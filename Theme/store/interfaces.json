@@ -1,0 +1,44 @@
+{
+  "cucarda-envio-gratis": {
+    "component": "CucardaEnvioGratis"
+  },
+  "instalment-product-box": {
+    "component": "InstalmentProductBox"
+  },
+  "custom-description": {
+    "component": "CustomDescription"
+  },
+  "sucursales": {
+    "component": "Sucursales"
+  },
+  "ocultar-titulo-especificaciones": {
+    "component": "OcultarTituloEspecificaciones"
+  },
+  "transparencia-fiscal": {
+    "component": "TransparenciaFiscal"
+  },
+  "guia-talles": {
+    "component": "GuiaTalles"
+  },
+  "cucarda-nuevo": {
+    "component": "CucardaNuevo"
+  },
+  "logos-top-bar": {
+    "component": "LogosTopBar"
+  },
+  "media-block": {
+    "component": "MediaBlock"
+  },
+  "dinamic-menu": {
+    "component": "DinamicMenu"
+  },
+  "dinamic-socials": {
+    "component": "DinamicSocials"
+  },
+  "video-shelf": {
+    "component": "VideoShelf"
+  },
+  "instalment-product-box-setter": {
+    "component": "InstallmentProductBoxSetter"
+  }
+}

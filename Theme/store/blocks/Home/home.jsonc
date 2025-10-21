@@ -1,0 +1,28 @@
+{
+  "store.home": {
+    "blocks": ["toggle-layout#home"]
+  },
+  "toggle-layout#home": {
+    "title": "Home",
+    "children": ["toggle-layout#init"]
+  },
+  //******************************************************
+  //
+  // Inicio de Toggles
+  //
+  //******************************************************
+  "toggle-layout#init": {
+    "title": "Init",
+    "children": ["rich-text#init"]
+  },
+  //******************************************************
+  //
+  // Fin de Toggles
+  //
+  //******************************************************
+  "rich-text#init": {
+    "props": {
+      "text": "Iniciando proyecto"
+    }
+  }
+}
