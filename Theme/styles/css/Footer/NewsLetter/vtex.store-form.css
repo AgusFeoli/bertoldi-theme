@@ -1,0 +1,81 @@
+.formSubmitContainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.formSubmitContainer .formSubmitButton :global(.vtex-button) {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 0px;
+    outline: none;
+    transition: all 150ms ease-in-out;
+
+
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+}
+
+.formSubmitContainer .formSubmitButton :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+.formSubmitContainer .formSubmitButton :global(.vtex-button) :global(.vtex-button__label) {
+    width: 96px;
+    padding: 0px !important;
+    text-transform: capitalize;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 16px;
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.formErrorServer {
+    max-width: 337px;
+}
+
+@media(max-width: 64.063rem) {
+    .formSubmitContainer .formSubmitButton {
+        width: 100%;
+    }
+
+    .formSubmitContainer .formSubmitButton :global(.vtex-button) {
+        width: 100% !important;
+        max-width: 640px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .formSubmitContainer {
+        position: relative;
+        gap: 0;
+    }
+
+    .formErrorServer {
+        position: absolute;
+        left: -585%;
+        bottom: 67px;
+        width: 337px;
+    }
+
+    .formSubmitContainer .formSubmitButton :global(.vtex-button) :global(.vtex-button__label) {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+    }
+}

@@ -22,7 +22,7 @@
   //******************************************************
   "rich-text#init": {
     "props": {
-      "text": "Iniciando proyecto"
+      "text": " "
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "flex-layout.row#header-MB": {
+    "title": "Header",
+    "props": {
+      "blockClass": "header-MB",
+      "htmlId": "row-test"
+    },
+    "children": ["flex-layout.row#menu-trigger" , "flex-layout.col#header-logo", "flex-layout.col#header-cart-MB"]
+  },
+  /*Menu*/
+  "flex-layout.row#menu-trigger": {
+    "title": "Menu",
+    "children": ["menu-kudos"],
+    "props": {
+      "blockClass": "menu-trigger"
+    }
+  },
+
+  /*Search y Cart*/
+  "flex-layout.col#header-cart-MB": {
+    "props": {
+      "blockClass": "header-cart-MB"
+    },
+    "children": ["minicart.v2"]
+  }
+}

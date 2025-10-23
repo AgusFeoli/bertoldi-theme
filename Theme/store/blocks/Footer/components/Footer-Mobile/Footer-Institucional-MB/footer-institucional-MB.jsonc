@@ -1,0 +1,66 @@
+{
+  "flex-layout.row#footer-institucional-MB": {
+    "props": {
+      "blockClass": "footer-institucional-MB"
+    },
+    "children": [
+      "flex-layout.row#footer-newsletter-DS",
+      "disclosure-layout#disclosure-footer-mb-1",
+      "flex-layout.row#boton-arrepentimiento-container-Mobile",
+      "disclosure-layout#disclosure-footer-mb-2",
+      "flex-layout.row#footer-redes-DS"
+    ]
+  },
+  //******************************************************
+  //
+  // Inicio de Disclosure 1
+  //
+  //******************************************************
+  "disclosure-layout#disclosure-footer-mb-1": {
+    "children": ["disclosure-trigger#disclosure-footer-mb-1", "disclosure-content#disclosure-footer-mb-1"]
+  },
+  "disclosure-trigger#disclosure-footer-mb-1": {
+    "props": {
+      "blockClass": "disclosure-footer-mb"
+    },
+    "children": ["rich-text#question-disclosure-footer-mb-1"]
+  },
+  "disclosure-content#disclosure-footer-mb-1": {
+    "props": {
+      "blockClass": "disclosure-footer-mb"
+    },
+    "children": ["link#institucionales-nosotros", "link#politica-de-cambio", "link#como-comprar"]
+  },
+  "rich-text#question-disclosure-footer-mb-1": {
+    "props": {
+      "text": "Servicio al cliente",
+      "blockClass": "question-disclosure-footer-mb"
+    }
+  },
+  //******************************************************
+  //
+  // Inicio de Disclosure 1
+  //
+  //******************************************************
+  "disclosure-layout#disclosure-footer-mb-2": {
+    "children": ["disclosure-trigger#disclosure-footer-mb-2", "disclosure-content#disclosure-footer-mb-2"]
+  },
+  "disclosure-trigger#disclosure-footer-mb-2": {
+    "props": {
+      "blockClass": "disclosure-footer-mb"
+    },
+    "children": ["rich-text#question-disclosure-footer-mb-2"]
+  },
+  "disclosure-content#disclosure-footer-mb-2": {
+    "props": {
+      "blockClass": "disclosure-footer-mb"
+    },
+    "children": ["link#institucionales-sucursales", "link#contacto", "link#institucionales-faq", "link#institucionales-terminoscondiciones"]
+  },
+  "rich-text#question-disclosure-footer-mb-2": {
+    "props": {
+      "text": "Contactanos",
+      "blockClass": "question-disclosure-footer-mb"
+    }
+  }
+}

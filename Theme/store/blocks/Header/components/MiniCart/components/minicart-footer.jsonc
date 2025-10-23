@@ -1,0 +1,70 @@
+{
+    "flex-layout.row#minicart-footer": {
+        "props": {
+            "blockClass": "minicart-footer"
+        },
+        "children": [
+            "flex-layout.col#minicart-footer"
+        ]
+    },
+    "flex-layout.col#minicart-footer": {
+        "children": [
+            "minicart-summary",
+            "minicart-checkout-button#minicartButton-to-checkout-profile",
+            "minicart-checkout-button#minicartButton-to-checkout-cart",
+            "rich-text#miniCart-mensaje"
+        ]
+    },
+    //
+    //
+    /*Inicio Minicart Summary*/
+    "minicart-summary": {
+        "blocks": [
+            "checkout-summary.compact#minicart"
+        ]
+    },
+    "checkout-summary.compact#minicart": {
+        "children": [
+            "summary-totalizers#minicart"
+        ],
+        "props": {
+            "totalizersToShow": [
+                "Items",
+                "Discounts"
+            ]
+        }
+    },
+    "summary-totalizers#minicart": {
+        "props": {
+            "showTotal": true,
+            "showDeliveryTotal": true
+        }
+    },
+    /*Fin Minicart Summary*/
+    //
+    //
+    /*Inicio Minicart Checkout Button*/
+    "minicart-checkout-button#minicartButton-to-checkout-profile": {
+        "props": {
+            "finishShoppingButtonLink": "/checkout/#/profile",
+            "blockClass": "minicartButton-to-checkout-profile"
+        }
+    },
+    "minicart-checkout-button#minicartButton-to-checkout-cart": {
+        "props": {
+            "finishShoppingButtonLink": "/checkout/#/cart",
+            "blockClass": "minicartButton-to-checkout-cart"
+        }
+    },
+    /*Fin Minicart Checkout Button*/
+    //
+    //
+    /*Inicio Minicart Mensaje*/
+    "rich-text#miniCart-mensaje": {
+        "props": {
+            "blockClass": "miniCart-mensaje",
+            "text": "Las promociones y costo de envío se verán aplicadas en el carrito"
+        }
+    }
+    /*Fin Minicart Mensaje*/
+}

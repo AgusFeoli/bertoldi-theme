@@ -1,0 +1,16 @@
+.link--terminos-y-conidiciones {
+    text-decoration: none;
+    width: auto !important;
+    height: fit-content;
+}
+
+.label--terminos-y-conidiciones {
+    color: var(--stroke-medium);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 1.1875rem;
+    margin: 0px;
+    text-decoration-line: underline;
+}

@@ -1,0 +1,27 @@
+.flexRow--menu-kudos {
+    background: var(--forCode-surface-background-background-header);
+    border-radius: 0 0 var(--forCode-spacing-system-radius-l) var(--forCode-spacing-system-radius-l);
+    border-bottom: 1px solid var(--forCode-stroke-light);
+    backdrop-filter: blur(10px);
+}
+
+.flexRow--menu-kudos :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.flexRowContent--menu-kudos {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--menu-kudos :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}

@@ -1,0 +1,116 @@
+{
+  "flex-layout.row#footer-enlaces-DS": {
+    "props": {
+      "blockClass": "footer-enlaces-DS"
+    },
+    "children": ["flex-layout.col#columna-enlace-1", "flex-layout.col#columna-enlace-2"]
+  },
+  /*Inicio Columna Enlace 1*/
+  "flex-layout.col#columna-enlace-1": {
+    "props": {
+      "blockClass": "columna-enlace-1"
+    },
+    "children": ["rich-text#footer-titulo-institucional-1", "flex-layout.col#columna-link-1"]
+  },
+
+  "rich-text#footer-titulo-institucional-1": {
+    "props": {
+      "blockClass": "footer-titulo-institucionales",
+      "text": "Servicio al cliente"
+    }
+  },
+  "flex-layout.col#columna-link-1": {
+    "props": {
+      "blockClass": "footer-columna-links"
+    },
+    "children": ["link#institucionales-nosotros", "link#politica-de-cambio", "link#como-comprar", "link#boton-arrepentimiento"]
+  },
+  "link#institucionales-nosotros": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/nosotros",
+      "label": "Nosotros"
+    }
+  },
+  "link#politica-de-cambio": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/politicadecambio",
+      "label": "Politica de cambio"
+    }
+  },
+  "link#como-comprar": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/comocomprar",
+      "label": "Como comprar"
+    }
+  },
+  /*Boton Arrepentimiento*/
+  "link#boton-arrepentimiento": {
+    "props": {
+      "blockClass": "boton-arrepentimiento",
+      "href": "/arrepentimiento",
+      "label": "Botón de arrepentimiento"
+    }
+  },
+  /*Fin Columna Enlace 1*/
+  //
+  //
+  //
+  //
+  /*Inicio Columna Enlace 2*/
+  "flex-layout.col#columna-enlace-2": {
+    "props": {
+      "blockClass": "columna-enlace-2"
+    },
+    "children": ["rich-text#footer-titulo-institucional-2", "flex-layout.col#columna-link-2"]
+  },
+
+  "rich-text#footer-titulo-institucional-2": {
+    "props": {
+      "blockClass": "footer-titulo-institucionales",
+      "text": "Contactanos"
+    }
+  },
+  "flex-layout.col#columna-link-2": {
+    "props": {
+      "blockClass": "footer-columna-links"
+    },
+    "children": [
+      "link#institucionales-sucursales",
+      "link#contacto",
+      "link#institucionales-faq",
+      "link#institucionales-terminoscondiciones"
+    ]
+  },
+  "link#institucionales-sucursales": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/sucursales",
+      "label": "Sucursales"
+    }
+  },
+  "link#contacto": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/contacto",
+      "label": "Contacto"
+    }
+  },
+  "link#institucionales-faq": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/preguntasfrecuentes",
+      "label": "Preguntas frecuentes"
+    }
+  },
+  "link#institucionales-terminoscondiciones": {
+    "props": {
+      "blockClass": "link-institucionales",
+      "href": "/terminoscondiciones",
+      "label": "Términos y condiciones"
+    }
+  }
+  /*Fin Columna Enlace 2*/
+}

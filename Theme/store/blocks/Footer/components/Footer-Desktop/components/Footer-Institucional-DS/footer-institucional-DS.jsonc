@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#footer-institucional-DS": {
+    "props": {
+      "blockClass": "footer-institucional-DS"
+    },
+    "children": ["flex-layout.row#footer-newsletter-DS", "flex-layout.row#footer-enlaces-DS", "flex-layout.row#footer-redes-DS"]
+  }
+}

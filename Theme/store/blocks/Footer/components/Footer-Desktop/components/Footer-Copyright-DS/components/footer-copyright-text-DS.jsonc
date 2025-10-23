@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#footer-copyright-text-DS": {
+    "props": {
+      "blockClass": "footer-copyright-text-DS"
+    },
+    "children": ["rich-text#derechos-reservados"]
+  },
+  "rich-text#derechos-reservados": {
+    "props": {
+      "blockClass": "derechos-reservados",
+      "text": "©2025 Bertoldi. Todos los derechos reservados"
+    }
+  }
+}

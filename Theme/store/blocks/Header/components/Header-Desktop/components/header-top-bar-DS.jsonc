@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#header-top-bar-DS": {
+        "title": "Top Bar",
+        "props": {
+            "blockClass": "header-top-bar-DS"
+        },
+        "children": [
+            "rich-text#top-bar-text"
+        ]
+    },
+    "rich-text#top-bar-text": {
+        "props": {
+            "blockClass": "notification",
+            "text": "Envío gratis en compras superiores a **$7.999**"
+        }
+    }
+}

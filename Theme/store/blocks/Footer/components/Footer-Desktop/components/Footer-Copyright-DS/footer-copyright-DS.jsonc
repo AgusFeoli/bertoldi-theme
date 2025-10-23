@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#footer-copyright-DS": {
+    "props": {
+      "blockClass": "footer-copyright-DS"
+    },
+    "children": ["flex-layout.row#footer-logos-DS", "flex-layout.row#footer-copyright-text-DS"]
+  }
+}

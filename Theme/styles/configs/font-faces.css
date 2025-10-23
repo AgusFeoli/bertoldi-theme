@@ -1,36 +1,31 @@
-/*Inter*/
+/*Poppins*/
 @font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-Regular.otf);
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-Medium.otf);
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-SemiBold.otf);
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-Bold.otf);
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Bold.ttf);
     font-weight: 700;
 }
 
+/*Bebas Kai*/
 @font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-ExtraBold.otf);
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url(assets/fonts/Inter/Inter-Black.otf);
-    font-weight: 900;
+    font-family: 'Bebas Kai';
+    src: url(assets/Fonts/BebasKai/BebasKai.ttf);
+    font-weight: 400;
 }

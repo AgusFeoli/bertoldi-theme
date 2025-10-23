@@ -1,0 +1,17 @@
+.container--derechos-reservados {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph--derechos-reservados {
+    margin: 0px;
+    color: var(--forCode-text-body-default);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}

@@ -1,0 +1,31 @@
+.flexRow--header-top-bar-DS {
+    background: var(--forCode-surface-background-top-bar);
+}
+
+.flexRow--header-top-bar-DS :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    width: 100%;
+    padding: var(--forCode-spacing-system-xs) var(--forCode-spacing-system-md);
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--header-top-bar-DS {
+    padding: 0px;
+    display: flex;
+    width: 85.375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 76.25rem) {
+    .flexRowContent--header-top-bar-DS {
+        width: 62.5rem;
+    }
+}
+
+@media(max-width: 62rem) {
+    .flexRowContent--header-top-bar-DS {
+        width: 100%;
+    }
+}
