@@ -1,0 +1,130 @@
+.flexRow--grid-banners {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--grid-banners :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 48px 16px 40px 16px;
+    margin: 0;
+}
+
+.flexRowContent--grid-banners {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--grid-banners :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+    height: 100%;
+}
+
+.flexRowContent--coleccion-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flexRowContent--coleccion-slider :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--grid-banner {
+    width: 100%;
+    position: relative;
+}
+
+.flexRowContent--grid-banner :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--grid-banner-text-and-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 520px;
+    height: 100%;
+    max-height: 146px;
+    padding: var(--forCode-spacing-system-xl);
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-light);
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(7.5px);
+}
+
+.flexRowContent--grid-banner-text-and-cta :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexRowContent--grid-banner-superior-image {
+    height: 514px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    overflow: hidden;
+}
+
+.flexRowContent--grid-banner-inferior {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+
+.flexRowContent--grid-banner-inferior-derecho-image,
+.flexRowContent--grid-banner-inferior-izq-image {
+    height: 365px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    overflow: hidden;
+}
+
+@media(max-width: 1170px) {
+    .flexRowContent--grid-banner-text-and-cta {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 1025px) {
+    .flexRow--grid-banners :global(.vtex-store-components-3-x-container) {
+        padding: 48px 16px 113px 16px;
+    }
+}
+
+@media(max-width: 930px) {
+    .flexRowContent--grid-banner-text-and-cta {
+        max-width: 320px;
+    }
+}
+
+@media(max-width: 760px) {
+    .flexRowContent--grid-banner-inferior {
+        flex-direction: column;
+    }
+
+    .flexRowContent--grid-banner-text-and-cta {
+        max-width: 316px;
+        max-height: 100px;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .flexRowContent--grid-banner-superior-image {
+        height: 308px;
+    }
+
+    .flexRowContent--grid-banner-inferior-derecho-image,
+    .flexRowContent--grid-banner-inferior-izq-image {
+        height: 205px;
+    }
+}

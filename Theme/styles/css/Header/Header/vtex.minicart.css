@@ -13,6 +13,12 @@
     padding: 8px 4px;
     width: 97px;
     height: 40px;
+    border-radius: 24px;
+}
+
+.minicartContainer :global(.vtex-button):hover,
+.minicartContainer :global(.vtex-button):focus {
+    background-color: #F7F7F7 !important;
 }
 
 .minicartContainer :global(.vtex-button__label) {
@@ -38,6 +44,11 @@
     text-transform: capitalize;
 }
 
+.minicartContainer :global(.vtex-button):hover::before,
+.minicartContainer :global(.vtex-button):focus::before {
+    color: #DE1269;
+}
+
 .minicartContainer :global(.vtex-button)::after {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18' fill='none'%3E%3Cpath d='M13.3709 0.439941L16.5819 6.00194L20.0049 6.00212V8.00214L18.8379 8.00194L18.0813 17.0851C18.0381 17.6034 17.6048 18.0021 17.0847 18.0021H2.92502C2.40493 18.0021 1.97166 17.6034 1.92847 17.0851L1.17088 8.00194L0.00488281 8.00214V6.00212L3.42688 6.00194L6.63886 0.439941L8.3709 1.43994L5.73688 6.00194H14.2719L11.6389 1.43994L13.3709 0.439941ZM16.8309 8.00194L3.17788 8.00214L3.84488 16.0021H16.1639L16.8309 8.00194ZM11.0049 10.0021V14.0021H9.0049V10.0021H11.0049ZM7.00488 10.0021V14.0021H5.00488V10.0021H7.00488ZM15.0049 10.0021V14.0021H13.0049V10.0021H15.0049Z' fill='%2319191A'/%3E%3C/svg%3E") no-repeat 50% / contain;
     background-size: 24px;
@@ -45,6 +56,11 @@
     display: inline-block;
     height: 24px;
     width: 24px;
+}
+
+.minicartContainer :global(.vtex-button):hover::after,
+.minicartContainer :global(.vtex-button):focus::after {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18' fill='none'%3E%3Cpath d='M13.3709 0.439941L16.5819 6.00194L20.0049 6.00212V8.00214L18.8379 8.00194L18.0813 17.0851C18.0381 17.6034 17.6048 18.0021 17.0847 18.0021H2.92502C2.40493 18.0021 1.97166 17.6034 1.92847 17.0851L1.17088 8.00194L0.00488281 8.00214V6.00212L3.42688 6.00194L6.63886 0.439941L8.3709 1.43994L5.73688 6.00194H14.2719L11.6389 1.43994L13.3709 0.439941ZM16.8309 8.00194L3.17788 8.00214L3.84488 16.0021H16.1639L16.8309 8.00194ZM11.0049 10.0021V14.0021H9.0049V10.0021H11.0049ZM7.00488 10.0021V14.0021H5.00488V10.0021H7.00488ZM15.0049 10.0021V14.0021H13.0049V10.0021H15.0049Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
 }
 
 @media(max-width: 64.063rem) {

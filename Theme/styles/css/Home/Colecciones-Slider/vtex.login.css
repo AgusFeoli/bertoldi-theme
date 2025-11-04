@@ -1,0 +1,4 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--colecciones-slider) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}

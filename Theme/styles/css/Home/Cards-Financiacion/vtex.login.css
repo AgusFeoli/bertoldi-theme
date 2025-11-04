@@ -1,0 +1,4 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--cards-financiacion)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    display: flex;
+    gap: 24px;
+}

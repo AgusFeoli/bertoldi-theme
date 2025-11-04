@@ -1,0 +1,10 @@
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button.numeric-stepper__minus-button.br2.pa0.br-0.flex.items-center.justify-center.ba.b--muted-4.bw1.h-small.f6.bg-muted-5.c-disabled.o-100) {
+    display: flex;
+    min-height: 40px;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--spacing-system-radius-s) !important;
+    background: var(--surface-button-Disabled) !important;
+    border: 1px solid var(--surface-button-Disabled) !important;
+}

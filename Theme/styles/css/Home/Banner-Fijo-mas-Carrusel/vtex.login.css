@@ -1,0 +1,36 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--banner-fijo-mas-carrusel)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: 75% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--banner-fijo-mas-carrusel)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    width: 25% !important;
+}
+
+:global(.vtex-store-components-3-x-imageElement--banner-fijo-mas-carrusel-image) {
+    object-fit: cover;
+    width: 100%;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrack--banner-fijo-mas-carrusel-container) {
+    padding-left: 2px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderTrack--banner-fijo-mas-carrusel-container-2) {
+    padding-left: 16px;
+}
+
+
+@media(max-width: 1025px) {
+    :global(.vtex-slider-layout-0-x-sliderTrack--banner-fijo-mas-carrusel-container) {
+        padding-left: 0;
+    }
+
+    :global(.vtex-slider-layout-0-x-sliderTrack--banner-fijo-mas-carrusel-container-2) {
+        padding-left: 0;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--banner-fijo-mas-carrusel)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child,
+    :global(.vtex-flex-layout-0-x-flexRowContent--banner-fijo-mas-carrusel)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        width: 100% !important;
+    }
+}

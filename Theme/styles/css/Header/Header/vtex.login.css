@@ -8,12 +8,12 @@
     width: 109px;
     height: 40px;
     border-radius: 0px;
+    border-radius: 24px;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):hover,
 :global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):focus {
-    background-color: transparent;
-    border-radius: 0px;
+    background-color: #F7F7F7 !important;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button)::before {
@@ -29,6 +29,11 @@
     text-transform: capitalize;
 }
 
+:global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):hover::before,
+:global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):focus::before {
+    color: #DE1269;
+}
+
 :global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button)::after {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 22H18V20C18 18.3431 16.6569 17 15 17H9C7.34315 17 6 18.3431 6 20V22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13ZM12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z' fill='%23524C4C'/%3E%3C/svg%3E") no-repeat center center / contain;
     background-size: 24px;
@@ -36,6 +41,11 @@
     display: inline-block;
     height: 24px;
     width: 24px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):hover::after,
+:global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container :global(.vtex-button):focus::after {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M20 22H18V20C18 18.3431 16.6569 17 15 17H9C7.34315 17 6 18.3431 6 20V22H4V20C4 17.2386 6.23858 15 9 15H15C17.7614 15 20 17.2386 20 20V22ZM12 13C8.68629 13 6 10.3137 6 7C6 3.68629 8.68629 1 12 1C15.3137 1 18 3.68629 18 7C18 10.3137 15.3137 13 12 13ZM12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat center center / contain;
 }
 
 :global(.vtex-flex-layout-0-x-flexCol--header-login-cart) .container .profileIcon,

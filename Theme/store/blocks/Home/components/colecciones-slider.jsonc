@@ -1,0 +1,128 @@
+{
+  "flex-layout.row#colecciones-slider": {
+    "props": {
+      "blockClass": "colecciones-slider"
+    },
+    "children": ["rich-text#title-colecciones-slider", "responsive-layout.desktop#colecciones-slider", "responsive-layout.mobile#colecciones-slider"]
+  },
+
+  //******************************************************
+  // Título principal del slider
+  //******************************************************
+  "rich-text#title-colecciones-slider": {
+    "title": "Títutlo",
+    "props": { "text": "Colecciones", "blockClass": "title-colecciones-slider" }
+  },
+
+  "responsive-layout.desktop#colecciones-slider": {
+    "title": "Desktop",
+    "children": [
+      "link.product#coleccion-slider-1",
+      "link.product#coleccion-slider-2",
+      "link.product#coleccion-slider-3",
+      "link.product#coleccion-slider-4",
+      "link.product#coleccion-slider-5"
+    ]
+  },
+  "responsive-layout.mobile#colecciones-slider": {
+    "title": "Mobile",
+    "children": ["slider-layout#colecciones-slider"]
+  },
+
+  //******************************************************
+  // Slider con todas las categorías
+  //******************************************************
+  "slider-layout#colecciones-slider": {
+    "title": "Slider",
+    "children": [
+      "link.product#coleccion-slider-1",
+      "link.product#coleccion-slider-2",
+      "link.product#coleccion-slider-3",
+      "link.product#coleccion-slider-4",
+      "link.product#coleccion-slider-5"
+    ],
+    "props": {
+      "blockClass": "coleccion-slider",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 16,
+      "autoplay": {
+        "timeout": 3500,
+        "stopOnHover": true
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never"
+    }
+  },
+
+  //******************************************************
+  // Coleccion 1
+  //******************************************************
+  "link.product#coleccion-slider-1": {
+    "title": "Colección 1",
+    "props": { "href": "/", "label": "Reparación capital", "blockClass": "coleccion-slider" },
+    "children": ["image#coleccion-slider-1"]
+  },
+  "image#coleccion-slider-1": {
+    "title": "Imagen",
+    "props": { "blockClass": "coleccion-slider", "src": "/arquivos/coleccionbanner1.png" }
+  },
+  //******************************************************
+  // Coleccion 2
+  //******************************************************
+  "link.product#coleccion-slider-2": {
+    "title": "Colección 2",
+    "props": { "href": "/", "label": "Todo sobre rulos", "blockClass": "coleccion-slider" },
+    "children": ["image#coleccion-slider-2"]
+  },
+  "image#coleccion-slider-2": {
+    "title": "Imagen",
+    "props": { "blockClass": "coleccion-slider", "src": "/arquivos/coleccionbanner2.png" }
+  },
+  //******************************************************
+  // Coleccion 3
+  //******************************************************
+  "link.product#coleccion-slider-3": {
+    "title": "Colección 3",
+    "props": { "href": "/", "label": "Hidratación capilar", "blockClass": "coleccion-slider" },
+    "children": ["image#coleccion-slider-3"]
+  },
+  "image#coleccion-slider-3": {
+    "title": "Imagen",
+    "props": { "blockClass": "coleccion-slider", "src": "/arquivos/coleccionbanner3.png" }
+  },
+  //******************************************************
+  // Coleccion 4
+  //******************************************************
+  "link.product#coleccion-slider-4": {
+    "title": "Colección 4",
+    "props": { "href": "/", "label": "Limpieza e hidratación facial", "blockClass": "coleccion-slider" },
+    "children": ["image#coleccion-slider-4"]
+  },
+  "image#coleccion-slider-4": {
+    "title": "Imagen",
+    "props": { "blockClass": "coleccion-slider", "src": "/arquivos/coleccionbanner4.png" }
+  },
+  //******************************************************
+  // Coleccion 5
+  //******************************************************
+  "link.product#coleccion-slider-5": {
+    "title": "Colección 5",
+    "props": { "href": "/", "label": "Belleza de labios", "blockClass": "coleccion-slider" },
+    "children": ["image#coleccion-slider-5"]
+  },
+  "image#coleccion-slider-5": {
+    "title": "Imagen",
+    "props": { "blockClass": "coleccion-slider", "src": "/arquivos/coleccionbanner5.png" }
+  }
+}

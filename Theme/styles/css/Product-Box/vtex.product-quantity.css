@@ -1,0 +1,52 @@
+.quantitySelectorContainer {
+    margin: 0px;
+}
+
+.quantitySelectorTitle--product-box {
+    display: none;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+    display: flex;
+    min-height: 40px;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--spacing-system-radius-s) !important;
+    border: 1px solid var(--stroke-button-primary-default);
+    background: var(--Surface-button-secondary);
+    transition: all 150ms ease-in-out;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button):hover,
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button):hover {
+    border-color: var(--surface-button-primary-default);
+    background: var(--surface-button-secondary-hover);
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+    min-height: 40px;
+    width: 100%;
+    border-color: transparent;
+    outline: none;
+    color: var(--text-body-dark);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-lg);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+    letter-spacing: 0.1px;
+}
+
+@media(max-width: 78.688rem) {
+    .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) {
+        justify-content: flex-start;
+    }
+}

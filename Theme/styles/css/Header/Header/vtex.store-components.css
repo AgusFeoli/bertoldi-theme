@@ -11,9 +11,9 @@
     width: 443px;
     display: flex;
     flex-direction: row-reverse;
-    border: 0.8px solid var(--forCode-surface-background-background-selected);
-    border-radius: var(--forCode-spacing-system-radius-xl);
-    background: var(--forCode-surface-background-background-selected);
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-medium);
+    background: var(--forCode-surface-background-base-secondary);
 }
 
 

@@ -1,0 +1,9 @@
+.imageElement--banner-dinamico-mas-carrusel-cta-image {
+    object-fit: cover;
+}
+
+@media(max-width: 1025px) {
+    .imageElement--banner-dinamico-mas-carrusel-cta-image {
+        width: 100%;
+    }
+}

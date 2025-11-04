@@ -1,0 +1,141 @@
+.media_block {}
+
+.media_container {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.media_item {
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.media_item::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+
+.media_banner,
+.media_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* -------------- */
+/*       OTROS    */
+/* -------------- */
+
+
+/* Video hero */
+:global(.vtex-flex-layout-0-x-flexRowContent--home-video-principal) .media_container {
+    max-width: unset;
+    gap: 0;
+}
+
+/* Mantengo tu aspect-ratio porque overridea al padding-top si es necesario */
+:global(.vtex-flex-layout-0-x-flexRowContent--home-video-principal) .media_video {
+    aspect-ratio: 3/1;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--home-video-principal) .media_item:hover .media_video {
+    transform: unset;
+}
+
+/* Banners home - full width */
+:global(.vtex-flex-layout-0-x-flexRow--home-banner-full-width-1) .media_video,
+:global(.vtex-flex-layout-0-x-flexRow--home-banner-full-width-2) .media_video {
+    aspect-ratio: 4/1;
+}
+
+@media (max-width: 768px) {
+
+    :global(.vtex-flex-layout-0-x-flexRow--home-banner-full-width-1) .media_video,
+    :global(.vtex-flex-layout-0-x-flexRow--home-banner-full-width-2) .media_video {
+        aspect-ratio: 3/5;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .media_item {
+        min-height: 308px;
+    }
+}
+
+/* Banner junto a slider de productos */
+:global(.vtex-flex-layout-0-x-flexRow--container-slider-product-box-with-media) .media_container {
+    height: calc(100% - 39px);
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--container-slider-product-box-with-media) .media_video {
+    aspect-ratio: 3/5;
+}
+
+/*
+@media(max-width: 60rem) {
+    :global(.vtex-flex-layout-0-x-flexRow--container-slider-product-box-with-media) .media_container {
+        height: calc(100% - 8px);
+    }
+}
+
+@media(max-width: 45rem) {
+    :global(.vtex-flex-layout-0-x-flexRow--container-slider-product-box-with-media) .media_container {
+        height: calc(100% - 31px);
+    }
+}
+
+@media(max-width: 40rem) {
+    :global(.vtex-flex-layout-0-x-flexRow--container-slider-product-box-with-media) .media_video {
+        aspect-ratio: 1/2;
+    }
+}
+
+
+
+@media (max-width: 76.25rem) {
+    .media-container {
+        width: 62.5rem;
+    }
+}
+
+@media (max-width: 64.063rem) {
+    .media_container {
+        width: 100%;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 40rem) {
+    .media_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .media_item {
+        padding-top: 0 !important;
+        height: 308px !important;
+        min-height: 308px !important;
+    }
+
+    .media_video {
+        height: 100% !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+}*/

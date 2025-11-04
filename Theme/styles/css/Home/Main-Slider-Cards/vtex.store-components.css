@@ -1,0 +1,4 @@
+.imageElement--main-slider-image {
+    width: 100% !important;
+    object-fit: cover;
+}

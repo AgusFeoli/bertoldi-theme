@@ -2,4 +2,5 @@
     position: fixed;
     right: 2%;
     bottom: 4%;
+    z-index: 9;
 }

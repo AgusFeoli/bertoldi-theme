@@ -1,0 +1,96 @@
+{
+  "flex-layout.row#banner-dinamico-mas-carrusel-2": {
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel", "banner-dinamico-mas-carrusel-2"]
+    },
+    "children": [
+      "flex-layout.col#banner-dinamico-mas-carrusel-2-image-and-cta-container",
+      "flex-layout.row#banner-dinamico-mas-carrusel-2-product-box-slider"
+    ]
+  },
+  //*********************************
+  //
+  //
+  //*********************************
+  /*Inicio CTA*/
+  "flex-layout.col#banner-dinamico-mas-carrusel-2-image-and-cta-container": {
+    "title": "Banner",
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel-image-and-cta-container", "banner-dinamico-mas-carrusel-2-image-and-cta-container"]
+    },
+    "children": ["image#banner-dinamico-mas-carrusel-2-cta-image", "flex-layout.row#banner-dinamico-mas-carrusel-2-cta-text-container"]
+  },
+  //Image
+  "image#banner-dinamico-mas-carrusel-2-cta-image": {
+    "title": "Imagen",
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel-cta-image", "banner-dinamico-mas-carrusel-2-cta-image"],
+      "src": "/arquivos/banner-dinamico2.png"
+    }
+  },
+  //CTA
+  "flex-layout.row#banner-dinamico-mas-carrusel-2-cta-text-container": {
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel-cta-text-container", "banner-dinamico-mas-carrusel-2-cta-text-container"]
+    },
+    "children": ["rich-text#banner-dinamico-mas-carrusel-2-text", "link.product#banner-dinamico-mas-carrusel-2-link"]
+  },
+  //Text
+  "rich-text#banner-dinamico-mas-carrusel-2-text": {
+    "title": "Texto",
+    "props": {
+      "text": "Especial Herramientas",
+      "blockClass": ["banner-dinamico-mas-carrusel-text", "banner-dinamico-mas-carrusel-2-text"]
+    }
+  },
+  //CTA
+  "link.product#banner-dinamico-mas-carrusel-2-link": {
+    "title": "Link CTA",
+    "props": {
+      "href": "/",
+      "label": "Comprar ahora",
+      "blockClass": ["banner-dinamico-mas-carrusel-link", "banner-dinamico-mas-carrusel-2-link"]
+    }
+  },
+  /*Fin CTA*/
+  //*********************************
+  //
+  //
+  //*********************************
+  /*Inicio Slider Product Box*/
+  "flex-layout.row#banner-dinamico-mas-carrusel-2-product-box-slider": {
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel-product-box-slider", "banner-dinamico-mas-carrusel-2-product-box-slider"]
+    },
+    "children": ["list-context.product-list#banner-dinamico-mas-carrusel-2-slider"]
+  },
+  "list-context.product-list#banner-dinamico-mas-carrusel-2-slider": {
+    "title": "Slider - Config. del Contenido",
+    "blocks": ["product-summary.shelf#product-box"],
+    "children": ["slider-layout#banner-dinamico-mas-carrusel-2-slider"],
+    "props": {
+      "blockClass": ["banner-dinamico-mas-carrusel-slider", "banner-dinamico-mas-carrusel-2-slider", "carrusel-de-productos"],
+      "orderBy": "OrderByPriceASC",
+      "hideUnavailableItems": true
+    }
+  },
+  "slider-layout#banner-dinamico-mas-carrusel-2-slider": {
+    "title": "Slider - Config. del Componente",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      /*"autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },*/
+      "showPaginationDots": "mobileOnly",
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "mobileOnly",
+      "blockClass": ["banner-dinamico-mas-carrusel-slider", "banner-dinamico-mas-carrusel-2-slider", "carrusel-de-productos"]
+    }
+  }
+}

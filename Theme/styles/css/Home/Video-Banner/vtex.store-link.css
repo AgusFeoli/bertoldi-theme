@@ -1,0 +1,43 @@
+.link--video-banner-cta {
+    text-decoration: none;
+    padding: 16px 12px;
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    width: 100%;
+    max-width: 171px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.link--video-banner-cta:hover {
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+
+.label--video-banner-cta {
+    display: inline-block;
+    width: 147px;
+    height: 16px;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 16px;
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+@media(max-width: 760px) {
+    .link--video-banner-cta {
+        padding: 8px 12px;
+        max-width: 139px;
+        margin-top: 8px;
+    }
+
+    .label--video-banner-cta {
+        width: 115px;
+        font-size: var(--forCode-font-size-sm);
+    }
+}

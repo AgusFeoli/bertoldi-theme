@@ -1,0 +1,33 @@
+.paragraph--video-banner-brand {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: uppercase;
+}
+
+.paragraph--video-banner-text {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-3xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-3xl);
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 760px) {
+    .paragraph--video-banner-text {
+        font-size: var(--forCode-font-size-2xl);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: -0.12px;
+    }
+}

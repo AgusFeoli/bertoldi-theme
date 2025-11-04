@@ -1,1 +1,8 @@
-{}
+{
+    "video-banner": {
+        "component": "VideoBanner"
+    },
+    "instalment-product-box": {
+        "component": "InstalmentProductBox"
+    }
+}

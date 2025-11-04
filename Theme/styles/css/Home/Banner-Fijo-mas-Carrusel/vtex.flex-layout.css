@@ -1,0 +1,135 @@
+.flexRow--banner-fijo-mas-carrusel {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--banner-fijo-mas-carrusel :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 16px 48px 16px;
+    margin: 0;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-2 {
+    flex-direction: row-reverse;
+}
+
+.flexRow--banner-fijo-mas-carrusel-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRow--banner-fijo-mas-carrusel-container :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-container-2 {
+    padding-left: 6px;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-container :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-container-titulo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    padding: 0px 4px;
+    margin-bottom: 15px;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-container-titulo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+.flexRow--banner-fijo-mas-carrusel-image {
+    padding-top: 54px;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-image {
+    height: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-image :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--banner-fijo-mas-carrusel-image :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    height: 100%;
+}
+
+@media(max-width: 1025px) {
+    .flexRowContent--banner-fijo-mas-carrusel-container {
+        width: 100%;
+        gap: 17.5px;
+        padding: 0px;
+    }
+
+    .flexRowContent--banner-fijo-mas-carrusel-container-titulo {
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+
+    .flexRow--banner-fijo-mas-carrusel-container :global(.vtex-store-components-3-x-container) {
+        padding: 32px 11px 16px 11px;
+    }
+
+    .flexRow--banner-fijo-mas-carrusel-image {
+        padding: 0;
+    }
+
+    .flexRowContent--banner-fijo-mas-carrusel {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .flexRowContent--banner-fijo-mas-carrusel-image :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+        height: unset;
+    }
+
+    .flexRowContent--banner-fijo-mas-carrusel-image :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        height: 100%;
+    }
+}

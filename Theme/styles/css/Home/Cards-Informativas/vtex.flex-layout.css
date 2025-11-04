@@ -1,0 +1,87 @@
+.flexRow--cards-informativas {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 24px;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--cards-informativas :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--forCode-surface-background-base-secondary-md);
+}
+
+.flexRowContent--cards-informativas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--cards-informativas :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--card-informativa {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.flexRowContent--info-card-informativa {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.flexRowContent--card-informativa :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+.flexRowContent--info-card-informativa :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--image-card-informativa {
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--image-card-informativa :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px !important;
+    height: 44px;
+    padding: 10px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    background: var(--forCode-surface-button-ghost-default);
+}
+
+.flexRow--card-informativa {
+    width: 100%;
+    max-width: 384px;
+    height: 100%;
+    max-height: 212px;
+    padding: var(--forCode-spacing-system-sxl);
+    border-radius: var(--forCode-spacing-system-radius-l);
+    background: var(--forCode-surface-background-base-default);
+
+}
+
+@media(max-width: 1025px) {
+    .flexRow--cards-informativas {
+        padding-top: 0;
+    }
+
+    .flexRow--cards-informativas :global(.vtex-store-components-3-x-container) {
+        padding: 24px 0px 24px 0px;
+    }
+}

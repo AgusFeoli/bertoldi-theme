@@ -1,0 +1,30 @@
+{
+  "flex-layout.row#video-banner": {
+    "props": {
+      "blockClass": "video-banner"
+    },
+    "children": ["video-banner", "flex-layout.row#video-banner-text-and-cta"]
+  },
+  //Containter Text and CTA
+  "flex-layout.row#video-banner-text-and-cta": {
+    "props": {
+      "blockClass": "video-banner-text-and-cta"
+    },
+    "children": ["rich-text#video-banner-brand", "rich-text#video-banner-text", "link.product#video-banner-cta"]
+  },
+  //Marca
+  "rich-text#video-banner-brand": {
+    "title": "Marca",
+    "props": { "text": "ALFAPARF", "blockClass": "video-banner-brand" }
+  },
+  //Text
+  "rich-text#video-banner-text": {
+    "title": "Texto",
+    "props": { "text": "Especial Hair sale 40% OFF", "blockClass": "video-banner-text" }
+  },
+  //CTA
+  "link.product#video-banner-cta": {
+    "title": "Link CTA",
+    "props": { "href": "/", "label": "Comprar ahora", "blockClass": "video-banner-cta" }
+  }
+}

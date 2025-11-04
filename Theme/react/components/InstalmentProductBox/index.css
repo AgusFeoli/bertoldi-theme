@@ -1,0 +1,30 @@
+.instalmentProductBoxMainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 0;
+    min-height: 54px;
+}
+
+.instalmentProductBoxText {
+    margin: 0px;
+    padding: 0px 4px;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    border: 1px solid var(--forCode-stroke-tag-cuota);
+
+    color: var(--forCode-text-tag-cuota);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-align: start;
+}
+
+@media(max-width: 640px) {
+    .instalmentProductBoxText {
+        font-size: var(--forCode-font-size-xs, 12px);
+        line-height: var(--forCode-font-line-height-lg, 18px);
+    }
+}
