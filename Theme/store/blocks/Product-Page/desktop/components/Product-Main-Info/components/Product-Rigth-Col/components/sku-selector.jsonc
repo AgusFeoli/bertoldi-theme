@@ -1,0 +1,22 @@
+{
+  "flex-layout.col#containerTalles": {
+    "props": {
+      "blockClass": ["containerTalles", "containerTalles-pdp"]
+    },
+    "children": ["sku-selector"]
+  },
+  "sku-selector": {
+    "props": {
+      "blockClass": ["divisor"],
+      "showValueForVariation": "all",
+      "disableUnavailableSelectOptions": true,
+      "sortVariationsByLabel": true,
+      "initialSelection": "image",
+      "maxItems": 40,
+      "displayMode": "slider",
+      "sliderDisplayThreshold": 7,
+      "sliderItemsPerPage": { "desktop": 7, "tablet": 7, "phone": 7 },
+      "thumbnailImage": ["tonocolor"]
+    }
+  }
+}

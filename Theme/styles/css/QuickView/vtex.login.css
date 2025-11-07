@@ -1,0 +1,22 @@
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: max-content !important;
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+
+    :global(.vtex-modal-layout-0-x-pap0er--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB) :global(.vtex-flex-layout-0-x-flexRowContent--condition-result-true-MB)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        position: sticky;
+        bottom: 0;
+        background: #fff;
+        border-top: 1px solid #E9E9ED;
+        z-index: 9;
+    }
+}

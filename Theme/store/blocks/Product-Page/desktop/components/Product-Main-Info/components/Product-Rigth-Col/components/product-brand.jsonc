@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#product-brand": {
+        "props": {
+            "blockClass": "product-brand"
+        },
+        "children": [
+            "vtex.store-components:product-brand#name"
+        ]
+    },
+    "vtex.store-components:product-brand#name": {
+        "props": {
+            "displayMode": "text",
+            "withLink": "text"
+        }
+    }
+}

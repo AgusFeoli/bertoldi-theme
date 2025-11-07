@@ -1,0 +1,29 @@
+.flexRowContent--productSpecificationGroup {
+    width: 100%;
+}
+
+/*
+Esto es para hijos impares
+.flexRow--productSpecification:nth-child(odd) {
+    background: var(--forCode-surface-background-background-grey);
+}*/
+
+/*Esto es para hijos pares*/
+.flexRow--productSpecification:nth-child(even) {
+    background: var(--forCode-surface-background-background-grey);
+}
+
+
+.flexRowContent--productSpecification :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: fit-content !important;
+    padding: 12px 16px;
+}
+
+.flexRowContent--productSpecification :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    padding: 12px 16px;
+    overflow: hidden;
+}
+
+.flexCol--productSpecificationName {
+    min-width: 140px;
+}

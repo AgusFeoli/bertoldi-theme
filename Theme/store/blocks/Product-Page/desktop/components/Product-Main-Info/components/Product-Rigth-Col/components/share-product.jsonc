@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#share-product": {
+        "props": {
+            "blockClass": "share-product"
+        },
+        "children": [
+            "share#share-product"
+        ]
+    },
+    "share#share-product": {
+        "props": {
+            "social": {
+                "Facebook": true,
+                "Twitter": false,
+                "WhatsApp": true,
+                "Pinterest": false
+            }
+        }
+    }
+}

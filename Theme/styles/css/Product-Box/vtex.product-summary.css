@@ -86,6 +86,10 @@
 
 }
 
+.currencyLiteral--product-box {
+    display: none;
+}
+
 .listPriceContainer--product-box {
     position: unset;
 }

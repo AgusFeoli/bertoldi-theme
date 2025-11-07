@@ -1,0 +1,10 @@
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) {
+    width: 300px !important;
+}
+
+
+@media(max-width: 1025px) {
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) {
+        width: 100% !important;
+    }
+}

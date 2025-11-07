@@ -1,0 +1,31 @@
+{
+  "flex-layout.col#product-left-col": {
+    "props": {
+      "blockClass": "product-images",
+      "width": "60%",
+      "rowGap": 0,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#product-images-container",
+      "flex-layout.col#product-description"
+      //"flex-layout.col#product-specification"
+    ]
+  },
+
+  /*Imagen Container*/
+  "flex-layout.col#product-images-container": {
+    "props": {
+      "blockClass": "product-images-container"
+    },
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": true,
+      "showPaginationDots": true,
+      "hiddenImages": ["tonocolor"]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.notiferContainer {
+    margin-top: 24px;
+}
+
+.title,
+.notifyLabel {
+    font-size: 0px;
+}
+
+.title {
+    margin-bottom: 4px;
+}
+
+.title::before {
+    content: "Déjanos tus datos para informarte cuando éste producto se encuentre nuevamente en stock";
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.form .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form .content .inputName::before {
+    content: "Nombre";
+    display: block;
+    margin-bottom: 5px;
+    color: var(--forCode-text-label-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.form .content .inputEmail::before {
+    content: "Mail";
+    display: block;
+    margin-bottom: 5px;
+    color: var(--forCode-text-label-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.form .content :global(.vtex-input-prefix__group) {
+    box-sizing: content-box;
+    height: fit-content;
+    padding: 8px 12px;
+    border-radius: var(--forCode-spacing-system-xxs);
+    border: 1px solid var(--forCode-stroke-default);
+}
+
+.form .content :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
+    padding: 0px;
+    height: 24px;
+}
+
+.form .content .submit :global(.vtex-button) {
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    padding: 16px 12px;
+    border: 1px solid var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+}
+
+.form .content .submit :global(.vtex-button):hover {
+    border-color: var(--forCode-surface-button-primary-hover);
+    background: var(--forCode-surface-button-primary-hover);
+    cursor: pointer;
+}
+
+.form .content .submit :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0px !important;
+    font-size: 0px;
+}
+
+.form .content .submit :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Enviar datos";
+    display: block;
+    width: 100%;
+    height: 16px;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 16px;
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+@media(max-width: 64.063rem) {
+    .notiferContainer {
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,17 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--product-ID) .product-identifier--productReference {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+    text-transform: capitalize;
+}
+
+@media(max-width: 64.063rem) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-ID) .product-identifier--productReference {
+        margin: 9px 0px 9px;
+    }
+}

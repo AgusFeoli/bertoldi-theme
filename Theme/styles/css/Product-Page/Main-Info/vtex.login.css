@@ -1,0 +1,342 @@
+:global(.vtex-breadcrumb-1-x-container--product-breadcrumb)>:global(.vtex-breadcrumb-1-x-termArrow--product-breadcrumb) {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button):focus-visible {
+    outline-color: var(--forCode-surface-button-primary-hover);
+    background-color: var(--forCode-surface-button-primary-hover);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button.numeric-stepper__minus-button.br2.pa0.br-0.flex.items-center.justify-center.ba.b--muted-4.bw1.h-small.f6.bg-muted-5.c-disabled.o-100) {
+    padding: 16px !important;
+    width: auto !important;
+    height: 50px !important;
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button.numeric-stepper__minus-button.br2.pa0.br-0.flex.items-center.justify-center.ba.b--muted-4.bw1.h-small.f6.bg-muted-5.c-disabled.o-100) {
+        padding: 12px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev) {
+    margin-left: 12px;
+    padding: 8px;
+    border-radius: 100px;
+    border: 0.8px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev):hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev) {
+    padding: 8px;
+    border-radius: 100px;
+    border: 0.8px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev):hover {
+    cursor: pointer;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev)::before,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev)::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M13.3894 15.9999L20.9107 8.97461C21.4481 8.47194 21.4774 7.62794 20.9747 7.08928C20.4734 6.55061 19.6267 6.52261 19.0907 7.02528L11.4894 14.1266C10.9587 14.6226 10.6667 15.2866 10.6667 15.9999C10.6667 16.7133 10.9587 17.3773 11.4881 17.8733L19.0894 24.9746C19.3467 25.2146 19.6734 25.3333 20.0001 25.3333C20.3574 25.3333 20.7121 25.1919 20.9734 24.9106C21.4761 24.3719 21.4467 23.5293 20.9094 23.0253L13.3894 15.9999Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 32px;
+    content: "";
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev) :global(.vtex-store-components-3-x-caretIcon) {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next) {
+    margin-right: 12px;
+    padding: 8px;
+    border-radius: 100px;
+    border: 0.8px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next):hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next) {
+    padding: 8px;
+    border-radius: 100px;
+    border: 0.8px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next):hover {
+    cursor: pointer;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next)::before,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next)::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M20.5134 14.1271L12.9121 7.02573C12.3748 6.5244 11.5294 6.55107 11.0281 7.08973C10.5254 7.6284 10.5534 8.4724 11.0908 8.97507L18.6121 16.0004L11.0908 23.0257C10.5534 23.5284 10.5241 24.3724 11.0268 24.9111C11.2894 25.1924 11.6441 25.3337 12.0014 25.3337C12.3281 25.3337 12.6548 25.2151 12.9121 24.9751L20.5134 17.8737C21.0428 17.3777 21.3348 16.7137 21.3348 16.0004C21.3348 15.2871 21.0428 14.6231 20.5134 14.1271Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 32px;
+    content: "";
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-next)::before,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-next)::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect width='30' height='30' transform='translate(30 30) rotate(180)' fill='white'/%3E%3Cpath d='M15.6789 19.9123L25.6351 9.46294C25.8013 9.28858 25.894 9.05694 25.894 8.81606C25.894 8.57518 25.8013 8.34354 25.6351 8.16919L25.6239 8.15794C25.5433 8.07312 25.4463 8.00558 25.3388 7.95943C25.2313 7.91328 25.1155 7.88948 24.9986 7.88948C24.8816 7.88948 24.7658 7.91328 24.6583 7.95943C24.5508 8.00558 24.4538 8.07312 24.3732 8.15794L14.9982 17.9979L5.62699 8.15794C5.54641 8.07312 5.44942 8.00559 5.34193 7.95944C5.23443 7.91328 5.11866 7.88949 5.00167 7.88949C4.88469 7.88949 4.76892 7.91328 4.66142 7.95944C4.55392 8.00559 4.45694 8.07312 4.37636 8.15794L4.36511 8.16919C4.1989 8.34354 4.10618 8.57518 4.10618 8.81606C4.10618 9.05695 4.1989 9.28859 4.36511 9.46294L14.3214 19.9123C14.4089 20.0042 14.5142 20.0774 14.6309 20.1274C14.7476 20.1773 14.8732 20.2031 15.0001 20.2031C15.127 20.2031 15.2527 20.1773 15.3693 20.1274C15.486 20.0774 15.5913 20.0042 15.6789 19.9123Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 30px;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-prev)::before,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-prev)::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect width='30' height='30' transform='translate(30 30) rotate(180)' fill='white'/%3E%3Cpath d='M15.6789 19.9123L25.6351 9.46294C25.8013 9.28858 25.894 9.05694 25.894 8.81606C25.894 8.57518 25.8013 8.34354 25.6351 8.16919L25.6239 8.15794C25.5433 8.07312 25.4463 8.00558 25.3388 7.95943C25.2313 7.91328 25.1155 7.88948 24.9986 7.88948C24.8816 7.88948 24.7658 7.91328 24.6583 7.95943C24.5508 8.00558 24.4538 8.07312 24.3732 8.15794L14.9982 17.9979L5.62699 8.15794C5.54641 8.07312 5.44942 8.00559 5.34193 7.95944C5.23443 7.91328 5.11866 7.88949 5.00167 7.88949C4.88469 7.88949 4.76892 7.91328 4.66142 7.95944C4.55392 8.00559 4.45694 8.07312 4.37636 8.15794L4.36511 8.16919C4.1989 8.34354 4.10618 8.57518 4.10618 8.81606C4.10618 9.05695 4.1989 9.28859 4.36511 9.46294L14.3214 19.9123C14.4089 20.0042 14.5142 20.0774 14.6309 20.1274C14.7476 20.1773 14.8732 20.2031 15.0001 20.2031C15.127 20.2031 15.2527 20.1773 15.3693 20.1274C15.486 20.0774 15.5913 20.0042 15.6789 19.9123Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 30px;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+    transform: rotate(180deg);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-prev) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-next) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-prev) :global(.vtex-store-components-3-x-caretIcon),
+:global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.vtex-store-components-3-x-carouselGaleryThumbs) :global(.swiper-thumbnails-caret-next) :global(.vtex-store-components-3-x-caretIcon) {
+    display: none;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorDropdownContainer) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow) svg,
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorDropdownMobileContainer) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow) svg {
+    display: none;
+    padding: 0px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorDropdownContainer) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow)::before,
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-product-quantity-1-x-quantitySelectorDropdownMobileContainer) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' fill='none'%3E%3Cpath d='M6.18738 5.87988L9.62988 9.31488L13.0724 5.87988L14.1299 6.93738L9.62988 11.4374L5.12988 6.93738L6.18738 5.87988Z' fill='black'/%3E%3C/svg%3E");
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+
+/*ESTO ES PARA OCULTAR LAS FLECHAS DE LA IMAGEN PRINCIPAL EN DS*/
+/*@media(min-width: 64.064rem) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next),
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next),
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev),
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev) {
+        display: none;
+    }
+}*/
+
+@media(max-width: 64.063rem) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-prev)::before,
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) :global(.swiper-caret-next)::before {
+        background-size: 24px;
+        height: 24px;
+        width: 24px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-prev)::before,
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-caret-next)::before {
+        background-size: 20px;
+        height: 20px;
+        width: 20px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisMainContainer) {
+        margin: 0px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisMainContainer) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisText) {
+        color: var(--forCode-Color-Green-800);
+        text-align: center;
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-lg);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-bold);
+        line-height: 24px;
+    }
+}
+
+
+/*Start Shipping Simulator*/
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-flex-layout-0-x-flexRowContent--shiping-simulator)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: flex;
+    flex-direction: column;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-flex-layout-0-x-flexRowContent--shiping-simulator)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-store-components-3-x-shippingTableBody) {
+    background: #f0f0f0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-flex-layout-0-x-flexRowContent--shiping-simulator)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-store-components-3-x-shippingTableBody) tr:nth-child(n+6) {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-flex-layout-0-x-flexRowContent--shiping-simulator)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-store-components-3-x-shippingTableBody) :global(.vtex-store-components-3-x-shippingTableRow) :global(.vtex-store-components-3-x-shippingTableCell) {
+    padding: 5px 10px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input.w-100) {
+    max-width: 228px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input.w-100) :global(.vtex-input-prefix__group) {
+    border-radius: var(--forCode-spacing-system-xxs);
+    border: 1px solid var(--forCode-stroke-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input.w-100) :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL) {
+    padding: 0px;
+    position: relative;
+    top: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL)>a {
+    color: var(--forCode-text-link-default-state);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xmd);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-address-form__postalCode-forgottenURL)>a>span {
+    display: none;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input__label) {
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    width: fit-content;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button) {
+    padding: 16px 12px;
+    margin: 0px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+    transition: all 150ms ease-in-out;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-secondary-hover);
+    cursor: pointer;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button) :global(.vtex-button__label) {
+    width: 202px;
+    height: 16px;
+    color: var(--forCode-text-button-secondary);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xlg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-xlg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+    text-transform: initial;
+}
+
+@media(max-width: 64.063rem) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--product-images-MB) :global(.swiper-wrapper) {
+        max-height: 328px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--shiping-simulator) {
+        margin: 30px 0px 40px;
+    }
+
+    :global(.vtex-store-components-3-x-shippingContainer) {
+        position: relative;
+
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+
+    :global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input.w-100) :global(.vtex-input-prefix__group) {
+        max-width: 193px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-address-form__postalCode) :global(.vtex-input.w-100) :global(.vtex-input-prefix__group) :global(.vtex-address-form-4-x-input) {
+        box-sizing: border-box;
+        width: 193px;
+        max-width: 193px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button) {
+        position: absolute;
+        bottom: 0px;
+        margin-left: 198px;
+        margin-bottom: 32px;
+        padding: 12px;
+
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--shiping-simulator) :global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button) :global(.vtex-button__label) {
+        padding: 0px !important;
+        width: 103px;
+        font-size: var(--forCode-font-size-xmd);
+        font-weight: var(--forCode-font-weight-medium);
+        line-height: 16px;
+        line-height: var(--forCode-font-line-height-lg);
+    }
+}
+
+/*Finish Shipping Simulator*/

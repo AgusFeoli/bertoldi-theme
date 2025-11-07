@@ -26,17 +26,14 @@
     min-height: 50px;
     min-width: 50px;
     padding: var(--spacing-system-xs);
-    border: 0.8px solid #E9E9ED;
-    border-radius: 40px;
+    border-radius: 100px;
+    border: 0.8px solid var(--forCode-stroke-button-primary-default, #DE1269);
     background: #FFF !important;
-    opacity: 0.45;
-    box-shadow: 0 1px 2px 0 rgba(40, 22, 105, 0.08);
 }
 
 .sliderArrows--banner-fijo-mas-carrusel-container:hover {
-    background: #fff !important;
-    opacity: 1;
-    border-color: #DE1269;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.05), 0px 10px 15px -3px rgba(0, 0, 0, 0.10);
 }
 
 .sliderArrows--banner-fijo-mas-carrusel-container .caretIcon--banner-fijo-mas-carrusel-container {
@@ -60,6 +57,9 @@
 
 .sliderRightArrow--banner-fijo-mas-carrusel-container {
     right: -1%;
+}
+
+.sliderRightArrow--banner-fijo-mas-carrusel-container::before {
     transform: rotate(180deg);
 }
 
@@ -120,6 +120,7 @@
 
     .sliderRightArrow--banner-fijo-mas-carrusel-container {
         right: -1%;
+        top: 53.2%;
     }
 
     .sliderLeftArrow--banner-fijo-mas-carrusel-container {
@@ -141,6 +142,10 @@
     .sliderArrows--banner-fijo-mas-carrusel-container {
         top: 49%;
     }
+
+    .sliderRightArrow--banner-fijo-mas-carrusel-container {
+        top: 49.5%;
+    }
 }
 
 
@@ -152,10 +157,18 @@
     .sliderArrows--banner-fijo-mas-carrusel-container {
         top: 44%;
     }
+
+    .sliderRightArrow--banner-fijo-mas-carrusel-container {
+        top: 44.1%;
+    }
 }
 
 @media(max-width: 390px) {
     .sliderArrows--banner-fijo-mas-carrusel-container {
         top: 40%;
+    }
+
+    .sliderRightArrow--banner-fijo-mas-carrusel-container {
+        top: 40.4%;
     }
 }

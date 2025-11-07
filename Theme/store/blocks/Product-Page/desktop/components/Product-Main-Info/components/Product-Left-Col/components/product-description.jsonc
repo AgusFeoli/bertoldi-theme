@@ -1,0 +1,24 @@
+{
+  "flex-layout.col#product-description": {
+    "props": {
+      "blockClass": "product-description"
+    },
+    "children": ["disclosure-layout#product-description"]
+  },
+  "disclosure-layout#product-description": {
+    "children": ["disclosure-trigger#product-description", "disclosure-content#product-description"]
+  },
+  "disclosure-trigger#product-description": {
+    "children": ["rich-text#product-description-title"]
+  },
+  "disclosure-content#product-description": {
+    "children": ["custom-description"]
+  },
+  "rich-text#product-description-title": {
+    "title": "Titulo de la descripción",
+    "props": {
+      "blockClass": "product-description-title",
+      "text": "Descripción"
+    }
+  }
+}

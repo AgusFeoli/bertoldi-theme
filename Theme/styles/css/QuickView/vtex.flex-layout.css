@@ -1,0 +1,103 @@
+.flexRow--pdbx-quickview-close {
+    position: absolute;
+    top: 10px;
+    right: 2.5%;
+    z-index: 9;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info {
+    background: var(--forCode-surface-background-base-default);
+    overflow: auto;
+    padding: 0px 5px;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB {
+    background: var(--forCode-surface-background-base-default);
+    overflow: auto;
+    padding: 0px;
+}
+
+/*Inicio Scroll*/
+/* Chrome, Edge and Safari */
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-track,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #E4E4E4;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-track:hover,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-track:hover {
+    background-color: #E4E4E4;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-track:active,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-track:active {
+    background-color: #E4E4E4;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-thumb,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #CFCFCF;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-thumb:hover,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-thumb:hover {
+    background-color: #A4A4A4;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-main-info::-webkit-scrollbar-thumb:active,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-data-PDP-MB::-webkit-scrollbar-thumb:active {
+    background-color: #A4A4A4;
+}
+
+/*Fin Scroll*/
+
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRowContent--product-main-info,
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRowContent--product-data-PDP-MB {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0;
+    padding: 0;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--product-info {
+    padding: 0;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--product-info {
+    border-radius: 0;
+    border-color: transparent;
+}
+
+:global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--product-description {
+    display: none;
+}
+
+
+@media(max-width: 1025px) {
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRowContent--product-data-PDP-MB .flexRowContent--buy-product {
+        padding: 16px 8px;
+        max-width: 100%;
+    }
+
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-images-MB {
+        padding: 0 16px;
+    }
+
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-brand,
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-name,
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-ID,
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-price,
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--containerTalles,
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-store-link-0-x-link--see-detail-product) {
+        padding: 0 16px;
+    }
+}

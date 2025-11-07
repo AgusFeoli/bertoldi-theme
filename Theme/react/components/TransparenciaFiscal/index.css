@@ -1,0 +1,88 @@
+/*General*/
+.TransparenciaFiscalMainContainer {
+    width: 100%;
+    display: flex;
+}
+
+.TransparenciaFiscalContainer {
+    width: fit-content;
+}
+
+/*Product Box*/
+:global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalMainContainer {
+    justify-content: center;
+}
+
+:global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalText {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+
+}
+
+:global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalSpan {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}
+
+@media(max-width: 1025px) {
+
+    :global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalMainContainer {
+        padding-top: 8px;
+    }
+
+    :global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalText,
+    :global(.vtex-product-summary-2-x-containerNormal) .TransparenciaFiscalSpan {
+        line-height: 16.1px;
+    }
+}
+
+
+/*PDP*/
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) .TransparenciaFiscalMainContainer,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB) .TransparenciaFiscalMainContainer {
+    justify-content: flex-start;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) .TransparenciaFiscalText,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB) .TransparenciaFiscalText {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) .TransparenciaFiscalSpan,
+:global(.vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB) .TransparenciaFiscalSpan {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .TransparenciaFiscalMainContainer {
+        padding: 0 16px;
+    }
+}

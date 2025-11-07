@@ -6,6 +6,7 @@
 :global(.vtex-minicart-2-x-drawerContent),
 :global(.vtex-login-2-x-portalContainer),
 :global(.vtex-modal__overlay),
+:global(.vtex-modal-layout-0-x-modal),
 :global(.vtex-login-2-x-portalContainer) {
     /*Las siguientes variales fueron pre-definidas por el equipo de diseño.*/
 

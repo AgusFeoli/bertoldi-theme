@@ -6,6 +6,7 @@
     padding: 2px 8px;
     border-radius: var(--forCode-spacing-system-radius-s);
     border: 1px solid var(--forCode-stroke-tag-discount);
+    max-width: max-content !important;
 }
 
 .savingsPercentage--product-box {
@@ -13,7 +14,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 43px;
     height: 16px;
     color: var(--forCode-text-tag-discount);
     text-align: center;
@@ -54,7 +54,6 @@
     }
 
     .savingsPercentage--product-box {
-        width: 43px;
         height: 16px;
         font-size: var(--forCode-font-size-xxs);
         line-height: var(--forCode-font-line-height-base);

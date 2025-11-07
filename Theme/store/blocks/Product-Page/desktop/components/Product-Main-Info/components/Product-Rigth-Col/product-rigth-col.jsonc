@@ -1,0 +1,15 @@
+{
+  "flex-layout.col#product-rigth-col": {
+    "props": {
+      "blockClass": "product-info"
+    },
+    "children": [
+      "flex-layout.row#product-brand",
+      "flex-layout.row#product-name",
+      "flex-layout.row#product-ID",
+      "condition-layout.product#availability",
+      "ocultar-titulo-especificaciones"
+      //"flex-layout.row#share-product"
+    ]
+  }
+}

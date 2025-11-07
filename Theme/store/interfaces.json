@@ -4,5 +4,14 @@
     },
     "instalment-product-box": {
         "component": "InstalmentProductBox"
+    },
+    "custom-description": {
+        "component": "CustomDescription"
+    },
+    "ocultar-titulo-especificaciones": {
+        "component": "OcultarTituloEspecificaciones"
+    },
+    "transparencia-fiscal": {
+        "component": "TransparenciaFiscal"
     }
 }

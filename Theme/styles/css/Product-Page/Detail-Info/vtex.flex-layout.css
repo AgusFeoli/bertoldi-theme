@@ -1,0 +1,75 @@
+.flexRow--product-detail-info :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexRowContent--product-detail-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 0px;
+    margin-bottom: 80px;
+}
+
+.flexRowContent--product-detail-switch-buttons :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: fit-content !important;
+}
+
+.flexRow--product-detail-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--product-detail-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 689px;
+}
+
+.flexRowContent--product-detail-switch :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--productSpecification :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue),
+.flexRowContent--product-detail-info-MB :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-flex-layout-0-x-flexColChild--productSpecificationValue) {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media(max-width: 76.25rem) {
+    .flexRowContent--product-detail-info {
+        width: 1000px;
+    }
+}
+
+@media(max-width: 64.063rem) {
+
+    .flexRowContent--product-detail-descripcion-MB,
+    .flexRowContent--product-detail-Especificaciones-MB {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexRow--product-detail-info :global(.vtex-store-components-3-x-container) {
+        padding: 12px 16px 12px 16px;
+    }
+
+    .flexRowContent--product-detail-info {
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+        align-items: flex-start;
+    }
+
+    .flexRowContent--product-detail-info-MB :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+    .flexRowContent--product-detail-info :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+}

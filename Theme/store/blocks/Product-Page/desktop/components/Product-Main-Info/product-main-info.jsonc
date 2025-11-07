@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#product-main-info": {
+        "props": {
+            "blockClass": "product-main-info"
+        },
+        "children": [
+            "flex-layout.col#product-left-col",
+            "flex-layout.col#product-rigth-col"
+        ]
+    }
+}

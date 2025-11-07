@@ -1,0 +1,102 @@
+.container--product-breadcrumb {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.homeLink--product-breadcrumb::before {
+    content: "Home";
+    color: var(--forCode-text-body-default);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    transition: none !important;
+}
+
+.homeLink--product-breadcrumb:hover::before {
+    color: var(--forCode-text-body-dark);
+}
+
+.arrow--product-breadcrumb {
+    padding: 0px;
+    margin: 0px;
+}
+
+.link--product-breadcrumb,
+.term--product-breadcrumb {
+    margin: 0px;
+    padding: 0px;
+    color: var(--forCode-text-body-default);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    transition: none !important;
+}
+
+.term--product-breadcrumb {
+    font-weight: var(--forCode-font-weight-semibold);
+}
+
+.link--product-breadcrumb:hover {
+    color: var(--forCode-text-body-dark);
+}
+
+.link--product-breadcrumb::after {
+    content: "/";
+    color: var(--forCode-text-body-default);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    margin-left: 4px;
+}
+
+.homeLink--product-breadcrumb .homeIcon--product-breadcrumb,
+.arrow--product-breadcrumb .caretIcon--product-breadcrumb {
+    display: none;
+}
+
+
+@media(max-width: 64.063rem) {
+
+    .link--product-breadcrumb,
+    .link--product-breadcrumb::after {
+        font-size: var(--forCode-font-size-xs);
+        line-height: var(--forCode-font-line-height-lg);
+        height: 15px;
+        display: flex;
+    }
+
+    .term--product-breadcrumb {
+        position: relative;
+        color: var(--forCode-text-body-medium);
+        font-size: var(--forCode-font-size-xs);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-medium);
+        line-height: var(--forCode-font-line-height-lg);
+        letter-spacing: 0.1px;
+    }
+
+    .homeLink--product-breadcrumb::before {
+        font-size: var(--forCode-font-size-xs);
+        line-height: var(--forCode-font-line-height-lg);
+    }
+
+    .link--product-breadcrumb::after {
+        position: relative;
+    }
+}

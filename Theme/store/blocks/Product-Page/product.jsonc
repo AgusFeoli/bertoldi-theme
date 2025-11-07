@@ -1,0 +1,9 @@
+{
+    "store.product": {
+        "title": "Página de Producto",
+        "children": [
+            "responsive-layout.desktop#product",
+            "responsive-layout.mobile#product"
+        ]
+    }
+}

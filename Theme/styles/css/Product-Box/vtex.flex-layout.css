@@ -25,10 +25,10 @@
 
 .flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: auto !important;
+    justify-content: flex-start;
 }
 
 .flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
-    justify-content: flex-start;
     padding-top: 3px;
 }
 
@@ -58,5 +58,6 @@
 @media(max-width: 640px) {
     .flexRowContent--price-prod-box {
         padding-top: 6px;
+        gap: 4px;
     }
 }
