@@ -17,7 +17,7 @@
     text-overflow: ellipsis;
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-md);
+    font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
     line-height: var(--forCode-font-line-height-2xl);

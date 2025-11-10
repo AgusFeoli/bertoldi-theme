@@ -188,7 +188,7 @@
         padding: 5px;
         top: -14px;
         left: 16%;
-        font-size: var(--forCode-font-size-md);
+        font-size: var(--forCode-font-size-sm);
     }
 
     .minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button),

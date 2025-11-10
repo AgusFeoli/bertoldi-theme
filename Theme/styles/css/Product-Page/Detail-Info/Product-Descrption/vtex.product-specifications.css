@@ -20,12 +20,12 @@
 
 @media(max-width: 64.063rem) {
     .specificationName {
-        font-size: var(--forCode-font-size-md);
+        font-size: var(--forCode-font-size-sm);
         line-height: var(--forCode-font-line-height-2xl);
     }
 
     .specificationValue {
-        font-size: var(--forCode-font-size-md);
+        font-size: var(--forCode-font-size-sm);
         line-height: var(--forCode-font-line-height-2xl);
     }
 

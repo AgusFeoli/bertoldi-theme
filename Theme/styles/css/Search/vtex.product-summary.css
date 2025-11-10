@@ -1,0 +1,107 @@
+.containerNormal--search-product-box {
+    max-width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.element--search-product-box {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.element--search-product-box:hover {
+    background: #eeeeee3d;
+}
+
+.container--search-product-box-MB {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.element--search-product-box-MB {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 4px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .imageWrapper--product-box,
+:global(.vtex-product-summary-2-x-element--search-product-box) .imageContainer--product-box,
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .imageWrapper--product-box,
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .imageContainer--product-box {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .image--product-box,
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .image--product-box {
+    max-width: 75px;
+    max-height: 75px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .nameContainer--product-box,
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .nameContainer--product-box {
+    margin: 0px !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .price_className--product-box {
+    flex-direction: column !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .brandName--product-box {
+    color: var(--forCode-text-body-dark) !important;
+    font-weight: var(--forCode-font-weight-regular) !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .currencyContainer--product-box {
+    color: var(--forCode-text-body-dark) !important;
+    font-weight: var(--forCode-font-weight-regular) !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .price_listPrice--product-box .currencyContainer--product-box {
+    color: var(--forCode-text-body-default) !important;
+    font-weight: 300 !important;
+
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .nameWrapper--product-box {
+    width: 100%;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .brandName--product-box {
+    color: var(--forCode-text-body-dark);
+    font-size: var(--forCode-font-size-sm);
+    font-weight: var(--forCode-font-weight-regular);
+    text-transform: uppercase;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .price_className--product-box {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .price_listPriceContainer--product-box {
+    position: relative;
+    top: 1px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .currencyContainer--product-box {
+    font-size: var(--forCode-font-size-sm);
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 19px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .price_listPrice--product-box .currencyContainer--product-box {
+    color: var(--forCode-text-body-default) !important;
+    font-weight: 300 !important;
+
+}

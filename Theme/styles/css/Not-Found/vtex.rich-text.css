@@ -1,0 +1,90 @@
+.container--title-not-found {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px 28px;
+    width: 498px !important;
+}
+
+.container--text-not-found {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 26px;
+}
+
+.wrapper--text-not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.paragraph--title-not-found {
+    padding: 0px;
+    margin: 0px;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-3xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-3xl);
+    letter-spacing: -0.15px;
+}
+
+.paragraph--text-not-found {
+    padding: 0px;
+    margin: 0px;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.strong--text-not-found {
+    padding: 0px;
+    margin: 0px;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    position: relative;
+    right: 4%;
+}
+
+@media(max-width: 64.063rem) {
+    .paragraph--title-not-found {
+        font-size: var(--forCode-font-size-2xl);
+        font-weight: var(--forCode-font-weight-medium);
+        line-height: var(--forCode-font-line-height-2xl);
+    }
+
+    .strong--text-not-found {
+        right: 0%;
+        color: var(--forCode-text-body-medium);
+        font-size: var(--forCode-font-size-lg);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-lg);
+    }
+
+    .container--title-not-found {
+        padding: 32px 0px;
+        width: 100% !important;
+        justify-content: center;
+
+    }
+
+    .paragraph--text-not-found {
+        font-size: var(--forCode-font-size-sm);
+        line-height: var(--forCode-font-line-height-xl);
+    }
+}
+
+@media(max-width: 28.125rem) {
+    .wrapper--text-not-found {
+        max-width: 313px;
+    }
+}

@@ -1,0 +1,38 @@
+.link--not-found-return {
+    width: 100% !important;
+    max-width: 478px;
+    text-decoration: none;
+    display: flex;
+    min-height: 48px;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+    margin-bottom: 251px;
+    position: relative;
+    right: 0.5%;
+}
+
+.link--not-found-return:hover {
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+.label--not-found-return {
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 16px;
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 64.063rem) {
+    .link--not-found-return {
+        margin-bottom: 80.87px;
+    }
+}

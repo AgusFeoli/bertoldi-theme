@@ -1,0 +1,11 @@
+.imageElement--not-found-image {
+    width: 395px;
+    height: 280px;
+}
+
+@media(max-width: 64.063rem) {
+    .imageElement--not-found-image {
+        width: 225.74px;
+        height: 160px;
+    }
+}
