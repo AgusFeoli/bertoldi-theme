@@ -11,7 +11,7 @@
       "showValueForVariation": "all",
       "disableUnavailableSelectOptions": true,
       "sortVariationsByLabel": true,
-      "initialSelection": "image",
+      "initialSelection": "empty",
       "maxItems": 40,
       "displayMode": "slider",
       "sliderDisplayThreshold": 7,
