@@ -60,7 +60,7 @@
     },
     "quantity-selector#minicart-quantity-selector": {
         "props": {
-            "mode": "dropdown"
+            "mode": "stepper"
         }
     },
     "price#miniCart-price": {

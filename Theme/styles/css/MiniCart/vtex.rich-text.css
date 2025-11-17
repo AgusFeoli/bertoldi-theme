@@ -6,14 +6,15 @@
 .paragraph--miniCart-mensaje {
     width: 300px;
     padding: 0px;
-    margin: 14px 0px;
+    margin: 0px;
+    margin-top: 8px;
     color: var(--forCode-text-body-default);
     text-align: center;
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -41,13 +42,4 @@
     font-weight: var(--forCode-font-weight-regular);
     line-height: var(--forCode-font-line-height-4xl);
     letter-spacing: var(--forCode-spacing-system-none);
-}
-
-@media(max-width: 64.063rem) {
-    .paragraph--miniCart-mensaje {
-        width: 200px;
-        font-size: var(--forCode-font-size-sm);
-        line-height: var(--forCode-font-line-height-lg, 16px);
-    }
-
 }

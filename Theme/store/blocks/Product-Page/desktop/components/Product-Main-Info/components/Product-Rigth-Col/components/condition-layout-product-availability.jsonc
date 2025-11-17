@@ -20,6 +20,7 @@
       "blockClass": ["condition-result", "condition-result-true"]
     },
     "children": [
+      "cucarda-envio-gratis",
       "flex-layout.row#product-price",
       "transparencia-fiscal",
       "instalment-product-box",

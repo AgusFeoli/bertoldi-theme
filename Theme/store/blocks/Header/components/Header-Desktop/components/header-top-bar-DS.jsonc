@@ -5,7 +5,8 @@
             "blockClass": "header-top-bar-DS"
         },
         "children": [
-            "rich-text#top-bar-text"
+            //"rich-text#top-bar-text"
+             "cucarda-envio-gratis-setter"
         ]
     },
     "rich-text#top-bar-text": {

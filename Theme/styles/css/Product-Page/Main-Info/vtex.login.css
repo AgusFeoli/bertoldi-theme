@@ -289,6 +289,12 @@
     text-transform: initial;
 }
 
+:global(.vtex-flex-layout-0-x-flexCol--pdp-cucardas-container) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
 @media(min-width: 1026px) {
     :global(.vtex-flex-layout-0-x-flexRowContent--product-main-info)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
         position: sticky;

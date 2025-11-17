@@ -5,7 +5,10 @@
       "blockClass": "product-box"
     },
     "children": [
+      "cucarda-nuevo",
+      "cucarda-2x1",
       "product-summary-image#product-box",
+      "cucarda-envio-gratis",
       "product-summary-brand#product-box",
       "product-summary-name#product-box",
       "flex-layout.row#price-prod-box",

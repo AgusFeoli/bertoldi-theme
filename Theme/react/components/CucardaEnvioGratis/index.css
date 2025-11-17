@@ -1,0 +1,39 @@
+.cucardaEnvioGratisMainContainer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.cucardaEnvioGratisContainer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cucardaEnvioGratisText {
+    margin: 0px;
+    padding: 0px;
+    color: var(--forCode-text-highlight);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-bold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-product-summary-2-x-element--product-box) .cucardaEnvioGratisText {
+        font-size: var(--forCode-font-size-xs);
+        line-height: var(--forCode-font-line-height-lg);
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main-info) .cucardaEnvioGratisText,
+:global(.vtex-flex-layout-0-x-flexRow--condition-result-true-MB) .cucardaEnvioGratisText {
+    margin-bottom: 8px;
+}

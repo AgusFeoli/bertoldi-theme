@@ -8,8 +8,8 @@
 
 .closeIconContainer {
     position: absolute;
-    right: 98%;
-    top: -6px;
+    right: 1rem;
+    top: 1rem;
 }
 
 .minicartSideBarContentWrapper {
@@ -18,19 +18,20 @@
 
 .minicartTitle--minicart-container {
     margin: 0px;
-    padding: 16px 24px;
+    padding: 16px;
     border-bottom: 1px solid var(--forCode-stroke-light);
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-titles);
     font-size: var(--forCode-font-size-2xl);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 .minicartProductListContainer {
-    padding: 0px !important;
+    padding: 8px !important;
+    background: var(--forCode-surface-background-base-secondary);
 }
 
 .minicartProductListContainer::-webkit-scrollbar {
@@ -80,12 +81,11 @@
     height: 16px;
     text-transform: initial;
     color: var(--forCode-text-on-dark);
-    text-align: center;
-    font-family: var(--forCode-font-family-body);
+    font-family: var(--forCode-font-family-button);
     font-size: var(--forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 18px;
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -113,17 +113,16 @@
 }
 
 .minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) :global(.vtex-button__label)::before {
-    content: "Ver compra";
+    content: "Seguir comprando";
     display: block;
     height: 16px;
     text-transform: initial;
     color: var(--forCode-text-button-secondary);
-    text-align: center;
-    font-family: var(--forCode-font-family-body);
+    font-family: var(--forCode-font-family-button);
     font-size: var(--forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 18px;
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -178,10 +177,6 @@
         min-width: 320px !important;
     }
 
-    .minicartTitle--minicart-container {
-        padding: 16px;
-    }
-
     .minicartQuantityBadge {
         width: 9px;
         height: 10px;
@@ -194,11 +189,5 @@
     .minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button),
     .minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) {
         padding: 12px;
-    }
-
-    .minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button) :global(.vtex-button__label)::before,
-    .minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) :global(.vtex-button__label)::before {
-        font-size: var(--forCode-font-size-xmd);
-        line-height: var(--forCode-font-line-height-lg);
     }
 }

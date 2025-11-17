@@ -13,5 +13,17 @@
     },
     "transparencia-fiscal": {
         "component": "TransparenciaFiscal"
+    },
+    "cucarda-2x1": {
+        "component": "Cucarda2x1"
+    },
+    "cucarda-nuevo": {
+        "component": "CucardaNuevo"
+    },
+    "cucarda-envio-gratis": {
+        "component": "CucardaEnvioGratis"
+    },
+    "cucarda-envio-gratis-setter": {
+        "component": "CucardaEnvioGratisSetter"
     }
 }

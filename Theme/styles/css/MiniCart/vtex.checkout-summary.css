@@ -2,13 +2,18 @@
     display: none;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--minicart-footer),
+:global(.vtex-flex-layout-0-x-flexRowContent--minicart-footer) {
+    box-shadow: none;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .summarySmallContent {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px 0px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid var(--forCode-stroke-default);
+    gap: 2px;
+    padding: 0px;
+    margin-bottom: 12px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .summarySmallContent .summaryItemContainer {
@@ -22,18 +27,17 @@
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .price {
     color: var(--forCode-text-body-default);
-    text-align: right;
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -41,19 +45,9 @@
 :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .summarySmallContent .summaryItemContainer:last-child .price {
     color: var(--forCode-text-body-dark) !important;
     font-family: var(--forCode-font-family-body) !important;
-    font-size: var(--forCode-font-size-lg) !important;
+    font-size: var(--forCode-font-size-base) !important;
     font-style: normal !important;
-    font-weight: var(--forCode-font-weight-medium) !important;
-    line-height: var(--forCode-font-line-height-4xl) !important;
+    font-weight: var(--forCode-font-weight-regular) !important;
+    line-height: var(--forCode-font-line-height-2xl) !important;
     letter-spacing: var(--forCode-spacing-system-none) !important;
-
-}
-
-@media(max-width: 64.063rem) {
-
-    :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .summaryItemLabel,
-    :global(.vtex-flex-layout-0-x-flexRow--minicart-footer) .price {
-        font-size: var(--forCode-font-size-lg);
-        line-height: 24px;
-    }
 }

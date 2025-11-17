@@ -12,6 +12,6 @@
 
 @media(max-width: 64.063rem) {
     :global(.vtex-flex-layout-0-x-flexRowContent--product-ID) .product-identifier--productReference {
-        margin: 9px 0px 9px;
+        margin: 9px 0px 16px;
     }
 }

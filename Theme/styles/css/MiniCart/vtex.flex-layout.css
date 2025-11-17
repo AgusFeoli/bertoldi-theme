@@ -1,8 +1,8 @@
 .flexRowContent--miniCart-product-list-container {
     display: flex;
     flex-direction: row;
-    gap: 14px;
-    padding: 16px;
+    gap: 16px;
+    padding: 16px 12px;
 }
 
 .flexRowContent--miniCart-description-remove {
@@ -24,9 +24,9 @@
 .flexRowContent--miniCart-quantity-selector-and-price {
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .flexCol--miniCart-quantity-price {
@@ -43,8 +43,12 @@
 
 .flexRowContent--minicart-footer :global(.vtex-flex-layout-0-x-stretchChildrenWidth) :global(.vtex-flex-layout-0-x-flexCol) {
     padding: 16px;
+    padding-top: 24px;
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    border-radius: 24px 24px 0 0;
+    background: var(--forCode-surface-background-base-default);
+    box-shadow: 0 -2px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 @media(max-width: 64.063rem) {}

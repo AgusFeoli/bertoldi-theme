@@ -1,0 +1,8 @@
+{
+  "flex-layout.col#pdp-cucardas-container": {
+    "props": {
+      "blockClass": "pdp-cucardas-container"
+    },
+    "children": ["cucarda-nuevo", "cucarda-2x1"]
+  }
+}

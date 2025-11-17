@@ -15,14 +15,13 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--forCode-text-body-dark);
+    color: var(--forCode-text-body-default);
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
-
 }
 
 :global(.vtex-minicart-2-x-drawerContent) .removeButton .deleteIcon {
@@ -34,20 +33,24 @@
 }
 
 :global(.vtex-minicart-2-x-drawerContent) .removeButton::before {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M10 3.10526H8V2.05263C8 1.77346 7.89464 1.50572 7.70711 1.30831C7.51957 1.1109 7.26522 1 7 1H5C4.73478 1 4.48043 1.1109 4.29289 1.30831C4.10536 1.50572 4 1.77346 4 2.05263V3.10526H2C1.86739 3.10526 1.74021 3.16071 1.64645 3.25942C1.55268 3.35812 1.5 3.49199 1.5 3.63158C1.5 3.77117 1.55268 3.90504 1.64645 4.00374C1.74021 4.10244 1.86739 4.15789 2 4.15789H2.5V9.94737C2.5 10.2265 2.60536 10.4943 2.79289 10.6917C2.98043 10.8891 3.23478 11 3.5 11H8.5C8.76522 11 9.01957 10.8891 9.20711 10.6917C9.39464 10.4943 9.5 10.2265 9.5 9.94737V4.15789H10C10.1326 4.15789 10.2598 4.10244 10.3536 4.00374C10.4473 3.90504 10.5 3.77117 10.5 3.63158C10.5 3.49199 10.4473 3.35812 10.3536 3.25942C10.2598 3.16071 10.1326 3.10526 10 3.10526ZM5 2.05263H7V3.10526H5V2.05263ZM8.5 9.94737H3.5V4.15789H8.5V9.94737Z' fill='%23EC460C'/%3E%3Cpath d='M5 4.68421C4.86739 4.68421 4.74021 4.73966 4.64645 4.83837C4.55268 4.93707 4.5 5.07094 4.5 5.21053V8.89474C4.5 9.03432 4.55268 9.1682 4.64645 9.2669C4.74021 9.3656 4.86739 9.42105 5 9.42105C5.13261 9.42105 5.25979 9.3656 5.35355 9.2669C5.44732 9.1682 5.5 9.03432 5.5 8.89474V5.21053C5.5 5.07094 5.44732 4.93707 5.35355 4.83837C5.25979 4.73966 5.13261 4.68421 5 4.68421Z' fill='%23EC460C'/%3E%3Cpath d='M7 4.68421C6.86739 4.68421 6.74021 4.73966 6.64645 4.83837C6.55268 4.93707 6.5 5.07094 6.5 5.21053V8.89474C6.5 9.03432 6.55268 9.1682 6.64645 9.2669C6.74021 9.3656 6.86739 9.42105 7 9.42105C7.13261 9.42105 7.25979 9.3656 7.35355 9.2669C7.44732 9.1682 7.5 9.03432 7.5 8.89474V5.21053C7.5 5.07094 7.44732 4.93707 7.35355 4.83837C7.25979 4.73966 7.13261 4.68421 7 4.68421Z' fill='%23EC460C'/%3E%3C/svg%3E") no-repeat 50% / contain;
-    background-size: 12px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3333 4.14003H10.6667V2.73652C10.6667 2.36428 10.5262 2.00729 10.2761 1.74409C10.0261 1.48088 9.68696 1.33301 9.33333 1.33301H6.66667C6.31305 1.33301 5.97391 1.48088 5.72386 1.74409C5.47381 2.00729 5.33333 2.36428 5.33333 2.73652V4.14003H2.66667C2.48986 4.14003 2.32029 4.21396 2.19526 4.34556C2.07024 4.47717 2 4.65566 2 4.84178C2 5.0279 2.07024 5.20639 2.19526 5.338C2.32029 5.4696 2.48986 5.54353 2.66667 5.54353H3.33333V13.2628C3.33333 13.6351 3.47381 13.9921 3.72386 14.2553C3.97391 14.5185 4.31304 14.6663 4.66667 14.6663H11.3333C11.687 14.6663 12.0261 14.5185 12.2761 14.2553C12.5262 13.9921 12.6667 13.6351 12.6667 13.2628V5.54353H13.3333C13.5101 5.54353 13.6797 5.4696 13.8047 5.338C13.9298 5.20639 14 5.0279 14 4.84178C14 4.65566 13.9298 4.47717 13.8047 4.34556C13.6797 4.21396 13.5101 4.14003 13.3333 4.14003ZM6.66667 2.73652H9.33333V4.14003H6.66667V2.73652ZM11.3333 13.2628H4.66667V5.54353H11.3333V13.2628Z' fill='%233E3D43'/%3E%3Cpath d='M6.66667 6.24529C6.48986 6.24529 6.32029 6.31922 6.19526 6.45083C6.07024 6.58243 6 6.76093 6 6.94704V11.8593C6 12.0454 6.07024 12.2239 6.19526 12.3555C6.32029 12.4871 6.48986 12.5611 6.66667 12.5611C6.84348 12.5611 7.01305 12.4871 7.13807 12.3555C7.2631 12.2239 7.33333 12.0454 7.33333 11.8593V6.94704C7.33333 6.76093 7.2631 6.58243 7.13807 6.45083C7.01305 6.31922 6.84348 6.24529 6.66667 6.24529Z' fill='%233E3D43'/%3E%3Cpath d='M9.33333 6.24529C9.15652 6.24529 8.98695 6.31922 8.86193 6.45083C8.73691 6.58243 8.66667 6.76093 8.66667 6.94704V11.8593C8.66667 12.0454 8.73691 12.2239 8.86193 12.3555C8.98695 12.4871 9.15652 12.5611 9.33333 12.5611C9.51014 12.5611 9.67971 12.4871 9.80474 12.3555C9.92976 12.2239 10 12.0454 10 11.8593V6.94704C10 6.76093 9.92976 6.58243 9.80474 6.45083C9.67971 6.31922 9.51014 6.24529 9.33333 6.24529Z' fill='%233E3D43'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 16px;
     content: "";
     display: inline-block;
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 16px;
 }
 
+:global(.vtex-minicart-2-x-drawerContent) .removeButton:hover::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3333 4.14003H10.6667V2.73652C10.6667 2.36428 10.5262 2.00729 10.2761 1.74409C10.0261 1.48088 9.68696 1.33301 9.33333 1.33301H6.66667C6.31305 1.33301 5.97391 1.48088 5.72386 1.74409C5.47381 2.00729 5.33333 2.36428 5.33333 2.73652V4.14003H2.66667C2.48986 4.14003 2.32029 4.21396 2.19526 4.34556C2.07024 4.47717 2 4.65566 2 4.84178C2 5.0279 2.07024 5.20639 2.19526 5.338C2.32029 5.4696 2.48986 5.54353 2.66667 5.54353H3.33333V13.2628C3.33333 13.6351 3.47381 13.9921 3.72386 14.2553C3.97391 14.5185 4.31304 14.6663 4.66667 14.6663H11.3333C11.687 14.6663 12.0261 14.5185 12.2761 14.2553C12.5262 13.9921 12.6667 13.6351 12.6667 13.2628V5.54353H13.3333C13.5101 5.54353 13.6797 5.4696 13.8047 5.338C13.9298 5.20639 14 5.0279 14 4.84178C14 4.65566 13.9298 4.47717 13.8047 4.34556C13.6797 4.21396 13.5101 4.14003 13.3333 4.14003ZM6.66667 2.73652H9.33333V4.14003H6.66667V2.73652ZM11.3333 13.2628H4.66667V5.54353H11.3333V13.2628Z' fill='%23DE1269'/%3E%3Cpath d='M6.66667 6.24529C6.48986 6.24529 6.32029 6.31922 6.19526 6.45083C6.07024 6.58243 6 6.76093 6 6.94704V11.8593C6 12.0454 6.07024 12.2239 6.19526 12.3555C6.32029 12.4871 6.48986 12.5611 6.66667 12.5611C6.84348 12.5611 7.01305 12.4871 7.13807 12.3555C7.2631 12.2239 7.33333 12.0454 7.33333 11.8593V6.94704C7.33333 6.76093 7.2631 6.58243 7.13807 6.45083C7.01305 6.31922 6.84348 6.24529 6.66667 6.24529Z' fill='%23DE1269'/%3E%3Cpath d='M9.33333 6.24529C9.15652 6.24529 8.98695 6.31922 8.86193 6.45083C8.73691 6.58243 8.66667 6.76093 8.66667 6.94704V11.8593C8.66667 12.0454 8.73691 12.2239 8.86193 12.3555C8.98695 12.4871 9.15652 12.5611 9.33333 12.5611C9.51014 12.5611 9.67971 12.4871 9.80474 12.3555C9.92976 12.2239 10 12.0454 10 11.8593V6.94704C10 6.76093 9.92976 6.58243 9.80474 6.45083C9.67971 6.31922 9.51014 6.24529 9.33333 6.24529Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+}
 
 :global(.vtex-minicart-2-x-drawerContent) .productImage {
     object-fit: contain;
-    max-width: 99px;
-    max-height: 99px;
-    border: 0.765px solid #EFEFEF;
+    max-width: 96px;
+    max-height: 96px;
+    border-radius: var(--forCode-spacing-system-radius-ml);
+    border: 1px solid var(--forCode-stroke-light);
 }
 
 :global(.vtex-minicart-2-x-drawerContent) .productPriceCurrency {
@@ -59,56 +62,51 @@
     color: var(--forCode-text-body-light);
     text-align: right;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-size: var(--forCode-font-size-xs);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-lg);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
+}
+
+:global(.vtex-minicart-2-x-drawerContent) .productPriceContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    justify-content: flex-start;
+    margin: 4px 0 14px;
 }
 
 :global(.vtex-minicart-2-x-drawerContent) .price {
     width: fit-content;
     color: var(--forCode-text-body-dark);
-    text-align: right;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-sm);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
+    font-weight: var(--forCode-font-weight-bold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 :global(.vtex-minicart-2-x-drawerContent) .inputContainer {
     padding: 0px;
     width: fit-content !important;
-    max-width: 70px;
+    max-width: 30px;
     border: 0px;
 }
 
-:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorDecrease {
-    padding: 12px;
-    border-radius: var(--forCode-spacing-system-radius-s);
+:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorDecrease,
+:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorIncrease {
+    padding: 8px;
+    border-radius: var(--forCode-radius-button);
     border: 1px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
     background-color: transparent;
     transition: all 150ms ease-in-out;
 }
 
-:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorDecrease:hover {
-    border-radius: var(--forCode-spacing-system-radius-s);
-    border: 1px solid var(--forCode-surface-button-primary-default);
-    background: var(--forCode-surface-button-secondary-hover);
-}
-
-:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorIncrease {
-    padding: 12px;
-    border-radius: var(--forCode-spacing-system-radius-s);
-    border: 1px solid var(--forCode-stroke-button-primary-default);
-    transition: all 150ms ease-in-out;
-}
-
+:global(.vtex-minicart-2-x-drawerContent) .quantitySelectorDecrease:hover,
 :global(.vtex-minicart-2-x-drawerContent) .quantitySelectorIncrease:hover {
-    border-radius: var(--forCode-spacing-system-radius-s);
-    border: 1px solid var(--forCode-surface-button-primary-default);
     background: var(--forCode-surface-button-secondary-hover);
 }
 
@@ -125,6 +123,10 @@
 }
 
 @media(max-width: 64.063rem) {
+    :global(.vtex-minicart-2-x-drawerContent) .productName {
+        -webkit-line-clamp: 3;
+    }
+
     :global(.vtex-minicart-2-x-drawerContent) .inputContainer {
         max-width: 59.5px;
     }
