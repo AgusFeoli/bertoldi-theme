@@ -1000,7 +1000,7 @@ h1#cart-title {
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -1053,7 +1053,7 @@ h1#cart-title {
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -1233,23 +1233,28 @@ h1#cart-title {
 
 .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk svg {
     width: 6px;
-    margin-right: 9px;
+    margin-right: 6px;
+    height: 20px;
 }
 
 .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk svg path {
-    fill: #322DB5;
+    fill: #1F49D6;
 }
 
 .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk::after {
     content: "Ver todos los puntos de retiro";
     color: var(--forCode-text-link-default-state);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(
+    --forCode-font-size-sm);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
-    letter-spacing: var(--forCode-spacing-system-none);
+    font-weight: var(
+    --forCode-font-weight-semibold);
+    line-height: var(
+    --forCode-font-line-height-xl);
+    letter-spacing: var(
+    --forCode-spacing-system-none);
 }
 
 .vtex-pickup-points-modal-3-x-pkpmodal .vtex-pickup-points-modal-3-x-infoBar {
@@ -1270,19 +1275,16 @@ h1#cart-title {
     content: "Elija un punto de retiro";
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 @media(max-width: 900px) {
     .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-modalHeader .vtex-pickup-points-modal-3-x-modalTitle::before {
-        font-size: var(--forCode-font-size-sm);
-        font-style: normal;
-        font-weight: var(--forCode-font-weight-medium);
-        line-height: 20px;
+        line-height: var(--forCode-font-line-height-xl);
     }
 }
 
@@ -1322,27 +1324,46 @@ h1#cart-title {
 .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-modalHeader {
     border: 0px;
     padding-top: 26px;
+    padding-bottom: 8px;
 }
 
 .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-pointsList .vtex-pickup-points-modal-3-x-showListButton {
+    font-size: 0;
+    border: 0;
+    background: #fff;
+    margin: 0;
+    padding: 12px 0;
+    line-height: 0;
+    position: sticky;
+    bottom: -6px;
+}
+
+.vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-pointsList .vtex-pickup-points-modal-3-x-showListButton::before {
+    content: "Ver todos los puntos de retiro";
     padding: 12px;
     border-radius: var(--forCode-radius-button);
     border: 1px solid var(--forCode-stroke-default);
     background: var(--forCode-surface-button-secondary-default);
     color: var(--forCode-surface-icon-light);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-transform: initial;
+    display: block;
 }
 
 @media(max-width: 900px) {
     .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-pointsList .vtex-pickup-points-modal-3-x-showListButton {
         padding: 16px 12px;
+    }
+
+    .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-pointsList .vtex-pickup-points-modal-3-x-showListButton::before {
+        font-size: var(--forCode-font-size-lg);
+        line-height: var(--forCode-font-line-height-2xl);
     }
 }
 
@@ -1386,7 +1407,7 @@ h1#cart-title {
 
 
 .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-modalSearch .vtex-pickup-points-modal-3-x-askGeolocationBtn>svg>path {
-    fill: #4241DC;
+    fill: #4165DC;
 }
 
 .vtex-pickup-points-modal-3-x-pointsList::-webkit-scrollbar,
@@ -1420,6 +1441,7 @@ h1#cart-title {
     font-weight: var(--forCode-font-weight-medium);
     line-height: var(--forCode-spacing-system-lg);
     margin-top: 5px;
+    display: none;
 }
 
 
@@ -1431,7 +1453,7 @@ h1#cart-title {
 }
 
 .vtex-pickup-points-modal-3-x-infoBarContainer .vtex-pickup-points-modal-3-x-modalSearch .vtex-pickup-points-modal-3-x-modalSearchIcon>path {
-    fill: #464958;
+    fill: #DE1269;
 }
 
 .vtex-pickup-points-modal-3-x-pickupDetailsHeader {
@@ -1445,48 +1467,51 @@ h1#cart-title {
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 .vtex-pickup-points-modal-3-x-pickupPointName {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg) !important;
+    font-size: var(--forCode-font-size-base) !important;
     font-style: normal;
     font-weight: var(--forCode-font-weight-medium) !important;
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
+    margin: 0;
 }
 
 .vtex-pickup-points-modal-3-x-pickupPointAddress {
     color: var(--forCode-text-body-default) !important;
     font-family: var(--forCode-font-family-body) !important;
-    font-size: var(--forCode-font-size-lg) !important;
+    font-size: var(--forCode-font-size-base) !important;
     font-style: normal !important;
     font-weight: var(--forCode-font-weight-regular) !important;
-    line-height: var(--forCode-font-line-height-4xl) !important;
+    line-height: var(--forCode-font-line-height-2xl) !important;
     letter-spacing: var(--forCode-spacing-system-none) !important;
+    margin: 4px 0;
 }
 
 .pkpmodal-pickup-point-available {
     margin: 10px 0px;
     display: block;
     color: var(--forCode-text-body-default) !important;
-    font-size: var(--forCode-font-size-md) !important;
+    font-size: var(--forCode-font-size-sm) !important;
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular) !important;
-    line-height: var(--forCode-spacing-system-lg) !important;
+    line-height: var(--forCode-spacing-system-xl) !important;
     letter-spacing: var(--forCode-spacing-system-none);
+    margin: 0;
 }
 
 @media(max-width: 900px) {
     .vtex-pickup-points-modal-3-x-pickupPointName {
-        font-weight: var(--forCode-font-weight-semibold) !important;
+        /* font-weight: var(--forCode-font-weight-semibold) !important; */
     }
 
     .pkpmodal-pickup-point-available {
-        font-size: var(--forCode-font-size-lg) !important;
+        font-size: var(--forCode-font-size-base) !important;
     }
 }
 
@@ -1509,10 +1534,10 @@ h1#cart-title {
 .vtex-pickup-points-modal-3-x-pickupPointSla {
     color: var(--forCode-text-body-default, );
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-md) !important;
+    font-size: var(--forCode-font-size-sm) !important;
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular) !important;
-    line-height: var(--forCode-spacing-system-lg);
+    line-height: var(--forCode-spacing-system-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -1520,13 +1545,13 @@ h1#cart-title {
 
     .vtex-pickup-points-modal-3-x-pickupPointPrice,
     .vtex-pickup-points-modal-3-x-pickupPointSla {
-        font-size: var(--forCode-font-size-xsm) !important;
+        /* font-size: var(--forCode-font-size-xsm) !important; */
     }
 }
 
 .vtex-pickup-points-modal-3-x-pickupPointMain {
     padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    padding-bottom: 16px !important;
     display: flex;
     gap: 5px;
 }
@@ -1542,30 +1567,36 @@ h1#cart-title {
 }
 
 .vtex-pickup-points-modal-3-x-pickupPointMain .vtex-pickup-points-modal-3-x-pickupPointMarker::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M12.4998 2C11.0413 1.99858 9.61027 2.39629 8.36166 3.15005C7.11306 3.9038 6.09452 4.98486 5.4164 6.27611C4.73827 7.56735 4.42642 9.01954 4.51463 10.4754C4.60284 11.9312 5.08774 13.3351 5.91681 14.535C5.94999 14.6002 5.99023 14.6616 6.03681 14.718L6.15681 14.864C6.26881 15.009 6.38381 15.149 6.48281 15.264L11.7278 21.638C11.8219 21.7515 11.9398 21.8428 12.0733 21.9054C12.2068 21.968 12.3524 22.0003 12.4998 22C12.6476 22.0001 12.7936 21.9674 12.9273 21.9043C13.0609 21.8412 13.1789 21.7492 13.2728 21.635L18.3648 15.43C18.5711 15.2082 18.7641 14.9745 18.9428 14.73L19.0698 14.575C19.1182 14.5162 19.1592 14.4518 19.1918 14.383C19.9821 13.1763 20.4314 11.7785 20.4922 10.3374C20.553 8.89624 20.2231 7.46549 19.5373 6.19653C18.8516 4.92758 17.8355 3.86763 16.5966 3.12889C15.3578 2.39015 13.9422 2.00009 12.4998 2ZM12.4998 7C13.0932 7 13.6732 7.17595 14.1665 7.5056C14.6599 7.83524 15.0444 8.30378 15.2714 8.85195C15.4985 9.40013 15.5579 10.0033 15.4422 10.5853C15.3264 11.1672 15.0407 11.7018 14.6211 12.1213C14.2016 12.5409 13.667 12.8266 13.0851 12.9424C12.5031 13.0581 11.8999 12.9987 11.3518 12.7716C10.8036 12.5446 10.335 12.1601 10.0054 11.6667C9.67576 11.1734 9.49981 10.5933 9.49981 10C9.49981 9.20435 9.81588 8.44129 10.3785 7.87868C10.9411 7.31607 11.7042 7 12.4998 7Z' fill='%23464958'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' viewBox='0 0 25 24' fill='none'%3E%3Cpath d='M12.4998 2C11.0413 1.99858 9.61027 2.39629 8.36166 3.15005C7.11306 3.9038 6.09452 4.98486 5.4164 6.27611C4.73827 7.56735 4.42642 9.01954 4.51463 10.4754C4.60284 11.9312 5.08774 13.3351 5.91681 14.535C5.94999 14.6002 5.99023 14.6616 6.03681 14.718L6.15681 14.864C6.26881 15.009 6.38381 15.149 6.48281 15.264L11.7278 21.638C11.8219 21.7515 11.9398 21.8428 12.0733 21.9054C12.2068 21.968 12.3524 22.0003 12.4998 22C12.6476 22.0001 12.7936 21.9674 12.9273 21.9043C13.0609 21.8412 13.1789 21.7492 13.2728 21.635L18.3648 15.43C18.5711 15.2082 18.7641 14.9745 18.9428 14.73L19.0698 14.575C19.1182 14.5162 19.1592 14.4518 19.1918 14.383C19.9821 13.1763 20.4314 11.7785 20.4922 10.3374C20.553 8.89624 20.2231 7.46549 19.5373 6.19653C18.8516 4.92758 17.8355 3.86763 16.5966 3.12889C15.3578 2.39015 13.9422 2.00009 12.4998 2ZM12.4998 7C13.0932 7 13.6732 7.17595 14.1665 7.5056C14.6599 7.83524 15.0444 8.30378 15.2714 8.85195C15.4985 9.40013 15.5579 10.0033 15.4422 10.5853C15.3264 11.1672 15.0407 11.7018 14.6211 12.1213C14.2016 12.5409 13.667 12.8266 13.0851 12.9424C12.5031 13.0581 11.8999 12.9987 11.3518 12.7716C10.8036 12.5446 10.335 12.1601 10.0054 11.6667C9.67576 11.1734 9.49981 10.5933 9.49981 10C9.49981 9.20435 9.81588 8.44129 10.3785 7.87868C10.9411 7.31607 11.7042 7 12.4998 7Z' fill='%23DE1269'/%3E%3C/svg%3E");
     display: block;
     width: 24px;
     height: 24px;
 }
 
 .vtex-pickup-points-modal-3-x-pickupPointMain .vtex-pickup-points-modal-3-x-pickupPointMarker>p {
+    color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
-    color: var(--forCode-text-body-dark);
 }
 
 .vtex-pickup-points-modal-3-x-modalDetailsInfoTitle {
     color: var(--forCode-text-body-dark) !important;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-md) !important;
+    font-size: 13px;
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium) !important;
-    line-height: var(--forCode-font-line-height-4xl);
+    font-weight: var(--forCode-font-weight-regular) !important;
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 640px){
+    .vtex-pickup-points-modal-3-x-modalDetailsInfoTitle {
+        font-weight: var(--forCode-font-weight-medium) !important;
+    }
 }
 
 .vtex-pickup-points-modal-3-x-productItem {
@@ -1573,8 +1604,18 @@ h1#cart-title {
     overflow: hidden;
 }
 
+.orderform-template-holder .step.shipping-data .pkpmodal-details-bottom {
+    padding: 10px;
+}
+
+@media(max-width: 640px){
+    .orderform-template-holder .step.shipping-data .pkpmodal-details-bottom {
+        padding: 60px 10px;
+    }
+}
+
 .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-primary {
-    border-radius: 4px;
+    border-radius: 24px;
     background: var(--forCode-surface-button-primary-default);
     transition: all 150ms ease-in-out;
     font-size: 0px;
@@ -1584,7 +1625,6 @@ h1#cart-title {
 }
 
 .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-primary:hover {
-    border-radius: 4px;
     background: var(--forCode-surface-button-primary-hover);
 }
 
@@ -1593,12 +1633,14 @@ h1#cart-title {
     text-transform: initial;
     color: var(--forCode-text-on-dark);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
+    height: 16px;
+    display: block;
 }
 
 .vtex-pickup-points-modal-3-x-pickupDetailsHeaderButton>svg>path {
@@ -1620,10 +1662,10 @@ h1#cart-title {
 .vtex-pickup-points-modal-3-x-modalDetailsHours td {
     color: var(--forCode-font-family-body);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg) !important;
+    font-size: var(--forCode-font-size-sm) !important;
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular) !important;
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     border-bottom: 0px !important;
     padding-top: 10px !important;
@@ -1696,7 +1738,8 @@ h1#cart-title {
     }
 
     .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk {
-        padding: 16px 11px;
+        padding: 0px;
+        padding-bottom: 16px;
     }
 
     .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk>svg {
@@ -1705,7 +1748,7 @@ h1#cart-title {
 
     .orderform-template-holder .step.shipping-data .vtex-pickup-points-modal-3-x-modalDetailsBackLnk::after {
         font-size: var(--forCode-font-size-lg);
-        line-height: var(--forCode-font-line-height-xlg);
+        line-height: var(--forCode-font-line-height-2xl);
     }
 
     .vtex-pickup-points-modal-3-x-pickupDetailsHeader .vtex-pickup-points-modal-3-x-pickupDetailsHeaderTitle {
@@ -2176,6 +2219,8 @@ h1#cart-title {
     letter-spacing: var(--forCode-spacing-system-none);
     box-sizing: content-box;
     padding: 2px;
+    border-radius: var(--forCode-spacing-system-xxs);
+    border: 1px solid var(--forCode-stroke-default);
 }
 
 @media (max-width: 690px) {
@@ -3611,7 +3656,7 @@ h1#cart-title {
 /*--------------------------------- CHECKOUT -----------------------------------------------*/
 @media(max-width: 690px) {
     body:before {
-        background: #0041A8;
+        background: #DE1269;
     }
 }
 
@@ -3673,7 +3718,7 @@ h1#cart-title {
 
 @media (min-width: 1026px) {
     .body-order-form .container-order-form .orderform-active .orderform-template .cart-template.mini-cart {
-        top: 0px;
+        top: 16px;
         position: sticky;
     }
 }
@@ -3699,7 +3744,7 @@ h1#cart-title {
 }
 
 .orderform-template-holder #client-profile-data .step.accordion-group.client-profile-data.filled {
-    border-radius: var(--forCode-spacing-system-radius-s);
+    border-radius: var(--forCode-spacing-system-radius-l);
     border: 1px solid var(--forCode-stroke-light);
     background: var(--forCode-surface-background-card-default);
 }
@@ -3711,18 +3756,38 @@ h1#cart-title {
 
 .orderform-template-holder #shipping-data {
     padding: 0px;
+    background: unset;
+}
+.orderform-template-holder .span6.shipping-data .shipping-data:not(.active)::after {
+    content: "Esperando que se complete la información";
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    opacity: 1 !important;
+    position: relative;
+    top: 16px;
+}
+
+.orderform-template-holder .span6.shipping-data .shipping-data:has(.link-box-edit)::after {
+    display: none;
 }
 
 .orderform-template-holder #shipping-data .step.accordion-group.shipping-data {
     padding: 32px;
-    border-radius: var(--forCode-spacing-system-radius-s);
+    position: relative;
+    border-radius: var(--forCode-spacing-system-radius-l);
     border: 1px solid var(--forCode-stroke-light);
     background: var(--forCode-surface-background-card-default);
+    overflow: hidden;
+    min-height: 74px;
 }
 
 .orderform-template-holder #shipping-data .step.accordion-group.shipping-data.active {
     background: #FFF;
-    border-left: 0px;
 }
 
 .orderform-template-holder #shipping-data .step.accordion-group.shipping-data.vtex-omnishipping-1-x-shippingDataDev.active {
@@ -3785,11 +3850,11 @@ h1#cart-title {
 body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-titles);
-    font-size: var(--forCode-spacing-system-size-text-titulo-paso-checkout);
+    font-size: var(--forCode-font-size-2xl);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl) !important;
-    letter-spacing: var(--forCode-spacing-system-none);
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl) !important;
+    letter-spacing: -0.12px;
 }
 
 /*@media(max-width: 690px) {
@@ -3929,9 +3994,18 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .checkout-container .orderform-template-holder div[class*="-data"] .accordion-toggle-active:before,
 .checkout-container .orderform-template-holder div[class*="-data"].active .accordion-toggle span:before,
 .checkout-container .orderform-template-holder div[class*="-data"] .accordion-toggle-active span:before {
-    border: 1px solid var(--forCode-surface-background-background-secondary) !important;
-    background: var(--forCode-surface-background-background-secondary) !important;
+    border: 1px solid var(--forCode-surface-background-background-primary) !important;
+    background: var(--forCode-surface-background-background-primary) !important;
     color: var(--forCode-text-on-dark) !important;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    letter-spacing: var(--forCode-spacing-system-none);
+    line-height: 26px;
 }
 
 .orderform-template-holder .step .form-step .corporate-info-box .client-company-name {
@@ -3959,10 +4033,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .orderform-template-holder .step .form-step fieldset p {
     color: var(--forCode-text-body-default);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -3976,7 +4050,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-overflow: ellipsis;
     text-wrap: wrap;
@@ -4055,7 +4129,20 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 #app-container input[type=email],
 #app-container select,
 .vcustom--vtex-omnishipping-1-x-address input {
-    border: 1px solid #D9D9D9;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-default);
+    background: var(--forCode-surface-background-base-default);
+}
+
+#app-container .CardForm input[type=text],
+#app-container .CardForm input[type=tel],
+#app-container .CardForm input[type=email],
+#app-container .CardForm select {
+    border-radius: var(--forCode-spacing-system-radius-s);
+}
+
+.orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup {
+    padding-top: 0;
 }
 
 #app-container input[type=text].input-mini.card-value.success {
@@ -4065,7 +4152,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 
 .client-profile-data ul {
     display: inline-block;
-    margin: 5px 5px 0 0;
+    margin: 0;
     width: 100%;
 }
 
@@ -4074,7 +4161,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     justify-content: center;
     align-items: center;
     border-radius: var(--forCode-radius-button);
-    background: var(--forCode-surface-button-ghost-link-default);
+    background: var(--forCode-surface-button-ghost-default);
     border: 0px;
     width: 100%;
     max-width: 350px;
@@ -4107,20 +4194,22 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 
 .orderform-template-holder .step .form-step #is-corporate-client::before {
     content: "Quiero factura A";
-    color: var(--forCode-text-link-default-state);
+    color: var(--forCode-text-button-secondary);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     display: block;
     height: 16px;
 }
 
 .orderform-template-holder .step .form-step #is-corporate-client:hover {
-    background: var(--forCode-surface-button-ghost-link-hover);
+    background: var(--forCode-surface-button-ghost-hover);
 }
 
 .box-client-info .newsletter {
@@ -4173,15 +4262,15 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "Quiero suscribirme al Newsletter";
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     padding-left: 27px;
     position: relative;
-    top: 2px;
-    right: 1%;
+    top: 0px;
+    right: 3%;
 }
 
 .box-client-info .newsletter .newsletter-label #opt-in-newsletter {
@@ -4247,10 +4336,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     color: var(--forCode-text-on-dark);
     text-align: center;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     width: 100%;
 }
@@ -4262,11 +4351,12 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .box-client-info-pj .corporate-title {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
+    margin: 0;
 }
 
 .box-client-info-pj .links .corporate-hide-link #not-corporate-client {
@@ -4275,7 +4365,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     align-items: center;
     border: 0px;
     border-radius: var(--forCode-radius-button);
-    background: var(--forCode-surface-button-ghost-link-default);
+    background: var(--forCode-surface-button-ghost-default);
     text-decoration: none;
     width: 100%;
     max-width: 324px;
@@ -4284,13 +4374,15 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     padding: 12px;
     box-sizing: content-box;
     transition: all 150ms ease-in-out;
-    color: var(--forCode-text-link-default-state);
+    color: var(--forCode-text-button-secondary);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    leading-trim: both;
+    text-edge: cap;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -4326,7 +4418,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 }
 
 .box-client-info-pj .links .corporate-hide-link #not-corporate-client:hover {
-    background: var(--forCode-surface-button-ghost-link-hover);
+    background: var(--forCode-surface-button-ghost-hover);
 }
 
 .box-client-info-pj .corporate-info-box {
@@ -4343,13 +4435,13 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 }
 
 .orderform-template-holder .step .client-email label::before {
-    content: 'E-mail';
+    content: 'Mail';
     color: var(--forCode-text-label-default);
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -4379,8 +4471,6 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .icon-edit:before {
     content: 'Editar';
     color: var(--forCode-text-button-secondary);
-    text-align: center;
-    leading-trim: both;
     text-edge: cap;
     font-family: var(--forCode-font-family-body);
     font-size: var(--forCode-font-size-sm);
@@ -4394,7 +4484,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 }
 
 .icon-edit:after {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8.59967 4.56986L11.4281 7.39831L4.82843 13.998H2V11.1695L8.59967 4.56986ZM9.54247 3.62705L10.9567 2.21284C11.2171 1.95249 11.6391 1.95249 11.8995 2.21284L13.7851 4.09846C14.0455 4.3588 14.0455 4.78092 13.7851 5.04126L12.3709 6.45548L9.54247 3.62705Z' fill='%23464958'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8.59967 4.56986L11.4281 7.39831L4.82843 13.998H2V11.1695L8.59967 4.56986ZM9.54247 3.62705L10.9567 2.21284C11.2171 1.95249 11.6391 1.95249 11.8995 2.21284L13.7851 4.09846C14.0455 4.3588 14.0455 4.78092 13.7851 5.04126L12.3709 6.45548L9.54247 3.62705Z' fill='%23DE1269'/%3E%3C/svg%3E");
     position: relative;
     top: -2px;
 }
@@ -4402,10 +4492,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .orderform-template-holder .step .box-info {
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -4413,10 +4503,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "Correo electrónico:";
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     margin-right: 7px;
 }
@@ -4425,10 +4515,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "Nombre:";
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     margin-right: 7px;
 }
@@ -4437,10 +4527,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "Teléfono/Móvil:";
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     margin-right: 7px;
 }
@@ -4497,27 +4587,30 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive {
-    border-radius: var(--forCode-spacing-system-radius-s);
-    border: 1px solid var(--forCode-stroke-default);
-    background: var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-ghost-default);
+    box-shadow: 0 6px 15px -1px rgba(40, 22, 105, 0.14);
 }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption {
-    border-radius: 4px;
-    border: 1px solid #CCD5E0;
-    background: #FFF;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-default);
+    background: var(--forCode-surface-background-base-subtle);
     outline: none !important;
-    padding: 12px;
-    width: fit-content;
-    max-width: fit-content;
-    min-width: fit-content;
-    height: fit-content;
-    max-height: fit-content;
-    min-height: fit-content;
+    padding: 8px 20px;
+    width: 100%;
+    max-width: 165px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10.240px;
+    gap: 8px;
+}
+
+@media(max-width: 380px){
+    .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption {
+        padding: 8px 15px;
+    }
 }
 
 .btn-ask-for-geolocation-cta {
@@ -4541,10 +4634,6 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsWrapper {
         gap: 10px;
     }
-
-    .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption {
-        padding: 12px 17px;
-    }
 }
 
 .orderform-template-holder #shipping-option-delivery span,
@@ -4567,10 +4656,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "A domicilio";
     color: var(--forCode-text-body-default);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     display: block;
 }
@@ -4586,52 +4675,55 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     content: "En sucursal";
     color: var(--forCode-text-body-default);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 /*Active*/
 .orderform-template-holder .step.shipping-data #shipping-option-delivery.vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive::after,
 .orderform-template-holder .step.shipping-data #shipping-option-pickup-in-point.vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive::after {
-    color: var(--forCode-text-on-dark);
-    font-weight: var(--forCode-font-weight-semibold);
+    color: var(--forCode-text-button-secondary);
 }
 
 .orderform-template-holder .step.shipping-data #shipping-option-delivery.vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='16' viewBox='0 0 19 16' fill='none'%3E%3Cpath d='M18.3665 10.8002H17.8995V7.6472C17.899 7.27609 17.7512 6.92037 17.4885 6.6582L14.5745 3.7442C14.3126 3.48178 13.9573 3.33397 13.5865 3.3332H12.2995V1.9332C12.2995 1.74935 12.2633 1.5673 12.1929 1.39745C12.1226 1.22759 12.0195 1.07326 11.8895 0.943254C11.7595 0.813252 11.6051 0.710128 11.4353 0.639772C11.2654 0.569415 11.0834 0.533203 10.8995 0.533203H1.5665C1.1952 0.533203 0.839105 0.680703 0.576554 0.943254C0.314003 1.2058 0.166504 1.5619 0.166504 1.9332L0.166504 11.2662C0.166504 11.6375 0.314003 11.9936 0.576554 12.2562C0.839105 12.5187 1.1952 12.6662 1.5665 12.6662H2.0335C2.0335 13.4088 2.3285 14.121 2.85361 14.6461C3.37871 15.1712 4.0909 15.4662 4.8335 15.4662C5.57611 15.4662 6.2883 15.1712 6.8134 14.6461C7.3385 14.121 7.6335 13.4088 7.6335 12.6662H11.3665C11.3665 13.4088 11.6615 14.121 12.1866 14.6461C12.7117 15.1712 13.4239 15.4662 14.1665 15.4662C14.9091 15.4662 15.6213 15.1712 16.1464 14.6461C16.6715 14.121 16.9665 13.4088 16.9665 12.6662H18.3665C18.4903 12.6659 18.6089 12.6167 18.6964 12.5291C18.784 12.4416 18.8332 12.323 18.8335 12.1992V11.2662C18.833 11.1426 18.7836 11.0242 18.6961 10.9369C18.6086 10.8496 18.4901 10.8005 18.3665 10.8002ZM4.8335 14.0662C4.55661 14.0662 4.28593 13.9841 4.05571 13.8303C3.82548 13.6764 3.64604 13.4578 3.54007 13.202C3.43411 12.9461 3.40639 12.6646 3.4604 12.3931C3.51442 12.1215 3.64776 11.872 3.84355 11.6763C4.03935 11.4805 4.2888 11.3471 4.56038 11.2931C4.83195 11.2391 5.11344 11.2668 5.36926 11.3728C5.62508 11.4787 5.84373 11.6582 5.99756 11.8884C6.1514 12.1186 6.2335 12.3893 6.2335 12.6662C6.2335 12.8501 6.19729 13.0321 6.12694 13.202C6.05658 13.3718 5.95346 13.5262 5.82345 13.6562C5.69345 13.7862 5.53912 13.8893 5.36926 13.9596C5.19941 14.03 5.01735 14.0662 4.8335 14.0662ZM14.1665 14.0662C13.8896 14.0662 13.6189 13.9841 13.3887 13.8303C13.1585 13.6764 12.979 13.4578 12.8731 13.202C12.7671 12.9461 12.7394 12.6646 12.7934 12.3931C12.8474 12.1215 12.9808 11.872 13.1766 11.6763C13.3723 11.4805 13.6218 11.3471 13.8934 11.2931C14.165 11.2391 14.4464 11.2668 14.7023 11.3728C14.9581 11.4787 15.1767 11.6582 15.3306 11.8884C15.4844 12.1186 15.5665 12.3893 15.5665 12.6662C15.5665 13.0375 15.419 13.3936 15.1565 13.6562C14.8939 13.9187 14.5378 14.0662 14.1665 14.0662ZM16.4995 7.9992H12.2995V4.7332H13.5865L16.5005 7.6472L16.4995 7.9992Z' fill='white'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='15' viewBox='0 0 19 15' fill='none'%3E%3Cpath d='M18.2 10.267H17.733V7.114C17.7325 6.74289 17.5847 6.38716 17.322 6.125L14.408 3.211C14.1461 2.94858 13.7908 2.80077 13.42 2.8H12.133V1.4C12.133 1.21615 12.0968 1.0341 12.0264 0.864243C11.9561 0.694387 11.853 0.540053 11.7229 0.410051C11.5929 0.280048 11.4386 0.176925 11.2688 0.106569C11.0989 0.0362121 10.9169 0 10.733 0L1.4 0C1.0287 0 0.672601 0.1475 0.410051 0.410051C0.1475 0.672601 0 1.0287 0 1.4L0 10.733C0 11.1043 0.1475 11.4604 0.410051 11.7229C0.672601 11.9855 1.0287 12.133 1.4 12.133H1.867C1.867 12.8756 2.162 13.5878 2.6871 14.1129C3.2122 14.638 3.92439 14.933 4.667 14.933C5.40961 14.933 6.1218 14.638 6.6469 14.1129C7.172 13.5878 7.467 12.8756 7.467 12.133H11.2C11.2 12.8756 11.495 13.5878 12.0201 14.1129C12.5452 14.638 13.2574 14.933 14 14.933C14.7426 14.933 15.4548 14.638 15.9799 14.1129C16.505 13.5878 16.8 12.8756 16.8 12.133H18.2C18.3238 12.1327 18.4424 12.0834 18.5299 11.9959C18.6174 11.9084 18.6667 11.7898 18.667 11.666V10.733C18.6665 10.6094 18.6171 10.491 18.5296 10.4037C18.4421 10.3164 18.3236 10.2673 18.2 10.267ZM4.667 13.533C4.39011 13.533 4.11943 13.4509 3.8892 13.2971C3.65897 13.1432 3.47953 12.9246 3.37357 12.6688C3.26761 12.4129 3.23988 12.1314 3.2939 11.8599C3.34792 11.5883 3.48126 11.3388 3.67705 11.1431C3.87284 10.9473 4.1223 10.8139 4.39387 10.7599C4.66545 10.7059 4.94694 10.7336 5.20276 10.8396C5.45857 10.9455 5.67722 11.125 5.83106 11.3552C5.98489 11.5854 6.067 11.8561 6.067 12.133C6.067 12.3169 6.03079 12.4989 5.96043 12.6688C5.89008 12.8386 5.78695 12.9929 5.65695 13.1229C5.52695 13.253 5.37261 13.3561 5.20276 13.4264C5.0329 13.4968 4.85085 13.533 4.667 13.533ZM14 13.533C13.7231 13.533 13.4524 13.4509 13.2222 13.2971C12.992 13.1432 12.8125 12.9246 12.7066 12.6688C12.6006 12.4129 12.5729 12.1314 12.6269 11.8599C12.6809 11.5883 12.8143 11.3388 13.0101 11.1431C13.2058 10.9473 13.4553 10.8139 13.7269 10.7599C13.9984 10.7059 14.2799 10.7336 14.5358 10.8396C14.7916 10.9455 15.0102 11.125 15.1641 11.3552C15.3179 11.5854 15.4 11.8561 15.4 12.133C15.4 12.5043 15.2525 12.8604 14.9899 13.1229C14.7274 13.3855 14.3713 13.533 14 13.533ZM16.333 7.466H12.133V4.2H13.42L16.334 7.114L16.333 7.466Z' fill='%23DE1269'/%3E%3C/svg%3E");
+    top: 3.5px;
 }
 
 .orderform-template-holder .step.shipping-data #shipping-option-pickup-in-point.vtex-omnishipping-1-x-deliveryChannelsOption.vtex-omnishipping-1-x-deliveryOptionActive::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M21 8.44737C21 7.23189 19.5366 4.34526 19.0884 3.48979C19.0106 3.34138 18.8965 3.21764 18.7578 3.13149C18.6191 3.04535 18.461 2.99994 18.3 3H5.7C5.54055 2.99993 5.38394 3.04446 5.24621 3.12902C5.10847 3.21358 4.99455 3.33514 4.9161 3.48126C4.467 4.31968 3 7.15421 3 8.44737C3.00039 8.86109 3.08033 9.27044 3.23501 9.65077C3.38968 10.0311 3.61589 10.3746 3.9 10.6604V20.0526C3.9 20.3039 3.99482 20.5449 4.1636 20.7225C4.33239 20.9002 4.56131 21 4.8 21H6.6C6.83869 21 7.06761 20.9002 7.2364 20.7225C7.40518 20.5449 7.5 20.3039 7.5 20.0526V14.3684H11.1V20.0526C11.1 20.3039 11.1948 20.5449 11.3636 20.7225C11.5324 20.9002 11.7613 21 12 21H19.2C19.4387 21 19.6676 20.9002 19.8364 20.7225C20.0052 20.5449 20.1 20.3039 20.1 20.0526V10.6206C20.3793 10.3392 20.6027 10.0022 20.7572 9.62909C20.9117 9.25601 20.9943 8.85432 21 8.44737ZM6.2319 4.89474H17.76C18.3814 6.00974 18.8653 7.20357 19.2 8.44737C19.1815 8.75507 19.0571 9.0451 18.85 9.26311C18.6428 9.48112 18.3673 9.61213 18.075 9.63158C17.7768 9.63108 17.4909 9.50615 17.28 9.28418C17.0692 9.0622 16.9505 8.76129 16.95 8.44737C16.95 8.19611 16.8552 7.95514 16.6864 7.77748C16.5176 7.59981 16.2887 7.5 16.05 7.5C15.8113 7.5 15.5824 7.59981 15.4136 7.77748C15.2448 7.95514 15.15 8.19611 15.15 8.44737C15.15 8.76144 15.0315 9.06265 14.8205 9.28473C14.6095 9.50681 14.3234 9.63158 14.025 9.63158C13.7266 9.63158 13.4405 9.50681 13.2295 9.28473C13.0185 9.06265 12.9 8.76144 12.9 8.44737C12.9 8.19611 12.8052 7.95514 12.6364 7.77748C12.4676 7.59981 12.2387 7.5 12 7.5C11.7613 7.5 11.5324 7.59981 11.3636 7.77748C11.1948 7.95514 11.1 8.19611 11.1 8.44737C11.1 8.76144 10.9815 9.06265 10.7705 9.28473C10.5595 9.50681 10.2734 9.63158 9.975 9.63158C9.67663 9.63158 9.39048 9.50681 9.1795 9.28473C8.96853 9.06265 8.85 8.76144 8.85 8.44737C8.85 8.19611 8.75518 7.95514 8.5864 7.77748C8.41761 7.59981 8.18869 7.5 7.95 7.5C7.71131 7.5 7.48239 7.59981 7.3136 7.77748C7.14482 7.95514 7.05 8.19611 7.05 8.44737C7.04952 8.76129 6.93084 9.0622 6.71997 9.28418C6.50909 9.50615 6.22322 9.63108 5.925 9.63158C5.62779 9.62765 5.34381 9.50162 5.13363 9.28039C4.92346 9.05915 4.80373 8.76022 4.8 8.44737C5.11883 7.19912 5.60073 6.0035 6.2319 4.89474ZM16.95 16.2632C16.95 16.3888 16.9026 16.5093 16.8182 16.5981C16.7338 16.6869 16.6193 16.7368 16.5 16.7368H13.8C13.6807 16.7368 13.5662 16.6869 13.4818 16.5981C13.3974 16.5093 13.35 16.3888 13.35 16.2632V13.4211C13.35 13.2954 13.3974 13.1749 13.4818 13.0861C13.5662 12.9973 13.6807 12.9474 13.8 12.9474H16.5C16.6193 12.9474 16.7338 12.9973 16.8182 13.0861C16.9026 13.1749 16.95 13.2954 16.95 13.4211V16.2632Z' fill='white'/%3E%3C/svg%3E");
-    ;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M18 5.44737C18 4.23189 16.5366 1.34526 16.0884 0.48979C16.0106 0.341376 15.8965 0.217643 15.7578 0.131494C15.6191 0.0453455 15.461 -6.42644e-05 15.3 7.76255e-08H2.7C2.54055 -6.78577e-05 2.38394 0.0444565 2.24621 0.129017C2.10847 0.213578 1.99455 0.33514 1.9161 0.481263C1.467 1.31968 0 4.15421 0 5.44737C0.000392569 5.86109 0.0803331 6.27044 0.235007 6.65077C0.38968 7.03111 0.615886 7.37455 0.9 7.66042V17.0526C0.9 17.3039 0.994821 17.5449 1.1636 17.7225C1.33239 17.9002 1.56131 18 1.8 18H3.6C3.83869 18 4.06761 17.9002 4.2364 17.7225C4.40518 17.5449 4.5 17.3039 4.5 17.0526V11.3684H8.1V17.0526C8.1 17.3039 8.19482 17.5449 8.3636 17.7225C8.53239 17.9002 8.7613 18 9 18H16.2C16.4387 18 16.6676 17.9002 16.8364 17.7225C17.0052 17.5449 17.1 17.3039 17.1 17.0526V7.62063C17.3793 7.33922 17.6027 7.00218 17.7572 6.62909C17.9117 6.25601 17.9943 5.85432 18 5.44737ZM3.2319 1.89474H14.76C15.3814 3.00974 15.8653 4.20357 16.2 5.44737C16.1815 5.75507 16.0571 6.0451 15.85 6.26311C15.6428 6.48112 15.3673 6.61213 15.075 6.63158C14.7768 6.63108 14.4909 6.50615 14.28 6.28418C14.0692 6.0622 13.9505 5.76129 13.95 5.44737C13.95 5.19611 13.8552 4.95514 13.6864 4.77748C13.5176 4.59981 13.2887 4.5 13.05 4.5C12.8113 4.5 12.5824 4.59981 12.4136 4.77748C12.2448 4.95514 12.15 5.19611 12.15 5.44737C12.15 5.76144 12.0315 6.06265 11.8205 6.28473C11.6095 6.50681 11.3234 6.63158 11.025 6.63158C10.7266 6.63158 10.4405 6.50681 10.2295 6.28473C10.0185 6.06265 9.9 5.76144 9.9 5.44737C9.9 5.19611 9.80518 4.95514 9.6364 4.77748C9.46761 4.59981 9.23869 4.5 9 4.5C8.7613 4.5 8.53239 4.59981 8.3636 4.77748C8.19482 4.95514 8.1 5.19611 8.1 5.44737C8.1 5.76144 7.98147 6.06265 7.77049 6.28473C7.55952 6.50681 7.27337 6.63158 6.975 6.63158C6.67663 6.63158 6.39048 6.50681 6.1795 6.28473C5.96853 6.06265 5.85 5.76144 5.85 5.44737C5.85 5.19611 5.75518 4.95514 5.5864 4.77748C5.41761 4.59981 5.18869 4.5 4.95 4.5C4.71131 4.5 4.48239 4.59981 4.3136 4.77748C4.14482 4.95514 4.05 5.19611 4.05 5.44737C4.04952 5.76129 3.93084 6.0622 3.71997 6.28418C3.50909 6.50615 3.22322 6.63108 2.925 6.63158C2.62779 6.62765 2.34381 6.50162 2.13363 6.28039C1.92346 6.05915 1.80373 5.76022 1.8 5.44737C2.11883 4.19912 2.60073 3.0035 3.2319 1.89474ZM13.95 13.2632C13.95 13.3888 13.9026 13.5093 13.8182 13.5981C13.7338 13.6869 13.6193 13.7368 13.5 13.7368H10.8C10.6807 13.7368 10.5662 13.6869 10.4818 13.5981C10.3974 13.5093 10.35 13.3888 10.35 13.2632V10.4211C10.35 10.2954 10.3974 10.1749 10.4818 10.0861C10.5662 9.99727 10.6807 9.94737 10.8 9.94737H13.5C13.6193 9.94737 13.7338 9.99727 13.8182 10.0861C13.9026 10.1749 13.95 10.2954 13.95 10.4211V13.2632Z' fill='%23DE1269'/%3E%3C/svg%3E");
+    position: relative;
+    top: 3px;
 }
 
 .orderform-template-holder #shipping-data .accordion-toggle::before {
     outline: none;
     border-radius: 100px;
-    background: var(--forCode-surface-button-secondary-neutral-hover);
-    border-color: var(--forCode-surface-button-secondary-neutral-hover);
+    background: var(--forCode-surface-background-background-grey-medium);
+    border-color: var(--forCode-surface-background-background-grey-medium);
     color: var(--forCode-text-body-default);
     text-align: center;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-semibold);
-    line-height: 27px;
+    line-height: 26px;
+    letter-spacing: var(--forCode-spacing-system-none);
     margin-right: 6px;
 }
 
 .orderform-template-holder #shipping-data .accordion-toggle {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-titles);
-    font-size: var(--forCode-spacing-system-size-text-titulo-paso-checkout);
+    font-size: var(--forCode-font-size-2xl);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
-    letter-spacing: var(--forCode-spacing-system-none);
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl) !important;
+    letter-spacing: -0.12px;
+    padding: 0 !important;
 }
 
 .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 .ship-postalCode label::after {
@@ -4649,26 +4741,39 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     width: 119px !important;
 }
 
+.shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 .ship-postalCode {
+    position: relative;
+}
+
 .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 small a {
     font-size: 0px;
     text-decoration: none;
+    position: absolute;
+    top: 47px;
+}
+
+@media(max-width: 418px){
+    .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 small a {
+        width: 55%;
+        top: 38px;
+    }
 }
 
 .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 small a::before {
     content: "No conozco mi código postal";
     color: var(--forCode-text-link-default-state);
-    font-family: var(--forCode-font-family-body);
+    font-family: var(--forCode-font-family-button);
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-decoration: none;
 }
 
 @media(max-width: 990px) {
     .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 small a::before {
-        font-size: var(--forCode-font-size-sm);
+        /* font-size: var(--forCode-font-size-sm); */
     }
 }
 
@@ -4901,15 +5006,16 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     padding: 16px 12px;
     justify-content: center;
     align-items: center;
-    border-radius: var(--forCode-spacing-system-radius-s);
-    background: var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-radius-button);
+    background: var(
+    --forCode-surface-button-primary-default);
     border: 0px;
     margin: 0px;
     width: 100%;
     height: fit-content;
     font-size: 0px;
     transition: all 150ms ease-in-out;
-    max-width: 47.593%;
+    max-width: 47.659%;
     max-height: 40px;
     box-sizing: border-box;
     min-width: unset;
@@ -4933,11 +5039,11 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     height: 16px;
     color: var(--forCode-text-on-dark);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -4989,27 +5095,27 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     display: block;
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-leanShippingGroupList {
     width: 100%;
     position: relative;
-    max-width: 39.203%;
-    border-radius: var(--forCode-spacing-system-radius-s);
+    max-width: 41.736%;
+    border-radius: var(--forCode-spacing-system-radius-m);
     border-top: 1px solid var(--forCode-stroke-button-primary-default);
     border-right: 1px solid var(--forCode-stroke-button-primary-default);
     border-bottom: 1px solid var(--forCode-stroke-button-primary-default);
     border-left: 6px solid var(--forCode-stroke-button-primary-default);
     background: var(--forCode-surface-background-card-default);
-    padding: 16px 34px 16px 20px;
+    padding: 16px 16px 16px 20px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     min-height: 34px;
 }
 
@@ -5024,6 +5130,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     display: grid;
     grid-template-columns: 1fr auto;
     justify-content: flex-start;
+    gap: 8px;
 }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-leanShippingOption:not(:first-of-type) {
@@ -5037,7 +5144,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     }
 
     .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-packages .vtex-omnishipping-1-x-shippingSectionTitle::before {
-        font-family: var(--forCode-font-family-titles);
+        /* font-family: var(--forCode-font-family-titles); */
     }
 
 }
@@ -5077,10 +5184,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 .vtex-omnishipping-1-x-leanShippingTextLabelSingle {
     color: var(--forCode-text-body-medium) !important;
     font-family: var(--forCode-font-family-body) !important;
-    font-size: var(--forCode-font-size-md) !important;
+    font-size: var(--forCode-font-size-sm) !important;
     font-style: normal !important;
     font-weight: var(--forCode-font-weight-regular) !important;
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5094,10 +5201,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     text-align: left;
     color: var(--forCode-text-price-strong);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-semibold);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5108,7 +5215,7 @@ svg.pkpmodal-pickup-point-marker-image path,
 svg.vtex-omnishipping-1-x-svg,
 svg.vtex-omnishipping-1-x-svg path,
 svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
-    fill: #464958;
+    fill: #DE1269;
 }
 
 @media(max-width: 990px) {
@@ -5156,8 +5263,8 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: var(--forCode-spacing-system-radius-s, 4px);
-    background: var(--forCode-surface-button-ghost-link-default) !important;
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-ghost-default) !important;
     border: 0px;
     padding: 12px;
     width: 100%;
@@ -5165,28 +5272,30 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     height: 16px;
     text-decoration: none;
     transition: all 150ms ease-in-out;
-    color: var(--forCode-text-link-default-state) !important;
+    color: var(--forCode-text-button-secondary) !important;
     text-align: center;
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg, );
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     box-sizing: content-box;
+    margin-top: 24px !important;
 }
 
 .orderform-template-holder .step.shipping-data .box-info.shipping-summary-placeholder .vtex-omnishipping-1-x-summaryChange:hover {
-    background: var(--forCode-surface-button-ghost-link-hover) !important
+    background: var(--forCode-surface-button-ghost-hover) !important;
 }
 
 
 .orderform-template-holder .step.shipping-data .box-info.shipping-summary-placeholder .vtex-omnishipping-1-x-SummaryItemTitle {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-semibold);
-    line-height: var(--forCode-font-line-height-4xl);
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-transform: initial;
 }
@@ -5199,14 +5308,27 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.orderform-template-holder .step.shipping-data .box-info.shipping-summary-placeholder .shp-summary-group-address::before {
+    content: "Dirección de facturación";
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
     line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
+    margin-bottom: 12px;
+    display: block;
 }
 
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info {
     padding: 16px 24px;
-    border-radius: var(--forCode-spacing-system-xxs);
-    border: 1px solid var(--forCode-stroke-default);
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(    --forCode-stroke-default);
     max-width: 40.716%;
     display: flex;
     flex-direction: row;
@@ -5239,10 +5361,10 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-PickupPointName {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-semibold);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5259,7 +5381,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5273,26 +5395,38 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-details {
     border-radius: 0px;
-    padding: 0px;
+    padding: 12px 0;
     margin-top: 12px;
     color: var(--forCode-text-link-default-state);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-decoration: none;
 }
 
+#shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-details:hover{
+    background: var(--forCode-surface-button-ghost-link-default);
+}
+
 @media(max-width: 990px) {
     #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-PickupPointAddress>div>span {
-        font-size: var(--forCode-font-size-lg);
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+
     }
 
     #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-details {
         font-size: var(--forCode-font-size-sm);
+        padding: 0;
     }
 }
 
@@ -5301,7 +5435,8 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     padding: 12px;
     border: 0px;
     border-radius: var(--forCode-radius-button);
-    background: var(--forCode-surface-button-ghost-link-default);
+    background: var(
+    --forCode-surface-button-ghost-default);
     transition: all 150ms ease-in-out;
     max-height: 16px;
     box-sizing: unset;
@@ -5318,13 +5453,13 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-pickupPointChange::before {
     content: "Ver otros puntos de retiro";
-    color: var(--forCode-text-link-default-state);
+    color: var(--forCode-text-button-secondary);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     display: block;
     width: 100%;
@@ -5349,7 +5484,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 }
 
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-pickupPointChange:hover {
-    background: var(--forCode-surface-button-ghost-link-hover);
+    background: var(--forCode-surface-button-ghost-hover);
 }
 
 .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-container.shp-pickup-receiver {
@@ -5407,39 +5542,76 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-edit-link):before {
     content: "3";
     border-radius: 100px;
-    background: var(--forCode-surface-button-secondary-neutral-hover);
-    border-color: var(--forCode-surface-button-secondary-neutral-hover);
+    background: var(--forCode-surface-background-background-grey-medium);
+    border-color: var(--forCode-surface-background-background-grey-medium);
     color: var(--forCode-text-body-default);
     text-align: center;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-semibold);
-    line-height: 27px;
+    line-height: 26px;
+    letter-spacing: var(--forCode-spacing-system-none);
+    margin-right: 6px;
 }
 
-body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-edit-link):after {
+body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:has(.payment-edit-link):after {
+    content: "Esperando que se complete la información";
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    z-index: 99999;
+}
+
+body.js-vcustom-hideEmailStep .payment-data .accordion-group .accordion-toggle>span::after {
+    content: "Esperando que se complete la información";
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    color: var(--forCode-text-body-default);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    z-index: 99999;
+}
+
+body.js-vcustom-hideEmailStep .payment-data .accordion-group .accordion-toggle-active>span::after {
     content: "Selecciona tu método de pago";
     position: absolute;
     top: 40px;
     left: 0px;
     color: var(--forCode-text-body-medium);
+    font-variant-numeric: lining-nums tabular-nums;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
+    z-index: 99999;
 }
+
+
 
 body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-edit-link) {
     color: var(--forCode-text-body-dark);
     font-family: var(--forCode-font-family-titles);
-    font-size: var(--forCode-spacing-system-size-text-titulo-paso-checkout);
+    font-size: var(--forCode-font-size-2xl);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
-    letter-spacing: var(--forCode-spacing-system-none);
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl) !important;
+    letter-spacing: -0.12px;
 }
 
 .orderform-template-holder #payment-data p.link.link-gift-card {
@@ -5459,11 +5631,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 .orderform-template-holder #payment-data p.link.link-gift-card a::before {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.333 4.66732H12.869C13.015 4.36332 13.103 4.02665 13.103 3.66732C13.103 2.38065 12.0563 1.33398 10.7697 1.33398C9.62234 1.33398 8.62367 2.13065 7.87901 2.98798C6.93301 1.89532 5.96567 1.33398 4.99967 1.33398C3.71301 1.33398 2.66634 2.38065 2.66634 3.66732C2.66634 4.02665 2.75501 4.36332 2.90034 4.66732H2.66634C1.93101 4.66732 1.33301 5.26532 1.33301 6.00065V8.00065C1.33301 8.36932 1.63101 8.66732 1.99967 8.66732H2.66634V13.334C2.66634 14.0693 3.26434 14.6673 3.99967 14.6673H11.9997C12.735 14.6673 13.333 14.0693 13.333 13.334V8.66732H13.9997C14.3683 8.66732 14.6663 8.36932 14.6663 8.00065V6.00065C14.6663 5.26532 14.0683 4.66732 13.333 4.66732ZM10.7697 2.66732C11.321 2.66732 11.7697 3.11598 11.7697 3.66732C11.7697 4.21865 11.321 4.66732 10.7697 4.66732H8.27701C8.89901 3.75532 9.85768 2.66732 10.7697 2.66732ZM4.99967 2.66732C5.59901 2.66732 6.33101 3.16998 7.06101 4.08198C6.91501 4.30665 6.79634 4.50532 6.70501 4.66732H4.99967C4.44834 4.66732 3.99967 4.21865 3.99967 3.66732C3.99967 3.11598 4.44834 2.66732 4.99967 2.66732ZM5.99967 13.334H3.99967V8.66732H5.99967V13.334ZM8.66634 13.334H7.33301V8.66732H8.66634V13.334ZM9.99967 13.334V8.66732H11.9997L12.001 13.334H9.99967ZM13.333 7.33398H2.66634V6.00065H13.333V7.33398Z' fill='%231F49D6'/%3E%3C/svg%3E");
     position: relative;
-    bottom: 2px;
+    bottom: 0px;
     display: block;
     width: 16px;
     height: 16px;
-    margin-right: 8px;
+    margin-right: 3px;
 }
 
 .orderform-template-holder #payment-data p.link.link-gift-card a::after {
@@ -5471,11 +5643,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     display: block;
     color: var(--forCode-text-link-default-state);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-sm);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-lg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5493,7 +5665,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 .orderform-template-holder #payment-data .gift-card-section.form-step.box-default label {
     color: var(--forCode-text-body-medium, #434343);
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
@@ -5619,10 +5791,10 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     content: 'Mercado Crédito';
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -5632,6 +5804,20 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     width: 40px;
     height: 28px;
     background: url("data:image/svg+xml,%3Csvg width='30' height='26' viewBox='0 0 30 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5161 1.51178C10.8845 1.84791 8.71189 2.80712 7.35916 4.23364C6.39175 5.24204 5.97363 6.22585 5.97363 7.4884C5.97363 11.3334 9.90066 13.9405 15.3608 13.7356C18.3942 13.6208 20.7963 12.6944 22.313 11.0547C24.0757 9.15267 24.2396 6.439 22.7065 4.51239C21.9687 3.57777 20.3864 2.56937 18.9271 2.08566C17.7137 1.68394 16.7709 1.53637 15.2378 1.50358C14.4508 1.48718 13.6719 1.49538 13.5161 1.51178ZM16.361 1.96269C17.9597 2.13486 19.8371 2.76613 20.8537 3.45479L21.1652 3.66795L20.9275 3.75813C19.9519 4.13526 18.5581 4.17625 17.6973 3.85651C17.4514 3.76633 16.9677 3.59417 16.6315 3.47119C16.115 3.27443 15.8855 3.24164 15.2378 3.24164C14.3852 3.24164 14.049 3.33182 13.3932 3.74994C13.1718 3.88931 12.9013 4.00409 12.7865 4.00409C12.6635 4.00409 12.393 4.06147 12.1634 4.13526C11.442 4.35662 10.7205 4.28283 9.22019 3.82372C8.55612 3.62696 8.55612 3.62696 9.58092 3.10226C11.5731 2.09386 13.9589 1.69214 16.361 1.96269ZM16.4676 3.90571C16.7135 3.99589 17.1972 4.16805 17.5333 4.29923C18.0826 4.50419 18.2548 4.52878 19.132 4.52878C20.0339 4.52878 20.1814 4.50419 20.8947 4.25824L21.6735 3.98769L22.149 4.50419C22.4196 4.79113 22.7393 5.26664 22.9033 5.59457C23.3624 6.55378 23.4034 6.4636 22.3294 6.76694C21.8211 6.91451 21.0013 7.18506 20.5176 7.37362C19.9519 7.59498 19.5993 7.69336 19.5338 7.64417C19.4846 7.60318 18.7139 6.9637 17.8285 6.21765C16.156 4.81573 15.6969 4.50419 15.2788 4.50419C14.9427 4.49599 14.3688 4.77473 13.9179 5.15186C13.3358 5.63556 13.016 5.80773 12.6553 5.80773C12.0732 5.80773 12.0404 5.70935 12.4831 5.21745C13.2702 4.35662 13.8031 3.9549 14.4016 3.78273C14.9099 3.64336 15.8937 3.70075 16.4676 3.90571ZM8.73649 4.15986C8.94964 4.24184 9.53173 4.414 10.0236 4.53698C10.9255 4.75834 11.6961 4.79113 12.2864 4.61077C12.4586 4.55338 12.4258 4.61896 12.0568 5.06168C11.8273 5.34862 11.6305 5.60277 11.6305 5.64376C11.6305 5.98809 12.065 6.24224 12.6553 6.24224C13.1144 6.25044 13.426 6.11107 14.0408 5.62737C14.8279 5.00429 15.2624 4.87311 15.7297 5.11087C15.9921 5.25024 16.9431 6.01269 18.5008 7.34083C19.6239 8.30824 19.7305 8.46401 19.4436 8.77554C19.1812 9.07069 18.9107 8.96411 18.1236 8.26724C17.7219 7.90652 17.3448 7.61137 17.3038 7.61137C17.0414 7.61137 17.1808 7.85733 17.8121 8.505C18.1974 8.89852 18.5172 9.28384 18.5172 9.35763C18.5172 9.55439 18.1892 9.82494 17.9351 9.82494C17.7793 9.82494 17.5497 9.66917 17.1398 9.29204C16.8283 8.9969 16.5249 8.75915 16.4758 8.75915C16.2708 8.75915 16.4102 9.04609 16.8365 9.5216C17.2956 10.0217 17.3694 10.2021 17.189 10.3824C16.9595 10.612 16.5987 10.4972 16.1806 10.0709C15.9593 9.84133 15.7297 9.66097 15.6723 9.66097C15.4674 9.66097 15.5657 9.93152 15.8937 10.2922C16.0822 10.489 16.2052 10.6858 16.1806 10.7268C16.115 10.8251 15.5657 10.8333 15.4182 10.735C15.3526 10.694 15.2952 10.4972 15.287 10.2513C15.2788 9.91512 15.2296 9.78394 15.041 9.58718C14.9099 9.44781 14.6803 9.30024 14.5327 9.25105C14.3278 9.17726 14.2622 9.10348 14.2212 8.88212C14.1474 8.4886 13.7621 8.18526 13.3358 8.18526C13.098 8.18526 12.9341 8.12787 12.7537 7.9721C12.5241 7.77534 12.4504 7.75894 11.9912 7.79994C11.6633 7.82453 11.4256 7.79994 11.2944 7.72615C11.032 7.57858 10.6385 7.58678 10.4254 7.73435C10.2696 7.84093 10.2204 7.83273 9.87606 7.64417C9.40056 7.38182 8.36756 7.02929 7.36736 6.79154C6.94104 6.68496 6.55572 6.57838 6.52292 6.54558C6.43274 6.4636 6.74428 5.66016 7.05582 5.20105C7.39195 4.69275 8.06422 4.00409 8.21999 4.00409C8.28558 4.00409 8.52333 4.06967 8.73649 4.15986ZM8.1462 7.4966C8.55612 7.61137 9.12181 7.80813 9.41695 7.94751L9.94985 8.19346V8.56239C9.95805 8.88212 9.99904 8.9805 10.2204 9.17726C10.4499 9.38222 10.6713 9.46421 10.9173 9.42322C10.95 9.42322 10.9746 9.44781 10.9746 9.497C10.9746 9.69376 11.4911 10.1529 11.7781 10.2021C11.9421 10.2349 12.2044 10.366 12.352 10.489C12.4995 10.6202 12.7045 10.735 12.8029 10.7432C12.9013 10.7514 13.0488 10.7596 13.1226 10.7677C13.2046 10.7677 13.3686 10.8743 13.4915 10.9891C13.9097 11.3908 14.3524 11.4482 14.8033 11.1695C14.9509 11.0711 15.0328 11.0793 15.328 11.1777C15.7789 11.3416 15.9593 11.3334 16.3446 11.1367C16.5249 11.0465 16.7627 10.9727 16.8775 10.9727C17.1316 10.9727 17.5743 10.7104 17.6891 10.4972C17.7383 10.407 17.9023 10.3086 18.058 10.284C18.386 10.2185 18.8287 9.88232 18.9271 9.61998C18.9681 9.5134 19.1156 9.40682 19.3124 9.34943C19.7961 9.21006 20.0257 8.91492 20.0339 8.44761L20.0421 8.06228L20.6323 7.84093C21.6899 7.43101 23.1984 7.01289 23.2804 7.09488C23.3296 7.14407 23.3296 7.37362 23.2722 7.74255C22.9197 10.0381 20.4766 11.8581 16.8775 12.4976C15.8609 12.678 13.8359 12.6862 12.7783 12.5058C9.84327 12.0057 7.58052 10.6284 6.75248 8.83293C6.54752 8.37382 6.38355 7.69336 6.38355 7.28344V7.05388L6.90005 7.16866C7.17879 7.23425 7.74448 7.38182 8.1462 7.4966ZM11.2124 8.17706C11.2944 8.25905 11.3764 8.37382 11.401 8.43941C11.4256 8.5132 11.4829 8.4968 11.6141 8.36562C11.9503 8.02949 12.5569 8.16067 12.6553 8.59518C12.7127 8.86573 12.7865 8.89852 12.9423 8.71816C13.0898 8.53779 13.4915 8.57058 13.6883 8.76735C13.8359 8.91492 13.8523 9.0051 13.8113 9.30024L13.7621 9.66097L14.1474 9.64457C14.4672 9.63637 14.5573 9.66917 14.7213 9.86593C15.2542 10.4808 14.3688 11.2597 13.8031 10.6858C13.6883 10.5792 13.5981 10.4152 13.5981 10.3168C13.5981 10.1447 13.4014 10.0873 13.3112 10.2349C13.1636 10.4808 12.5323 10.1857 12.5323 9.87413C12.5323 9.60358 12.4586 9.57079 12.1962 9.71016C11.983 9.81674 11.9339 9.81674 11.7125 9.70196C11.4829 9.58718 11.319 9.26745 11.3682 9.02969C11.3928 8.90672 11.2452 8.81654 11.1796 8.92311C11.0976 9.05429 10.7205 9.0215 10.5483 8.86573C10.245 8.59518 10.4581 8.02129 10.8681 8.02129C10.9664 8.02129 11.1222 8.08688 11.2124 8.17706Z' fill='%232D337A'/%3E%3Cpath d='M24.2685 14.1044C23.8422 14.2765 23.7766 14.3995 23.7766 15.1046V15.7604L23.5963 15.5883C22.7846 14.8422 21.5385 15.3259 21.1859 16.5311C20.8416 17.7116 21.3663 18.9578 22.2845 19.1546C23.2519 19.3595 24.0964 19.1136 24.4899 18.5069L24.7194 18.1707L24.744 16.0884C24.7686 13.801 24.7932 13.8994 24.2685 14.1044ZM23.2519 16.1867C23.5963 16.3261 23.7766 16.7032 23.7766 17.2935C23.7766 18.1871 23.2109 18.6627 22.5551 18.3183C21.891 17.9822 21.973 16.4245 22.6698 16.1376C22.8994 16.0474 22.924 16.0474 23.2519 16.1867Z' fill='%232D337A'/%3E%3Cpath d='M1.87052 15.4079C1.4606 15.6292 1.17366 16.031 1.06708 16.5229C1.01789 16.7442 0.993294 17.4247 1.00149 18.0314L1.02609 19.1382L1.87872 19.1873L1.92791 16.5393L2.15746 16.3425C2.4608 16.0884 2.82153 16.0884 3.07568 16.3507C3.27244 16.5475 3.28064 16.5803 3.28064 17.8674V19.1791H4.18246V17.9494C4.18246 16.6377 4.23985 16.3835 4.56779 16.2359C4.81374 16.1212 4.94491 16.1212 5.19087 16.2359C5.5188 16.3835 5.57619 16.6377 5.57619 17.9494V19.1791H6.49441L6.46161 17.7608C6.43702 16.4327 6.42882 16.3261 6.23206 15.99C5.81394 15.2439 4.82194 15.0144 4.08408 15.4817C3.73975 15.703 3.69056 15.7112 3.59218 15.5965C3.29704 15.2357 2.39522 15.1373 1.87052 15.4079Z' fill='%232D337A'/%3E%3Cpath d='M8.03576 15.3505C7.64223 15.4735 7.10934 16.031 6.98636 16.4409C6.83879 16.9492 6.86339 17.851 7.04375 18.2445C7.44547 19.1218 8.68343 19.5071 9.64264 19.0644C10.0362 18.884 10.4953 18.4167 10.4953 18.2117C10.4953 18.0396 9.63444 18.097 9.3065 18.2855C8.89659 18.5315 8.40468 18.4659 8.10134 18.1134C7.97017 17.9822 7.87179 17.7936 7.87179 17.7034C7.87179 17.5477 7.92918 17.5395 9.22452 17.5395H10.5773V17.064C10.5691 15.7358 9.37209 14.9242 8.03576 15.3505ZM9.13434 16.1457C9.3229 16.2113 9.59345 16.5967 9.59345 16.8016C9.59345 16.8508 9.27371 16.8836 8.72442 16.8836C7.96197 16.8836 7.86359 16.8672 7.90458 16.7524C7.92918 16.6786 7.95377 16.5885 7.95377 16.5475C7.95377 16.4983 8.05215 16.3753 8.16693 16.2687C8.40468 16.0474 8.76541 16.0064 9.13434 16.1457Z' fill='%232D337A'/%3E%3Cpath d='M12.3071 15.3669C12.1103 15.4325 11.807 15.621 11.6266 15.7932C11.1757 16.2359 11.0691 16.6622 11.0691 18.0478V19.1791H12.0365L12.0693 17.9494C12.0939 16.7524 12.1021 16.7196 12.3071 16.5065C12.4547 16.3589 12.6432 16.2769 12.9056 16.2523L13.2827 16.2031V15.2439L12.9794 15.2521C12.8072 15.2521 12.5039 15.3095 12.3071 15.3669Z' fill='%232D337A'/%3E%3Cpath d='M14.6354 15.3341C13.9058 15.6047 13.4467 16.3261 13.4467 17.1951C13.4467 17.8592 13.5696 18.2691 13.873 18.6463C14.2009 19.0316 14.4961 19.1791 15.1191 19.2365C15.5619 19.2775 15.7012 19.2529 16.0866 19.0808C16.5785 18.8512 16.9392 18.4577 17.0212 18.0478L17.0786 17.7854H16.5703C16.1111 17.7854 16.062 17.8018 15.9882 17.9822C15.8652 18.3101 15.5373 18.4823 15.1929 18.3921C14.7912 18.2937 14.578 17.974 14.5289 17.4329C14.4879 16.8836 14.619 16.4491 14.8978 16.2277C15.2749 15.9326 15.8324 16.072 15.98 16.4901C16.062 16.7196 16.0784 16.7278 16.5785 16.7032C17.0786 16.6786 17.095 16.6704 17.0704 16.4737C17.0212 16.0802 16.7588 15.6948 16.3981 15.4981C15.9964 15.2685 15.0454 15.1865 14.6354 15.3341Z' fill='%232D337A'/%3E%3Cpath d='M18.4066 15.3423C18.0787 15.4571 17.7918 15.7194 17.6606 16.0392C17.4556 16.5065 17.4884 16.5557 18.0295 16.5557C18.4722 16.5557 18.5132 16.5393 18.5624 16.3589C18.6444 16.0228 19.3249 15.8998 19.661 16.1703C19.7102 16.2113 19.7594 16.3343 19.7594 16.4409C19.7594 16.6786 19.5954 16.7524 18.9067 16.8426C18.0705 16.941 17.6114 17.2525 17.4556 17.8018C17.2097 18.7364 17.9475 19.3513 19.1527 19.2201C19.7922 19.1546 20.3169 18.8922 20.5546 18.5315C20.7268 18.2773 20.7432 18.1625 20.7432 17.1378C20.7432 15.7932 20.6612 15.5883 20.0381 15.3751C19.6036 15.2275 18.7838 15.2111 18.4066 15.3423ZM19.7594 17.6624C19.7594 17.9494 19.7102 18.0888 19.5626 18.2363C19.1937 18.6053 18.587 18.6053 18.4476 18.2363C18.3247 17.9084 18.4722 17.646 18.833 17.5477C19.1691 17.4657 19.702 17.3181 19.743 17.3017C19.7512 17.2935 19.7594 17.4575 19.7594 17.6624Z' fill='%232D337A'/%3E%3Cpath d='M26.1541 15.3669C25.7442 15.5555 25.5065 15.8014 25.2851 16.2687C24.949 16.9656 25.0473 17.974 25.4983 18.5889C25.9164 19.1464 26.8264 19.3841 27.6544 19.1464C28.7858 18.8184 29.2777 17.3099 28.6382 16.1376C28.2939 15.4981 27.925 15.2931 27.1051 15.2603C26.6378 15.2521 26.3591 15.2767 26.1541 15.3669ZM27.4167 16.1539C27.843 16.3507 28.0152 17.2853 27.7528 17.9166C27.6134 18.2527 27.1707 18.4823 26.8018 18.4003C26.2607 18.2773 25.9492 17.4903 26.1541 16.7524C26.3263 16.1457 26.851 15.8998 27.4167 16.1539Z' fill='%232D337A'/%3E%3Cpath d='M17.211 19.9252C16.7847 20.0974 16.7191 20.2203 16.7191 20.9254V21.5813L16.5388 21.4173C16.1289 21.0484 15.5796 20.9582 15.0549 21.1796C13.9809 21.6223 13.6529 23.6555 14.522 24.4835C14.8909 24.8278 15.0795 24.9098 15.637 24.9672C16.2436 25.0328 16.9241 24.8442 17.2274 24.5327C17.6702 24.0736 17.7029 23.8604 17.7029 21.7616C17.7029 19.6465 17.7275 19.7202 17.211 19.9252ZM16.178 21.9666C16.4978 22.0896 16.7191 22.5077 16.7191 23.016C16.7191 23.7948 16.4486 24.1802 15.8993 24.1802C15.3664 24.1802 15.0631 23.7866 15.0467 23.0734C15.0385 22.188 15.5222 21.7124 16.178 21.9666Z' fill='%2340B79B'/%3E%3Cpath d='M18.5228 20.9008H19.5066V19.917H18.5228V20.9008Z' fill='%2340B79B'/%3E%3Cpath d='M20.4084 22.2535C20.4084 24.9508 20.3838 24.8606 21.1709 24.959C21.8431 25.041 21.9661 24.9836 21.9661 24.5491C21.9661 24.2048 21.9579 24.1884 21.7038 24.1638L21.4332 24.1392L21.4086 22.9258C21.3922 21.7944 21.4004 21.7206 21.5398 21.7206C21.7447 21.7206 21.9661 21.4665 21.9661 21.2451C21.9661 21.0976 21.9169 21.0648 21.6792 21.0648H21.3922V20.6549C21.3922 20.1302 21.2037 19.917 20.7363 19.917H20.4084V22.2535Z' fill='%2340B79B'/%3E%3Cpath d='M11.5296 20.0564C11.505 20.0974 11.4558 20.2613 11.4066 20.4253L11.3246 20.7368H11.7509C12.1854 20.7368 12.1854 20.7368 12.2756 20.4171C12.333 20.2449 12.374 20.081 12.374 20.0482C12.374 19.9744 11.5706 19.9826 11.5296 20.0564Z' fill='%2340B79B'/%3E%3Cpath d='M4.62651 21.1878C3.88046 21.4747 3.47874 22.1716 3.48694 23.1554C3.48694 23.7948 3.65911 24.2212 4.06902 24.6147C4.36417 24.8934 4.7249 25 5.34797 25C6.13502 25 6.68431 24.6803 6.97125 24.0572C7.209 23.5489 7.19261 23.5243 6.59413 23.5243C6.2006 23.5243 6.06123 23.5571 6.06123 23.6391C6.06123 23.6965 5.98745 23.844 5.88907 23.967C5.75789 24.131 5.65131 24.1802 5.40536 24.1802C5.23319 24.1802 5.02824 24.1556 4.95445 24.131C4.56913 23.9834 4.42155 22.8028 4.7249 22.2781C5.02004 21.7698 5.81528 21.7862 6.00384 22.2945C6.09402 22.5323 6.11862 22.5405 6.57773 22.5405C7.15981 22.5405 7.2172 22.4421 6.95485 21.9092C6.69251 21.3927 6.26619 21.1468 5.51194 21.1058C5.13481 21.0812 4.84787 21.1058 4.62651 21.1878Z' fill='%2340B79B'/%3E%3Cpath d='M11.0295 21.1878C10.6441 21.3271 10.2834 21.6551 10.0539 22.0896C9.8079 22.5569 9.8161 23.5899 10.0621 24.0736C10.3982 24.7295 11.0459 25.041 11.9559 24.9836C12.4314 24.959 12.5954 24.9098 12.8823 24.7131C13.0709 24.5737 13.3004 24.3441 13.3824 24.1966L13.5382 23.9342H13.0135C12.6937 23.9424 12.4396 23.9834 12.3412 24.0572C12.251 24.1228 12.0051 24.1802 11.7837 24.1802C11.4722 24.1802 11.341 24.1392 11.1524 23.9506C11.0131 23.8276 10.8983 23.6391 10.8819 23.5243L10.8573 23.3193L12.2428 23.2947L13.6283 23.2783L13.5792 22.8028C13.489 21.7206 12.7757 21.0566 11.7263 21.0648C11.5214 21.073 11.2098 21.1222 11.0295 21.1878ZM12.1526 21.983C12.3822 22.106 12.5298 22.2945 12.538 22.4749C12.538 22.6061 12.4478 22.6225 11.7181 22.6225C10.7917 22.6225 10.7097 22.5569 11.136 22.1224C11.3984 21.86 11.8247 21.8026 12.1526 21.983Z' fill='%2340B79B'/%3E%3Cpath d='M23.4008 21.2041C22.2203 21.819 21.9497 23.4669 22.8679 24.4589C23.2369 24.8606 23.614 25 24.3109 25C25.4586 24.9918 26.1473 24.2375 26.1473 22.9832C26.1473 22.1634 25.7292 21.4665 25.0651 21.1878C24.6634 21.0238 23.7288 21.032 23.4008 21.2041ZM24.8356 22.1142C25.0979 22.3765 25.2045 22.8602 25.1225 23.3767C25.0323 23.885 24.7044 24.1802 24.2289 24.1802C23.6386 24.1802 23.3598 23.8112 23.3598 23.0324C23.3598 22.2535 23.6386 21.8928 24.2453 21.8846C24.5322 21.8846 24.647 21.9338 24.8356 22.1142Z' fill='%2340B79B'/%3E%3Cpath d='M8.65191 21.2697C8.25019 21.4091 7.88946 21.7534 7.6927 22.1716C7.56973 22.4421 7.53693 22.7045 7.53693 23.7456V25H8.52074V23.8522C8.52074 23.1964 8.56173 22.6307 8.61092 22.5159C8.7257 22.2699 9.00444 22.1306 9.38157 22.1306H9.66851V21.1468H9.32418C9.12742 21.155 8.83228 21.2041 8.65191 21.2697Z' fill='%2340B79B'/%3E%3Cpath d='M18.5228 25H19.5066V21.2287H18.5228V25Z' fill='%2340B79B'/%3E%3C/svg%3E") no-repeat center center / contain;
+    font-size: 15px;
+    margin-bottom: 0px;
+    background-size: 35px;
+    position: relative;
+    left: 2%;
+}
+
+
+#payment-group-MercadoPagoWalletPaymentGroup>span::after {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 24px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='16' viewBox='0 0 26 16' fill='none'%3E%3Cpath d='M25.9178 7.56208C25.9178 3.39612 20.1156 0 12.9589 0C5.80222 0 0 3.3955 0 7.56208V8.00403C0 12.4235 5.07071 16 12.9589 16C20.8948 16 25.92 12.4216 25.92 8.00403L25.9178 7.56208Z' fill='%232D3277'/%3E%3Cpath d='M25.4214 7.55544C25.4214 11.484 19.8452 14.6669 12.9607 14.6669C6.07625 14.6669 0.5 11.4834 0.5 7.55544C0.5 3.62749 6.07625 0.443359 12.9607 0.443359C19.8452 0.443359 25.4214 3.63059 25.4214 7.55544Z' fill='%23009EE3'/%3E%3Cpath d='M8.82641 5.31411C8.81981 5.32526 8.69508 5.43807 8.77653 5.53229C8.97054 5.66893 9.20246 5.76172 9.45053 5.80194C9.69859 5.84216 9.95468 5.8285 10.1948 5.76225C10.6752 5.59144 11.1125 5.34465 11.4832 5.03517C11.9114 4.68713 12.4079 4.40462 12.9506 4.20025C13.2939 4.08782 13.6726 4.07906 14.0226 4.17545C14.3814 4.295 14.7123 4.46729 14.9999 4.68435C15.8525 5.25646 19.2811 7.9255 19.8732 8.38729C21.6316 7.70778 23.4673 7.1813 25.3519 6.81598C25.032 5.37448 24.1084 4.07847 22.7501 3.16511C20.775 3.9052 18.3611 4.29136 16 3.26304C15.2032 2.94023 14.3344 2.76403 13.451 2.74609C11.5793 2.78514 10.7671 3.50788 9.90865 4.27339L8.82641 5.31411Z' fill='white'/%3E%3Cpath d='M19.7379 8.67563C19.6975 8.6434 15.7069 5.52807 14.8029 4.92248C14.4931 4.67472 14.1036 4.50977 13.6833 4.44831C13.5039 4.43551 13.3232 4.45106 13.1506 4.49417C12.6128 4.67583 12.1185 4.93858 11.692 5.2696C11.2868 5.61233 10.8015 5.88 10.2671 6.05555C9.73099 6.1532 9.17105 6.07827 8.69692 5.84543C8.5835 5.78286 8.49325 5.69457 8.43647 5.59067C8.4043 5.51046 8.39975 5.42417 8.42339 5.34187C8.44703 5.25956 8.49787 5.18463 8.56999 5.12579L9.67056 4.06338C9.79896 3.94933 9.92736 3.83528 10.0594 3.72309C9.71932 3.76876 9.3838 3.8361 9.05572 3.92454C8.67763 4.0374 8.28224 4.10358 7.88177 4.12103C7.47966 4.08486 7.08035 4.02919 6.68581 3.95429C5.58916 3.70211 4.52474 3.35891 3.50809 2.92969C2.01831 3.83996 0.979322 5.18326 0.59082 6.70143C0.816071 6.75474 1.17781 6.84895 1.33043 6.88119C4.87354 7.58409 5.97703 8.30683 6.17294 8.45931C6.28714 8.34256 6.43227 8.25014 6.59656 8.18952C6.76085 8.1289 6.93971 8.10178 7.1187 8.11033C7.29826 8.12123 7.47237 8.16728 7.62723 8.24485C7.78208 8.32242 7.91343 8.42937 8.0109 8.55724C8.24574 8.38627 8.54539 8.29213 8.85541 8.29195C9.02855 8.29356 9.20008 8.3204 9.36241 8.37129C9.5234 8.41821 9.67056 8.4938 9.79398 8.59293C9.9174 8.69206 10.0142 8.81242 10.0778 8.94588C10.2323 8.88336 10.4017 8.85136 10.573 8.85229C10.7763 8.855 10.9764 8.89453 11.16 8.9682C11.4226 9.08388 11.633 9.26927 11.7587 9.49585C11.8844 9.72243 11.9184 9.97761 11.8556 10.2221C11.9023 10.2174 11.9494 10.2152 11.9965 10.2153C12.2434 10.2172 12.4852 10.2746 12.6971 10.3817C12.909 10.4888 13.0833 10.6417 13.202 10.8246C13.3269 11.0126 13.3951 11.2238 13.4005 11.4394C13.4058 11.6549 13.3482 11.8683 13.2328 12.0606C13.5953 12.2597 14.0207 12.3612 14.4529 12.3519C14.5613 12.3514 14.6683 12.3314 14.7668 12.2931C14.8652 12.2549 14.9528 12.1992 15.0238 12.13C15.059 12.0854 15.0971 12.0321 15.0619 11.9968L14.0626 11.005C14.0626 11.005 13.8975 10.8662 13.9525 10.8122C14.0076 10.7583 14.1103 10.8364 14.1829 10.8897C14.6914 11.2691 15.3128 11.8412 15.3128 11.8412C15.3128 11.8412 15.3649 11.9199 15.5939 11.9565C15.7318 11.9776 15.8735 11.9738 16.0097 11.9455C16.1459 11.9172 16.2734 11.865 16.3841 11.7922C16.4482 11.7445 16.5062 11.6913 16.5572 11.6335C16.5539 11.6366 16.5502 11.6393 16.5462 11.6416C16.6168 11.5537 16.6521 11.449 16.647 11.3429C16.6418 11.2367 16.5965 11.1348 16.5176 11.0521L15.3503 9.88309C15.3503 9.88309 15.1852 9.74548 15.2402 9.69032C15.2952 9.63515 15.398 9.71511 15.4713 9.76904C15.8382 10.0449 16.3628 10.5128 16.8654 10.9467C17.0299 11.0472 17.2294 11.0984 17.4323 11.0921C17.6351 11.0858 17.8297 11.0224 17.985 10.912C18.1171 10.8447 18.2253 10.7486 18.2983 10.6337C18.3712 10.5189 18.4062 10.3895 18.3996 10.2593C18.3752 10.096 18.2887 9.94368 18.1531 9.82544L16.5565 8.39546C16.5565 8.39546 16.3877 8.26716 16.4464 8.20269C16.4956 8.14753 16.6042 8.22687 16.6761 8.28017C17.1838 8.65952 18.5596 9.78391 18.5596 9.78391C18.7194 9.87697 18.9099 9.92518 19.104 9.92174C19.2981 9.91829 19.486 9.86335 19.641 9.76469C19.7439 9.70963 19.8297 9.63473 19.8916 9.54615C19.9535 9.45757 19.9896 9.35785 19.9969 9.25518C20.0032 9.14873 19.9834 9.04233 19.9389 8.94261C19.8943 8.84289 19.8259 8.75201 19.7379 8.67563Z' fill='white'/%3E%3Cpath d='M12.0019 10.4894C11.8151 10.5129 11.6311 10.5496 11.4516 10.5991C11.4318 10.5873 11.4662 10.5011 11.4905 10.4478C11.5147 10.3945 11.8397 9.52304 11.0466 9.21993C10.8697 9.13525 10.664 9.10372 10.4632 9.13052C10.2624 9.15731 10.0782 9.24083 9.94085 9.36745C9.9071 9.39844 9.89242 9.39596 9.88875 9.35691C9.88699 9.19713 9.82695 9.04168 9.71678 8.91179C9.60662 8.78189 9.4517 8.68387 9.27317 8.63108C9.02322 8.5642 8.75389 8.57025 8.50851 8.64827C8.26312 8.72629 8.05593 8.87174 7.9202 9.06125C7.89945 8.89267 7.81181 8.73496 7.67154 8.61377C7.53128 8.49257 7.34663 8.415 7.14759 8.39368C6.94966 8.37835 6.75151 8.42107 6.58649 8.51466C6.42146 8.60824 6.29963 8.74698 6.24146 8.90753C6.17642 9.07009 6.17536 9.24605 6.23844 9.40915C6.30151 9.57225 6.42534 9.71374 6.59144 9.8125C6.75392 9.90608 6.95041 9.94796 7.146 9.93071C7.34159 9.91346 7.52362 9.8382 7.65972 9.71829C7.66486 9.72201 7.66707 9.72944 7.66413 9.74432C7.60256 9.9796 7.64037 10.2257 7.77103 10.4399C7.90169 10.6541 8.11694 10.8229 8.37949 10.9171C8.51834 10.9647 8.67003 10.9791 8.81795 10.9588C8.96588 10.9385 9.10432 10.8841 9.21813 10.8018C9.2871 10.7578 9.29811 10.777 9.29151 10.834C9.26802 11.0042 9.31648 11.1759 9.42832 11.3188C9.54015 11.4617 9.70817 11.5666 9.9027 11.615C10.0522 11.6801 10.2232 11.7006 10.3883 11.6733C10.5533 11.646 10.7025 11.5723 10.8118 11.4644C10.8895 11.4024 10.9101 11.4117 10.9145 11.509C10.9361 11.6871 11.0183 11.8562 11.1512 11.9956C11.2842 12.1351 11.4622 12.239 11.6636 12.2948C11.865 12.3506 12.0812 12.3558 12.2861 12.3099C12.491 12.2639 12.6757 12.1688 12.8179 12.036C12.9601 11.9032 13.0537 11.7385 13.0873 11.5617C13.1209 11.3849 13.0931 11.2036 13.0073 11.0399C12.9215 10.8762 12.7813 10.737 12.6038 10.6391C12.4263 10.5413 12.2189 10.4891 12.007 10.4887L12.0019 10.4894Z' fill='white'/%3E%3Cpath d='M19.8891 8.30326C18.6602 7.34622 15.8185 5.14206 15.0466 4.62759C14.7515 4.40544 14.4122 4.22916 14.0444 4.10692C13.8855 4.06236 13.7194 4.03935 13.552 4.03874C13.3391 4.04126 13.128 4.07287 12.9269 4.13234C12.3827 4.33473 11.8845 4.61605 11.4551 4.96355L11.4301 4.9809C11.0681 5.28349 10.6417 5.52555 10.1733 5.69434C10.0209 5.72507 9.86476 5.74067 9.70809 5.74083C9.55008 5.75248 9.39094 5.73648 9.24058 5.69382C9.09023 5.65116 8.9519 5.58276 8.83425 5.49289C8.81224 5.4681 8.82617 5.43091 8.87753 5.36892L8.88414 5.36087L9.96563 4.32139C10.8131 3.5658 11.6128 2.85236 13.4545 2.81455H13.5462C14.3858 2.84563 15.2093 3.01956 15.9674 3.32592C16.985 3.78172 18.1175 4.02387 19.2692 4.03193C20.5308 4.01141 21.7701 3.74655 22.8915 3.25774C22.7506 3.15195 22.6039 3.04865 22.4513 2.94782C21.4585 3.35467 20.3731 3.57461 19.2699 3.59246C18.1927 3.58364 17.1338 3.35617 16.1824 2.92923C15.359 2.59207 14.462 2.40215 13.5476 2.37137H13.4434C12.3363 2.36009 11.2644 2.69954 10.4389 3.32282C9.92825 3.34787 9.42399 3.43127 8.93989 3.57076C8.59943 3.67246 8.24379 3.73338 7.88334 3.75175C7.7476 3.75175 7.50401 3.7406 7.482 3.73998C6.18177 3.53538 4.90921 3.22077 3.68354 2.80092C3.52873 2.89885 3.38052 2.99741 3.23525 3.10216C4.55261 3.59387 5.93502 3.95034 7.35287 4.16395C7.52162 4.17387 7.70213 4.19122 7.88262 4.19122C8.28907 4.17383 8.69052 4.10767 9.07491 3.99473C9.30456 3.93709 9.55769 3.87448 9.82329 3.82923C9.75237 3.89163 9.68143 3.95465 9.61051 4.01829L8.50993 5.07822C8.42644 5.14666 8.36817 5.23405 8.34213 5.32984C8.3161 5.42563 8.32342 5.52574 8.3632 5.6181C8.42551 5.73476 8.52575 5.83407 8.65227 5.90447C9.00427 6.0829 9.40844 6.17438 9.81888 6.16852C9.97544 6.16921 10.1316 6.15444 10.2841 6.12451C10.83 5.94731 11.3259 5.67534 11.7398 5.32616C12.1596 5.00195 12.6443 4.74337 13.1712 4.56251C13.3009 4.5316 13.4349 4.51514 13.5696 4.51354C13.6042 4.51337 13.6388 4.51523 13.6731 4.51912C14.0796 4.57953 14.456 4.7397 14.7553 4.97966C15.6571 5.58401 19.6485 8.69872 19.6874 8.73033C19.7674 8.79924 19.8299 8.88125 19.8711 8.97133C19.9122 9.0614 19.9311 9.15763 19.9266 9.2541C19.9205 9.34593 19.8884 9.43518 19.8329 9.51435C19.7775 9.59352 19.7004 9.66029 19.6081 9.70906C19.4551 9.80165 19.2725 9.85306 19.0843 9.85659C18.9195 9.85654 18.7585 9.81488 18.622 9.73696C18.6073 9.72642 17.2397 8.6076 16.7364 8.23198C16.6744 8.1733 16.591 8.13382 16.4994 8.11979C16.479 8.11956 16.4589 8.12344 16.4406 8.1311C16.4224 8.13875 16.4066 8.14996 16.3945 8.1638C16.3152 8.25058 16.404 8.37144 16.5082 8.45078L18.1047 9.88324C18.2248 9.98893 18.3019 10.1242 18.3249 10.2694C18.33 10.3874 18.2975 10.5043 18.2308 10.608C18.164 10.7117 18.0655 10.7984 17.9455 10.8589C17.7816 10.9624 17.5837 11.0207 17.3791 11.0256C17.2158 11.0248 17.0567 10.9816 16.9235 10.9016L16.6938 10.7002C16.2749 10.3326 15.8427 9.95266 15.5265 9.71774C15.4639 9.65983 15.3802 9.62122 15.2888 9.60803C15.2698 9.60786 15.2509 9.61115 15.2336 9.61767C15.2163 9.6242 15.2008 9.63381 15.1882 9.64584C15.1523 9.68179 15.1273 9.74378 15.2169 9.85287C15.2414 9.88119 15.2683 9.90791 15.2975 9.93283L16.4627 11.1012C16.5295 11.1706 16.5681 11.2563 16.5727 11.3456C16.5773 11.4349 16.5478 11.5231 16.4884 11.5971L16.4473 11.6436C16.4129 11.6767 16.3762 11.708 16.3372 11.7372C16.1746 11.8444 15.9734 11.9012 15.7671 11.8983C15.7142 11.8984 15.6614 11.8942 15.6094 11.886C15.5236 11.8797 15.4427 11.8494 15.3797 11.7998L15.3658 11.7868C15.302 11.7248 14.7142 11.193 14.2278 10.8304C14.1687 10.7739 14.0889 10.7359 14.0011 10.7225C13.981 10.7225 13.9612 10.7262 13.9431 10.7333C13.925 10.7405 13.9089 10.751 13.8961 10.764C13.8 10.8576 13.9438 10.999 14.0062 11.0504L15.0011 12.0285C14.9926 12.0508 14.9797 12.0718 14.963 12.0905C14.9278 12.1345 14.8067 12.2424 14.4494 12.2827C14.4056 12.2875 14.3615 12.2898 14.3173 12.2895C13.9735 12.2695 13.6401 12.1812 13.3444 12.0316C13.4509 11.829 13.4983 11.6078 13.4827 11.3865C13.4672 11.1652 13.389 10.9502 13.2549 10.7597C13.1269 10.5746 12.9443 10.4208 12.7249 10.3131C12.5055 10.2054 12.2569 10.1477 12.0032 10.1454H11.9481C11.9929 9.89824 11.9444 9.64541 11.8094 9.42286C11.6744 9.20031 11.4598 9.01937 11.1961 8.90575C11.0024 8.82717 10.7909 8.78488 10.5761 8.78178C10.4203 8.781 10.2658 8.80584 10.1212 8.85492C10.0491 8.72731 9.94774 8.61302 9.82307 8.51865C9.6984 8.42429 9.55286 8.35172 9.39481 8.30512C9.22473 8.25094 9.04463 8.22261 8.86286 8.22144C8.56297 8.22067 8.2713 8.30419 8.03376 8.45884C7.92758 8.3377 7.79146 8.23752 7.63486 8.16527C7.47826 8.09302 7.30493 8.05043 7.12689 8.04045C6.94945 8.03229 6.77205 8.05715 6.60724 8.11327C6.44242 8.1694 6.29419 8.25541 6.17305 8.36525C5.86342 8.1545 4.63591 7.45841 1.35033 6.79394C1.19111 6.76233 0.825732 6.66998 0.601948 6.60799C0.564773 6.76667 0.536655 6.927 0.517578 7.08899C0.517578 7.08899 1.12288 7.21854 1.24247 7.24209C4.59996 7.90718 5.70788 8.5983 5.89571 8.72971C5.80913 8.91674 5.78061 9.11937 5.81284 9.31834C5.84507 9.51731 5.937 9.706 6.07988 9.8665C6.21685 10.0218 6.40265 10.1414 6.61615 10.2119C6.82965 10.2824 7.06229 10.3008 7.28757 10.2651C7.33305 10.4831 7.44423 10.6876 7.61039 10.8588C7.77655 11.03 7.9921 11.1621 8.23627 11.2426C8.37838 11.2926 8.53061 11.3189 8.68456 11.32C8.78117 11.3202 8.8774 11.3095 8.97072 11.2884C9.07897 11.501 9.25592 11.6836 9.48133 11.8152C9.70674 11.9467 9.97149 12.0219 10.2452 12.0322C10.377 12.0321 10.5077 12.0111 10.6304 11.9703C10.7183 12.1696 10.8642 12.3471 11.0546 12.4864C11.245 12.6257 11.4738 12.7223 11.7199 12.7674C11.9634 12.8082 12.2152 12.7949 12.4508 12.7288C12.6863 12.6626 12.8974 12.5458 13.0634 12.3899C13.4425 12.5876 13.8739 12.7027 14.3188 12.7246C14.3826 12.7245 14.4463 12.7209 14.5095 12.7141C14.6751 12.7087 14.8373 12.6726 14.9845 12.6083C15.1317 12.544 15.2604 12.4532 15.3614 12.3422C15.3811 12.3179 15.3985 12.2924 15.4135 12.2659C15.5434 12.3014 15.679 12.3202 15.8155 12.3217C16.113 12.3157 16.3992 12.2243 16.6271 12.0626C16.8745 11.9153 17.0457 11.6935 17.1054 11.4428V11.4285C17.1946 11.445 17.2856 11.4533 17.3769 11.4533C17.6772 11.4493 17.9686 11.3668 18.2111 11.2171C18.4011 11.1158 18.5564 10.9742 18.6614 10.8064C18.7665 10.6386 18.8177 10.4504 18.8099 10.2607C18.9002 10.2777 18.9925 10.2862 19.085 10.2861C19.3651 10.283 19.6376 10.2082 19.8664 10.0717C20.0223 9.98475 20.1525 9.86862 20.2466 9.7323C20.3408 9.59599 20.3965 9.44317 20.4094 9.28571C20.4291 9.0631 20.369 8.84063 20.2369 8.64727C21.9093 8.03788 23.642 7.55398 25.4148 7.20118C25.3996 7.04044 25.3751 6.88072 25.3414 6.72204C23.4677 7.09197 21.643 7.62068 19.895 8.30016L19.8891 8.30326ZM12.0017 12.37C11.7331 12.3654 11.4772 12.2726 11.2882 12.1113C11.0992 11.95 10.992 11.7329 10.9892 11.506C10.9892 11.4645 10.9833 11.3541 10.8791 11.3541C10.8308 11.3593 10.7867 11.3799 10.7558 11.4118C10.6936 11.4718 10.6177 11.5205 10.5325 11.555C10.4474 11.5895 10.3549 11.6091 10.2606 11.6126C10.1467 11.6112 10.0343 11.5901 9.93041 11.5506C9.75262 11.5086 9.59836 11.4145 9.49524 11.2851C9.39212 11.1557 9.34688 10.9996 9.36765 10.8446C9.3732 10.8264 9.37416 10.8074 9.3705 10.7888C9.36683 10.7702 9.35863 10.7525 9.34638 10.7368L9.31116 10.7083H9.27448C9.23715 10.7109 9.20183 10.7237 9.17395 10.7448C9.03501 10.8408 8.86252 10.8955 8.68311 10.9004C8.58849 10.8994 8.49502 10.8828 8.40796 10.8514C8.1619 10.7637 7.96034 10.6054 7.83876 10.4045C7.71717 10.2037 7.68334 9.97296 7.74321 9.75307C7.74722 9.73696 7.7463 9.72024 7.74053 9.70451C7.73475 9.68879 7.72429 9.67456 7.71019 9.6632L7.65517 9.62414L7.60526 9.66753C7.48109 9.77743 7.3148 9.84653 7.13596 9.86254C6.95713 9.87854 6.77736 9.84041 6.62869 9.75493C6.47673 9.66469 6.36345 9.53531 6.30578 9.38615C6.24812 9.23698 6.24916 9.07606 6.30878 8.92744C6.36215 8.78071 6.47373 8.654 6.62475 8.56865C6.77576 8.4833 6.95698 8.44452 7.13789 8.45884C7.31937 8.47913 7.48743 8.55058 7.61487 8.66161C7.7423 8.77264 7.82165 8.91676 7.84005 9.07063L7.86721 9.2603L7.98387 9.09976C8.10829 8.92017 8.30211 8.78227 8.53275 8.70923C8.76339 8.63619 9.01676 8.63248 9.25026 8.69872C9.41306 8.7473 9.55419 8.83711 9.65437 8.95591C9.75456 9.0747 9.80892 9.21671 9.81008 9.36257C9.81815 9.45493 9.89153 9.46051 9.90621 9.46051C9.92421 9.45926 9.94167 9.45481 9.95748 9.44744C9.97329 9.44006 9.98708 9.42994 9.99792 9.41774C10.0713 9.34863 10.1611 9.29341 10.2615 9.2557C10.3619 9.21799 10.4706 9.19864 10.5805 9.19893C10.7314 9.20183 10.8799 9.23161 11.0163 9.28633C11.7603 9.57084 11.4228 10.4157 11.4191 10.4244C11.3553 10.5644 11.3524 10.6264 11.4125 10.6618L11.4419 10.6742H11.4632C11.5138 10.6691 11.5633 10.6576 11.6099 10.6401C11.7361 10.5954 11.8703 10.5689 12.0068 10.562C12.1907 10.5599 12.3717 10.6004 12.5302 10.6792C12.6887 10.758 12.8185 10.8721 12.9056 11.0089C12.9974 11.1494 13.0456 11.3073 13.0456 11.4679C13.0456 11.6284 12.9974 11.7863 12.9056 11.9269C12.8185 12.0637 12.6887 12.1777 12.5302 12.2565C12.3717 12.3353 12.1907 12.3759 12.0068 12.3738L12.0017 12.37Z' fill='%232D3277'/%3E%3C/svg%3E") no-repeat center center / contain;
     font-size: 15px;
     margin-bottom: 0px;
     background-size: 35px;
@@ -5685,24 +5871,30 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     margin-bottom: 5px;
     padding: 0;
     text-decoration: none;
-    color: var(--forCode-text-body-dark);
-    font-family: "Roboto", sans-serif;
-    font-size: var(--forCode-font-size-lg);
+    color: var(--forCode-text-button-secondary);
+    font-family:
+    "Roboto", sans-serif;
+    font-size: var(
+    --forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-4xl);
-    letter-spacing: var(--forCode-spacing-system-none);
+    font-weight: var(
+    --forCode-font-weight-semibold);
+    line-height: var(
+    --forCode-font-line-height-4xl);
+    letter-spacing: var(
+    --forCode-spacing-system-none);
+    text-decoration: underline;
 }
 
 [class*="-payment-group"] a {
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #0041A8;
+    color: var(--forCode-text-button-secondary);
     font-family: "Roboto", sans-serif;
-    font-size: var(--forCode-font-size-sm);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     margin-bottom: 5px;
     padding: 0;
@@ -5710,25 +5902,27 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }
 
 [class*="-payment-group"] a:hover {
-    color: #0041A8;
+    color: var(--forCode-text-button-secondary);
+    text-decoration: underline;
 }
 
 [class*="-payment-group"] #dont-know-postal-code {
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #0041A8;
+    color: var(--forCode-text-button-secondary);
     font-family: "Roboto", sans-serif;
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     margin-bottom: 5px;
     padding: 0;
     text-decoration: none;
     position: absolute;
-    left: 32%;
-    bottom: 13px;
+    left: 44%;
+    bottom: 5px;
+    width: 38%;
 }
 
 #app-container .AddressForm input {
@@ -5750,10 +5944,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     display: none;
 }
 
-.orderform-template-holder #payment-data .payment-group-item.active {
+.orderform-template-holder #payment-data p.link.link-gift-card.active,
+.orderform-template-holder #payment-data .payment-group-item.active,
+.orderform-template-holder #payment-data .payment-group-item:hover {
     box-shadow: none;
     border: 1.5px solid var(--forCode-stroke-button-primary-default) !important;
-    background: var(--forCode-surface-background-background-selected) !important;
 }
 
 .orderform-template-holder #payment-data .payment-group-item.active>span {
@@ -5776,42 +5971,25 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 @media(max-width: 1025px) {
     .orderform-template-holder #payment-data .link-box-edit .icon-edit {
-        right: -70%;
+        right: -5%;
     }
 }
 
-.payment-data .accordion-heading {
-    background: #FFF;
-    width: 40.95%;
-    height: 75px;
-    border-radius: 5px 5px 0px 0px;
-    padding: 32px 32px 12px 32px;
-}
-
-@media(max-width: 1199px) {
-    .payment-data .accordion-heading {
-        width: 90.7%;
-    }
-}
-
-@media(max-width: 1010px) {
-    .payment-data .accordion-heading {
-        width: 93.4%;
-    }
-}
-
-@media(max-width: 990px) {
-    .payment-data .accordion-heading {
-        width: 100%;
-        padding: 0px;
-    }
+.orderform-template-holder #payment-data  {
+    width: 100%;
+    min-height: 124px;
+    padding: 32px !important;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-light);
+    background: var(--forCode-surface-background-card-default) !important;
+    box-sizing: border-box;
 }
 
 @media(max-width: 1199px) {
 
     .pull-right.payment-data.span6,
     .pull-right.payment-data.span6 .accordion-heading {
-        background: #fff !important;
+        /* background: #fff !important; */
     }
 
     .vtex-pickup-points-modal-3-x-askGeolocationBtn {
@@ -5820,57 +5998,71 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 }
 
+@media(max-width: 1025px) {
+
+    .orderform-template-holder #payment-data  {
+        padding: 24px 12px !important;
+    }
+
+}
+
 @media(min-width: 1200px) {
     #payment-data .box-step form.form-step {
         display: flex !important;
-        flex-direction: column;
+        flex-direction: row;
         position: relative;
-        padding-top: 0px !important;
+        padding-top: 16px !important;
+        display: grid !important;
+        grid-template-areas:
+            "a b"
+            "c b";
+        column-gap: 20px;
     }
 }
 
 .payment-data .box-step .form-step .payment-group {
-    width: 388px !important;
-    max-width: 388px !important;
-    padding: 0px 32px 32px 32px !important;
+    width: 100% !important;
+    max-width: 354px !important;
+    padding: 0px !important;
     margin: 0px !important;
-    border-radius: 0 0 5px 5px !important;
+    border-radius: 0 !important;
     display: block !important;
-    border: 0 !important;
-    background: #FFF !important;
-    height: fit-content;
     box-sizing: border-box;
+    grid-area: c;
+}
+
+@media (min-width: 1200px) {
+    .payment-data .box-step .form-step .payment-group {
+        padding-right: 32px !important;
+    }
 }
 
 .orderform-template-holder #payment-data .steps-view {
-    margin-top: -3rem !important;
-    padding: 1rem 1.5rem !important;
-    max-width: 388px;
-    box-sizing: border-box;
-    min-height: calc(100% + 120px);
-    position: absolute;
-    right: 0;
-    width: 50% !important;
+    padding: 0 !important;
+    width: 100% !important;
     background: #fff !important;
     display: block !important;
-    top: -71px;
+    grid-area: b;
+    box-sizing: border-box;
+    padding-right: 16px !important;
 }
 
 @media(min-width: 1200px) {
     .orderform-template-holder #payment-data .steps-view {
-        max-height: 626px;
+        max-height: 486px;
         overflow: auto;
+        margin-top: -45px;
+        min-height: calc(100% + 45px);
     }
 }
 
 @media(max-width: 1210px) {
     .payment-data .box-step .form-step .payment-group {
-        width: 346px !important;
-        max-width: 346px !important;
+        max-width: 292px !important;
     }
 
     .orderform-template-holder #payment-data .steps-view {
-        width: 47% !important;
+        /* width: 47% !important; */
     }
 }
 
@@ -5883,34 +6075,42 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }
 
 .orderform-template-holder #payment-data .steps-view::-webkit-scrollbar-thumb {
-    background: #cbcbcb;
+    background: #3e3d43;
     border-radius: 6px;
 }
 
 .orderform-template-holder #payment-data .steps-view::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #9b9b9b;
 }
 
 .orderform-template-holder #payment-data .gift-card-section.form-step.box-default {
-    position: unset;
-    grid-area: a;
-    padding: 0px 32px;
-    max-width: 324px;
-    box-sizing: content-box;
+    margin: 0px !important;
+    background: #FFF;
+    position: unset !important;
+    padding: 60px 32px 30px 0;
     border-radius: 0px;
-    display: block !important;
-    padding-bottom: 10px;
+    grid-area: a;
+    width: 100%;
+    max-width: 354px;
+}
+
+.payment-discounts-list h5 {
+    font-family: var(--forCode-font-family-body);
+}
+
+.orderform-template-holder #payment-data .payment-discounts-list table #remove-gift-card {
+    font-size: 12px;
 }
 
 .orderform-template-holder #payment-data p.link.link-gift-card {
     margin: 0px !important;
     background: #FFF;
     position: unset !important;
-    padding: 0px 32px 16px 32px;
+    padding: 60px 32px 30px 0;
     border-radius: 0px;
-    height: fit-content;
-    width: 388px;
-    min-height: 47px;
+    grid-area: a;
+    width: 100%;
+    max-width: 354px;
 }
 
 @media(max-width: 1199px) {
@@ -5918,6 +6118,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
         padding-top: 0px !important;
         width: 100%;
         height: fit-content;
+        margin-top: 59px;
     }
 
     .payment-data .box-step .form-step .payment-group {
@@ -5959,8 +6160,8 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     }
 
     .payment-data .accordion-heading {
-        max-width: 93.6%;
-        width: 100%;
+        /* max-width: 93.6%; */
+        /* width: 100%; */
     }
 }
 
@@ -5975,7 +6176,8 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n+5),
@@ -5986,16 +6188,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
         display: flex;
         height: 44px;
         padding: 8px 16px;
-        border-radius: var(--forCode-spacing-system-xxs);
-        border: 1px solid var(--forCode-stroke-light);
         background: var(--forCode-surface-button-secondary-default);
         transition: none;
-    }
-
-    .orderform-template-holder #payment-data p.link.link-gift-card.active,
-    .orderform-template-holder #payment-data .payment-group-item.active,
-    .orderform-template-holder #payment-data .payment-group-item:hover {
-        border: 1px solid var(--forCode-stroke-button-primary-default) !important;
+        border-radius: var(--forCode-spacing-system-radius-l);
+        border: 1.5px solid var(--forCode-stroke-light);
+        box-shadow: none;
     }
 
     .orderform-template-holder #payment-data p.link.link-gift-card:hover {
@@ -6011,13 +6208,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
         width: 100%;
         text-align: left !important;
         color: var(--forCode-text-body-medium) !important;
-        ;
         font-family: var(--forCode-font-family-body);
-        font-size: var(--forCode-font-size-lg) !important;
-        ;
+        font-size: var(--forCode-font-size-base) !important;
         font-style: normal;
         font-weight: var(--forCode-font-weight-regular);
-        line-height: var(--forCode-font-line-height-4xl);
+        line-height: var(--forCode-font-line-height-2xl) !important;
         letter-spacing: var(--forCode-spacing-system-none);
     }
 }
@@ -6059,7 +6254,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 @media(max-width: 990px) {
     .orderform-template-holder #payment-data p.link.link-gift-card {
         height: fit-content;
-        margin: 5px 0px !important;
+        /* margin: 5px 0px !important; */
         width: fit-content;
         padding: 0px;
     }
@@ -6102,13 +6297,13 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     .orderform-template-holder #payment-data .payment-group-item:first-child:nth-last-child(n+5)~.payment-group-item {
         width: 100%;
         margin-right: 0;
-        border-radius: 4px;
-        border: 1px solid #D9D9D9;
         background: transparent;
         display: flex;
         height: 43px;
         width: 100%;
         padding: 8px 16px;
+        border-radius: var(--forCode-spacing-system-radius-l);
+        border: 1.5px solid var(--forCode-stroke-light);
     }
 
     #payment-group-MercadoCreditoPaymentGroup>span::before {
@@ -6124,7 +6319,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 @media(max-width: 364px) {
     .orderform-template-holder #payment-data {
-        padding: 17px;
+        padding: 24px 12px !important;
     }
 }
 
@@ -6142,10 +6337,10 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     display: block;
     color: var(--forCode-text-body-medium);
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-4xl);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     text-align: start;
 }
@@ -6161,13 +6356,13 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 /*-------------- RESUMEN DE COMPRA EN CHECKOUT --------------*/
 .body-order-form .orderform-template .cart-template.mini-cart h2 {
     border-bottom: 1px solid #E9EAED;
-    padding: 16px 24px !important;
+    padding: 20px 24px !important;
     margin: 0px;
     color: var(--forCode-text-body-dark);
-    font-family: var(--forCode-font-family-titles);
-    font-size: var(--forCode-font-size-lg);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
+    font-weight: var(--forCode-font-weight-semibold);
     line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
@@ -6284,7 +6479,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }
 
 .body-order-form .orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit] {
-    height: 38px !important;
+    height: 44px !important;
 }
 
 /*.body-order-form .orderform-template .cart-template.mini-cart .summary-template-holder button[type=submit]::before {
@@ -6292,13 +6487,14 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }*/
 
 .body-order-form .orderform-template .cart-template.mini-cart .summary-template-holder input[type=text] {
-    height: 46px !important;
+    height: 40px !important;
     max-width: 100%;
 }
 
 .body-order-form .orderform-template .cart-template.mini-cart .summary-totalizers tbody {
     border-top: 0px;
     padding: 24px 0px 15px;
+    border-bottom: 1px solid #E9E9ED;
 }
 
 .body-order-form .orderform-template .cart-template.mini-cart .summary-totalizers tbody td {
@@ -6307,7 +6503,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     font-size: var(--forCode-font-size-sm);
     font-style: normal;
     font-weight: var(--forCode-font-weight-regular);
-    line-height: var(--forCode-font-line-height-2xl);
+    line-height: var(--forCode-font-line-height-xl);
     letter-spacing: var(--forCode-spacing-system-none);
     padding-bottom: 8px !important;
 }
@@ -6316,10 +6512,10 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     padding-bottom: 0px !important;
     color: var(--forCode-text-body-medium) !important;
     font-family: var(--forCode-font-family-body);
-    font-size: var(--forCode-font-size-lg) !important;
+    font-size: var(--forCode-font-size-base) !important;
     font-style: normal;
-    font-weight: var(--forCode-font-weight-semibold);
-    line-height: var(--forCode-font-line-height-4xl);
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
@@ -6377,7 +6573,12 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }
 
 .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.76882 12.6673C9.53357 12.6673 9.30797 12.569 9.14164 12.3942L5.59323 8.66544C5.42692 8.49062 5.3335 8.25356 5.3335 8.00638C5.3335 7.7592 5.42692 7.52213 5.59323 7.34732L9.14164 3.61857C9.22348 3.52954 9.32136 3.45852 9.42959 3.40967C9.53782 3.36081 9.65423 3.3351 9.77202 3.33402C9.88981 3.33294 10.0066 3.35653 10.1156 3.4034C10.2247 3.45027 10.3237 3.51949 10.407 3.60702C10.4903 3.69454 10.5562 3.79862 10.6008 3.91318C10.6454 4.02775 10.6678 4.1505 10.6668 4.27427C10.6658 4.39805 10.6413 4.52037 10.5948 4.6341C10.5483 4.74783 10.4807 4.85069 10.396 4.93668L7.47477 8.00638L10.396 11.0761C10.52 11.2064 10.6045 11.3725 10.6387 11.5533C10.6729 11.7341 10.6554 11.9215 10.5882 12.0918C10.5211 12.2621 10.4074 12.4077 10.2616 12.5102C10.1157 12.6126 9.94425 12.6673 9.76882 12.6673Z' fill='%231F49D6'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.76882 12.6673C9.53357 12.6673 9.30797 12.569 9.14164 12.3942L5.59323 8.66544C5.42692 8.49062 5.3335 8.25356 5.3335 8.00638C5.3335 7.7592 5.42692 7.52213 5.59323 7.34732L9.14164 3.61857C9.22348 3.52954 9.32136 3.45852 9.42959 3.40967C9.53782 3.36081 9.65423 3.3351 9.77202 3.33402C9.88981 3.33294 10.0066 3.35653 10.1156 3.4034C10.2247 3.45027 10.3237 3.51949 10.407 3.60702C10.4903 3.69454 10.5562 3.79862 10.6008 3.91318C10.6454 4.02775 10.6678 4.1505 10.6668 4.27427C10.6658 4.39805 10.6413 4.52037 10.5948 4.6341C10.5483 4.74783 10.4807 4.85069 10.396 4.93668L7.47477 8.00638L10.396 11.0761C10.52 11.2064 10.6045 11.3725 10.6387 11.5533C10.6729 11.7341 10.6554 11.9215 10.5882 12.0918C10.5211 12.2621 10.4074 12.4077 10.2616 12.5102C10.1157 12.6126 9.94425 12.6673 9.76882 12.6673Z' fill='%23DE1269'/%3E%3C/svg%3E");
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 4px;
 }
 
 .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart {
@@ -6385,32 +6586,46 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     text-decoration: none;
     display: flex;
     gap: 2px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid transparent;
+    background: transparent;
+    padding: 8px 4px;
+}
+
+.orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart:hover {
+    border-color: var(--forCode-stroke-default);
+    background: var(--forCode-surface-button-ghost-hover);
+    cursor: pointer;
 }
 
 .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::after {
-    content: "Volver al carrito";
+    content: "Continuar comprando";
     text-decoration: none;
-    color: var(--forCode-text-link-default-state);
+    color: var(--forCode-text-button-secondary);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
+    font-family: var(--forCode-font-family-button);
     font-size: var(--forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-xlg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
-@media(max-width: 990px) {
+@media(max-width: 1025px) {
+    .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::before {
+        top: 2px;
+    }
+    
     .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::after {
-        font-size: var(--forCode-font-size-sm);
-        font-weight: var(--forCode-font-weight-medium);
-        line-height: var(--forCode-font-line-height-lg);
+        font-size: var(--forCode-font-size-base);
+        line-height: var(--forCode-font-line-height-xl);
     }
 }
 
 .orderform-template .cart-template.mini-cart .payment-confirmation-wrap {
     padding: 0px 24px 32px 24px;
     box-sizing: border-box;
+    background: transparent;
 }
 
 .orderform-template .cart-template.mini-cart .payment-confirmation-wrap .payment-submit-wrap {
@@ -6435,9 +6650,11 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     padding: 16px 12px;
     justify-content: center;
     align-items: center;
-    border-radius: var(--forCode-spacing-system-radius-s) !important;
-    background: var(--forCode-surface-button-primary-default);
-    border: 1px solid var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-spacing-system-xl) !important;
+    background: var(
+    --forCode-surface-button-primary-default);
+    border: 1px solid var(
+    --forCode-surface-button-primary-default);
     height: 48px;
     margin: 0px;
     transition: all 150ms ease-in-out;
@@ -6468,23 +6685,24 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 }
 
 .orderform-template .cart-template.mini-cart .payment-confirmation-wrap #payment-data-submit span::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13.3332 5.28265C13.3202 5.11488 13.2443 4.95822 13.1207 4.84409C12.997 4.72997 12.8348 4.66682 12.6665 4.66732H10.6665V4.00065C10.6665 3.29341 10.3856 2.61513 9.88547 2.11503C9.38537 1.61494 8.70709 1.33398 7.99985 1.33398C7.2926 1.33398 6.61433 1.61494 6.11423 2.11503C5.61413 2.61513 5.33318 3.29341 5.33318 4.00065V4.66732H3.33318C3.16491 4.66682 3.00268 4.72997 2.87904 4.84409C2.75539 4.95822 2.67947 5.11488 2.66651 5.28265L2.05718 13.2313C2.04303 13.4145 2.0669 13.5987 2.12729 13.7722C2.18768 13.9457 2.28329 14.1049 2.40811 14.2398C2.53293 14.3746 2.68427 14.4822 2.85264 14.5558C3.02101 14.6293 3.20277 14.6673 3.38651 14.6673H12.6132C12.7969 14.6673 12.9786 14.6293 13.1469 14.5558C13.3152 14.4823 13.4665 14.3747 13.5913 14.24C13.7161 14.1052 13.8118 13.9461 13.8722 13.7727C13.9326 13.5992 13.9566 13.4151 13.9425 13.232L13.3332 5.28265ZM6.66651 7.33398C6.66651 7.5108 6.59628 7.68036 6.47125 7.80539C6.34623 7.93041 6.17666 8.00065 5.99985 8.00065C5.82304 8.00065 5.65347 7.93041 5.52844 7.80539C5.40342 7.68036 5.33318 7.5108 5.33318 7.33398V6.00065H6.66651V7.33398ZM6.66651 4.00065C6.66651 3.64703 6.80699 3.30789 7.05704 3.05784C7.30709 2.80779 7.64623 2.66732 7.99985 2.66732C8.35347 2.66732 8.69261 2.80779 8.94266 3.05784C9.1927 3.30789 9.33318 3.64703 9.33318 4.00065V4.66732H6.66651V4.00065ZM10.6665 7.33398C10.6665 7.5108 10.5963 7.68036 10.4713 7.80539C10.3462 7.93041 10.1767 8.00065 9.99985 8.00065C9.82304 8.00065 9.65347 7.93041 9.52844 7.80539C9.40342 7.68036 9.33318 7.5108 9.33318 7.33398V6.00065H10.6665V7.33398Z' fill='white'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='18' viewBox='0 0 14 18' fill='none'%3E%3Cpath d='M12.729 5.15557H10.471V3.51757C10.4242 2.56901 10.0144 1.67477 9.32648 1.01998C8.63857 0.365193 7.72522 0 6.7755 0C5.82578 0 4.91243 0.365193 4.22452 1.01998C3.53661 1.67477 3.12681 2.56901 3.07999 3.51757V5.15957H0.615997C0.452624 5.15957 0.295942 5.22447 0.18042 5.33999C0.0648975 5.45551 0 5.6122 0 5.77557V17.2756C0 17.4389 0.0648975 17.5956 0.18042 17.7111C0.295942 17.8267 0.452624 17.8916 0.615997 17.8916H12.729C12.8924 17.8916 13.049 17.8267 13.1646 17.7111C13.2801 17.5956 13.345 17.4389 13.345 17.2756V5.77557C13.345 5.6122 13.2801 5.45551 13.1646 5.33999C13.049 5.22447 12.8924 5.15957 12.729 5.15957V5.15557ZM9.239 5.15557H4.312V3.51757C4.32499 2.8728 4.59025 2.25883 5.05083 1.80743C5.51141 1.35604 6.1306 1.10321 6.7755 1.10321C7.42039 1.10321 8.03959 1.35604 8.50017 1.80743C8.96075 2.25883 9.22601 2.8728 9.239 3.51757V5.15557Z' fill='white'/%3E%3C/svg%3E");
     position: relative;
     right: 7px;
     display: block;
     width: 16px;
     height: 16px;
+    bottom: 3px;
 }
 
 .orderform-template .cart-template.mini-cart .payment-confirmation-wrap #payment-data-submit span::after {
     content: 'Finalizar compra';
     color: var(--forCode-text-on-dark);
     text-align: center;
-    font-family: var(--forCode-font-family-body);
+    font-family: var(--forCode-font-family-button);
     font-size: var(--forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(--forCode-font-weight-medium);
-    line-height: var(--forCode-font-line-height-xlg);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
     letter-spacing: var(--forCode-spacing-system-none);
     display: block;
 }
@@ -6756,11 +6974,11 @@ window.addEventListener("DOMContentLoaded", function () {
 }
 
 .payment-data.span6 #payments-title {
-    width: 92%;
+    /* width: 92%; */
 }
 
 @media(max-width: 1210px) {
     .payment-data.span6 #payments-title {
-        width: 91%;
+        /* width: 91%; */
     }
 }
