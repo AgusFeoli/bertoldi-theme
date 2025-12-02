@@ -1,0 +1,33 @@
+:global(.vtex-order-placed-2-x-myOrdersButton) a {
+    display: block;
+    width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--order-grid) :global(.vtex-order-placed-2-x-orderPaymentItem)>article>div>p {
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    margin: 0px;
+}
+
+:global(.vtex-order-placed-2-x-cancelOrderButton)>a {
+    text-decoration: none;
+}
+
+:global(.vtex-rich-text-0-x-container--order-placed-message):not(:last-of-type) {
+    border-bottom: 1px solid var(--forCode-stroke-default);
+}
+
+:global(.vtex-order-placed-2-x-packageHeader br) {
+    display: none;
+}
+
+@media(max-width: 830px) {
+    :global(.vtex-rich-text-0-x-container--order-placed-message):not(:last-of-type) {
+        border-bottom: 0px;
+    }
+}
