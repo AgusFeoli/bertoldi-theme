@@ -1,0 +1,168 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{_accountInfo.TradingName}}</title>
+    <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+</head>
+
+<body>
+    <table cellspacing="0" cellpadding="0"
+        style="width: 100%; max-width: 600px; margin: 0 auto; font-family: 'Helvetica', Montserrat, Arial, sans-serif; border: 1px solid #E4E4E4;">
+        <thead>
+            <tr style="width: 300px; height: 40px;">
+                <td style="background: #DE1269; padding: 10px; text-align: center; width: 300px; height: 60px;">
+                    <a href="https://bertoldi.com.ar/" target="_blank">
+                        <img src="https://bertoldiar.myvtex.com/arquivos/logoblacobertoldi.png" alt="Bertoldi"
+                            style="width: auto; height: auto;" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; background: #F7F7F7; padding: 20px;">
+                    <p style="color: #19191A; margin: 0; font-size: 14px; line-height: 33px;">Hola
+                        {{clientProfileData.firstName}},</p>
+                    <h3 style="color: #19191A; margin: 10px 0; font-weight: 700; font-size: 20px; line-height: 20px;">
+                        TU PEDIDO FUE ENTREGADO</h3>
+                    <p style="color: #19191A; margin: 0; font-size: 14px; line-height: 33px;">Pedido N°:
+                        {{orderId}}</p>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody style="font-size: 17px; line-height: 31px;">
+            <tr>
+                <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 40px 30px 21px;">
+                    {{#if package.courier}}
+                    <div>
+                        <p style="font-size: 16px; font-weight: 700; color: #19191A; margin: 0px; margin-bottom: 12px;">
+                            <strong>Datos de envío:</strong></p>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px; font-weight: 400; color: #6B6779; margin: 0px; margin-bottom: 4px;">
+                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Dirección:</strong>
+                            {{shippingData.address.street}}
+                            {{shippingData.address.number}} - {{shippingData.address.city}}
+                        </p>
+                    </div>
+                    <div>
+                        <p style="font-size: 16px; font-weight: 400; color: #6B6779; margin: 0px; margin-bottom: 4px;">
+                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Enviado por:</strong>
+                            {{package.courier}}
+                        </p>
+                    </div>
+                    {{/if}}
+                    <div>
+                        <p style="font-size: 16px; font-weight: 400; color: #6B6779; margin: 0px;">
+                            <strong style="font-size: 16px; font-weight: 400; color: #19191A;">Seguimiento:</strong>
+                            <a style="font-size: 17px; font-weight: 700; color:#1F49D6;" href="{{package.trackingUrl}}">
+                                {{package.trackingNumber}}
+                            </a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 1rem 30px; font-size: 14px; color: #070E1D;">
+                    <strong style="font-size: 16px;">Tu pedido</strong>
+
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                        style="border-collapse: collapse; margin-top: 25px; margin-bottom: 36px;">
+                        <tbody>
+                            {{#each items}}
+                            <tr
+                                style="border-top: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; display: block; padding: 12px 0 12px 8px;">
+                                <td style="border: 1px solid #EFEFEF;">
+                                    <img src="{{imageUrl}}" alt="" />
+                                </td>
+                                <td
+                                    style="padding: 0 20px; font-size: 14px; color: #070E1D; line-height: 20px; width: 100%;">
+                                    <div style="font-size: 17px; font-weight: bold;">{{name}}</div>
+                                    <div>Sku: {{productRefId}}</div>
+                                    <div>Cantidad: {{quantity}}</div>
+                                    <div>Talle: {{skuName}}</div>
+                                </td>
+                                <td>
+                                    <div><strong>${{formatCurrency price}}</strong></div>
+                                </td>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 0px 27px;">
+                    <div style="background: #F4F4F6; padding: 4px;">
+                        <strong style="font-size: 16px; color: #19191A; line-height: 24px;">
+                            Importante:
+                        </strong>
+                        <p
+                            style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; color: #6B6779;">
+                            si modificaste tu pedido con nuestro personal de Atención al cliente es posible que el
+                            cambio no se vea reflejado en este correo.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 1rem; margin-top: 1.5rem;">
+                        <p
+                            style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; font-weight: 400; color: #3E3D43;">
+                            ¡Muchas gracias por tu compra!
+                        </p>
+                        <br />
+                        <br />
+                        <strong style="font-size: 16px; line-height: 24px; font-weight: 700; color: #19191A;">Equipo
+                            Newsport.</strong>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td style="background: #FFFFFF; text-align: center; padding: 1px; border-top: 1px solid #E9EAED;">
+                    <table cellpadding="0" cellspacing="10" align="center" style="color: #fff;">
+                        <tr>
+                            <td>
+                                <a href="https://www.kudoscommerce.com/" target="_blank"
+                                    style="display: inline-block; padding-right: 37px;">
+                                    <img src="https://bertoldiar.myvtex.com/arquivos/logokudos.png"
+                                        alt="Desarrollado por Kudos" />
+                                </a>
+                            </td>
+                            <td>
+                                <a href="https://vtex.com/es-ar/" target="_blank" style="display: inline-block;">
+                                    <img src="https://bertoldiar.myvtex.com/arquivos/logovtex.png"
+                                        alt="Plataforma VTEX" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td
+                    style="text-align: center; background: #E9EAED; padding: 0px; font-size: 12px; line-height: 28px; letter-spacing: 0.12px; font-weight: 400; color: #676F79;">
+                    ©2025 Bertoldi. Todos los derechos reservados
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+    xmlns:v="urn:schemas-microsoft-com:vml"
+    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #f1f1f1 !important;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{_accountInfo.TradingName}}</title>
+
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <style>
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    </style>
+
+    <style>
+        @media (max-width: 600px) {
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #f1f1f1 !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+
+    <table width="100%" border="0" cellpadding="0" cellspacing="0"
+        style="box-sizing: border-box; margin: 0; padding: 0; background: #fafafa; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; height: 100%; line-height: 100% !important;">
+
+        <tr>
+            <td align="left" valign="top"
+                style="font-size: 14px; line-height: 20px; box-sizing: border-box; text-align: left !important;">
+
+                <table class="mv4-ns" width="100%" align="center" border="0" cellpadding="0" cellspacing="0"
+                    style="max-width: 40rem; width: 100%; background-color: #fff; border-collapse: collapse; margin-bottom: 30px; box-shadow: 0px 3px 6px #00000029;">
+
+                    <tr>
+                        <td>
+                            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <td
+                                        style="background-image: url(https://newsport.vteximg.com.br/arquivos/newsport-background-emails.png); background-repeat: no-repeat; background-position: center center; background-size: cover; text-align: center; color: #FFFFFF; height: 198px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 1.5rem 3rem 2rem; text-align: center;">
+                            <div style="margin-bottom: 1rem;">
+                                <p style="font-size: 16px; text-align: center;">Hola {{clientProfileData.firstName}},</p>
+                                <h4 style="font-size: 22px; margin: 0; text-align: center;">Tu pedido fue entregado</h4>
+                                <p style="font-size: 14px; text-align: center;">Pedido N°: {{orderId}}</p>
+                                <p style="display: inline-block; margin: 0; font-size: 19px;">
+                                    Te enviamos este correo para informarte que tu pedido fue entregado:
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 0 3rem 2rem;">
+                            {{#if package.courier}}
+                            <div>
+                                <p style="font-size: 19px;"><strong>Datos de envío:</strong></p>
+                            </div>
+                            <div>
+                                <p style="font-size: 17px;">
+                                    <strong>Dirección:</strong> {{shippingData.address.street}}
+                                    {{shippingData.address.number}} - {{shippingData.address.city}}
+                                </p>
+                            </div>
+                            <div>
+                                <p style="font-size: 17px; margin-bottom: 0;">
+                                    <strong>Enviado por:</strong> {{package.courier}}
+                                </p>
+                            </div>
+                            <br />
+                            {{/if}}
+                            <div>
+                                <p style="font-size: 17px; margin-top: 0;">
+                                    <strong>Seguimiento:</strong>
+                                    <a style="color:#0094F6;" href="{{package.trackingUrl}}">
+                                        {{package.trackingNumber}}
+                                    </a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 1rem 30px; font-size: 14px; color: #070E1D;">
+                            <strong style="font-size: 20px; margin-top: 20px;">Productos de tu pedido</strong>
+
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                                style="border-collapse: collapse; margin-top: 25px; margin-bottom: 36px;">
+                                <tbody>
+                                    {{#each items}}
+                                    <tr
+                                        style="border-top: 1px solid #E0E0E0; border-bottom: 1px solid #E0E0E0; display: block; padding: 12px 0 12px 8px;">
+                                        <td style="border: 1px solid #EFEFEF;">
+                                            <img src="{{imageUrl}}" alt="" />
+                                        </td>
+                                        <td
+                                            style="padding: 0 20px; font-size: 14px; color: #070E1D; line-height: 20px; width: 100%;">
+                                            <div style="font-size: 17px; font-weight: bold;">{{name}}</div>
+                                            <div>Sku: {{productRefId}}</div>
+                                            <div>Cantidad: {{quantity}}</div>
+                                            <div>Talle: {{skuName}}</div>
+                                        </td>
+                                        <td>
+                                            <div><strong>${{formatCurrency price}}</strong></div>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 0 3rem 2rem; text-align: center;">
+                            <div style="margin-bottom: 1rem; margin-top: 1.5rem;">
+                                <p style="display: inline-block; margin: 0; font-size: 18px; line-height: 1.5;">
+                                    <strong style="font-size: 19px;">Importante:</strong>
+                                    si modificaste tu pedido con nuestro personal de Atención al cliente es posible que el cambio no se vea reflejado en este correo.
+                                    <br /><br />
+                                    Muchas gracias por tu compra y esperamos que nos volvamos a encontrar!
+                                    <br />
+                                    <strong>Equipo Newsport.</strong>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div style="padding: 0 50px; margin-top: 15px; margin-bottom: 40px;">
+                                <h3 style="font-size: 20px; margin: 0 0 30px 0;">Estado de tu pedido</h3>
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td>
+                                            <img src="https://newsport.vteximg.com.br/arquivos/barra-email-4.png" alt="" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tfoot>
+                        <tr>
+                            <td style="background: #FFFFFF; text-align: center; padding: 1px; border-top: 1px solid #E9EAED;">
+                                <table cellpadding="0" cellspacing="10" align="center" style="color: #fff;">
+                                    <tr>
+                                        <td>
+                                            <a href="https://www.kudoscommerce.com/" target="_blank"
+                                                style="display: inline-block; padding-right: 37px;">
+                                                <img src="https://bertoldiar.myvtex.com/arquivos/logokudos.png" alt="Desarrollado por Kudos" />
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="https://vtex.com/es-ar/" target="_blank" style="display: inline-block;">
+                                                <img src="https://bertoldiar.myvtex.com/arquivos/logovtex.png" alt="Plataforma VTEX" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="text-align: center; background: #E9EAED; padding: 0px; font-size: 12px; line-height: 28px; letter-spacing: 0.12px; font-weight: 400; color: #676F79;">
+                                ©2025 Bertoldi. Todos los derechos reservados
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
