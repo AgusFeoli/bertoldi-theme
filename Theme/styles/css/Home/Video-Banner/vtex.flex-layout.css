@@ -56,7 +56,7 @@
 
 @media(max-width: 1025px) {
     .flexRow--video-banner :global(.vtex-store-components-3-x-container) {
-        padding: 32px 16px 20px;
+        padding: 80px 16px 20px;
     }
 
     .flexRowContent--video-banner-text-and-cta {

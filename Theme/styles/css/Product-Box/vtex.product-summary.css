@@ -114,6 +114,10 @@
     background: var(--forCode-surface-background-card-default);
 }
 
+.clearLink--product-box:hover {
+    box-shadow: 0 6px 15px -1px rgba(40, 22, 105, 0.14);
+}
+
 .element--product-box {
     padding: 0px;
     position: relative;
@@ -144,6 +148,27 @@
     width: 100%;
 }
 
+:global(.vtex-slider-layout-0-x-slide--carrusel-de-productos) .containerNormal--product-box,
+:global(.vtex-slider-layout-0-x-slide--banner-fijo-mas-carrusel-container) .containerNormal--product-box {
+    padding-bottom: 48px;
+}
+
+:global(.vtex-slider-layout-0-x-slide--banner-dinamico-mas-carrusel-slider) .containerNormal--product-box,
+:global(.vtex-flex-layout-0-x-flexRow--pdp-slider-product-box) .containerNormal--product-box {
+    padding-bottom: 24px;
+}
+
+@media(min-width: 1026px) {
+    :global(.vtex-slider-layout-0-x-slide--banner-dinamico-mas-carrusel-slider) .containerNormal--product-box {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    :global(.vtex-search-result-3-x-gallery) .containerNormal--product-box {
+        padding-bottom: 1rem;
+    }
+}
+
 .element--product-box :global(.vtex-flex-layout-0-x-flexRow--product-image) {
     margin-bottom: 15px;
 }
@@ -157,6 +182,11 @@
 @media(max-width: 1025px) {
     .clearLink--product-box {
         max-width: 98%;
+    }
+
+    :global(.vtex-slider-layout-0-x-slide--carrusel-de-productos) .containerNormal--product-box,
+    :global(.vtex-slider-layout-0-x-slide--banner-fijo-mas-carrusel-container) .containerNormal--product-box {
+        padding-bottom: 16px;
     }
 
     .listPriceContainer--product-box {

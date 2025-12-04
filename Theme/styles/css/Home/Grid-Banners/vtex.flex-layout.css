@@ -97,7 +97,7 @@
 
 @media(max-width: 1025px) {
     .flexRow--grid-banners :global(.vtex-store-components-3-x-container) {
-        padding: 48px 16px 113px 16px;
+        padding: 80px 16px 113px 16px;
     }
 }
 

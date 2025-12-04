@@ -1,0 +1,144 @@
+:global(.vtex-render__container-id-my-account) :global(.vtex-account) {
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.content--accountOptions {
+    margin: 0px !important;
+    padding: 24px !important;
+}
+
+.content--accountOptions .accountOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content--accountOptions .accountOptions>hr {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.content--accountOptions .accountOptions>div {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.content--accountOptions .accountOptions>div:first-child>a {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.content--accountOptions .accountOptions>div:first-child>a .button {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: fit-content;
+    height: fit-content;
+    border: 0px;
+    margin-bottom: 12px;
+}
+
+.content--accountOptions .accountOptions>div:last-child :global(.vtex-button) {
+    margin: 0px;
+    padding: 12px 0px 8px;
+    width: fit-content;
+    height: fit-content;
+    border: 0px;
+}
+
+.content--accountOptions .accountOptions>div:last-child :global(.vtex-button):hover {
+    background: transparent;
+}
+
+.content--accountOptions .accountOptions>div:last-child :global(.vtex-button) :global(.vtex-button__label) {
+    margin: 0px;
+    padding: 0px !important;
+    border: 0px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.content--accountOptions .accountOptions>div:first-child>a .button>span {
+    display: block;
+    width: 262px;
+    height: 18px;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-align: left;
+
+}
+
+.content--accountOptions .accountOptions>div:last-child :global(.vtex-button) :global(.vtex-button__label)>span {
+    display: block;
+    width: 262px;
+    height: 18px;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-align: left;
+}
+
+/*Modal Login cuando se esta logeado*/
+.contentFormVisible {
+    min-width: 266px !important;
+}
+
+.accountOptions>div:first-child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accountOptions .accountOptionsSectionTitle {
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    margin: 0px;
+    padding: 8px 0;
+}
+
+.accountOptions .loginAccountItem,
+.accountOptions :global(.mv4.min-h-2.b--muted-4) .logoutButton {
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    width: 100% !important;
+    text-align: left;
+    padding: 8px 0 !important;
+}
+
+.accountOptions .loginAccountItem:hover,
+.accountOptions :global(.mv4.min-h-2.b--muted-4) .logoutButton:hover {
+    background-color: #80808017;
+}
+
+.accountOptions>div:last-child {
+    width: 100%;
+    border-top: 0.8px solid var(--forCode-stroke-default);
+    padding-top: 8px;
+}

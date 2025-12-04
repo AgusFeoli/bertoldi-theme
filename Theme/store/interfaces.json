@@ -25,5 +25,8 @@
     },
     "cucarda-envio-gratis-setter": {
         "component": "CucardaEnvioGratisSetter"
+    },
+    "header-top-bar": {
+        "component": "HeaderTopBar"
     }
 }

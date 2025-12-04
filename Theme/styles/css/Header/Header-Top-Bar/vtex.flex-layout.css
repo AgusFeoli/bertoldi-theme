@@ -5,7 +5,7 @@
 .flexRow--header-top-bar-DS :global(.vtex-store-components-3-x-container) {
     display: flex;
     width: 100%;
-    padding: var(--forCode-spacing-system-xs) var(--forCode-spacing-system-md);
+    padding: var(--forCode-spacing-system-xs) 0;
     justify-content: center;
     align-items: center;
 }
@@ -13,7 +13,7 @@
 .flexRowContent--header-top-bar-DS {
     padding: 0px;
     display: flex;
-    width: 85.375rem;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }

@@ -11,7 +11,7 @@
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    padding: 32px 16px 48px 16px;
+    padding: 5px 16px 0 16px;
     margin: 0;
 }
 
@@ -82,6 +82,7 @@
 
 .flexRow--banner-fijo-mas-carrusel-image {
     padding-top: 54px;
+    padding-bottom: 48px;
 }
 
 .flexRowContent--banner-fijo-mas-carrusel-image {
@@ -113,7 +114,7 @@
     }
 
     .flexRow--banner-fijo-mas-carrusel-container :global(.vtex-store-components-3-x-container) {
-        padding: 32px 11px 16px 11px;
+        padding: 32px 11px 0 11px;
     }
 
     .flexRow--banner-fijo-mas-carrusel-image {
