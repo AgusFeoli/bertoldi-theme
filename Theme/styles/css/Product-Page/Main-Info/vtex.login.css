@@ -169,11 +169,11 @@
         width: 20px;
     }
 
-    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisMainContainer) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.bertoldiar-theme-0-x-cucardaEnvioGratisMainContainer) {
         margin: 0px;
     }
 
-    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisMainContainer) :global(.montellacalzadosar-theme-0-x-cucardaEnvioGratisText) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--cucarda-envio-gratis-container) :global(.bertoldiar-theme-0-x-cucardaEnvioGratisMainContainer) :global(.bertoldiar-theme-0-x-cucardaEnvioGratisText) {
         color: var(--forCode-Color-Green-800);
         text-align: center;
         font-family: var(--forCode-font-family-body);

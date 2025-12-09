@@ -35,8 +35,8 @@
   "link#politica-de-cambio": {
     "props": {
       "blockClass": "link-institucionales",
-      "href": "/politicadecambio",
-      "label": "Politica de cambio"
+      "href": "/politicasdecambio",
+      "label": "Politicas de cambio"
     }
   },
   "link#como-comprar": {
@@ -108,7 +108,7 @@
   "link#institucionales-terminoscondiciones": {
     "props": {
       "blockClass": "link-institucionales",
-      "href": "/terminoscondiciones",
+      "href": "/terminosycondiciones",
       "label": "Términos y condiciones"
     }
   }

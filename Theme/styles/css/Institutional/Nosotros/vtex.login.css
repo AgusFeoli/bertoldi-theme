@@ -1,0 +1,49 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--image-and-text-container>.vtex-flex-layout-0-x-stretchChildrenWidth),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros>.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h1),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h2),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h3),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h4),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h5),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content h6),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content p),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content p a),
+:global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content p span) {
+    height: unset !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--image-and-text .bertoldiar-theme-0-x-imported_content) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--image-and-text) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--image-and-text>.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 368px !important;
+}
+
+@media(max-width: 800px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--image-and-text) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--image-and-text>.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content p),
+    :global(.vtex-flex-layout-0-x-flexRowContent--institutional-text-container-nosotros .bertoldiar-theme-0-x-imported_content p span) {
+        margin-bottom: 4px;
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "store.custom#sucursales": {
+    "children": ["flex-layout.row#sucursales-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#sucursales-main-container": {
+    "title": "Como Comprar",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-sucursales"]
+    },
+    "children": ["flex-layout.col#sucursales-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#sucursales-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "sucursales-main-col"]
+    },
+    "children": [
+      "rich-text#institutional-breadcrumb-sucursales",
+      "flex-layout.row#institutional-title-container-sucursales",
+      "flex-layout.col#institutional-text-container-sucursales"
+    ]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-sucursales": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-sucursales"],
+      "text": "[Inicio](/) / Preguntas frecuentes"
+    }
+  },
+  /* Titulo */
+  "flex-layout.row#institutional-title-container-sucursales": {
+    "props": {
+      "blockClass": ["institutional-title-container", "institutional-title-container-sucursales"]
+    },
+    "children": ["rich-text#institutional-title-sucursales"]
+  },
+  "rich-text#institutional-title-sucursales": {
+    "props": {
+      "blockClass": ["institutional-title", "institutional-title-sucursales"],
+      "text": "Sucursales"
+    }
+  },
+
+  /* Textos */
+  "flex-layout.col#institutional-text-container-sucursales": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-sucursales"]
+    },
+    "children": ["sucursales"]
+  }
+}

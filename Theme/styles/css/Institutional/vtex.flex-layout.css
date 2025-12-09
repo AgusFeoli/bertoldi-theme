@@ -1,0 +1,52 @@
+.flexRow--institutional-main-container {
+    padding-bottom: 250px;
+    border-bottom: 1px solid var(--forCode-stroke-light);
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--institutional-main-container :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.flexRowContent--institutional-main-container {
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--institutional-title-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+.flexRowContent--institutional-title-container :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: fit-content !important;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 62.5rem) {
+    .flexRow--institutional-main-container {
+        padding-bottom: 116px;
+        border-bottom: 0px;
+    }
+
+    .flexRow--institutional-main-container :global(.vtex-store-components-3-x-container) {
+        padding: 0px 16px 0px 16px;
+    }
+
+    .flexRowContent--institutional-main-container {
+        width: 100%;
+    }
+
+    .flexRowContent--institutional-title-container {
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+}

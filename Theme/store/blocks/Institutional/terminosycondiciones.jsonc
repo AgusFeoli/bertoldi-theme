@@ -1,0 +1,36 @@
+{
+  "store.custom#terminosycondiciones": {
+    "children": ["flex-layout.row#terminosycondiciones-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#terminosycondiciones-main-container": {
+    "title": "Como Comprar",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-terminosycondiciones"]
+    },
+    "children": ["flex-layout.col#terminosycondiciones-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#terminosycondiciones-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "terminosycondiciones-main-col"]
+    },
+    "children": ["rich-text#institutional-breadcrumb-terminosycondiciones", "flex-layout.col#institutional-text-container-terminosycondiciones"]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-terminosycondiciones": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-terminosycondiciones"],
+      "text": "[Inicio](/) / Términos y condiciones"
+    }
+  },
+
+  /* Textos */
+  "flex-layout.col#institutional-text-container-terminosycondiciones": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-terminosycondiciones"]
+    },
+    "children": ["institutional-content"]
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "store.custom#arrepentimiento": {
+        "children": [
+            "flex-layout.row#arrepentimiento-main-container"
+        ]
+    },
+    /* Main Container */
+    "flex-layout.row#arrepentimiento-main-container": {
+        "props": {
+            "blockClass": [
+                "institutional-main-container",
+                "institutional-main-container-arrepentimiento"
+            ]
+        },
+        "children": [
+            "flex-layout.col#arrepentimiento-main-col"
+        ]
+    },
+    /*Main Col*/
+    "flex-layout.col#arrepentimiento-main-col": {
+        "props": {
+            "blockClass": [
+                "institutional-main-col",
+                "arrepentimiento-main-col"
+            ]
+        },
+        "children": [
+            "rich-text#institutional-breadcrumb-arrepentimiento",
+            "flex-layout.row#institutional-title-container-arrepentimiento",
+            "rich-text#arrepentimiento-sub-title",
+            "flex-layout.col#institutional-text-container-arrepentimiento"
+        ]
+    },
+    /* Breadcrumb*/
+    "rich-text#institutional-breadcrumb-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "institutional-breadcrumb",
+                "institutional-breadcrumb-arrepentimiento"
+            ],
+            "text": "[Inicio](/) / Botón de arrepentimiento"
+        }
+    },
+    /* Titulo */
+    "flex-layout.row#institutional-title-container-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "institutional-title-container",
+                "institutional-title-container-arrepentimiento"
+            ]
+        },
+        "children": [
+            "rich-text#institutional-title-arrepentimiento"
+        ]
+    },
+    /* Sub Titulo */
+    "rich-text#arrepentimiento-sub-title": {
+        "props": {
+            "blockClass": [
+                "institutional-sub-title",
+                "arrepentimiento-sub-title"
+            ],
+            "text": "Si te arrepentiste de una compra, llená el formulario y nos pondremos en contacto lo antes posible para ayudarte."
+        }
+    },
+    "rich-text#institutional-title-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "institutional-title",
+                "institutional-title-arrepentimiento"
+            ],
+            "text": "Botón de arrepentimiento"
+        }
+    },
+    /* Form */
+    "flex-layout.col#institutional-text-container-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "institutional-text-container",
+                "institutional-text-container-arrepentimiento"
+            ]
+        },
+        "children": [
+            "form#arrepentimiento"
+        ]
+    }
+}

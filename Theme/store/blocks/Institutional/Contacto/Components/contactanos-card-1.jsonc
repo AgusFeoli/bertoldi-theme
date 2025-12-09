@@ -1,0 +1,22 @@
+{
+  "flex-layout.col#contactanos-card-1": {
+    "props": {
+      "blockClass": ["contactanos-card", "contactanos-card-1"]
+    },
+    "children": [/*"rich-text#contactanos-card-title-1", */"rich-text#contactanos-card-text-1"]
+  },
+  /* Titulo 1*/
+  "rich-text#contactanos-card-title-1": {
+    "props": {
+      "blockClass": ["contactanos-card-title", "contactanos-card-title-1"],
+      "text": "Contactate con nosotros"
+    }
+  },
+  /* Text 1*/
+  "rich-text#contactanos-card-text-1": {
+    "props": {
+      "blockClass": ["contactanos-card-text", "contactanos-card-text-1"],
+      "text": "Si necesitás comunicarte con nosotros, podés hacerlo a través de los siguientes canales:"
+    }
+  }
+}

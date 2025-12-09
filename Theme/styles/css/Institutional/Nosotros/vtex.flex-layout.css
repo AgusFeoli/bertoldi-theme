@@ -1,0 +1,48 @@
+.flexRowContent--institutional-text-container-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.flexRowContent--institutional-nosotros-metricas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21px;
+}
+
+.flexRowContent--institutional-nosotros-metricas :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 180px !important;
+}
+
+@media(max-width: 780px) {
+    .flexRowContent--institutional-nosotros-metricas {
+        flex-direction: column;
+    }
+}
+
+.flexRowContent--institutional-nosotros-metrica {
+    padding: 28px 32px;
+    border-radius: var(--forCode-spacing-system-radius-2xl);
+    border: 1px solid var(--forCode-stroke-light);
+    background: var(--forCode-surface-background-base-default);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    height: 168px;
+}
+
+.flexRowContent--institutional-nosotros-metrica :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: max-content !important;
+
+}
+
+
+.flexRowContent--image-and-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}

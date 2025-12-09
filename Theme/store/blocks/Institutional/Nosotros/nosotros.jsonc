@@ -1,0 +1,35 @@
+{
+  "store.custom#nosotros": {
+    "children": ["flex-layout.row#nosotros-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#nosotros-main-container": {
+    "title": "Nosotros",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-nosotros"]
+    },
+    "children": ["flex-layout.col#nosotros-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#nosotros-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "nosotros-main-col"]
+    },
+    "children": ["rich-text#institutional-breadcrumb-nosotros", "flex-layout.row#institutional-text-container-nosotros"]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-nosotros": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-nosotros"],
+      "text": "[Inicio](/) / Nosotros"
+    }
+  },
+  /* Textos */
+  "flex-layout.row#institutional-text-container-nosotros": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-nosotros"]
+    },
+    "children": ["institutional-content", "flex-layout.row#institutional-nosotros-metricas", "flex-layout.row#image-and-text"]
+  }
+}

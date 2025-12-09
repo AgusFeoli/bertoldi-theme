@@ -1,0 +1,297 @@
+.imported_content {
+    padding: 0;
+    border: 1px solid transparent;
+    background: transparent;
+
+    & * {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    & p,
+    & p span {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        background-color: transparent;
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    & p span br:first-of-type {
+        display: none;
+    }
+
+    & h1,
+    & h1 span {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        background-color: transparent;
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-titles);
+        font-size: var(--forCode-font-size-4xl);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-4xl);
+        letter-spacing: -0.18px;
+    }
+
+    & h2,
+    & h2 span {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        background-color: transparent;
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-bold);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    & h3,
+    & h3 span {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-titles);
+        font-size: var(--forCode-font-size-2xl);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: -0.12px;
+    }
+
+    & h4,
+    & h4 span {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    & h5,
+    & h5 span {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    & h6,
+    & h6 span {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    a {
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+    }
+
+    & ol,
+    & ul {
+        margin-block: 0 16px;
+
+        & li {
+            margin-left: 10px;
+            padding: 0;
+            padding-bottom: 16px;
+        }
+    }
+
+    & ol {
+        & li {
+            & span {
+                color: var(--forCode-text-body-default);
+                font-family: var(--forCode-font-family-body);
+                font-size: var(--forCode-font-size-base);
+                font-style: normal;
+                font-weight: var(--forCode-font-weight-regular);
+                line-height: var(--forCode-font-line-height-2xl);
+                letter-spacing: var(--forCode-spacing-system-none);
+                margin-left: 4px;
+            }
+        }
+    }
+
+    & ol {
+        & li {
+            &[class*="li-bullet"] {
+                &::before {
+                    color: var(--forCode-text-body-default);
+                    font-family: var(--forCode-font-family-body);
+                    font-size: var(--forCode-font-size-base);
+                    font-style: normal;
+                    font-weight: var(--forCode-font-weight-regular);
+                    line-height: var(--forCode-font-line-height-2xl);
+                    letter-spacing: var(--forCode-spacing-system-none);
+                    width: 14px;
+                    min-width: 14px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    & ul {
+        & li {
+            &[class*="li-bullet"] {
+                &::before {
+                    content: "\0025cf";
+                    color: var(--forCode-text-body-default);
+                    font-size: 10px;
+                    width: 14px;
+                    min-width: 14px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    & ol+ul {
+        margin-block-start: -16px;
+        margin-inline-start: 10px;
+    }
+
+    @media (max-width: 920px) {
+
+        & h1,
+        & h1 span {
+            font-size: var(--forCode-font-size-2xl);
+            line-height: var(--forCode-font-line-height-2xl);
+        }
+    }
+
+    /* FAQ toggle mode (use global classes to match injected HTML) */
+    & :global(.faq-group) {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--forCode-stroke-light);
+
+        & :global(tr.faq-toggle) {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--forCode-spacing-system-md);
+            height: fit-content;
+            font-weight: var(--forCode-font-weight-medium);
+
+            & td,
+            & th {
+                margin: 0;
+                padding: 0;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+
+                & *:last-child {
+                    margin-block-end: 0;
+                }
+            }
+
+            &::after {
+                content: '';
+                font-weight: var(--forCode-font-weight-bold);
+                transition: transform .2s ease;
+                width: 10.5px;
+                height: 6px;
+                transform: rotate(180deg);
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='6' viewBox='0 0 11 6' fill='none'%3E%3Cpath d='M4.56152 0.788086C4.92214 0.402923 5.57919 0.404151 5.93848 0.789062L9.93262 5.0752V5.07617C10.0263 5.17668 10.0222 5.33605 9.91992 5.43262C9.87178 5.47772 9.8121 5.5 9.75 5.5C9.68301 5.49998 9.61601 5.47305 9.56641 5.41992L5.61621 1.17969L5.25 0.787109L4.88477 1.17969L0.932617 5.41992C0.837202 5.52187 0.680542 5.52589 0.580078 5.43164C0.491008 5.348 0.476103 5.21488 0.537109 5.11523L0.567383 5.0752L4.56152 0.788086Z' fill='%2319191A' stroke='%2319191A'/%3E%3C/svg%3E") no-repeat center / contain;
+            }
+
+            &[aria-expanded="true"] {
+                &::after {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        & :global(.faq-content[aria-hidden="true"]) {
+            display: none;
+        }
+
+        & :global(.faq-content[aria-hidden="false"]) {
+            display: table-row;
+        }
+
+        & :global(table) {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        & :global(tr.faq-content) {
+
+            & td,
+            & th {
+                padding: var(--forCode-spacing-system-md) 0;
+                border: none;
+                vertical-align: top;
+                width: 100%;
+                max-width: 100%;
+
+                & *:last-child {
+                    margin-block-end: 0;
+                }
+            }
+        }
+    }
+
+    & :global(.faq-group + h2) {
+        margin-block: 16px 0;
+    }
+
+    @media (max-width: 768px) {
+        & :global(.faq-group):not(:last-child) {
+            border-bottom: 1px solid var(--forCode-stroke-light);
+        }
+    }
+}

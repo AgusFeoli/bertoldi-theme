@@ -1,0 +1,77 @@
+{
+    "store.custom#contacto": {
+        "children": [
+            "flex-layout.row#contacto-main-container"
+        ]
+    },
+    /* Main Container */
+    "flex-layout.row#contacto-main-container": {
+        "props": {
+            "blockClass": [
+                "institutional-main-container",
+                "institutional-main-container-contacto"
+            ]
+        },
+        "children": [
+            "flex-layout.col#contacto-main-col"
+        ]
+    },
+    /*Main Col*/
+    "flex-layout.col#contacto-main-col": {
+        "props": {
+            "blockClass": [
+                "institutional-main-col",
+                "contacto-main-col"
+            ]
+        },
+        "children": [
+            "rich-text#institutional-breadcrumb-contacto",
+            "flex-layout.row#institutional-title-container-contacto",
+            "flex-layout.col#institutional-text-container-contacto"
+        ]
+    },
+    /* Breadcrumb*/
+    "rich-text#institutional-breadcrumb-contacto": {
+        "props": {
+            "blockClass": [
+                "institutional-breadcrumb",
+                "institutional-breadcrumb-contacto"
+            ],
+            "text": "[Inicio](/) / Contacto"
+        }
+    },
+    /* Titulo */
+    "flex-layout.row#institutional-title-container-contacto": {
+        "props": {
+            "blockClass": [
+                "institutional-title-container",
+                "institutional-title-container-contacto"
+            ]
+        },
+        "children": [
+            "rich-text#institutional-title-contacto"
+        ]
+    },
+    "rich-text#institutional-title-contacto": {
+        "props": {
+            "blockClass": [
+                "institutional-title",
+                "institutional-title-contacto"
+            ],
+            "text": "Contacto"
+        }
+    },
+    /* Cards */
+    "flex-layout.col#institutional-text-container-contacto": {
+        "props": {
+            "blockClass": [
+                "institutional-text-container",
+                "institutional-text-container-contacto"
+            ]
+        },
+        "children": [
+            "flex-layout.col#contactanos-card-1",
+            "flex-layout.row#contactanos-card-2"
+        ]
+    }
+}

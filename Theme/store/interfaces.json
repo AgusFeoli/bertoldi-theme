@@ -28,5 +28,11 @@
     },
     "header-top-bar": {
         "component": "HeaderTopBar"
+    },
+    "institutional-content": {
+        "component": "InstitutionalContent"
+    },
+    "sucursales": {
+        "component": "Sucursales"
     }
 }
