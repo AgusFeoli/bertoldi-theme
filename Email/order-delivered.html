@@ -35,7 +35,7 @@
                     <p style="color: #19191A; margin: 0; font-size: 14px; line-height: 33px;">Hola
                         {{clientProfileData.firstName}},</p>
                     <h3 style="color: #19191A; margin: 10px 0; font-weight: 700; font-size: 20px; line-height: 20px;">
-                        TU PEDIDO FUE ENTREGADO</h3>
+                        TU  PEDIDO FUE ENTREGADO</h3>
                     <p style="color: #19191A; margin: 0; font-size: 14px; line-height: 33px;">Pedido N°:
                         {{orderId}}</p>
                 </td>
@@ -47,20 +47,17 @@
                 <td style="font-size: 14px; line-height: 20px; width: 100%; padding: 40px 30px 21px;">
                     {{#if package.courier}}
                     <div>
-                        <p style="font-size: 16px; font-weight: 700; color: #19191A; margin: 0px; margin-bottom: 12px;">
-                            <strong>Datos de envío:</strong></p>
+                        <p style="font-size: 16px; font-weight: 700; color: #19191A; margin: 0px; margin-bottom: 12px;"><strong>Datos de envío:</strong></p>
                     </div>
                     <div>
                         <p style="font-size: 16px; font-weight: 400; color: #6B6779; margin: 0px; margin-bottom: 4px;">
-                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Dirección:</strong>
-                            {{shippingData.address.street}}
+                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Dirección:</strong> {{shippingData.address.street}}
                             {{shippingData.address.number}} - {{shippingData.address.city}}
                         </p>
                     </div>
                     <div>
                         <p style="font-size: 16px; font-weight: 400; color: #6B6779; margin: 0px; margin-bottom: 4px;">
-                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Enviado por:</strong>
-                            {{package.courier}}
+                            <strong style="font-size: 16px; font-weight: 400;color: #19191A;">Enviado por:</strong> {{package.courier}}
                         </p>
                     </div>
                     {{/if}}
@@ -93,7 +90,6 @@
                                     <div style="font-size: 17px; font-weight: bold;">{{name}}</div>
                                     <div>Sku: {{productRefId}}</div>
                                     <div>Cantidad: {{quantity}}</div>
-                                    <div>Talle: {{skuName}}</div>
                                 </td>
                                 <td>
                                     <div><strong>${{formatCurrency price}}</strong></div>
@@ -112,22 +108,19 @@
                         <strong style="font-size: 16px; color: #19191A; line-height: 24px;">
                             Importante:
                         </strong>
-                        <p
-                            style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; color: #6B6779;">
+                        <p style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; color: #6B6779;">
                             si modificaste tu pedido con nuestro personal de Atención al cliente es posible que el
                             cambio no se vea reflejado en este correo.
                         </p>
                     </div>
-
+                    
                     <div style="margin-bottom: 1rem; margin-top: 1.5rem;">
-                        <p
-                            style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; font-weight: 400; color: #3E3D43;">
+                        <p style="display: inline-block; margin: 0; font-size: 16px; line-height: 24px; font-weight: 400; color: #3E3D43;">
                             ¡Muchas gracias por tu compra!
                         </p>
                         <br />
                         <br />
-                        <strong style="font-size: 16px; line-height: 24px; font-weight: 700; color: #19191A;">Equipo
-                            Newsport.</strong>
+                        <strong style="font-size: 16px; line-height: 24px; font-weight: 700; color: #19191A;">Equipo Bertoldi.</strong>
                     </div>
                 </td>
             </tr>
