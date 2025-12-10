@@ -22,7 +22,7 @@
     "title": "Breadcrumb",
     "props": {
       "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-comocomprar"],
-      "text": "[Inicio](/) / comocomprar"
+      "text": "[Inicio](/) / Como comprar"
     }
   },
 

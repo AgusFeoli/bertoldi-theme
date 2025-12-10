@@ -156,7 +156,7 @@ InstitutionalContent.schema = {
     properties: {
         content: {
             title: "Contenido HTML",
-            description: "Contenido exportado de Google Docs como HTML",
+            description: "Nota: editar contenido en Google Docs, descargar como HTML, abrir archivo en cualquier editor de texto, copiar todo su contendio y pegarlo en este campo.",
             type: "string"
         }
     }
