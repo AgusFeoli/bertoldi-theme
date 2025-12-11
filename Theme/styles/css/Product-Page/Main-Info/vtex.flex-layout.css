@@ -44,6 +44,10 @@
     padding-top: 32px;
 }
 
+:global(.vtex-modal-layout-0-x-modal--pdbx-quickview) .flexRowContent--buy-product {
+    display: none !important;
+}
+
 .flexRowContent--buy-product :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: max-content !important;
     display: flex;

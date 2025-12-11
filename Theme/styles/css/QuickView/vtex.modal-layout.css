@@ -41,7 +41,7 @@
 
 @media(max-width: 1025px) {
     .paper--pdbx-quickview {
-        padding: 0;
-        padding-top: 20px;
+        padding: 20px 0;
+        padding-bottom: 0;
     }
 }

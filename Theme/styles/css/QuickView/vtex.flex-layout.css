@@ -96,8 +96,7 @@
     :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-name,
     :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-ID,
     :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexRow--product-price,
-    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--containerTalles,
-    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) :global(.vtex-store-link-0-x-link--see-detail-product) {
+    :global(.vtex-modal-layout-0-x-paper--pdbx-quickview) .flexCol--containerTalles {
         padding: 0 16px;
     }
 }

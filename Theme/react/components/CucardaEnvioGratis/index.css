@@ -27,6 +27,10 @@
 }
 
 @media(max-width: 1025px) {
+    .cucardaEnvioGratisMainContainer {
+        padding: 0px 16px;
+    }
+
     :global(.vtex-product-summary-2-x-element--product-box) .cucardaEnvioGratisText {
         font-size: var(--forCode-font-size-xs);
         line-height: var(--forCode-font-line-height-lg);

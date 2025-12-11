@@ -70,7 +70,8 @@
     "vtex.condition-layout": "2.x",
     "vtex.toggle-layout": "0.x",
     "vtex.store-video": "1.x",
-    "vtex.similar-products-variants": "0.x"
+    "vtex.similar-products-variants": "0.x",
+    "vtex.order-items": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x"

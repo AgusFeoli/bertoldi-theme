@@ -1,0 +1,33 @@
+.notifyAddToCartContainer {
+    z-index: 10000;
+    box-sizing: border-box;
+    padding: 16px;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 0;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 56px;
+    border-radius: 4px;
+    background: #DE1269;
+    transition: .2s;
+}
+
+.notifyAddToCartContainer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.notifyAddToCartContainer p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+:global(.render-route-store-product) .sizeColorButtonContainer {
+    display: none;
+}

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@react-google-maps/api": "^2.16.0"
+    "@react-google-maps/api": "^2.16.0",
+    "react-slick": "^0.31.0"
   }
 }
