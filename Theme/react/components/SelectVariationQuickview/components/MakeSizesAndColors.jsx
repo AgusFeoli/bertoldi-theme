@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from "react";
-import { useOrderItems } from "vtex.order-items/OrderItems";
+import React, { useState, useMemo, useEffect, useRef } from "react";
+import { OrderFormProvider, useOrderForm } from 'vtex.order-manager/OrderForm'
+import { OrderItemsProvider, useOrderItems } from 'vtex.order-items/OrderItems'
 
 // COMPONENTS
 import SizeButtons from './SizeButtons';
@@ -15,7 +16,8 @@ import { addToCart } from "../helpers/addToCart";
 
 const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddToCartText }) => {
 
-    const { addItems } = useOrderItems();
+    const { addItems, updateQuantity } = useOrderItems();
+    const { orderForm } = useOrderForm();
 
     const parsed = useMemo(() => parseVariations(product), [product]);
     const type = useMemo(() => getVariationType(parsed), [parsed]);
@@ -24,6 +26,8 @@ const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddTo
     const [selectedSize, setSelectedSize] = useState(null);
     const [selectedColor, setSelectedColor] = useState(null);
     const [quantitySeted, setQuantitySeted] = useState(1);
+
+    const [activeSpinnerAddToCart, setActiveSpinnerAddToCart] = useState(false);
 
     // FILTRO BIDIRECCIONAL
     const availableSizes = useMemo(() => {
@@ -48,228 +52,300 @@ const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddTo
 
     }, [selectedSize]);
 
+    const myRef = useRef();
+
+    useEffect(() => {
+        const isMobile = window.innerWidth <= 1025;
+        if (!isMobile) return;
+
+        const node = myRef.current;
+        const getFather = document.querySelector(
+            ".vtex-flex-layout-0-x-flexRowContent--product-data-PDP-MB"
+        );
+
+        if (!node || !getFather) return;
+
+        getFather.appendChild(node);
+
+        const handleClick = () => {
+            const highlightEl = document.querySelector(
+                ".bertoldiar-theme-0-x-buttonSelectorsWrapper"
+            );
+
+            if (!highlightEl) return;
+
+            highlightEl.classList.add("blink-highlight");
+
+            const interval = setInterval(() => {
+                highlightEl.classList.toggle("blink-highlight-active");
+            }, 400);
+
+            setTimeout(() => {
+                clearInterval(interval);
+                highlightEl.classList.remove(
+                    "blink-highlight",
+                    "blink-highlight-active"
+                );
+            }, 5000);
+        };
+
+        const clickListener = (e) => {
+            const target = e.target.closest(
+                ".bertoldiar-theme-0-x-BlockedAddToCartButton"
+            );
+            if (!target) return;
+
+            getFather.scrollIntoView({ behavior: "smooth", block: "end" });
+            handleClick();
+        };
+
+        document.addEventListener("click", clickListener);
+
+        return () => {
+            document.removeEventListener("click", clickListener);
+        };
+    }, []);
+
+
+
     return (
 
-        <div className={style.sizeColorButtonContainer}>
+        <OrderFormProvider>
 
-            {type === "none" && (
+            <OrderItemsProvider>
 
-                <div className={style.selectVariationQuickviewWrapper}>
+                <div className={style.sizeColorButtonContainer}>
 
-                    {productLink &&
+                    {type === "none" && (
 
-                        <a href={productLink} className={style.productLink}>
+                        <div className={style.selectVariationQuickviewWrapper}>
 
-                            <p>Ver detalles</p>
+                            {productLink &&
 
-                        </a>
+                                <a href={productLink} className={style.productLink}>
 
-                    }
+                                    <p>Ver detalles</p>
 
-                    <div className={style.addToCartWrapper}>
-                        <div className={style.addToCartContainer}>
+                                </a>
 
-                            <div className={style.quantityContainer}>
-
-                                <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
-                                <div className={style.quantityValue}>{quantitySeted}</div>
-                                <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
-
-                            </div>
-
-                            <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveNotifyAddToCart, setNootifyAddToCartText, type)}>Agregar al carrito</div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-            )}
-
-            {type === "onlyColor" && (
-
-                <div className={style.selectVariationQuickviewWrapper}>
-
-                    <div className={style.buttonSelectorsWrapper}>
-
-                        <ColorButtons
-                            colors={parsed.colors}
-                            selectedColor={selectedColor}
-                            setSelectedColor={setSelectedColor}
-                        />
-
-                    </div>
-
-                    {productLink &&
-
-                        <a href={productLink} className={style.productLink}>
-
-                            <p>Ver detalles</p>
-
-                        </a>
-
-                    }
-
-                    <div className={style.addToCartWrapper}>
-
-                        <div className={style.addToCartContainer}>
-
-                            <div className={style.quantityContainer}>
-
-                                <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
-                                <div className={style.quantityValue}>{quantitySeted}</div>
-                                <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
-
-                            </div>
-
-                            {selectedSize ?
-                                <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveNotifyAddToCart, setNootifyAddToCartText, type)}>Agregar al carrito</div>
-                                :
-                                <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
                             }
 
+                            <div className={style.addToCartWrapper} ref={myRef}>
+                                <div className={style.addToCartContainer}>
 
+                                    <div className={style.quantityContainer}>
 
+                                        <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
+                                        <div className={style.quantityValue}>{quantitySeted}</div>
+                                        <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
+
+                                    </div>
+
+                                    <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveSpinnerAddToCart, setActiveNotifyAddToCart, setNootifyAddToCartText, type, orderForm, updateQuantity)}>
+                                        {activeSpinnerAddToCart ? <div class={style.spinner}></div> : "Agregar al carrito"}
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
-
-                </div>
-
-            )}
-
-            {type === "onlySize" && (
-
-                <div className={style.selectVariationQuickviewWrapper}>
-
-                    <div className={style.buttonSelectorsWrapper}>
-
-                        <SizeButtons
-                            sizes={availableSizes}
-                            selectedSize={selectedSize}
-                            setSelectedSize={setSelectedSize}
-                        />
-
-                    </div>
-
-                    {productLink &&
-
-                        <a href={productLink} className={style.productLink}>
-
-                            <p>Ver detalles</p>
-
-                        </a>
-
-                    }
-
-                    <div className={style.addToCartWrapper}>
 
 
-                        <div className={style.addToCartContainer}>
+                    )}
 
-                            <div className={style.quantityContainer}>
+                    {type === "onlyColor" && (
 
-                                <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
-                                <div className={style.quantityValue}>{quantitySeted}</div>
-                                <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
+                        <div className={style.selectVariationQuickviewWrapper}>
+
+                            <div className={style.buttonSelectorsWrapper}>
+
+                                <ColorButtons
+                                    colors={parsed.colors}
+                                    selectedColor={selectedColor}
+                                    setSelectedColor={setSelectedColor}
+                                />
 
                             </div>
 
-                            {selectedSize ?
-                                <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveNotifyAddToCart, setNootifyAddToCartText, type)}>Agregar al carrito</div>
-                                :
-                                <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
+                            {productLink &&
+
+                                <a href={productLink} className={style.productLink}>
+
+                                    <p>Ver detalles</p>
+
+                                </a>
+
                             }
 
-                        </div>
+                            <div className={style.addToCartWrapper} ref={myRef}>
 
-                    </div>
+                                <div className={style.addToCartContainer}>
 
-                </div>
+                                    <div className={style.quantityContainer}>
 
-            )}
+                                        <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
+                                        <div className={style.quantityValue}>{quantitySeted}</div>
+                                        <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
 
-            {type === "colorsAndSizes" && (
+                                    </div>
 
-                <div className={style.selectVariationQuickviewWrapper}>
-
-                    <div className={style.buttonSelectorsWrapper}>
-
-                        <SizeButtons
-                            sizes={availableSizes}
-                            selectedSize={selectedSize}
-                            setSelectedSize={size => {
-                                setSelectedSize(size === selectedSize ? null : size);
-                                if (selectedColor) {
-                                    // si ya no coincide, sacarlo
-                                    const validColors = parsed.itemMatrix
-                                        .filter(i => i.size === size)
-                                        .map(i => i.color[0]);
-                                    if (!validColors.includes(selectedColor)) {
-                                        setSelectedColor(null);
+                                    {selectedSize ?
+                                        <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveSpinnerAddToCart, setActiveNotifyAddToCart, setNootifyAddToCartText, type, orderForm, updateQuantity)}>
+                                            {activeSpinnerAddToCart ? <div class={style.spinner}></div> : "Agregar al carrito"}
+                                        </div>
+                                        :
+                                        <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
                                     }
-                                }
-                            }}
-                        />
 
-                        <ColorButtons
-                            colors={availableColors}
-                            selectedColor={selectedColor}
-                            setSelectedColor={color => {
 
-                                setSelectedColor(color === selectedColor ? null : color);
-                                if (selectedSize) {
-                                    const validSizes = parsed.itemMatrix
-                                        .filter(i => i.color[0] === color)
-                                        .map(i => i.size);
-                                    if (!validSizes.includes(selectedSize)) {
-                                        setSelectedSize(null);
-                                    }
-                                }
-                            }}
-                        />
 
-                    </div>
-
-                    {productLink &&
-
-                        <a href={productLink} className={style.productLink}>
-
-                            <p>Ver detalles</p>
-
-                        </a>
-
-                    }
-
-                    <div className={style.addToCartWrapper}>
-
-                        <div className={style.addToCartContainer}>
-
-                            <div className={style.quantityContainer}>
-
-                                <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
-                                <div className={style.quantityValue}>{quantitySeted}</div>
-                                <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
+                                </div>
 
                             </div>
 
-                            {
-                                selectedSize && selectedColor ?
-                                    <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveNotifyAddToCart, setNootifyAddToCartText, type)}>Agregar al carrito</div>
-                                    :
-                                    <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
+                        </div>
+
+                    )}
+
+                    {type === "onlySize" && (
+
+                        <div className={style.selectVariationQuickviewWrapper}>
+
+                            <div className={style.buttonSelectorsWrapper}>
+
+                                <SizeButtons
+                                    sizes={availableSizes}
+                                    selectedSize={selectedSize}
+                                    setSelectedSize={setSelectedSize}
+                                />
+
+                            </div>
+
+                            {productLink &&
+
+                                <a href={productLink} className={style.productLink}>
+
+                                    <p>Ver detalles</p>
+
+                                </a>
+
                             }
+
+                            <div className={style.addToCartWrapper} ref={myRef}>
+
+
+                                <div className={style.addToCartContainer}>
+
+                                    <div className={style.quantityContainer}>
+
+                                        <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
+                                        <div className={style.quantityValue}>{quantitySeted}</div>
+                                        <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
+
+                                    </div>
+
+                                    {selectedSize ?
+                                        <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveSpinnerAddToCart, setActiveNotifyAddToCart, setNootifyAddToCartText, type, orderForm, updateQuantity)}>
+                                            {activeSpinnerAddToCart ? <div class={style.spinner}></div> : "Agregar al carrito"}
+                                        </div>
+                                        :
+                                        <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
+                                    }
+
+                                </div>
+
+                            </div>
 
                         </div>
 
-                    </div>
+                    )}
+
+                    {type === "colorsAndSizes" && (
+
+                        <div className={style.selectVariationQuickviewWrapper}>
+
+                            <div className={style.buttonSelectorsWrapper}>
+
+                                <SizeButtons
+                                    sizes={availableSizes}
+                                    selectedSize={selectedSize}
+                                    setSelectedSize={size => {
+                                        setSelectedSize(size === selectedSize ? null : size);
+                                        if (selectedColor) {
+                                            // si ya no coincide, sacarlo
+                                            const validColors = parsed.itemMatrix
+                                                .filter(i => i.size === size)
+                                                .map(i => i.color[0]);
+                                            if (!validColors.includes(selectedColor)) {
+                                                setSelectedColor(null);
+                                            }
+                                        }
+                                    }}
+                                />
+
+                                <ColorButtons
+                                    colors={availableColors}
+                                    selectedColor={selectedColor}
+                                    setSelectedColor={color => {
+
+                                        setSelectedColor(color === selectedColor ? null : color);
+                                        if (selectedSize) {
+                                            const validSizes = parsed.itemMatrix
+                                                .filter(i => i.color[0] === color)
+                                                .map(i => i.size);
+                                            if (!validSizes.includes(selectedSize)) {
+                                                setSelectedSize(null);
+                                            }
+                                        }
+                                    }}
+                                />
+
+                            </div>
+
+                            {productLink &&
+
+                                <a href={productLink} className={style.productLink}>
+
+                                    <p>Ver detalles</p>
+
+                                </a>
+
+                            }
+
+                            <div className={style.addToCartWrapper} ref={myRef}>
+
+                                <div className={style.addToCartContainer}>
+
+                                    <div className={style.quantityContainer}>
+
+                                        <div className={quantitySeted === 1 ? `${style.subt} ${style.min}` : style.subt} onClick={() => quantitySeted > 1 ? setQuantitySeted(quantitySeted - 1) : null}></div>
+                                        <div className={style.quantityValue}>{quantitySeted}</div>
+                                        <div className={style.add} onClick={() => setQuantitySeted(quantitySeted + 1)}></div>
+
+                                    </div>
+
+                                    {
+                                        selectedSize && selectedColor ?
+                                            <div className={style.addToCartButton} onClick={e => addToCart(e, selectedSize, selectedColor, product, quantitySeted, addItems, setActiveSpinnerAddToCart, setActiveNotifyAddToCart, setNootifyAddToCartText, type, orderForm, updateQuantity)}>
+                                                {activeSpinnerAddToCart ? <div class={style.spinner}></div> : "Agregar al carrito"}
+                                            </div>
+                                            :
+                                            <div className={`${style.addToCartButton} ${style.BlockedAddToCartButton}`}>Elegir opción</div>
+                                    }
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    )}
 
                 </div>
 
-            )}
+            </OrderItemsProvider>
 
-        </div>
+        </OrderFormProvider>
 
     )
 

@@ -132,7 +132,7 @@
 .productLink {
     display: flex;
     justify-content: flex-start;
-    width: 100%;
+    width: max-content;
     margin: 0;
     margin-top: 16px;
     text-decoration: none;
@@ -159,11 +159,37 @@
     background: var(--forCode-surface-button-secondary-hover);
 }
 
+.addToCartButton .spinner {
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+:global(.blink-highlight-active) {
+    background-color: #dedede63;
+    transition: background-color 0.2s ease;
+}
+
+
 @media(max-width: 1025px) {
 
     .buttonSelectorsWrapper,
     .productLink {
         padding: 0 16px;
+    }
+
+    .buttonSelectorsWrapper {
+        padding-bottom: 12px;
     }
 
     .addToCartContainer {
@@ -188,9 +214,19 @@
 
     .addToCartContainer .addToCartButton {
         height: 40px;
-
         font-size: var(--forCode-font-size-base);
         line-height: var(--forCode-font-line-height-xl);
+    }
+
+    .addToCartContainer .BlockedAddToCartButton {
+        pointer-events: unset;
+        background: #E5E5E5;
+        color: #A3A3A3;
+    }
+
+    .addToCartContainer .BlockedAddToCartButton:hover {
+        background: #E5E5E5;
+        color: #A3A3A3;
     }
 
     .quantityContainer .quantityValue {
