@@ -1,0 +1,323 @@
+.quickViewGallery {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+@media (max-width: 1025px) {
+  .quickViewGallery {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
+/* ================= SKELETON ================= */
+
+.skeletonWrapper {
+  display: flex;
+  gap: 20px;
+  width: 498px;
+  height: 420px;
+}
+
+.skeletonThumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 1025px) {
+  .skeletonWrapper {
+    width: 100%;
+  }
+
+  .skeletonThumbs {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .skeletonWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .skeletonThumbs {
+    flex-direction: row;
+  }
+}
+
+.skeletonBox,
+.skeletonMain {
+  background: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeletonBox {
+  width: 95px;
+  height: 95px;
+}
+
+.skeletonMain {
+  width: 100%;
+  height: 100%;
+}
+
+/* Shimmer */
+.skeletonBox::after,
+.skeletonMain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* ================= MAIN IMAGE ================= */
+
+.mainImageWrapper {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.mainSlider {
+  display: flex;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  max-height: 420px;
+  transition: transform 0.25s ease-out; /* 👈 rápido y smooth */
+  will-change: transform;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@media (max-width: 1025px) {
+  .mainImageWrapper {
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+  }
+
+  .mainSlider {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .mainImage {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mainImageWrapper {
+    max-height: 287px;
+  }
+
+  .mainImage {
+    max-height: 287px;
+  }
+}
+
+/* ================= ARROWS ================= */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  font-size: 0;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 100px;
+  border: 0.8px solid var(--forCode-stroke-button-primary-default, #de1269);
+  background: var(--forCode-surface-button-secondary-default, #fff);
+}
+
+.arrow:hover {
+  box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05),
+    0 10px 15px -3px rgba(40, 22, 105, 0.1);
+}
+
+.arrow.left::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36866 9.99972L13.0695 5.60889C13.4053 5.29472 13.4237 4.76722 13.1095 4.43055C12.7962 4.09389 12.267 4.07639 11.932 4.39055L7.18116 8.82889C6.84949 9.13889 6.66699 9.55389 6.66699 9.99972C6.66699 10.4456 6.84949 10.8606 7.18033 11.1706L11.9312 15.6089C12.092 15.7589 12.2962 15.8331 12.5003 15.8331C12.7237 15.8331 12.9453 15.7447 13.1087 15.5689C13.4228 15.2322 13.4045 14.7056 13.0687 14.3906L8.36866 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  right: 2px;
+  bottom: 1px;
+}
+
+.arrow.right {
+  right: 0;
+}
+
+.arrow.right::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12' fill='none'%3E%3Cpath d='M6.15341 4.66255L1.40257 0.224213C1.06674 -0.0891202 0.538408 -0.0724537 0.225074 0.264213C-0.0890925 0.60088 -0.0715926 1.12838 0.264241 1.44255L4.96507 5.83338L0.264241 10.2242C-0.0715926 10.5384 -0.0899262 11.0659 0.224241 11.4025C0.388407 11.5784 0.610074 11.6667 0.833407 11.6667C1.03757 11.6667 1.24174 11.5925 1.40257 11.4425L6.15341 7.00421C6.48424 6.69421 6.66674 6.27921 6.66674 5.83338C6.66674 5.38755 6.48424 4.97255 6.15341 4.66255Z' fill='%23DE1269'/%3E%3C/svg%3E");
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  left: 3px;
+  top: 1px;
+}
+
+/* ================= DOTS ================= */
+.dotsContainer {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dots {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px;
+  border-radius: var(--forCode-spacing-system-radius-sm, 16px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #d0cce0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.activeDot,
+.dot:hover {
+  background: #b80659;
+  border-color: #b80659;
+}
+
+/* ================= THUMBS ================= */
+
+.thumbsWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+
+@media (max-width: 1025px) {
+  .thumbsWrapper {
+    display: none;
+  }
+}
+
+.thumbsContainer {
+  height: 100%;
+  max-height: 420px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--forCode-stroke-light);
+  border-radius: var(--forCode-spacing-system-radius-m);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.thumb:hover {
+  border-color: var(--forCode-stroke-button-primary-default);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.selected {
+  border-color: var(--forCode-stroke-button-primary-default);
+}
+
+/* ================= THUMB ARROWS ================= */
+
+.thumbArrow {
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.thumbArrow::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect width='30' height='30' transform='translate(30 30) rotate(180)' fill='white'/%3E%3Cpath d='M15.6784 19.9123L25.6346 9.46294C25.8008 9.28858 25.8936 9.05694 25.8936 8.81606C25.8936 8.57518 25.8008 8.34354 25.6346 8.16919L25.6234 8.15794C25.5428 8.07312 25.4458 8.00558 25.3383 7.95943C25.2308 7.91328 25.1151 7.88948 24.9981 7.88948C24.8811 7.88948 24.7653 7.91328 24.6578 7.95943C24.5503 8.00558 24.4533 8.07312 24.3728 8.15794L14.9978 17.9979L5.6265 8.15794C5.54593 8.07312 5.44894 8.00559 5.34144 7.95944C5.23394 7.91328 5.11818 7.88949 5.00119 7.88949C4.8842 7.88949 4.76844 7.91328 4.66094 7.95944C4.55344 8.00559 4.45645 8.07312 4.37588 8.15794L4.36463 8.16919C4.19842 8.34354 4.1057 8.57518 4.1057 8.81606C4.1057 9.05695 4.19842 9.28859 4.36463 9.46294L14.3209 19.9123C14.4084 20.0042 14.5137 20.0774 14.6304 20.1274C14.7471 20.1773 14.8727 20.2031 14.9996 20.2031C15.1266 20.2031 15.2522 20.1773 15.3688 20.1274C15.4855 20.0774 15.5908 20.0042 15.6784 19.9123Z' fill='%23DE1269'/%3E%3C/svg%3E");
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.thumbArrow.left {
+  position: absolute;
+  top: 1px;
+  left: 25%;
+  transform: rotate(180deg);
+}
+
+.thumbArrow.right {
+  position: absolute;
+  bottom: 1px;
+  left: 25%;
+}
+
+/* ================= ZOOM POPUP ================= */
+
+.zoomOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.zoomImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  cursor: default;
+}

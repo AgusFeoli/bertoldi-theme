@@ -26,7 +26,7 @@
     "props": {
       "blockClass": "pdbx-quickview"
     },
-    "children": ["flex-layout.row#pdbx-quickview-close", "responsive-layout.desktop#pdbx-quickview", "responsive-layout.mobile#pdbx-quickview"]
+    "children": ["flex-layout.row#pdbx-quickview-close", "select-variation-quickview"]
   },
   //Close Button
   "flex-layout.row#pdbx-quickview-close": {
@@ -34,31 +34,7 @@
       "blockClass": "pdbx-quickview-close"
     },
     "children": ["modal-actions.close"]
-  },
-  //Desktop
-  "responsive-layout.desktop#pdbx-quickview": {
-    "title": "Página de Producto Desktop",
-    "children": ["flex-layout.row#product-main-info"]
-  },
-  //Mobile
-  "responsive-layout.mobile#pdbx-quickview": {
-    "title": "Página de Producto Mobile",
-    "children": ["flex-layout.row#pdbx-quickview-MB"]
-  },
-  "flex-layout.row#pdbx-quickview-MB": {
-    "props": {
-      "blockClass": "product-data-PDP-MB"
-    },
-    "children": [
-      "flex-layout.row#product-image-MB",
-      "flex-layout.row#product-brand",
-      "flex-layout.row#product-name",
-      "flex-layout.row#product-ID",
-      "condition-layout.product#availability-MB",
-      "flex-layout.col#product-description"
-    ]
   }
-
   //Fin Modal
   //***************************************************************
   //

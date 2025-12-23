@@ -10,9 +10,9 @@ export const addToCart = async (
     setNootifyAddToCartText,
     type,
     orderForm,
-    updateQuantity
+    updateQuantity,
+    productoSeparadoPorVariantes
 ) => {
-
     e.preventDefault();
     e.stopPropagation();
 
@@ -21,16 +21,18 @@ export const addToCart = async (
     let skuId = "";
 
     if (type !== "none") {
-        product?.items?.forEach(item => {
-            let sizeSelected = false;
-            let colorSelected = false;
+        if (productoSeparadoPorVariantes) {
+            product?.[0]?.items?.forEach((item) => {
 
-            item.variations?.forEach(variation => {
-                if (variation.name === "Tamaño (ml)" && variation.values[0] === size) {
+                let sizeSelected = false;
+                let colorSelected = false;
+
+
+                if (item.Talle && item.Talle[0] === size) {
                     sizeSelected = true;
                 }
 
-                if (variation.name === "Color" && variation.values[0] === color) {
+                if (item.Color && item.Color[0] === color) {
                     colorSelected = true;
                 }
 
@@ -46,9 +48,42 @@ export const addToCart = async (
                     skuId = item.itemId;
                 }
             });
-        });
+
+        } else {
+            product?.items?.forEach((item) => {
+                let sizeSelected = false;
+                let colorSelected = false;
+
+                item.variations?.forEach((variation) => {
+                    if (variation.name === "Tamaño (ml)" && variation.values[0] === size) {
+                        sizeSelected = true;
+                    }
+
+                    if (variation.name === "Talle" && variation.values[0] === size) {
+                        sizeSelected = true;
+                    }
+
+                    if (variation.name === "Color" && variation.values[0] === color) {
+                        colorSelected = true;
+                    }
+
+                    if (type === "onlySize" && sizeSelected) {
+                        skuId = item.itemId;
+                    }
+
+                    if (type === "onlyColor" && colorSelected) {
+                        skuId = item.itemId;
+                    }
+
+                    if (type === "colorsAndSizes" && sizeSelected && colorSelected) {
+                        skuId = item.itemId;
+                    }
+                });
+            });
+        }
+
     } else {
-        skuId = product?.items?.[0]?.itemId;
+        skuId = product?.items?.[0]?.itemId || product?.[0]?.items?.[0]?.itemId;
     }
 
     if (!skuId) {
@@ -65,7 +100,7 @@ export const addToCart = async (
     let existingItem;
 
     if (orderForm?.items?.length) {
-        existingItem = orderForm.items.find(item => item.id === skuId);
+        existingItem = orderForm.items.find((item) => item.id === skuId);
     }
 
     const quantity = existingItem
@@ -89,7 +124,6 @@ export const addToCart = async (
         setTimeout(() => {
             setActiveNotifyAddToCart(false);
         }, 4000);
-
     } catch (error) {
         console.error("Error addToCart:", error);
 
@@ -99,7 +133,6 @@ export const addToCart = async (
         setTimeout(() => {
             setActiveNotifyAddToCart(false);
         }, 3000);
-
     } finally {
         setActiveSpinnerAddToCart(false);
     }

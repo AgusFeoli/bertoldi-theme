@@ -24,10 +24,6 @@
       "transparencia-fiscal",
       "instalment-product-box",
       "flex-layout.col#containerTalles",
-      "flex-layout.row#skuSelectorColorContainer",
-      "flex-layout.row#skuSelectorTallesContainer",
-      // "select-sku-in-product-box",
-      "select-variation-quickview",
       "flex-layout.row#buy-product"
     ]
   },

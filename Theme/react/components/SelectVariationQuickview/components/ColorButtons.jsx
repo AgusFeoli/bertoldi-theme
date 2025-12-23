@@ -1,14 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react'
 import style from './ColorButtons.css'
 
-const ColorButtons = ({ colors, selectedColor, setSelectedColor }) => {
+const ColorButtons = ({
+  colors,
+  selectedColor,
+  setSelectedColor,
+  product,
+  productoSeparadoPorVariantes,
+}) => {
+
   const itemsPerSlide = 3
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const sliderRef = useRef(null)
   const itemRef = useRef(null)
 
-  const maxIndex = Math.ceil(colors.length / itemsPerSlide) - 1
+  const maxIndex = Math.ceil(colors?.length / itemsPerSlide) - 1
 
   const handlePrev = () => {
     setCurrentIndex(prev => Math.max(prev - 1, 0))
@@ -18,52 +25,100 @@ const ColorButtons = ({ colors, selectedColor, setSelectedColor }) => {
     setCurrentIndex(prev => Math.min(prev + 1, maxIndex))
   }
 
+  //-------------------------------------
+  // Construye colores con stock
+  //-------------------------------------
+  const buildColorsWithStock = (colorsArray) => {
+    return colorsArray.map(color => {
+      const colorName = color[0]
+      const colorImage = color[1]
+      let totalAvailable = 0
+
+      if (productoSeparadoPorVariantes) {
+        product?.[0]?.items?.forEach(item => {
+          const itemColor = item?.Color?.[0]
+
+          if (itemColor === colorName) {
+            const qty =
+              item?.sellers?.[0]?.commertialOffer?.AvailableQuantity ?? 0
+            totalAvailable += qty
+          }
+        })
+      } else {
+        product?.items?.forEach((item) => {
+
+          item.variations.forEach(variation => {
+
+            if (variation.name.toLowerCase().includes("color")) {
+
+              const itemColor = variation.values[0];
+
+              if (itemColor === colorName) {
+                const qty = item?.sellers?.[0]?.commertialOffer?.AvailableQuantity ?? 0
+                totalAvailable += qty
+              }
+
+            }
+          });
+        })
+      }
+
+      return {
+        color: colorName,
+        image: colorImage,
+        AvailableQuantity: totalAvailable,
+      }
+    })
+  }
+  //-------------------------------------
+
+  const colorsWithStock = buildColorsWithStock(colors || [])
+
   useEffect(() => {
     if (!sliderRef.current || !itemRef.current) return
 
-    // Medición REAL del ancho del item + gap
     const itemWidth = itemRef.current.offsetWidth
-    const gap = 12 // lo tenés en el CSS
+    const gap = 12
 
     const moveX = (itemWidth + gap) * itemsPerSlide * currentIndex
-
     sliderRef.current.style.transform = `translateX(-${moveX}px)`
   }, [currentIndex])
 
   return (
     <div className={style.sectionColorContainer}>
-      <h4>Color</h4>
+      <h4>Color: <span>{selectedColor}</span></h4>
 
       <div className={style.buttonColorContainer}>
-        {colors.length > 6 ? (
+        {colorsWithStock.length > 6 ? (
           <div className={style.customSkuSelectorMainSliderConainter}>
 
             {/* PREV */}
             <div
               className={style.customSkuSelectorPrevButton}
               onClick={handlePrev}
-            ></div>
+            />
 
             <div className={style.customSkuSelectorMainSlider}>
               <div
                 ref={sliderRef}
                 className={style.customSkuSelectorSlider}
-                style={{ transition: 'transform 0.35s ease' }}
               >
-                {colors.map((color, index) => (
+                {colorsWithStock.map(({ color, image, AvailableQuantity }, index) => (
                   <div
                     ref={index === 0 ? itemRef : null}
-                    className={style.buttonColor}
-                    key={color[0]}
-                    onClick={() => setSelectedColor(color[0])}
-                    style={{
-                      border:
-                        selectedColor === color[0]
-                          ? '1px solid #DE1269'
-                          : '1px solid #D0CCE0'
-                    }}
+                    key={color}
+                    className={[
+                      style.buttonColor,
+                      selectedColor === color && style.buttonColorSelected,
+                      AvailableQuantity === 0 && style.buttonColorDisabled,
+                    ].filter(Boolean).join(' ')}
+                    onClick={() =>
+                      AvailableQuantity > 0 && setSelectedColor(color)
+                    }
                   >
-                    <img src={color[1]} alt={color[0]} />
+                    <div className={style.buttonColorMiddleContainer}>
+                      <img src={image} alt={color} />
+                    </div>
                   </div>
                 ))}
               </div>
@@ -73,22 +128,24 @@ const ColorButtons = ({ colors, selectedColor, setSelectedColor }) => {
             <div
               className={style.customSkuSelectorNextButton}
               onClick={handleNext}
-            ></div>
+            />
           </div>
         ) : (
-          colors.map(color => (
+          colorsWithStock.map(({ color, image, AvailableQuantity }) => (
             <div
-              className={style.buttonColor}
-              key={color[0]}
-              onClick={() => setSelectedColor(color[0])}
-              style={{
-                border:
-                  selectedColor === color[0]
-                    ? '1px solid #DE1269'
-                    : '1px solid #D0CCE0'
-              }}
+              key={color}
+              className={[
+                style.buttonColor,
+                selectedColor === color && style.buttonColorSelected,
+                AvailableQuantity === 0 && style.buttonColorDisabled,
+              ].filter(Boolean).join(' ')}
+              onClick={() =>
+                AvailableQuantity > 0 && setSelectedColor(color)
+              }
             >
-              <img src={color[1]} alt={color[0]} />
+              <div className={style.buttonColorMiddleContainer}>
+                <img src={image} alt={color} />
+              </div>
             </div>
           ))
         )}

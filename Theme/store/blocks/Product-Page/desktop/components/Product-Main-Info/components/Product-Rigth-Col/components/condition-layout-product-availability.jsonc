@@ -25,36 +25,9 @@
       "transparencia-fiscal",
       "instalment-product-box",
       "flex-layout.col#containerTalles",
-      "flex-layout.row#skuSelectorColorContainer",
-      "flex-layout.row#skuSelectorTallesContainer",
-      // "select-sku-in-product-box",
-      "select-variation-quickview",
       "flex-layout.row#buy-product"
     ]
   },
-  //
-  //
-  //Inicio de bloques para "select-variation-quickview"
-  "flex-layout.row#skuSelectorTallesContainer": {
-    "props": {
-      "blockClass": "sku-selector-talles-container"
-    },
-
-    "children": []
-  },
-
-  "flex-layout.row#skuSelectorColorContainer": {
-    "props": {
-      "blockClass": "sku-selector-color-container"
-    },
-
-    "children": []
-  },
-  //Fin de bloques para "select-variation-quickview"
-  //
-  //
-  //
-  //
   /*Inicio Boton Comprar*/
   "flex-layout.row#buy-product": {
     "props": {

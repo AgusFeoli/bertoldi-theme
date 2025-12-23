@@ -1,84 +1,161 @@
 .sectionColorContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .sectionColorContainer h4 {
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 400;
-    color: #6b6779;
+  margin: 0;
+  padding: 0;
+  color: var(--forCode-text-body-default);
+  font-family: var(--forCode-font-family-body);
+  font-size: var(--forCode-font-size-sm);
+  font-style: normal;
+  font-weight: var(--forCode-font-weight-regular);
+  line-height: var(--forCode-font-line-height-xl);
+  letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.sectionColorContainer h4 span {
+  margin: 0;
+  padding: 0;
+  color: var(--forCode-text-body-dark);
+  font-weight: var(--forCode-font-weight-bold);
 }
 
 .buttonColorContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 438px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 438px;
 }
 
-.buttonColorContainer .buttonColor {
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    border-radius: 50vw;
-}
-
-.buttonColorContainer .buttonColor img {
-    border-radius: 100px;
-    border: 0.7px solid var(--forCode-stroke-default);
-}
-
-.buttonColorContainer .buttonColor:hover {
-    border: 1px solid #DE1269 !important;
+.buttonColorContainer .buttonColorMiddleContainer {
+  max-height: 30px;
+  overflow: hidden;
 }
 
 .buttonColorContainer .sliderLayoutContainer {
-    padding: 0 44px;
+  padding: 0 44px;
 }
 
 .buttonColorContainer .sliderArrows {
-    margin: 0;
-    padding: 0;
-    width: 38px;
-    height: 38px;
-    box-sizing: border-box;
-    border: 1px solid #de1269;
-    border-radius: 50vw;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #676f79;
+  border-radius: 50vw;
 }
 
 .buttonColorContainer .sliderArrows svg {
-    display: none;
+  display: none;
 }
 
 .buttonColorContainer .sliderLeftArrow::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23676F79'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .buttonColorContainer .sliderRightArrow::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    transform: rotate(180deg);
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23676F79'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
+.sectionColorContainer {
+}
 
+.buttonColorContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.buttonColorContainer .buttonColor {
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 0.7px solid var(--forCode-stroke-default);
+}
+
+.buttonColorContainer .buttonColor:hover,
+.buttonColorSelected {
+  border: 0.7px solid var(--forCode-stroke-medium) !important;
+}
+
+.buttonColorDisabled {
+  pointer-events: none;
+  border-color: #f2f4f5 !important;
+  position: relative;
+}
+
+.buttonColorDisabled::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-46deg);
+  border-bottom: 1px solid #c6c7c8;
+  left: -13px;
+  bottom: 16px;
+  width: 133%;
+  top: 0;
+}
+
+.buttonColorMiddleContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.7px solid var(--forCode-stroke-default);
+  border-radius: 100%;
+}
+
+.buttonColorMiddleContainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.customSkuSelectorMainSliderConainter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customSkuSelectorMainSlider {
+  overflow: hidden;
+  width: calc((56px * 3) + (12px * 2));
+}
+
+.customSkuSelectorSlider {
+  display: flex;
+  gap: 12px;
+  transition: transform 0.35s ease;
+}
+
+.customSkuSelectorPrevButton,
+.customSkuSelectorNextButton {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 
 /****************************************************/
 /****************************************************/
@@ -86,62 +163,62 @@
 /****************************************************/
 /*INICIO SLIDER*/
 .buttonColorContainer .customSkuSelectorMainSliderConainter {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
 }
 
 .customSkuSelectorMainSlider {
-    width: 353px;
-    overflow: hidden;
+  width: 353px;
+  overflow: hidden;
 }
 
 .buttonColorContainer .customSkuSelectorSlider {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
 }
 
 .buttonColorContainer .customSkuSelectorPrevButton,
 .buttonColorContainer .customSkuSelectorNextButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    padding: 8px;
-    border-radius: 100px;
-    border: 0.8px solid var(--forCode-stroke-button-primary-default);
-    background: var(--forCode-surface-button-secondary-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 100px;
+  border: 0.8px solid var(--forCode-stroke-button-primary-default);
+  background: var(--forCode-surface-button-secondary-default);
 }
 
 .buttonColorContainer .customSkuSelectorPrevButton:hover,
 .buttonColorContainer .customSkuSelectorNextButton:hover {
-    box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05), 0 10px 15px -3px rgba(40, 22, 105, 0.10);
-    cursor: pointer;
+  box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05),
+    0 10px 15px -3px rgba(40, 22, 105, 0.1);
+  cursor: pointer;
 }
 
 .buttonColorContainer .customSkuSelectorPrevButton::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36866 9.99972L13.0695 5.60889C13.4053 5.29472 13.4237 4.76722 13.1095 4.43055C12.7962 4.09389 12.267 4.07639 11.932 4.39055L7.18116 8.82889C6.84949 9.13889 6.66699 9.55389 6.66699 9.99972C6.66699 10.4456 6.84949 10.8606 7.18033 11.1706L11.9312 15.6089C12.092 15.7589 12.2962 15.8331 12.5003 15.8331C12.7237 15.8331 12.9453 15.7447 13.1087 15.5689C13.4228 15.2322 13.4045 14.7056 13.0687 14.3906L8.36866 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    display: block;
-    width: 20px;
-    height: 20px;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36866 9.99972L13.0695 5.60889C13.4053 5.29472 13.4237 4.76722 13.1095 4.43055C12.7962 4.09389 12.267 4.07639 11.932 4.39055L7.18116 8.82889C6.84949 9.13889 6.66699 9.55389 6.66699 9.99972C6.66699 10.4456 6.84949 10.8606 7.18033 11.1706L11.9312 15.6089C12.092 15.7589 12.2962 15.8331 12.5003 15.8331C12.7237 15.8331 12.9453 15.7447 13.1087 15.5689C13.4228 15.2322 13.4045 14.7056 13.0687 14.3906L8.36866 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
+  display: block;
+  width: 20px;
+  height: 20px;
 }
-
 
 .buttonColorContainer .customSkuSelectorNextButton::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M12.8214 8.82954L8.07054 4.39121C7.73471 4.07787 7.20638 4.09454 6.89304 4.43121C6.57888 4.76787 6.59638 5.29537 6.93221 5.60954L11.633 10.0004L6.93221 14.3912C6.59638 14.7054 6.57804 15.2329 6.89221 15.5695C7.05638 15.7454 7.27804 15.8337 7.50138 15.8337C7.70554 15.8337 7.90971 15.7595 8.07054 15.6095L12.8214 11.1712C13.1522 10.8612 13.3347 10.4462 13.3347 10.0004C13.3347 9.55454 13.1522 9.13954 12.8214 8.82954Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    display: block;
-    width: 20px;
-    height: 20px;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M12.8214 8.82954L8.07054 4.39121C7.73471 4.07787 7.20638 4.09454 6.89304 4.43121C6.57888 4.76787 6.59638 5.29537 6.93221 5.60954L11.633 10.0004L6.93221 14.3912C6.59638 14.7054 6.57804 15.2329 6.89221 15.5695C7.05638 15.7454 7.27804 15.8337 7.50138 15.8337C7.70554 15.8337 7.90971 15.7595 8.07054 15.6095L12.8214 11.1712C13.1522 10.8612 13.3347 10.4462 13.3347 10.0004C13.3347 9.55454 13.1522 9.13954 12.8214 8.82954Z' fill='%23DE1269'/%3E%3C/svg%3E");
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
-@media(max-width: 1025px) {
-    .customSkuSelectorMainSlider {
-        width: 197px;
-    }
+@media (max-width: 1025px) {
+  .customSkuSelectorMainSlider {
+    width: 197px;
+  }
 }
 
 /*FIN SLIDER*/

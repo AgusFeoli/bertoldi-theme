@@ -1,81 +1,119 @@
 .sectionSizeContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .sectionSizeContainer h4 {
-    font-family: "Poppins";
-    font-size: 14px;
-    font-weight: 400;
-    color: #6b6779;
+  margin: 0;
+  padding: 0;
+  color: var(--forCode-text-body-default);
+  font-family: var(--forCode-font-family-body);
+  font-size: var(--forCode-font-size-sm);
+  font-style: normal;
+  font-weight: var(--forCode-font-weight-regular);
+  line-height: var(--forCode-font-line-height-xl);
+  letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.sectionSizeContainer h4 span {
+  margin: 0;
+  padding: 0;
+  color: var(--forCode-text-body-dark);
+  font-weight: var(--forCode-font-weight-bold);
 }
 
 .buttonSizeContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    max-width: 438px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 438px;
 }
 
 .buttonSizeContainer .buttonSize {
-    cursor: pointer;
-    box-sizing: border-box;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50vw;
-    font-family: "Poppins";
-    font-size: 12px;
-    font-weight: 400;
-    color: #3e3d43;
-}
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 42px;
+  border-radius: var(--forCode-spacing-system-radius-l);
+  border: 1px solid var(--forCode-stroke-default);
 
-.buttonSizeContainer .buttonSize {
-    border: 1px solid #d0cce0 !important;
+  color: var(--forCode-text-body-medium);
+  font-family: var(--forCode-font-family-body);
+  font-size: var(--forCode-font-size-xs);
+  font-style: normal;
+  font-weight: var(--forCode-font-weight-regular);
+  line-height: var(--forCode-font-line-height-lg); /* 150% */
+  letter-spacing: var(--forCode-spacing-system-none);
 }
 
 .buttonSizeContainer .buttonSize:hover {
-    border: 1px solid #de1269 !important;
+  border-color: var(--forCode-surface-button-primary-default) !important;
 }
 
 .buttonSizeContainer .sliderLayoutContainer {
-    padding: 0 44px;
+  padding: 0 44px;
 }
 
 .buttonSizeContainer .sliderArrows {
-    margin: 0;
-    padding: 0;
-    width: 38px;
-    height: 38px;
-    box-sizing: border-box;
-    border: 1px solid #de1269;
-    border-radius: 50vw;
+  margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 1px solid #676f79;
+  border-radius: 50vw;
 }
 
 .buttonSizeContainer .sliderArrows svg {
-    display: none;
+  display: none;
 }
 
 .buttonSizeContainer .sliderLeftArrow::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23676F79'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .buttonSizeContainer .sliderRightArrow::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    transform: rotate(180deg);
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23DE1269'/%3E%3C/svg%3E");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M8.36817 9.99972L13.069 5.60889C13.4048 5.29472 13.4232 4.76722 13.109 4.43055C12.7957 4.09389 12.2665 4.07639 11.9315 4.39055L7.18067 8.82889C6.849 9.13889 6.6665 9.55389 6.6665 9.99972C6.6665 10.4456 6.849 10.8606 7.17984 11.1706L11.9307 15.6089C12.0915 15.7589 12.2957 15.8331 12.4998 15.8331C12.7232 15.8331 12.9448 15.7447 13.1082 15.5689C13.4223 15.2322 13.404 14.7056 13.0682 14.3906L8.36817 9.99972Z' fill='%23676F79'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.buttonSizeSelected {
+  color: #fff !important;
+  border-color: var(--forCode-surface-button-primary-default) !important;
+  background: var(--forCode-surface-button-primary-default) !important;
+}
+
+.buttonSizeDisabled {
+  pointer-events: none;
+  color: #b0b0b0 !important;
+  border-color: #f2f4f5 !important;
+  position: relative;
+}
+
+.buttonSizeDisabled::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: rotate(-34deg);
+  border-bottom: 1px solid #c6c7c8;
+  left: -5px;
+  bottom: 16px;
+  width: 102%;
 }
