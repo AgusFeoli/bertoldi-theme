@@ -1236,10 +1236,13 @@
 
 :global(.vtex-account) :global(.vtex-account__page) :global(.vtex-my-orders-app-3-x-cancelOrder.vtex-account__cancel-order)>div>aside>article>div:first-child {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 16px 10px 16px 19px;
-    background: var(--forCode-surface-background-background-grey);
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin-bottom: 20px;
+    background: transparent;
     border: 0px;
 }
 

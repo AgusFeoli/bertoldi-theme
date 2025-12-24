@@ -129,6 +129,10 @@
         padding-bottom: 16px !important;
     }
 
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse):last-child :global(.ReactCollapse--content) :global(.pl8) :global(.vtex-search-result-3-x-accordionFilterItemOptions) :global(.vtex-search-result-3-x-filterTemplateOverflow){
+        padding-top: 20px;
+    }
+
     :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse):last-child :global(.ReactCollapse--content) :global(.pl8) :global(.vtex-search-result-3-x-accordionFilterItemOptions)::after {
         display: none;
     }

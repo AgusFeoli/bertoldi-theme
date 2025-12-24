@@ -141,13 +141,15 @@
 .swiperPaginationClickable {
     position: relative;
     bottom: 40px !important;
-    left: unset !important;
-    width: fit-content !important;
+    left: 0 !important;
+    width: 100% !important;
     height: fit-content;
     padding: 8px 12px;
     border-radius: var(--forCode-spacing-system-radius-sm);
-    background: rgba(255, 255, 255, 0.20);
-    backdrop-filter: blur(3px);
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .swiperPaginationClickable .swiperBullet {
@@ -249,13 +251,8 @@
     }
 
     .swiperPaginationClickable {
-        position: absolute;
-        bottom: 16px !important;
-        left: 40% !important;
-        width: max-content !important;
-        height: fit-content;
         padding: 4px 10px;
         border-radius: 27px;
-        background: rgba(255, 255, 255, 0.30);
+        background: transparent;
     }
 }

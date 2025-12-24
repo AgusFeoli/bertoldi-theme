@@ -1030,7 +1030,7 @@ h1#cart-title {
 }
 
 #shipping-data .vtex-omnishipping-1-x-addressForm .vtex-omnishipping-1-x-address>div>.input.required label::after {
-    content: ' *';
+    content: ' *' !important;
     display: inline;
     color: var(--forCode-surface-icon-error);
     text-align: right;
@@ -4139,6 +4139,38 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 #app-container .CardForm input[type=email],
 #app-container .CardForm select {
     border-radius: var(--forCode-spacing-system-radius-s);
+}
+
+#app-container .AddressForm .PostalCode {
+    order: 1 !important;
+}
+
+#app-container .AddressForm .payment-billing-address-street {
+    order: 2 !important;
+}
+
+.AddressField.payment-billing-address-number {
+    width: 100%;
+    order: 3 !important;
+    margin-right: 0 !important;
+}
+
+#app-container .AddressForm .payment-billing-address-complement {
+    order: 4 !important;
+}
+
+#app-container .AddressForm .payment-billing-address-state {
+    order: 5 !important;
+}
+
+#app-container .AddressForm .payment-billing-address-city {
+    order: 6 !important;
+}
+
+#app-container .AddressForm .payment-billing-address-street input,
+.AddressField.payment-billing-address-number input,
+#app-container .AddressForm .payment-billing-address-complement input {
+    width: 100% !important;
 }
 
 .orderform-template-holder #payment-data #iframe-placeholder-creditCardPaymentGroup {
