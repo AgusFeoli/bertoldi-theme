@@ -4,7 +4,7 @@
   },
   /* Main Container */
   "flex-layout.row#terminosycondiciones-main-container": {
-    "title": "Como Comprar",
+    "title": "Términos y condiciones",
     "props": {
       "blockClass": ["institutional-main-container", "institutional-main-container-terminosycondiciones"]
     },

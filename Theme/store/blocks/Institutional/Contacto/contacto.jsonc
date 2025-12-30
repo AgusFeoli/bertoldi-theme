@@ -6,6 +6,7 @@
     },
     /* Main Container */
     "flex-layout.row#contacto-main-container": {
+        "title": "Contacto",
         "props": {
             "blockClass": [
                 "institutional-main-container",
@@ -32,6 +33,7 @@
     },
     /* Breadcrumb*/
     "rich-text#institutional-breadcrumb-contacto": {
+        "title": "Breadcrumb",
         "props": {
             "blockClass": [
                 "institutional-breadcrumb",

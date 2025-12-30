@@ -6,6 +6,7 @@
     },
     /* Main Container */
     "flex-layout.row#arrepentimiento-main-container": {
+        "title": "Arrepentimiento",
         "props": {
             "blockClass": [
                 "institutional-main-container",
@@ -33,6 +34,7 @@
     },
     /* Breadcrumb*/
     "rich-text#institutional-breadcrumb-arrepentimiento": {
+        "title": "Breadcrumb",
         "props": {
             "blockClass": [
                 "institutional-breadcrumb",

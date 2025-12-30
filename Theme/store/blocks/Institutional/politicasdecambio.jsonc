@@ -4,7 +4,7 @@
   },
   /* Main Container */
   "flex-layout.row#politicasdecambio-main-container": {
-    "title": "Como Comprar",
+    "title": "Políticas de cambio",
     "props": {
       "blockClass": ["institutional-main-container", "institutional-main-container-politicasdecambio"]
     },

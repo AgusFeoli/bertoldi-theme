@@ -4,7 +4,7 @@
   },
   /* Main Container */
   "flex-layout.row#preguntasfrecuentes-main-container": {
-    "title": "Como Comprar",
+    "title": "Preguntas frecuentes",
     "props": {
       "blockClass": ["institutional-main-container", "institutional-main-container-preguntasfrecuentes"]
     },
