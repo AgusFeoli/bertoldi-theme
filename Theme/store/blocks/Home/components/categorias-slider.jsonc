@@ -28,13 +28,13 @@
       "link.product#categoria-slider-6",
       "link.product#categoria-slider-7",
       "link.product#categoria-slider-8",
-      "link.product#categoria-slider-9",
+      "link.product#categoria-slider-9"/*,
       "link.product#categoria-slider-10",
       "link.product#categoria-slider-11",
       "link.product#categoria-slider-12",
       "link.product#categoria-slider-13",
       "link.product#categoria-slider-14",
-      "link.product#categoria-slider-15"
+      "link.product#categoria-slider-15"*/
     ],
     "props": {
       "blockClass": "categorias-slider",
