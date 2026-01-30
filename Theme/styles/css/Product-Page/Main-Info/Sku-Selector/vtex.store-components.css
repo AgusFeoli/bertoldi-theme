@@ -220,6 +220,7 @@
 
 
 .skuSelectorSubcontainer--color .valueWrapper--divisor {
+    overflow: hidden;
     border-radius: 100px;
     border: 0.7px solid var(--forCode-stroke-default);
 }
