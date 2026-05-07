@@ -40,5 +40,8 @@
     },
     "select-variation-quickview": {
         "component": "SelectVariationQuickview"
+    }  ,  
+    "cucarda-pdp": {
+        "component": "CucardaPDP"
     }    
 }

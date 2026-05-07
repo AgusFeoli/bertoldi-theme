@@ -1,0 +1,8 @@
+.productImagesGallerySwiperContainer :global(.vtex-product-highlights-2-x-productHighlightText--BeautySale){
+    width: 96px;
+}
+
+.productImagesGallerySwiperContainer :global(.vtex-product-highlights-2-x-productHighlightText--BeautySale)::before{
+    width: 96px;
+    height: 96px;
+}

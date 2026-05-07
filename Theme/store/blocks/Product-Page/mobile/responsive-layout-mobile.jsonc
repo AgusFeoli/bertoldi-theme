@@ -7,7 +7,8 @@
       "flex-layout.row#product-image-MB",
       "flex-layout.row#product-data-PDP-MB",
       "flex-layout.row#product-slider-product-box",
-      "ocultar-titulo-especificaciones"
+      "ocultar-titulo-especificaciones",
+      "cucarda-pdp"
     ]
   },
 

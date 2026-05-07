@@ -5,6 +5,7 @@
       "blockClass": "product-box"
     },
     "children": [
+      "vtex.product-highlights@2.x:product-highlights#BeautySale",
       "cucarda-nuevo",
       "cucarda-2x1",
       "product-summary-image#product-box",
@@ -40,7 +41,10 @@
     "props": {
       "blockClass": "price-prod-box"
     },
-    "children": ["product-price-savings#product-box", "product-summary-price#product-box"]
+    "children": [
+      "product-price-savings#product-box",
+      "product-summary-price#product-box"
+    ]
   },
   "product-price-savings#product-box": {
     "props": {
