@@ -2,48 +2,64 @@ import React, { useState, useEffect } from 'react';
 import { useProduct } from 'vtex.product-context';
 import styles from './index.css';
 
+const getBestInstallment = (installments) => {
+    if (!installments?.length) return null;
+
+    // Filtrar cuotas con más de 1 cuota (descartamos "à vista")
+    const multipleInstallments = installments.filter(i => i.NumberOfInstallments > 1);
+
+    if (!multipleInstallments.length) return null;
+
+    // Primero intentar encontrar la mejor sin interés
+    const noInterest = multipleInstallments.filter(i => i.InterestRate === 0);
+
+    if (noInterest.length) {
+        // De las sin interés, la de mayor cantidad de cuotas
+        return noInterest.reduce((best, current) =>
+            current.NumberOfInstallments > best.NumberOfInstallments ? current : best
+        );
+    }
+
+    // Si todas tienen interés, la de mayor cuotas con menor interés
+    return multipleInstallments.reduce((best, current) => {
+        if (current.NumberOfInstallments > best.NumberOfInstallments) return current;
+        if (current.NumberOfInstallments === best.NumberOfInstallments && current.InterestRate < best.InterestRate) return current;
+        return best;
+    });
+};
+
+const formatCurrency = (value) => {
+    return new Intl.NumberFormat('es-AR', {
+        style: 'currency',
+        currency: 'ARS',
+        minimumFractionDigits: 2,
+    }).format(value).replace(/\s/g, '');
+};
+
 const InstalmentProductBox = () => {
     const productContext = useProduct();
-
-    const [showInstallment, setShowInstallment] = useState(false);
-    const [cantidadCuotas, setCantidadCuotas] = useState(0);
-    const [valorCuota, setValorCuota] = useState(0);
-    const [interes, setInteres] = useState(0);
+    const [bestInstallment, setBestInstallment] = useState(null);
 
     useEffect(() => {
-        if (productContext) {
-            const getCantidadCuotas = productContext.selectedItem?.sellers?.[0]?.commertialOffer?.Installments?.[0]?.NumberOfInstallments;
-            const getValorCuota = productContext.selectedItem?.sellers?.[0]?.commertialOffer?.Installments?.[0]?.Value;
-            const getInteres = productContext.selectedItem?.sellers?.[0]?.commertialOffer?.Installments?.[0]?.InterestRate;
+        if (!productContext) return;
 
-            if (!isNaN(getCantidadCuotas) && !isNaN(getValorCuota) && !isNaN(getInteres)) {
-                setShowInstallment(true);
+        const installments = productContext.selectedItem?.sellers?.[0]?.commertialOffer?.Installments;
+        const best = getBestInstallment(installments);
+        setBestInstallment(best);
+    }, [productContext]);
 
-                setCantidadCuotas(getCantidadCuotas);
+    if (!bestInstallment) return <div className={styles.instalmentProductBoxMainContainer} />;
 
-                const formattedValorCuota = new Intl.NumberFormat('es-AR', {
-                    style: 'currency',
-                    currency: 'ARS',
-                    minimumFractionDigits: 2,
-                }).format(getValorCuota);
-
-                const valorCuotaSinEspacio = formattedValorCuota.replace(/\s/g, '');
-
-                setValorCuota(valorCuotaSinEspacio);
-                setInteres(getInteres);
-            }
-
-        }
-    }, [productContext])
-
+    const { NumberOfInstallments, Value, InterestRate } = bestInstallment;
 
     return (
         <div className={styles.instalmentProductBoxMainContainer}>
-            {showInstallment &&
-                <p className={styles.instalmentProductBoxText}>{cantidadCuotas} {cantidadCuotas >= 2 ? "cuotas" : "cuota"}{interes === 0 && " sin interés"} de {valorCuota}</p>
-            }
+            <p className={styles.instalmentProductBoxText}>
+                {NumberOfInstallments} {NumberOfInstallments >= 2 ? 'cuotas' : 'cuota'}
+                {InterestRate === 0 ? ' sin interés' : ''} de {formatCurrency(Value)}
+            </p>
         </div>
-    )
-}
+    );
+};
 
 export default InstalmentProductBox;
