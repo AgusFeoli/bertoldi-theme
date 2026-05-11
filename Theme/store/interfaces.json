@@ -43,5 +43,8 @@
     }  ,  
     "cucarda-pdp": {
         "component": "CucardaPDP"
-    }    
+    },
+    "daily-event-countdown": {
+        "component": "DailyEventCountdown"
+    }
 }

@@ -6,6 +6,7 @@
     "title": "Home",
     "children": [
       "toggle-layout#main-slider-cards",
+      "daily-event-countdown",
       "toggle-layout#cards-informativas",
       "toggle-layout#categorias-slider",
       "toggle-layout#cards-financiacion",
@@ -19,6 +20,12 @@
       "toggle-layout#banner-fijo-mas-carrusel-2",
       "toggle-layout#grid-banners"
     ]
+  },
+
+  "daily-event-countdown": {
+    "props": {
+      "FormSuscription": "form#newsletter"
+    }
   },
   //******************************************************
   //
