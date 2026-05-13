@@ -30,7 +30,7 @@ const data = [
         "id": "BERTOLDI 2",
         "nombre": "Corrientes",
         "direccion": "Corrientes 180",
-        "horarios": "Lunes a Viernes de 9 hs a 18 hs, Sábados de 9hs a 13hs",
+        "horarios": "Lunes a Viernes de 9 hs a 18 hs, Sábados de 9hs a 14hs",
         "telefono": "+54 9 351 687-1394",
         "email": "corrientes@bertoldi.com.ar",
         "codigoPostal": "5000",
@@ -49,7 +49,7 @@ const data = [
         "id": "BERTOLDI 3",
         "nombre": "Vélez Sarsfield",
         "direccion": "Montevideo 220",
-        "horarios": "Lunes a Viernes de 9 hs a 19:30 hs, Sábados de 9hs a 13hs",
+        "horarios": "Lunes a Viernes de 9 hs a 19:30 hs, Sábados de 9hs a 19:30hs",
         "telefono": "+54 9 351 687-1401",
         "email": "velezsarsfield@bertoldi.com.ar",
         "codigoPostal": "5000",
@@ -68,7 +68,7 @@ const data = [
         "id": "BERTOLDI 4",
         "nombre": "Fontana",
         "direccion": "Av. General Paz 85",
-        "horarios": "Lunes a Viernes de 9 hs a 19 hs, Sábados de 9 hs a 14 hs",
+        "horarios": "Lunes a Viernes de 9 hs a 19:30 hs, Sábados de 9 hs a 14 hs",
         "telefono": "+54 9 351 660-0036",
         "email": "fontana@bertoldi.com",
         "codigoPostal": "5000",
@@ -106,7 +106,7 @@ const data = [
         "id": "BERTOLDI 6",
         "nombre": "Nueva Córdoba",
         "direccion": "Estrada 25",
-        "horarios": "Lunes a Viernes: de 10hs a 21 hs, Sábados: de 10 hs a 13hs",
+        "horarios": "Lunes a Viernes: de 10 hs a 21 hs, Sábados: de 9 hs a 13hs y 17 hs a 21 hs",
         "telefono": "+54 9 351 866-8930",
         "email": "estrada@bertoldi.com.ar",
         "codigoPostal": "5000",
@@ -144,7 +144,7 @@ const data = [
         "id": "BERTOLDI 8",
         "nombre": "Ruta 20",
         "direccion": "Av. Fuerza Aérea 2673",
-        "horarios": "Lunes a Sábados de 9 a 20hs",
+        "horarios": "Lunes a Viernes de 9 a 20hs - Sábados de 09:00 a 13:30 Y 16:00 a 20:00",
         "telefono": "+54 9 351 207-9517",
         "email": "ruta20@bertoldi.com.ar",
         "codigoPostal": "5011",
@@ -182,7 +182,7 @@ const data = [
         "id": "BERTOLDI 10",
         "nombre": "B° Jardín",
         "direccion": "Elías Yofre 1195",
-        "horarios": "Lunes a Viernes de 9 hs a 20:30 hs, Sábados de 09:30hs a 13:30hs y 16:30hs a 20:30hs",
+        "horarios": "Lunes a Viernes de 09:00 a 20:00hs - Sábados de 09:30hs a 13:30hs y 16:00hs a 20:00hs",
         "telefono": "+54 9 351 269-6836",
         "email": "jardin@bertoldi.com.ar",
         "codigoPostal": "5000",
@@ -239,7 +239,7 @@ const data = [
         "id": "BERTOLDI 13",
         "nombre": "Hiper Gral Paz",
         "direccion": "Libertad 1100 - Local 370",
-        "horarios": "Lunes a Lunes 10:00 a 22:00 hs",
+        "horarios": "Lunes a Domingos 10:00 a 21:00 hs",
         "telefono": "+54 9 351 652-3017",
         "email": "libertadgeneralpaz@bertoldi.com.ar",
         "codigoPostal": "5004",
@@ -258,7 +258,7 @@ const data = [
         "id": "BERTOLDI 14",
         "nombre": "Yofre Norte",
         "direccion": "Adolfo Alsina 1962",
-        "horarios": "Lunes a Sábados de 9 hs a 13:00 hs y 17:00 hs a 21:00 hs",
+        "horarios": "Lunes a Sábados de 9 hs a 13:30 hs y 16:30 a 20:00",
         "telefono": "+54 9 351 245-4190",
         "email": "yofre@bertoldi.com.ar",
         "codigoPostal": "5012",
@@ -277,7 +277,7 @@ const data = [
         "id": "BERTOLDI 15",
         "nombre": "Alta Córdoba",
         "direccion": "Mariano Fragueiro 2134",
-        "horarios": "Lunes a Sábado de 09:00 a 13:00 y 16:30 a 20:30",
+        "horarios": "Lunes a Sábado de 09:00 a 13:00 y 16:00 a 20:00",
         "telefono": "+54 9 351 687-1395",
         "email": "altacba@bertoldi.com.ar",
         "codigoPostal": "5001",
@@ -296,7 +296,7 @@ const data = [
         "id": "BERTOLDI 16",
         "nombre": "Cerro",
         "direccion": "Av. Rafael Núñez 3952",
-        "horarios": "Lunes a Sábados de 9 hs a 20 hs",
+        "horarios": "Lunes a Viernes de 9 hs a 20 hs. Sábados de 9 hs a 18 hs",
         "telefono": "+54 9 351 225-9992",
         "email": "cerro@bertoldi.com.ar",
         "codigoPostal": "5000",
@@ -315,7 +315,7 @@ const data = [
         "id": "BERTOLDI 18",
         "nombre": "Dino Alto Verde",
         "direccion": "Rodríguez del Busto 4086 - Local 156",
-        "horarios": "Lunes a Lunes de 9 a 22 hs",
+        "horarios": "Lunes a Domingos de 09:30 a 21:00hs",
         "telefono": "+54 9 351 259-1537",
         "email": "dinoaltoverde@bertoldi.com.ar",
         "codigoPostal": "5009",
@@ -363,7 +363,7 @@ const data = [
         "id": "BERTOLDI 17",
         "nombre": "Recta",
         "direccion": "Recta Martinolli 6667",
-        "horarios": "Lunes a Viernes de 9hs a 13hs 16:30hs a 20:30hs, Sábados de 9hs a 13:30hs y 16:30hs a 20hs",
+        "horarios": "Lunes a Viernes de 9hs a 20 hs. Sábados de 9hs a 13:30hs y 16:00hs a 19:30hs",
         "telefono": "+54 9 351 754-9591",
         "email": "recta@bertoldi.com.ar",
         "codigoPostal": "5021",
@@ -411,7 +411,7 @@ const data = [
         "id": "BERTOLDI 21",
         "nombre": "Villa Allende 2",
         "direccion": "Rio de Janeiro 137",
-        "horarios": "Lunes a Sábados de 9 hs a 13 hs y 17hs a 21 hs",
+        "horarios": "Lunes a Sábados de 9 hs a 13 hs y 16hs a 20 hs",
         "telefono": "+54 9 351 620-3486",
         "email": "allende2@bertoldi.com.ar",
         "codigoPostal": "5105",
@@ -458,35 +458,6 @@ const data = [
     ]
   },
   {
-    "zona": "La Calera",
-    "provincia": "Córdoba",
-    "position": {
-      "lat": -31.354701951640187,
-      "lng": -64.32793442176579
-    },
-    "sucursales": [
-      {
-        "id": "BERTOLDI 23",
-        "nombre": "La Calera",
-        "direccion": "Av. Ejército Argentino 318 interesección, RP E55",
-        "horarios": "Lunes a Sábados de 9 hs a 13 hs y 16 hs a 20 hs",
-        "telefono": "+54 9 3543 46-9845",
-        "email": "lacalera@bertoldi.com.ar",
-        "codigoPostal": "5151",
-        "retiro": false,
-        "exclusiva": false,
-        "imagen": null,
-        "activa": true,
-        "coordenadas": [
-          {
-            "lat": -31.354701951640187,
-            "lng": -64.32793442176579
-          }
-        ]
-      }
-    ]
-  },
-  {
     "zona": "Carlos Paz",
     "provincia": "Córdoba",
     "position": {
@@ -517,7 +488,7 @@ const data = [
         "id": "BERTOLDI 25",
         "nombre": "Wo Carlos Paz",
         "direccion": "9 de Julio 70. Local 91 - 92",
-        "horarios": "Lunes - Domingos de 10:00 a 00:00 hs",
+        "horarios": "Lunes - Domingos de 10:00 a 22:00 hs",
         "telefono": "+54 9 3541 52-9843",
         "email": "cpazwo@bertoldi.com.ar",
         "codigoPostal": "5152",
@@ -575,7 +546,7 @@ const data = [
         "id": "BERTOLDI 27",
         "nombre": "Alta Gracia",
         "direccion": "Av. Belgrano 87",
-        "horarios": "Lunes a Sabados de 9 a 13hs y 17:00 a 21:00hs",
+        "horarios": "Lunes a Sabados de 9 a 13hs y 16:00 a 20:00hs",
         "telefono": "+54 9 351 392-9790",
         "email": "altagracia@bertoldi.com.ar",
         "codigoPostal": "5186",
@@ -604,7 +575,7 @@ const data = [
         "id": "BERTOLDI 28",
         "nombre": "Villa Gral. Belgrano",
         "direccion": "Av. Julio Argentino Roca 215",
-        "horarios": "Lunes a Sábados 9:00 a 14:00 y 16:00 a 21:00, Domingo 10:00 a 14:00 y 16:00 a 21:00",
+        "horarios": "Lunes a Domingo 9:00 a 14:00 y 16:30 a 21:30",
         "telefono": "+54 9 3546 43-6499",
         "email": "vgralbelgrano@bertoldi.com.ar",
         "codigoPostal": "5194",
@@ -633,7 +604,7 @@ const data = [
         "id": "BERTOLDI 29",
         "nombre": "Río Segundo",
         "direccion": "Bv. Leandro Alem 1426",
-        "horarios": "Lunes a Viernes de 9 hs a 12:30 hs y 17:00 hs a 21:00 hs - Sabados de 9 a 13:30hs",
+        "horarios": "Lunes a Viernes de 9 hs a 12:30 hs y 16:00 a 20:00 hs - Sabados de 9 a 13:30hs",
         "telefono": "+54 9 3572 40-2398",
         "email": "riosegundo@bertoldi.com.ar",
         "codigoPostal": "5960",
@@ -645,6 +616,35 @@ const data = [
           {
             "lat": -31.64722887292006,
             "lng": -63.91223765356684
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "zona": "Río Cuarto",
+    "provincia": "Córdoba",
+    "position": {
+      "lat": -33.1241125,
+      "lng": -64.357039
+    },
+    "sucursales": [
+      {
+        "id": "BERTOLDI 32",
+        "nombre": "Río Cuarto",
+        "direccion": "Belgrano 33",
+        "horarios": "Lunes a Sábados de 08:30 a 12:30 y 16:00 a 20:00",
+        "telefono": "+54 9 3512 47-0546",
+        "email": "riocuarto@bertoldi.com.ar",
+        "codigoPostal": "5800",
+        "retiro": false,
+        "exclusiva": false,
+        "imagen": null,
+        "activa": true,
+        "coordenadas": [
+          {
+            "lat": -33.123423,
+            "lng": -64.3479535
           }
         ]
       }
@@ -691,7 +691,7 @@ const data = [
         "id": "BERTOLDI 31",
         "nombre": "La Rioja",
         "direccion": "San Martín 150",
-        "horarios": "Lunes a Sábados de 9 hs a 13 hs y 18 hs a 22 hs",
+        "horarios": "Lunes a Sábados de 9 hs a 13 hs y 17:00 a 21:00 hs",
         "telefono": "+54 9 3804 33-1885",
         "email": "larioja@bertoldi.com.ar",
         "codigoPostal": "5300",
