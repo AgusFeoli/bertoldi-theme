@@ -575,7 +575,7 @@ const data = [
         "id": "BERTOLDI 28",
         "nombre": "Villa Gral. Belgrano",
         "direccion": "Av. Julio Argentino Roca 215",
-        "horarios": "Lunes a Domingo 9:00 a 14:00 y 16:30 a 21:30",
+        "horarios": "Lunes a Sábados de 9:00 a 14:00 y de 16:00 a 21:00. Domingos de 10:00 a 14:00 y de 16:00 a 21:00",
         "telefono": "+54 9 3546 43-6499",
         "email": "vgralbelgrano@bertoldi.com.ar",
         "codigoPostal": "5194",
