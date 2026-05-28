@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useProduct } from 'vtex.product-context';
+import { OmitirEnvioGratis } from '../CucardaEnvioGratisSetter';
 import styles from './index.css';
 
 const CucardaEnvioGratis = () => {
     const [mostrarEnvioGratis, setMostrarEnvioGratis] = useState(false);
-    const { selectedItem } = useProduct();
+    const { product, selectedItem } = useProduct();
 
     useEffect(() => {
         if (selectedItem) {
+            const productHasSomeOmitCategory = OmitirEnvioGratis.some(omitCat =>
+                product.categories.some(productCat =>
+                    productCat.toLowerCase().includes(omitCat.toLowerCase())
+                )
+            )
+            if (productHasSomeOmitCategory) return;
+
             const priceProduct = selectedItem?.sellers?.[0]?.commertialOffer?.Price;
 
             if (priceProduct) {
