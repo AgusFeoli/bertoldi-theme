@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 
-const OmitirEnvioGratis = []
+const SkipEnvioGratis = []
 
-const CucardaEnvioGratisSetter = ({ envio, omit }) => {
+const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
 
     const normalizarPisoEnvio = (value) => {
         if (!value) return 0;
@@ -37,19 +37,24 @@ const CucardaEnvioGratisSetter = ({ envio, omit }) => {
 
         localStorage.setItem("fs", pisoBase64);
         
-        omit.forEach(item => {
-            const itemId = item.__editorItemTitle
-            fetch(`/api/catalog_system/pvt/category/${itemId}`)
-                .then(res => res.json())
-                .then(data => OmitirEnvioGratis.push(data.Title))
-                .catch(err => console.warn('fs - error category fetch', err))
-        })
+        if (skipCategories.length > 0) {
+            skipCategories?.forEach(item => {
+                const itemId = item.__editorItemTitle
+                fetch(`/api/catalog_system/pvt/category/${itemId}`)
+                    .then(res => res.json())
+                    .then(data => SkipEnvioGratis.push(data.Title))
+                    .catch(err => console.warn('fs - error category fetch', err))
+            })
+        } else {
+            skipCategories = null
+        }
+        
     }, [envio]);
 
     return null;
 };
 
-export { OmitirEnvioGratis }
+export { SkipEnvioGratis }
 
 CucardaEnvioGratisSetter.schema = {
     title: "Cucarda Envío Gratis",
@@ -61,7 +66,7 @@ CucardaEnvioGratisSetter.schema = {
             description: "Acá se establece el precio mínimo para mostrar la cucarda de Envío Gratis. El formato debe ser 99123.99 sin incluir $. **Recorda configurar el valor tanto en Desktop como en Mobile**",
             type: "string",
         },
-        omit: {
+        skipCategories: {
             title: "Omitir categorías",
             description: "Lista de categorías a las cuales el envío gratis no afecta.",
             type: "array",
