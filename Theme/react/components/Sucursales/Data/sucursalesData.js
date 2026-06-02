@@ -202,7 +202,7 @@ const data = [
         "nombre": "Ruta 9 (Hiper)",
         "direccion": "Av. Sabattini 3250",
         "horarios": "Lunes a Domingo de 9 hs a 21 hs",
-        "telefono": "+54 9 351 652-3017",
+        "telefono": "+54 9 351 398-3472",
         "email": "sabattini@bertoldi.com.ar",
         "codigoPostal": "5000",
         "retiro": false,
