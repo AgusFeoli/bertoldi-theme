@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
-import styles from "./index.css";
+import { useEffect } from 'react'
 
-const CucardaEnvioGratisSetter = ({ envio }) => {
+const SkipEnvioGratis = []
+
+const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
 
     const normalizarPisoEnvio = (value) => {
         if (!value) return 0;
@@ -35,10 +36,25 @@ const CucardaEnvioGratisSetter = ({ envio }) => {
         const pisoBase64 = btoa(pisoFinal);
 
         localStorage.setItem("fs", pisoBase64);
+        
+        if (skipCategories.length > 0) {
+            skipCategories?.forEach(item => {
+                const itemId = item.__editorItemTitle
+                fetch(`/api/catalog_system/pvt/category/${itemId}`)
+                    .then(res => res.json())
+                    .then(data => SkipEnvioGratis.push(data.Title))
+                    .catch(err => console.warn('fs - error category fetch', err))
+            })
+        } else {
+            skipCategories = null
+        }
+        
     }, [envio]);
 
     return null;
 };
+
+export { SkipEnvioGratis }
 
 CucardaEnvioGratisSetter.schema = {
     title: "Cucarda Envío Gratis",
@@ -50,6 +66,21 @@ CucardaEnvioGratisSetter.schema = {
             description: "Acá se establece el precio mínimo para mostrar la cucarda de Envío Gratis. El formato debe ser 99123.99 sin incluir $. **Recorda configurar el valor tanto en Desktop como en Mobile**",
             type: "string",
         },
+        skipCategories: {
+            title: "Omitir categorías",
+            description: "Lista de categorías a las cuales el envío gratis no afecta.",
+            type: "array",
+            items: {
+                type: "object",
+                properties: {
+                    __editorItemTitle: {
+                        title: "Id de categoría",
+                        description: "Ingresar ID de categoría a omitir.",
+                        type: "number"
+                    }
+                }
+            }
+        }
     },
 };
 
