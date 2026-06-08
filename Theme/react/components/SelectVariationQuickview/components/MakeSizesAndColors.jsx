@@ -15,7 +15,7 @@ import { parseVariations } from '../helpers/parseVariations';
 import { getVariationType } from '../helpers/getVariationType';
 import { addToCart } from "../helpers/addToCart";
 
-const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddToCartText, productoSeparadoPorVariantes, productSimpleData }) => {
+const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddToCartText, productoSeparadoPorVariantes, productSimpleData, setProductSimpleData }) => {
 
     const { addItems, updateQuantity } = useOrderItems();
     const { orderForm } = useOrderForm();
@@ -75,6 +75,28 @@ const MakeSizesAndColors = ({ product, setActiveNotifyAddToCart, setNootifyAddTo
             setGalleryImages(parsed?.gallery?.[0]?.images);
         }
     }, [selectedColor])
+
+    useEffect(() => {
+        // Actualización de precio según la selección de sku
+        if (!selectedColor && !selectedSize) return;
+    
+        const variation = product.items.find(item =>
+            item.variations.some(variation =>
+                variation.values.includes(selectedSize) || variation.values.includes(selectedColor)
+            )
+        )
+
+        const newListPrice = variation.sellers.find(seller => seller.sellerDefault)?.commertialOffer?.ListPrice
+    
+        
+        const newSellingPrice = variation.sellers.find(seller => seller.sellerDefault)?.commertialOffer?.Price
+
+        setProductSimpleData(prev => ({
+            ...prev,
+            listPrice: newListPrice,
+            sellingPrice: newSellingPrice
+        }));
+    }, [selectedColor, selectedSize])
 
     //---------------------------------------------------------------------
     //---------------------------------------------------------------------
