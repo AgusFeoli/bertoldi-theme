@@ -19,7 +19,8 @@
       "myaccount": {
         "display": true,
         "image": "assets/imgs/Header/menu-mobile-mi-cuenta-logo.svg",
-        "text": "Ingresar"
+        "text": "Ingresar",
+        "textLoggedIn": "Mi cuenta"
       },
       "desktopDepartmentHover": true,
       "colorIconCloseMenuMobile": "#3E3D43",
