@@ -14,7 +14,7 @@ const CucardaEnvioGratis = () => {
 
                 const productHasSomeSkipCategory = SkipEnvioGratis && SkipEnvioGratis.some(skipCat =>
                     product.categories.some(productCat =>
-                        productCat.toLowerCase().includes(skipCat.toLowerCase())
+                        productCat?.toLowerCase().includes(skipCat?.toLowerCase())
                     )
                 )
                 if (productHasSomeSkipCategory) return;
