@@ -1246,15 +1246,11 @@ h1#cart-title {
     color: var(--forCode-text-link-default-state);
     text-align: center;
     font-family: var(--forCode-font-family-button);
-    font-size: var(
-    --forCode-font-size-sm);
+    font-size: var(--forCode-font-size-sm);
     font-style: normal;
-    font-weight: var(
-    --forCode-font-weight-semibold);
-    line-height: var(
-    --forCode-font-line-height-xl);
-    letter-spacing: var(
-    --forCode-spacing-system-none);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
 }
 
 .vtex-pickup-points-modal-3-x-pkpmodal .vtex-pickup-points-modal-3-x-infoBar {
@@ -1593,7 +1589,7 @@ h1#cart-title {
     letter-spacing: var(--forCode-spacing-system-none);
 }
 
-@media(max-width: 640px){
+@media(max-width: 640px) {
     .vtex-pickup-points-modal-3-x-modalDetailsInfoTitle {
         font-weight: var(--forCode-font-weight-medium) !important;
     }
@@ -1608,7 +1604,7 @@ h1#cart-title {
     padding: 10px;
 }
 
-@media(max-width: 640px){
+@media(max-width: 640px) {
     .orderform-template-holder .step.shipping-data .pkpmodal-details-bottom {
         padding: 60px 10px;
     }
@@ -2767,7 +2763,8 @@ h1#cart-title {
     flex-direction: column;
 }
 
-@media(max-width: 690px){
+@media(max-width: 690px) {
+
     .cart-more-options .srp-container .srp-data .vtex-shipping-preview-0-x-pc .srp-postal-code__form .vtex-shipping-preview-0-x-postalCodeForgotten,
     .srp-content .srp-data .vtex-shipping-preview-0-x-pc .srp-postal-code__form .vtex-shipping-preview-0-x-postalCodeForgotten {
         flex-direction: column;
@@ -3091,12 +3088,13 @@ h1#cart-title {
 }
 
 @media(max-width: 690px) {
+
     .cart-more-options .srp-container .ship-postalCode input#ship-postalCode,
     .srp-content .ship-postalCode input#ship-postalCode {
         height: 40px;
         max-width: 38.22%;
     }
-    
+
 
     .cart-more-options .srp-container .ship-postalCode>small>a,
     .srp-content .ship-postalCode>small>a {
@@ -3390,7 +3388,7 @@ h1#cart-title {
     .cart-more-options .srp-container .srp-data .vtex-shipping-preview-0-x-pc .srp-postal-code__form .vtex-shipping-preview-0-x-postalCodeForgotten .srp-pc-input {
         max-width: 100%;
     }
-    
+
     .full-cart .cart table tbody {
         display: flex !important;
         gap: 0px;
@@ -3758,6 +3756,7 @@ h1#cart-title {
     padding: 0px;
     background: unset;
 }
+
 .orderform-template-holder .span6.shipping-data .shipping-data:not(.active)::after {
     content: "Esperando que se complete la información";
     color: var(--forCode-text-body-default);
@@ -4639,7 +4638,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     gap: 8px;
 }
 
-@media(max-width: 380px){
+@media(max-width: 380px) {
     .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-deliveryChannelsOption {
         padding: 8px 15px;
     }
@@ -4784,7 +4783,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     top: 47px;
 }
 
-@media(max-width: 418px){
+@media(max-width: 418px) {
     .shipping-container .box-step .vtex-omnishipping-1-x-addressFormPart1 small a {
         width: 55%;
         top: 38px;
@@ -5039,8 +5038,7 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
     justify-content: center;
     align-items: center;
     border-radius: var(--forCode-radius-button);
-    background: var(
-    --forCode-surface-button-primary-default);
+    background: var(--forCode-surface-button-primary-default);
     border: 0px;
     margin: 0px;
     width: 100%;
@@ -5360,7 +5358,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
 #shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info {
     padding: 16px 24px;
     border-radius: var(--forCode-spacing-system-radius-l);
-    border: 1px solid var(    --forCode-stroke-default);
+    border: 1px solid var(--forCode-stroke-default);
     max-width: 40.716%;
     display: flex;
     flex-direction: row;
@@ -5440,7 +5438,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     text-decoration: none;
 }
 
-#shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-details:hover{
+#shipping-data .vtex-omnishipping-1-x-findPickup .vtex-omnishipping-1-x-PickupPoint .vtex-omnishipping-1-x-PickupPointInfo.pickup-point-info .vtex-omnishipping-1-x-pointWrapper .vtex-omnishipping-1-x-details:hover {
     background: var(--forCode-surface-button-ghost-link-default);
 }
 
@@ -5467,8 +5465,7 @@ svg.pkpmodal-pickup-point-best-marker-image path:not([fill=white]) {
     padding: 12px;
     border: 0px;
     border-radius: var(--forCode-radius-button);
-    background: var(
-    --forCode-surface-button-ghost-default);
+    background: var(--forCode-surface-button-ghost-default);
     transition: all 150ms ease-in-out;
     max-height: 16px;
     box-sizing: unset;
@@ -5905,16 +5902,12 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     text-decoration: none;
     color: var(--forCode-text-button-secondary);
     font-family:
-    "Roboto", sans-serif;
-    font-size: var(
-    --forCode-font-size-lg);
+        "Roboto", sans-serif;
+    font-size: var(--forCode-font-size-lg);
     font-style: normal;
-    font-weight: var(
-    --forCode-font-weight-semibold);
-    line-height: var(
-    --forCode-font-line-height-4xl);
-    letter-spacing: var(
-    --forCode-spacing-system-none);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
     text-decoration: underline;
 }
 
@@ -6007,7 +6000,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     }
 }
 
-.orderform-template-holder #payment-data  {
+.orderform-template-holder #payment-data {
     width: 100%;
     min-height: 124px;
     padding: 32px !important;
@@ -6032,7 +6025,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 @media(max-width: 1025px) {
 
-    .orderform-template-holder #payment-data  {
+    .orderform-template-holder #payment-data {
         padding: 24px 12px !important;
     }
 
@@ -6647,7 +6640,7 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::before {
         top: 2px;
     }
-    
+
     .orderform-template .cart-template.mini-cart #go-to-cart-button #orderform-minicart-to-cart::after {
         font-size: var(--forCode-font-size-base);
         line-height: var(--forCode-font-line-height-xl);
@@ -6683,10 +6676,8 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
     justify-content: center;
     align-items: center;
     border-radius: var(--forCode-spacing-system-xl) !important;
-    background: var(
-    --forCode-surface-button-primary-default);
-    border: 1px solid var(
-    --forCode-surface-button-primary-default);
+    background: var(--forCode-surface-button-primary-default);
+    border: 1px solid var(--forCode-surface-button-primary-default);
     height: 48px;
     margin: 0px;
     transition: all 150ms ease-in-out;
@@ -6970,8 +6961,6 @@ body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-
 
 /*-------------- FIN REGALOS----------------------------*/
 
-/*--------------------------------- FIN CHECKOUT -----------------------------------------------*/
-
 /*--------------------------------- NOTA IMPORTANTE!!! -----------------------------------------------
   Es nesario declarar este codigo en JS para que se inserte el contendor del "calculador de envio" dentro del contendor del "Resumen de Compra"
   ya que nativamente esta por fuera.
@@ -7012,5 +7001,106 @@ window.addEventListener("DOMContentLoaded", function () {
 @media(max-width: 1210px) {
     .payment-data.span6 #payments-title {
         /* width: 91%; */
+    }
+}
+
+
+/* Contenedor custom */
+.custom-cart-holder {
+    display: flex;
+    flex-direction: column;
+    padding: var(--forCode-spacing-system-xl, 24px) var(--forCode-spacing-system-lg, 20px);
+    border-radius: var(--forCode-spacing-system-radius-l, 24px);
+    border: 1px solid var(--forCode-stroke-light, #E9E9ED);
+    background: var(--forCode-surface-background-base-default, #FFF);
+    margin-block-end: var(--forCode-spacing-system-md, 16px);
+}
+.custom-cart-holder:empty {
+    display: none;
+}
+
+@media (max-width: 690px) {
+    .custom-cart-holder {
+        width: 100%;
+        padding: var(--forCode-spacing-system-md, 16px);
+        border-radius: var(--forCode-spacing-system-radius-sm, 16px);
+        margin-block: var(--forCode-spacing-system-lg, 20px) 0;
+    }
+}
+
+
+/* Barra envío gratis */
+.shipping-bar-main {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--forCode-spacing-system-xs);
+}
+
+.shipping-bar-main .shipping-bar-header {
+    min-height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shipping-bar-main .shipping-bar-header:not(.no-icon) {
+    gap: 0 var(--forCode-spacing-system-xs);
+}
+
+.shipping-bar-main .shipping-bar-header:not(.no-icon)::before {
+    content: "";
+    display: inline-block;
+    height: 32px;
+    aspect-ratio: 1;
+    border: .5px solid var(--forCode-stroke-button-primary-default, #DE1269);
+    border-radius: 140px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none' viewBox='0 0 16 13'%3E%3Cpath fill='%23de1269' d='M15.167 8.556h-.39V5.928c0-.309-.123-.605-.342-.824l-2.428-2.428a1.17 1.17 0 0 0-.824-.343h-1.072V1.167A1.165 1.165 0 0 0 8.944 0H1.167A1.167 1.167 0 0 0 0 1.167v7.777a1.167 1.167 0 0 0 1.167 1.167h.389a2.333 2.333 0 1 0 4.667 0h3.11a2.333 2.333 0 1 0 4.667 0h1.167a.39.39 0 0 0 .389-.39v-.777a.39.39 0 0 0-.39-.388M3.889 11.278a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m7.778 0a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m1.944-5.056h-3.5V3.5h1.072l2.429 2.428z'/%3E%3C/svg%3E") no-repeat center/16px;
+    grid-column: 1;
+    grid-row: span 2;
+    transition: all .15 linear;
+}
+
+.shipping-bar-main .shipping-bar-header .shipping-bar-title {
+    color: var(--forCode-text-body-medium, #3E3D43);
+    font-family: var(--forCode-font-family-body, Poppins);
+    font-size: var(--forCode-font-size-sm, 14px);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular, 400);
+    line-height: var(--forCode-font-line-height-xl, 20px);
+    letter-spacing: var(--forCode-spacing-system-none, 0);
+}
+
+.shipping-bar-main .shipping-bar {
+    height: 6px;
+    width: 100%;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    background: var(--forCode-surface-background-background-grey-medium);
+}
+
+.shipping-bar-main .shipping-bar .shipping-bar-progress {
+    height: 100%;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    background: var(--forCode-surface-icon-primary-default);
+    transition: all .15s linear;
+}
+
+.shipping-bar-main>.shipping-bar-link {
+    display: none !important;
+}
+
+.shipping-bar-main.reached .shipping-bar-header:not(.no-icon)::before {
+    border-color: var(--noCopy-success-default, #33CC67);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' fill='none' viewBox='0 0 14 10'%3E%3Cpath fill='%23fff' d='M4.77 10a.8.8 0 0 1-.583-.256L.252 5.577a.9.9 0 0 1-.185-.293.98.98 0 0 1 .17-.994.8.8 0 0 1 .588-.275.8.8 0 0 1 .593.26l3.356 3.55L11.914.26A.8.8 0 0 1 12.51 0a.8.8 0 0 1 .587.275c.155.173.24.406.237.648a.95.95 0 0 1-.252.64l-7.728 8.18A.8.8 0 0 1 4.77 10'/%3E%3C/svg%3E") no-repeat center/16px, var(--noCopy-success-default, #33CC67);
+}
+.shipping-bar-main.reached .shipping-bar .shipping-bar-progress {
+    background: var(--noCopy-success-default, #33CC67);
+}
+
+@media (max-width: 768px) {
+    .shipping-bar-main .shipping-bar-header .shipping-bar-title {
+        font-size: var(--forCode-font-size-sm);
+        line-height: var(--forCode-font-line-height-lg);
     }
 }
