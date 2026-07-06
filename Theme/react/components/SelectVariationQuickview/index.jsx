@@ -73,8 +73,8 @@ const SelectVariationQuickview = () => {
             setProductSimpleData({
                 name: productContext.product?.productName,
                 brand: productContext.product?.brand,
-                listPrice: productContext.product?.priceRange?.listPrice?.highPrice,
-                sellingPrice: productContext.product?.priceRange?.sellingPrice?.highPrice,
+                listPrice: productContext.product?.sku?.seller?.commertialOffer.ListPrice,
+                sellingPrice: productContext.product?.sku?.seller?.commertialOffer.Price,
                 reference: productContext.product?.productReference,
             });
         }
@@ -87,7 +87,7 @@ const SelectVariationQuickview = () => {
 
             <>
 
-                <MakeSizesAndColors product={product} setActiveNotifyAddToCart={setActiveNotifyAddToCart} setNootifyAddToCartText={setNootifyAddToCartText} productoSeparadoPorVariantes={productoSeparadoPorVariantes} productSimpleData={productSimpleData} />
+                <MakeSizesAndColors product={product} setActiveNotifyAddToCart={setActiveNotifyAddToCart} setNootifyAddToCartText={setNootifyAddToCartText} productoSeparadoPorVariantes={productoSeparadoPorVariantes} productSimpleData={productSimpleData} setProductSimpleData={setProductSimpleData} />
 
                 {ReactDOM.createPortal(
 
