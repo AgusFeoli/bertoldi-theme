@@ -1,5 +1,20 @@
 import { useEffect } from 'react'
 
+const CATEGORY_TREE_LEVELS = 10;
+
+const findCategoryNameById = (categories, categoryId) => {
+    for (const category of categories) {
+        if (String(category.id) === String(categoryId)) return category.name;
+
+        if (category.children?.length) {
+            const found = findCategoryNameById(category.children, categoryId);
+            if (found) return found;
+        }
+    }
+
+    return null;
+};
+
 const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
 
     const normalizarPisoEnvio = (value) => {
@@ -38,18 +53,18 @@ const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
         };
 
         if (skipCategories?.length > 0) {
-            Promise.all(
-                skipCategories.map(item => {
-                    const itemId = item.__editorItemTitle
-                    return fetch(`/api/catalog_system/pvt/category/${itemId}`)
-                        .then(res => res.json())
-                        .then(data => data.Title)
-                        .catch(err => {
-                            console.warn('fs - error category fetch', err)
-                            return null
-                        })
+            fetch(`/api/catalog_system/pub/category/tree/${CATEGORY_TREE_LEVELS}`)
+                .then(res => res.json())
+                .then(categoryTree => {
+                    const fsSkipCategories = skipCategories
+                        .map(item => findCategoryNameById(categoryTree, item.__editorItemTitle))
+                        .filter(Boolean)
+                    writeFsData(fsSkipCategories)
                 })
-            ).then(titles => writeFsData(titles.filter(Boolean)))
+                .catch(err => {
+                    console.warn('fs - error category tree fetch', err)
+                    writeFsData([])
+                })
         } else {
             writeFsData([])
         }
