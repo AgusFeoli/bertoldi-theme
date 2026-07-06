@@ -1,38 +1,61 @@
 import React, { useState, useEffect } from 'react';
 import { useProduct } from 'vtex.product-context';
-import { SkipEnvioGratis } from '../CucardaEnvioGratisSetter';
 import styles from './index.css';
+
+const POLL_INTERVAL_MS = 2000;
+const MAX_POLL_ATTEMPTS = 10;
+
+const readFsData = () => {
+    const fsDataB64 = localStorage.getItem('fs');
+    if (!fsDataB64) return null;
+
+    try {
+        return JSON.parse(atob(fsDataB64));
+    } catch (error) {
+        console.warn('CucardaEnvioGratis - error parsing "fs" from localStorage', error);
+        return null;
+    }
+};
 
 const CucardaEnvioGratis = () => {
     const [ mostrarEnvioGratis, setMostrarEnvioGratis ] = useState(false);
     const { product, selectedItem } = useProduct();
 
     useEffect(() => {
-        const int = setInterval(() => {
-            if (selectedItem && (SkipEnvioGratis.length > 0 || SkipEnvioGratis === null)) {
-                clearInterval(int)
+        let attempts = 0;
 
-                const productHasSomeSkipCategory = SkipEnvioGratis && SkipEnvioGratis.some(skipCat =>
-                    product.categories.some(productCat =>
-                        productCat?.toLowerCase().includes(skipCat?.toLowerCase())
-                    )
-                )
-                if (productHasSomeSkipCategory) return;
-    
-                const priceProduct = selectedItem?.sellers?.[0]?.commertialOffer?.Price;
-    
-                if (priceProduct) {
-                    const pisoEnvioBase64 = localStorage.getItem('fs');
-                    const pisoEnvio = pisoEnvioBase64 ? parseInt(atob(pisoEnvioBase64), 10) : null;
-    
-                    if (priceProduct && pisoEnvio !== null) {
-                        setMostrarEnvioGratis(priceProduct >= pisoEnvio);
-                    } else {
-                        setMostrarEnvioGratis(false);
-                    }
-                }
+        const checkEnvioGratis = () => {
+            attempts++;
+
+            const fsData = readFsData();
+
+            if (!selectedItem || !fsData) {
+                if (attempts >= MAX_POLL_ATTEMPTS) clearInterval(intervalId);
+                return;
             }
-        }, 2000)
+
+            clearInterval(intervalId);
+
+            const { piso, skipCategories } = fsData;
+
+            const productHasSomeSkipCategory = skipCategories.some(skipCat =>
+                product.categories.some(productCat =>
+                    productCat?.toLowerCase().includes(skipCat?.toLowerCase())
+                )
+            );
+            if (productHasSomeSkipCategory) {
+                setMostrarEnvioGratis(false);
+                return;
+            }
+
+            const priceProduct = selectedItem?.sellers?.[0]?.commertialOffer?.Price;
+
+            setMostrarEnvioGratis(Boolean(priceProduct) && piso !== null && priceProduct >= piso);
+        };
+
+        const intervalId = setInterval(checkEnvioGratis, POLL_INTERVAL_MS);
+
+        return () => clearInterval(intervalId);
     }, [product, selectedItem]);
 
     return (
