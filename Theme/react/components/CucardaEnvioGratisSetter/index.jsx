@@ -1,7 +1,5 @@
 import { useEffect } from 'react'
 
-const SkipEnvioGratis = []
-
 const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
 
     const normalizarPisoEnvio = (value) => {
@@ -28,33 +26,38 @@ const CucardaEnvioGratisSetter = ({ envio, skipCategories }) => {
         const normalizado = normalizarPisoEnvio(envio);
 
         if (normalizado === 0) {
-            localStorage.setItem("fs", null);
+            localStorage.removeItem("fs");
             return;
         }
 
-        const pisoFinal = normalizado.toFixed(2);
-        const pisoBase64 = btoa(pisoFinal);
+        const piso = Number(normalizado.toFixed(2));
 
-        localStorage.setItem("fs", pisoBase64);
-        
-        if (skipCategories.length > 0) {
-            skipCategories?.forEach(item => {
-                const itemId = item.__editorItemTitle
-                fetch(`/api/catalog_system/pvt/category/${itemId}`)
-                    .then(res => res.json())
-                    .then(data => SkipEnvioGratis.push(data.Title))
-                    .catch(err => console.warn('fs - error category fetch', err))
-            })
+        const writeFsData = (fsSkipCategories) => {
+            const fsData = { piso, skipCategories: fsSkipCategories };
+            localStorage.setItem("fs", btoa(JSON.stringify(fsData)));
+        };
+
+        if (skipCategories?.length > 0) {
+            Promise.all(
+                skipCategories.map(item => {
+                    const itemId = item.__editorItemTitle
+                    return fetch(`/api/catalog_system/pvt/category/${itemId}`)
+                        .then(res => res.json())
+                        .then(data => data.Title)
+                        .catch(err => {
+                            console.warn('fs - error category fetch', err)
+                            return null
+                        })
+                })
+            ).then(titles => writeFsData(titles.filter(Boolean)))
         } else {
-            skipCategories = null
+            writeFsData([])
         }
-        
+
     }, [envio]);
 
     return null;
 };
-
-export { SkipEnvioGratis }
 
 CucardaEnvioGratisSetter.schema = {
     title: "Cucarda Envío Gratis",
