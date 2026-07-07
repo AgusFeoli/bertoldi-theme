@@ -1,3 +1,10 @@
+/* minicart */
+:global(.vtex-flex-layout-0-x-flexRow--minicart-footer .vtex-checkout-summary-0-x-summarySmallContent .vtex-checkout-summary-0-x-summaryItemContainer #shipping),
+:global(.vtex-flex-layout-0-x-flexRow--minicart-footer .vtex-checkout-summary-0-x-summarySmallContent .vtex-checkout-summary-0-x-summaryItemContainer #shipping-price) {
+    display: none;
+}
+/* !minicart */
+
 :global(.vtex-minicart-2-x-closeIconContainer) :global(.vtex-minicart-2-x-closeIconButton) {
     padding: 8px;
     border-radius: var(--forCode-radius-button);
