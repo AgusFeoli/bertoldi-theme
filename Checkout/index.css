@@ -7056,7 +7056,7 @@ window.addEventListener("DOMContentLoaded", function () {
     aspect-ratio: 1;
     border: .5px solid var(--forCode-stroke-button-primary-default, #DE1269);
     border-radius: 140px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none' viewBox='0 0 16 13'%3E%3Cpath fill='%23de1269' d='M15.167 8.556h-.39V5.928c0-.309-.123-.605-.342-.824l-2.428-2.428a1.17 1.17 0 0 0-.824-.343h-1.072V1.167A1.165 1.165 0 0 0 8.944 0H1.167A1.167 1.167 0 0 0 0 1.167v7.777a1.167 1.167 0 0 0 1.167 1.167h.389a2.333 2.333 0 1 0 4.667 0h3.11a2.333 2.333 0 1 0 4.667 0h1.167a.39.39 0 0 0 .389-.39v-.777a.39.39 0 0 0-.39-.388M3.889 11.278a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m7.778 0a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m1.944-5.056h-3.5V3.5h1.072l2.429 2.428z'/%3E%3C/svg%3E") no-repeat center/16px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='13' fill='none' viewBox='0 0 16 13'%3E%3Cpath fill='%23de1269' d='M15.167 8.556h-.39V5.928c0-.309-.123-.605-.342-.824l-2.428-2.428a1.17 1.17 0 0 0-.824-.343h-1.072V1.167A1.165 1.165 0 0 0 8.944 0H1.167A1.167 1.167 0 0 0 0 1.167v7.777a1.167 1.167 0 0 0 1.167 1.167h.389a2.333 2.333 0 1 0 4.667 0h3.11a2.333 2.333 0 1 0 4.667 0h1.167a.39.39 0 0 0 .389-.39v-.777a.39.39 0 0 0-.39-.388M3.889 11.278a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m7.778 0a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.333m1.944-5.056h-3.5V3.5h1.072l2.429 2.428z'/%3E%3C/svg%3E") no-repeat center 55% / 16px;
     grid-column: 1;
     grid-row: span 2;
     transition: all .15 linear;
@@ -7092,7 +7092,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 .shipping-bar-main.reached .shipping-bar-header:not(.no-icon)::before {
     border-color: var(--noCopy-success-default, #33CC67);
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' fill='none' viewBox='0 0 14 10'%3E%3Cpath fill='%23fff' d='M4.77 10a.8.8 0 0 1-.583-.256L.252 5.577a.9.9 0 0 1-.185-.293.98.98 0 0 1 .17-.994.8.8 0 0 1 .588-.275.8.8 0 0 1 .593.26l3.356 3.55L11.914.26A.8.8 0 0 1 12.51 0a.8.8 0 0 1 .587.275c.155.173.24.406.237.648a.95.95 0 0 1-.252.64l-7.728 8.18A.8.8 0 0 1 4.77 10'/%3E%3C/svg%3E") no-repeat center/16px, var(--noCopy-success-default, #33CC67);
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' fill='none' viewBox='0 0 14 10'%3E%3Cpath fill='%23fff' d='M4.77 10a.8.8 0 0 1-.583-.256L.252 5.577a.9.9 0 0 1-.185-.293.98.98 0 0 1 .17-.994.8.8 0 0 1 .588-.275.8.8 0 0 1 .593.26l3.356 3.55L11.914.26A.8.8 0 0 1 12.51 0a.8.8 0 0 1 .587.275c.155.173.24.406.237.648a.95.95 0 0 1-.252.64l-7.728 8.18A.8.8 0 0 1 4.77 10'/%3E%3C/svg%3E") no-repeat center 55% / 16px, var(--noCopy-success-default, #33CC67);
 }
 .shipping-bar-main.reached .shipping-bar .shipping-bar-progress {
     background: var(--noCopy-success-default, #33CC67);
