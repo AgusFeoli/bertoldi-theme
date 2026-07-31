@@ -1,7 +1,7 @@
 {
   "vendor": "bertoldiar",
   "name": "theme",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "builders": {
     "assets": "0.x",
     "docs": "0.x",
