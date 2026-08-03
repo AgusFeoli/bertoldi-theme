@@ -30,7 +30,7 @@ const minicartFreeShipping = ({ isEnabled = true }) => {
             if (!node) {
                 node = document.createElement('div');
                 node.setAttribute('data-minicart-free-shipping-portal', '');
-                node.classList = styles.minicart_free_shipping_portal;
+                node.className = styles.minicart_free_shipping_portal;
                 parent.firstChild.insertAdjacentElement('afterend', node);
             }
             setPortalContainer(node);
@@ -84,7 +84,7 @@ const minicartFreeShipping = ({ isEnabled = true }) => {
         if (pisoEnvioBase64) {
             try {
                 const decoded = JSON.parse(atob(pisoEnvioBase64));
-                const pisoEnvioGratis = Number(decoded);
+                const pisoEnvioGratis = Number(decoded?.piso);
 
                 if (!isNaN(pisoEnvioGratis) && pisoEnvioGratis > 0) {
                     setFreeShippingVal(pisoEnvioGratis);
@@ -142,7 +142,7 @@ minicartFreeShipping.schema = {
             title: "Activar barra de envío gratis",
             description: "Muestra u oculta la barra de progreso de envío gratis en el MiniCart y Checkout",
             type: "boolean",
-            default: false,
+            default: true,
         },
     },
 };
