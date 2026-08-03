@@ -7,7 +7,7 @@ const checkoutUi = {
     },
     progressBars: {
         freeShipping: {
-            value: parseInt(atob(localStorage.getItem('fs')) || 100000),
+            value: parseInt(atob(localStorage.getItem('fs'))?.piso || 100000),
             showIcon: true
         }
     },
