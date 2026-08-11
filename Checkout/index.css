@@ -4943,39 +4943,33 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 }
 
 .orderform-template-holder .step.shipping-data .box-step {
-    display: grid;
-    grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e";
+    display: flex;
+    flex-direction: column;
     position: relative;
-    /*grid-template-columns: 50% 50%;*/
 }
 
 .orderform-template-holder .step.shipping-data .box-step>*#postalCode-finished-loading {
-    grid-area: a;
+    order: 1;
 }
 
 .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-addressFormPart1 {
-    grid-area: b;
+    order: 2;
 }
 
 .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-addressForm {
-    grid-area: c;
+    order: 3;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-deliveryGroup {
-    grid-area: d;
+    order: 4;
     margin: 0px;
     padding-top: 30px;
 }
 
 .orderform-template-holder .step .shipping-container .vtex-omnishipping-1-x-submitPaymentButton {
-    grid-area: e;
+    order: 5;
     position: relative;
     width: 100%;
     display: flex !important;
@@ -5003,26 +4997,26 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 
 @media(max-width: 990px) {
     .orderform-template-holder .step.shipping-data .box-step>*#postalCode-finished-loading {
-        grid-area: a;
+        order: 1;
     }
 
     .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-addressFormPart1 {
-        grid-area: b;
+        order: 2;
     }
 
     .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-deliveryGroup {
-        grid-area: c;
+        order: 3;
         padding-top: 15px;
     }
 
 
     .orderform-template-holder .step.shipping-data .box-step>*.vtex-omnishipping-1-x-addressForm {
-        grid-area: d;
+        order: 4;
     }
 
 
     .orderform-template-holder .step .shipping-container .vtex-omnishipping-1-x-submitPaymentButton {
-        grid-area: e;
+        order: 5;
         padding-top: 0px;
         padding-bottom: 10px;
     }
