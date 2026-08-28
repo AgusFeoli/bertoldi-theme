@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import { useProduct } from "vtex.product-context";
 
 // COMPONENTS
@@ -6,6 +7,30 @@ import MakeSizesAndColors from './components/MakeSizesAndColors';
 
 // STYLES
 import style from './index.css';
+
+const NOTIFY_CONTAINER_ID = "quickview-notify-add-to-cart";
+
+/* La notificacion de "producto agregado" es position: fixed, no hereda nada de su contenedor.
+   Antes se montaba en el footer de VTEX, que renderiza lazy: con el modal abierto el body queda
+   en overflow hidden, el footer ya no entra en viewport y nunca llegaba a existir. Por eso el
+   Quick View se quedaba girando para siempre. Ahora se monta en un contenedor propio. (BER-124) */
+const getNotifyContainer = () => {
+
+    if (typeof document === "undefined") return null;
+
+    let container = document.getElementById(NOTIFY_CONTAINER_ID);
+
+    if (!container) {
+
+        container = document.createElement("div");
+        container.id = NOTIFY_CONTAINER_ID;
+        document.body.appendChild(container);
+
+    }
+
+    return container;
+
+}
 
 const SelectVariationQuickview = () => {
 
@@ -24,23 +49,11 @@ const SelectVariationQuickview = () => {
 
     const [activeNotifyAddToCart, setActiveNotifyAddToCart] = useState(false);
     const [nootifyAddToCartText, setNootifyAddToCartText] = useState("");
-    const [footerContainer, setFooterContainer] = useState();
+    const [notifyContainer, setNotifyContainer] = useState(null);
 
     useEffect(() => {
 
-        //ESTA CLASE NO SE DEBE MODIFICAR, REPLICA LA NOTIFICACION NATIVA DE VTEX QUE DA AVISO DE PRODUCTO AGREGADO AL CARRITO
-        const searchFooter = setInterval(() => {
-
-            const footerContainer = document.querySelector(".vtex-store-footer-2-x-footerLayout");
-
-            if (footerContainer) {
-
-                setFooterContainer(footerContainer);
-                clearInterval(searchFooter);
-
-            }
-
-        }, 200);
+        setNotifyContainer(getNotifyContainer());
 
     }, [])
 
@@ -81,7 +94,7 @@ const SelectVariationQuickview = () => {
 
     }, [productContext])
 
-    if (footerContainer && product && productSimpleData) {
+    if (product && productSimpleData) {
 
         return (
 
@@ -89,7 +102,7 @@ const SelectVariationQuickview = () => {
 
                 <MakeSizesAndColors product={product} setActiveNotifyAddToCart={setActiveNotifyAddToCart} setNootifyAddToCartText={setNootifyAddToCartText} productoSeparadoPorVariantes={productoSeparadoPorVariantes} productSimpleData={productSimpleData} setProductSimpleData={setProductSimpleData} />
 
-                {ReactDOM.createPortal(
+                {notifyContainer && ReactDOM.createPortal(
 
                     <div className={activeNotifyAddToCart ? `${style.notifyAddToCartContainer} ${style.show}` : style.notifyAddToCartContainer}>
 
@@ -97,7 +110,7 @@ const SelectVariationQuickview = () => {
 
                     </div>,
 
-                    footerContainer
+                    notifyContainer
 
                 )}
 
