@@ -1,0 +1,17 @@
+.imageElement--institutional-logo {
+    display: flex;
+    padding: var(--forCode-spacing-system-xs);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+@media(max-width: 62.5rem) {
+    .imageElement--institutional-logo {
+        padding: 4px;
+        width: 16px;
+        height: 16px;
+    }
+}

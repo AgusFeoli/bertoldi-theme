@@ -1,0 +1,142 @@
+{
+  "flex-layout.row#grid-banners": {
+    "props": {
+      "blockClass": "grid-banners"
+    },
+    "children": ["toggle-layout#grid-banner-superior", "toggle-layout#grid-banner-inferior"]
+  },
+  //******************************************************
+  //
+  // Inicio de banner superior
+  //
+  //******************************************************
+  "toggle-layout#grid-banner-superior": {
+    "title": "Banner Superior",
+    "children": ["flex-layout.row#grid-banner-superior"]
+  },
+  "flex-layout.row#grid-banner-superior": {
+    "props": {
+      "blockClass": ["grid-banner", "grid-banner-superior"]
+    },
+    "children": ["flex-layout.row#grid-banner-superior-image", "flex-layout.row#grid-banner-superior-text-and-cta"]
+  },
+  //Imagen
+  "flex-layout.row#grid-banner-superior-image": {
+    "props": {
+      "blockClass": ["grid-banner-image", "grid-banner-superior-image"]
+    },
+    "children": ["image#grid-banner-superior-image"]
+  },
+  "image#grid-banner-superior-image": {
+    "title": "Imagen",
+    "props": { "blockClass": "grid-banner-image", "src": "/arquivos/gridbanner1.png" }
+  },
+  //Containter Text and CTA
+  "flex-layout.row#grid-banner-superior-text-and-cta": {
+    "props": {
+      "blockClass": "grid-banner-text-and-cta"
+    },
+    "children": ["rich-text#grid-banner-superior-text", "link.product#grid-banner-superior-cta"]
+  },
+  //Text
+  "rich-text#grid-banner-superior-text": {
+    "title": "Texto",
+    "props": { "text": "Regalá una Gift Card", "blockClass": "grid-banner-text" }
+  },
+  //CTA
+  "link.product#grid-banner-superior-cta": {
+    "title": "Link CTA",
+    "props": { "href": "/", "label": "Comprar ahora", "blockClass": "grid-banner-cta" }
+  },
+  //******************************************************
+  //
+  // Inicio de banner inferior
+  //
+  //******************************************************
+  "toggle-layout#grid-banner-inferior": {
+    "title": "Banner Inferior",
+    "children": ["flex-layout.row#grid-banner-inferior"]
+  },
+  "flex-layout.row#grid-banner-inferior": {
+    "props": {
+      "blockClass": "grid-banner-inferior"
+    },
+    "children": ["flex-layout.row#grid-banner-inferior-izq", "flex-layout.row#grid-banner-inferior-derecho"]
+  },
+  //******************************************************
+  // Inicio de banner inferior izquierdo
+  //******************************************************
+  "flex-layout.row#grid-banner-inferior-izq": {
+    "title": "Banner Inferior Izquierdo",
+    "props": {
+      "blockClass": ["grid-banner", "grid-banner-inferior-izq"]
+    },
+    "children": ["flex-layout.row#grid-banner-inferior-izq-image", "flex-layout.row#grid-banner-inferior-izq-text-and-cta"]
+  },
+  //Imagen
+  "flex-layout.row#grid-banner-inferior-izq-image": {
+    "props": {
+      "blockClass": ["grid-banner-image", "grid-banner-inferior-izq-image"]
+    },
+    "children": ["image#grid-banner-inferior-izq-image"]
+  },
+  "image#grid-banner-inferior-izq-image": {
+    "title": "Imagen",
+    "props": { "blockClass": "grid-banner-image", "src": "/arquivos/gridbanner2.png" }
+  },
+  //Containter Text and CTA
+  "flex-layout.row#grid-banner-inferior-izq-text-and-cta": {
+    "props": {
+      "blockClass": "grid-banner-text-and-cta"
+    },
+    "children": ["rich-text#grid-banner-inferior-izq-text", "link.product#grid-banner-inferior-izq-cta"]
+  },
+  //Text
+  "rich-text#grid-banner-inferior-izq-text": {
+    "title": "Texto",
+    "props": { "text": "Especial Spray", "blockClass": "grid-banner-text" }
+  },
+  //CTA
+  "link.product#grid-banner-inferior-izq-cta": {
+    "title": "Link CTA",
+    "props": { "href": "/", "label": "Comprar ahora", "blockClass": "grid-banner-cta" }
+  },
+  //******************************************************
+  // Inicio de banner inferior derecho
+  //******************************************************
+  "flex-layout.row#grid-banner-inferior-derecho": {
+    "title": "Banner Inferior Derecho",
+    "props": {
+      "blockClass": ["grid-banner", "grid-banner-inferior-derecho"]
+    },
+    "children": ["flex-layout.row#grid-banner-inferior-derecho-image", "flex-layout.row#grid-banner-inferior-derecho-text-and-cta"]
+  },
+  //Imagen
+  "flex-layout.row#grid-banner-inferior-derecho-image": {
+    "props": {
+      "blockClass": ["grid-banner-image", "grid-banner-inferior-derecho-image"]
+    },
+    "children": ["image#grid-banner-inferior-derecho-image"]
+  },
+  "image#grid-banner-inferior-derecho-image": {
+    "title": "Imagen",
+    "props": { "blockClass": "grid-banner-image", "src": "/arquivos/gridbanner3.png" }
+  },
+  //Containter Text and CTA
+  "flex-layout.row#grid-banner-inferior-derecho-text-and-cta": {
+    "props": {
+      "blockClass": "grid-banner-text-and-cta"
+    },
+    "children": ["rich-text#grid-banner-inferior-derecho-text", "link.product#grid-banner-inferior-derecho-cta"]
+  },
+  //Text
+  "rich-text#grid-banner-inferior-derecho-text": {
+    "title": "Texto",
+    "props": { "text": "Especial Manos y Uñas", "blockClass": "grid-banner-text" }
+  },
+  //CTA
+  "link.product#grid-banner-inferior-derecho-cta": {
+    "title": "Link CTA",
+    "props": { "href": "/", "label": "Comprar ahora", "blockClass": "grid-banner-cta" }
+  }
+}

@@ -1,0 +1,6 @@
+:global(.vtex-flex-layout-0-x-flexRow--product-brand) .productBrandContainer,
+.productNameContainer,
+.productBrandNameLink {
+    width: 100%;
+    overflow: hidden;
+}

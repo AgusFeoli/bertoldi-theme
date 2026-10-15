@@ -1,0 +1,43 @@
+.notFound--layout {
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.notFound--layout :global(.vtex-flex-layout-0-x-flexRow) {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+.notFound--layout :global(.vtex-flex-layout-0-x-flexRow) :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    width: 1266px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+
+@media(max-width: 82.5rem) {
+    .notFound--layout :global(.vtex-flex-layout-0-x-flexRow) :global(.vtex-store-components-3-x-container) {
+        width: 1240px;
+    }
+}
+
+@media(max-width: 78.688rem) {
+    .notFound--layout :global(.vtex-flex-layout-0-x-flexRow) :global(.vtex-store-components-3-x-container) {
+        width: 1000px;
+    }
+}
+
+@media(max-width: 64.063rem) {
+
+    .notFound--layout :global(.vtex-flex-layout-0-x-flexRow) :global(.vtex-store-components-3-x-container) {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 16px;
+        align-items: flex-start;
+    }
+}

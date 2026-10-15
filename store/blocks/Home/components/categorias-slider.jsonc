@@ -1,0 +1,243 @@
+{
+  "flex-layout.row#categorias-slider": {
+    "props": {
+      "blockClass": "categorias-slider"
+    },
+    "children": ["rich-text#title-categoria-slider", "slider-layout#categorias-slider"]
+  },
+
+  //******************************************************
+  // Título principal del slider
+  //******************************************************
+  "rich-text#title-categoria-slider": {
+    "title": "Títutlo",
+    "props": { "text": "Categorías", "blockClass": "title-categoria-slider" }
+  },
+
+  //******************************************************
+  // Slider con todas las categorías
+  //******************************************************
+  "slider-layout#categorias-slider": {
+    "title": "Slider",
+    "children": [
+      "link.product#categoria-slider-1",
+      "link.product#categoria-slider-2",
+      "link.product#categoria-slider-3",
+      "link.product#categoria-slider-4",
+      "link.product#categoria-slider-5",
+      "link.product#categoria-slider-6",
+      "link.product#categoria-slider-7",
+      "link.product#categoria-slider-8",
+      "link.product#categoria-slider-9"/*,
+      "link.product#categoria-slider-10",
+      "link.product#categoria-slider-11",
+      "link.product#categoria-slider-12",
+      "link.product#categoria-slider-13",
+      "link.product#categoria-slider-14",
+      "link.product#categoria-slider-15"*/
+    ],
+    "props": {
+      "blockClass": "categorias-slider",
+      "itemsPerPage": {
+        "desktop": 9,
+        "tablet": 4,
+        "phone": 2
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 16,
+      "autoplay": {
+        "timeout": 3500,
+        "stopOnHover": true
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never"
+    }
+  },
+
+  //******************************************************
+  // Categoría 1
+  //******************************************************
+  "link.product#categoria-slider-1": {
+    "title": "Categoría 1",
+    "props": { "href": "/", "label": "Accesorios", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-1"]
+  },
+  "image#categoria-slider-1": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 2
+  //******************************************************
+  "link.product#categoria-slider-2": {
+    "title": "Categoría 2",
+    "props": { "href": "/", "label": "Barbería", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-2"]
+  },
+  "image#categoria-slider-2": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 3
+  //******************************************************
+  "link.product#categoria-slider-3": {
+    "title": "Categoría 3",
+    "props": { "href": "/", "label": "Capilar", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-3"]
+  },
+  "image#categoria-slider-3": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 4
+  //******************************************************
+  "link.product#categoria-slider-4": {
+    "title": "Categoría 4",
+    "props": { "href": "/", "label": "Cejas y pestañas", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-4"]
+  },
+  "image#categoria-slider-4": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 5
+  //******************************************************
+  "link.product#categoria-slider-5": {
+    "title": "Categoría 5",
+    "props": { "href": "/", "label": "Dermosmética", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-5"]
+  },
+  "image#categoria-slider-5": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 6
+  //******************************************************
+  "link.product#categoria-slider-6": {
+    "title": "Categoría 6",
+    "props": { "href": "/", "label": "Herramientas", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-6"]
+  },
+  "image#categoria-slider-6": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategoria2.png" }
+  },
+  //******************************************************
+  // Categoría 7
+  //******************************************************
+  "link.product#categoria-slider-7": {
+    "title": "Categoría 7",
+    "props": { "href": "/", "label": "Manos y uñas", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-7"]
+  },
+  "image#categoria-slider-7": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 8
+  //******************************************************
+  "link.product#categoria-slider-8": {
+    "title": "Categoría 8",
+    "props": { "href": "/", "label": "Maquillaje", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-8"]
+  },
+  "image#categoria-slider-8": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 9
+  //******************************************************
+  "link.product#categoria-slider-9": {
+    "title": "Categoría 9",
+    "props": { "href": "/", "label": "Perfumería", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-9"]
+  },
+  "image#categoria-slider-9": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 10
+  //******************************************************
+  "link.product#categoria-slider-10": {
+    "title": "Categoría 10",
+    "props": { "href": "/", "label": "Categoría 10", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-10"]
+  },
+  "image#categoria-slider-10": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 11
+  //******************************************************
+  "link.product#categoria-slider-11": {
+    "title": "Categoría 11",
+    "props": { "href": "/", "label": "Categoría 11", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-11"]
+  },
+  "image#categoria-slider-11": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 12
+  //******************************************************
+  "link.product#categoria-slider-12": {
+    "title": "Categoría 12",
+    "props": { "href": "/", "label": "Categoría 12", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-12"]
+  },
+  "image#categoria-slider-12": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 13
+  //******************************************************
+  "link.product#categoria-slider-13": {
+    "title": "Categoría 13",
+    "props": { "href": "/", "label": "Categoría 13", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-13"]
+  },
+  "image#categoria-slider-13": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 14
+  //******************************************************
+  "link.product#categoria-slider-14": {
+    "title": "Categoría 14",
+    "props": { "href": "/", "label": "Categoría 14", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-14"]
+  },
+  "image#categoria-slider-14": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  },
+  //******************************************************
+  // Categoría 15
+  //******************************************************
+  "link.product#categoria-slider-15": {
+    "title": "Categoría 15",
+    "props": { "href": "/", "label": "Categoría 15", "blockClass": "categoria-slider" },
+    "children": ["image#categoria-slider-15"]
+  },
+  "image#categoria-slider-15": {
+    "title": "Imagen",
+    "props": { "blockClass": "categoria-slider", "src": "/arquivos/imagencategorianuevo.png" }
+  }
+}

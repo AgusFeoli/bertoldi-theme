@@ -1,0 +1,957 @@
+.box {
+    min-width: 200px;
+}
+
+.content {
+    width: fit-content !important;
+    padding: 24px;
+    max-width: 368px;
+}
+
+:global(.vtex-render__container-id-default) {
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+:global(.vtex-render__container-id-default) .content {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    padding: 105px 0 164px;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+@media(max-width: 640px) {
+    :global(.vtex-render__container-id-default) .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 52px;
+        padding: 20px 16px 131px;
+        max-width: 100% !important;
+    }
+}
+
+.contentAlwaysWithOptions {
+    min-height: unset;
+    max-width: unset;
+}
+
+.content .contentForm {
+    position: relative;
+}
+
+.box .arrowUp {
+    width: 23px;
+    height: 20px;
+    box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05), 0 10px 15px -3px rgba(40, 22, 105, 0.10);
+}
+
+.portalContainer .contentContainer {
+    margin-top: 8px;
+    position: relative;
+    left: 8%;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    background: var(--forCode-surface-background-base-default);
+    box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05), 0 10px 15px -3px rgba(40, 22, 105, 0.10);
+    overflow: hidden;
+}
+
+.contentInitialScreen .loginOptionsContainer,
+.contentInitialScreen .loginOptionsContainer .options {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    max-width: 266px;
+    height: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+}
+
+.contentInitialScreen .contentFormVisible,
+.content .contentForm {
+    min-width: 322px !important;
+    max-width: unset;
+    padding: 0;
+}
+
+:global(.vtex-render__container-id-default) .contentForm {
+    max-width: 266px;
+    min-width: unset !important;
+}
+
+
+.contentInitialScreen .loginOptionsContainer .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.contentInitialScreen .loginOptionsContainer .options::before {
+    content: "¡Te damos la bienvenida!";
+    color: var(--forCode-text-body-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-2xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 24px;
+}
+
+.contentInitialScreen .loginOptionsContainer .formTitle {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    font-size: 0px;
+}
+
+.contentInitialScreen .loginOptionsContainer .formTitle::before {
+    content: "Escoja una opción para entrar";
+    color: #8C8C8C;
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.content--emailAndPassword .contentForm .emailVerification .formTitle {
+    font-size: 0px;
+    padding: 10px 0 15px;
+}
+
+.content--emailAndPassword .contentForm .emailVerification .formTitle::before {
+    content: "Ingresa con mail y contraseña";
+    color: var(--text-body-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+}
+
+
+.content--emailVerification .emailVerification .formTitle {
+    color: var(--text-body-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList {
+    margin: 0px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .optionsListItem {
+    margin: 0px;
+    width: fit-content;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .optionsListItem:not(:first-child) {
+    margin-top: 12px;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button) {
+    width: fit-content;
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-medium);
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.codeConfirmation .formTitle {
+    color: var(--forCode-text-body-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.content--codeConfirmation .formFooter .sendButton :global(.vtex-button) {
+    padding: 8px 12px;
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    border: 1px solid var(--forCode-surface-button-primary-default);
+}
+
+.content--codeConfirmation .formFooter .sendButton :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-primary-hover);
+    border-color: var(--forCode-surface-button-primary-hover);
+}
+
+.content--codeConfirmation .formFooter .sendButton :global(.vtex-button) span {
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.vtex-button):hover {
+    background-color: transparent;
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.vtex-button) span {
+    color: var(--forCode-text-link-default-state);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.mr2.nl2.flex.items-center) svg {
+    display: none;
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.vtex-button) :global(.t-small.ml2) {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.content--codeConfirmation .formFooter .backButton :global(.vtex-button) :global(.t-small.ml2)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.76834 12.6663C9.53308 12.6663 9.30748 12.568 9.14115 12.3932L5.59274 8.66446C5.42643 8.48965 5.33301 8.25258 5.33301 8.0054C5.33301 7.75822 5.42643 7.52116 5.59274 7.34635L9.14115 3.61759C9.22299 3.52856 9.32087 3.45754 9.4291 3.40869C9.53733 3.35983 9.65374 3.33412 9.77153 3.33304C9.88932 3.33197 10.0061 3.35555 10.1152 3.40242C10.2242 3.4493 10.3232 3.51851 10.4065 3.60604C10.4898 3.69356 10.5557 3.79765 10.6003 3.91221C10.6449 4.02677 10.6673 4.14952 10.6663 4.2733C10.6653 4.39707 10.6408 4.51939 10.5943 4.63312C10.5478 4.74685 10.4802 4.84972 10.3955 4.93571L7.47429 8.0054L10.3955 11.0751C10.5195 11.2055 10.604 11.3715 10.6382 11.5523C10.6724 11.7331 10.6549 11.9205 10.5877 12.0909C10.5206 12.2612 10.4069 12.4067 10.2611 12.5092C10.1152 12.6116 9.94376 12.6663 9.76834 12.6663Z' fill='%231F49D6'/%3E%3C/svg%3E");
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+
+.content--codeConfirmation .inputContainerAccessCode :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button):hover {
+    background: #E9EAED;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .accessCodeOptionBtn :global(.vtex-button) {
+    background-color: #F7F7F7;
+    border-color: #F7F7F7;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .accessCodeOptionBtn :global(.vtex-button):hover {
+    background-color: #F4E4EE;
+    border-color: #F4E4EE;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button) :global(.vtex-button__label) {
+    width: 296px;
+    height: 16px;
+    font-size: 0px;
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+    padding: 0px
+}
+
+
+:global(.vtex-render__container-id-default) .content .loginOptionsContainer>.optionsSticky .formTitle {
+    font-size: 0px;
+    padding: 0;
+}
+
+:global(.vtex-render__container-id-default) .content .loginOptionsContainer>.optionsSticky .formTitle::before {
+    content: "Escoja una opción para entrar";
+    color: var(--forCode-text-body-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+:global(.vtex-render__container-id-default) .content .contentFormVisible .formTitle {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 11px;
+    font-size: 0;
+}
+
+:global(.vtex-render__container-id-default) .content .contentFormVisible .emailForm .formTitle::before {
+    content: "Recibir código de acceso por mail";
+    font-size: var(--forCode-font-size-lg);
+}
+
+:global(.vtex-render__container-id-default) .content .emailAndPasswordForm .formTitle {
+    font-size: 0px !important;
+}
+
+:global(.vtex-render__container-id-default) .content .contentFormVisible :global(.vtex-input-prefix__group),
+.inputContainerPassword :global(.vtex-input-prefix__group) {
+    margin-top: 6px;
+    min-height: 44px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-default);
+    background: var(--forCode-surface-background-base-default);
+}
+
+:global(.vtex-render__container-id-default) .content .accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label),
+:global(.vtex-render__container-id-default) .content .emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+
+:global(.vtex-render__container-id-default) .content .accessCodeOptionBtn :global(.vtex-button) span {
+    color: var(--forCode-text-link-default-state);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: 0;
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: math-auto;
+}
+
+:global(.vtex-render__container-id-default) .content .emailPasswordOptionBtn :global(.vtex-button) span {
+    font-size: 0;
+}
+
+@media(max-width: 640px) {
+
+    :global(.vtex-render__container-id-default) .content .accessCodeOptionBtn :global(.vtex-button) span,
+    :global(.vtex-render__container-id-default) .content .emailPasswordOptionBtn :global(.vtex-button) span {
+        line-height: 16px;
+    }
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button) :global(.vtex-button__label) .oauthLabel {
+    display: none;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Recibir código de acceso por mail";
+    color: var(--forCode-text-button-secondary);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Ingresar con mail y contraseña";
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .googleOptionBtn :global(.vtex-button) :global(.vtex-button__label) {
+    display: flex;
+    gap: 4px;
+}
+
+.contentInitialScreen .loginOptionsContainer .optionsList .googleOptionBtn :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: "Ingresar con Google";
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+
+.content .contentForm .emailVerification .inputContainerEmail :global(.vtex-input)::before {
+    content: "Email";
+    color: var(--forCode-text-label-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    position: relative;
+    left: 1%;
+}
+
+.content .contentForm .emailVerification .inputContainerEmail :global(.vtex-input) :global(.vtex-input-prefix__group) {
+    margin-top: 6px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-default);
+    background: var(--forCode-surface-background-base-default);
+}
+
+.content .contentForm .emailVerification .inputContainerPassword {
+    padding: 12px 0px 16px;
+}
+
+
+.content .contentForm .emailVerification .inputContainerPassword :global(.vtex-input)::before {
+    content: "Contraseña";
+    color: var(--forCode-text-label-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    position: relative;
+    left: 1%;
+}
+
+.content .contentForm .emailVerification .formLinkContainer {
+    width: fit-content;
+    height: fit-content;
+    padding: var(--forCode-spacing-system-xs) var(--forCode-spacing-system-xxs);
+}
+
+.content .contentForm .emailVerification .formLinkContainer .forgotPasswordLink {
+    width: 100%;
+    height: 16px;
+    color: var(--forCode-text-link-default-state);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-align: right;
+}
+
+.content .contentForm .emailVerification .formLinkContainer .forgotPasswordLink:hover {
+    opacity: unset;
+    text-decoration: underline;
+}
+
+.content .contentForm .emailVerification .formFooter {
+    margin: 0px;
+    padding: 16px 0px;
+    border: 0px;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton {
+    width: fit-content;
+    height: fit-content;
+    min-height: fit-content;
+    margin: 0px;
+    padding: 0px !important;
+    border: 0px;
+}
+
+@media(max-width: 640px) {
+    .content .contentForm .emailVerification .formFooter .backButton {
+        top: -45px;
+        left: 3%;
+    }
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 4px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.content .contentForm .emailForm .formFooter .backButton :global(.vtex-button) {
+    position: relative;
+    top: 7px;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button):hover {
+    background-color: var(--forCode-surface-button-ghost-link-default) !important;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) :global(.vtex-button__label),
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) :global(.vtex-button__label)>span {
+    width: fit-content;
+    height: fit-content;
+    min-height: fit-content;
+    margin: 0px;
+    padding: 0px !important;
+    border: 0px;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) :global(.vtex-button__label)>span>div:last-child :global(.t-small.ml2) {
+    max-width: 57px;
+    color: var(--forCode-text-link-default-state) !important;
+    font-family: var(--forCode-font-family-body) !important;
+    font-size: var(--forCode-font-size-sm) !important;
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold) !important;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) :global(.vtex-button__label)>span>div:first-child {
+    display: none;
+}
+
+.content .contentForm .emailVerification .formFooter .backButton :global(.vtex-button) :global(.vtex-button__label)>span::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M9.76834 12.6663C9.53308 12.6663 9.30748 12.568 9.14115 12.3932L5.59274 8.66446C5.42643 8.48965 5.33301 8.25258 5.33301 8.0054C5.33301 7.75822 5.42643 7.52116 5.59274 7.34635L9.14115 3.61759C9.22299 3.52856 9.32087 3.45754 9.4291 3.40869C9.53733 3.35983 9.65374 3.33412 9.77153 3.33304C9.88932 3.33197 10.0061 3.35555 10.1152 3.40242C10.2242 3.4493 10.3232 3.51851 10.4065 3.60604C10.4898 3.69356 10.5557 3.79765 10.6003 3.91221C10.6449 4.02677 10.6673 4.14952 10.6663 4.2733C10.6653 4.39707 10.6408 4.51939 10.5943 4.63312C10.5478 4.74685 10.4802 4.84972 10.3955 4.93571L7.47429 8.0054L10.3955 11.0751C10.5195 11.2055 10.604 11.3715 10.6382 11.5523C10.6724 11.7331 10.6549 11.9205 10.5877 12.0909C10.5206 12.2612 10.4069 12.4067 10.2611 12.5092C10.1152 12.6116 9.94376 12.6663 9.76834 12.6663Z' fill='%231F49D6'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.content .googleOptionBtn .oauthLabel {
+    font-size: 0;
+}
+
+.content .googleOptionBtn .oauthLabel::before {
+    content: "Ingresar con GOOGLE";
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) {
+    width: 100%;
+    max-width: 156px;
+    height: fit-content;
+    padding: 12px;
+    border-radius: 4px;
+    background: var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-radius-button);
+    border: 0px;
+    transition: all 150ms ease-in-out;
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0px !important;
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) :global(.vtex-button__label)>span {
+    display: none;
+}
+
+.content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Entrar";
+    height: 16px;
+    width: 132px;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}
+
+.content .contentForm .emailVerification .formLinkContainer {
+    margin: 0px;
+    padding: var(--forCode-spacing-system-xs) var(--forCode-spacing-system-xxs);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding: 8px 4px;
+}
+
+.content .contentForm .emailVerification .formLinkContainer .dontHaveAccount {
+    height: 16px;
+    width: 274px;
+    font-size: 0;
+}
+
+.content .contentForm .emailVerification .formLinkContainer .dontHaveAccount:hover {
+    opacity: unset;
+    text-decoration: none;
+}
+
+.content .contentForm .emailVerification .formLinkContainer .dontHaveAccount::before {
+    content: "¿No tiene cuenta?";
+    color: var(--text-body-dark, #1F1F1F);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: var(--forCode-font-family-body, Poppins);
+    font-size: var(--forCode-font-size-base, 16px);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular, 400);
+    line-height: var(--forCode-font-line-height-2xl, 24px);
+    letter-spacing: var(--forCode-spacing-system-none, 0);
+    margin-right: 4px;
+}
+
+.content .contentForm .emailVerification .formLinkContainer .dontHaveAccount::after {
+    content: "Registrarme";
+    color: var(--forCode-text-link-default-state, #1F49D6);
+    font-family: var(--forCode-font-family-button, Poppins);
+    font-size: var(--forCode-font-size-base, 16px);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold, 600);
+    line-height: var(--forCode-font-line-height-xl, 20px);
+    letter-spacing: var(--forCode-spacing-system-none, 0);
+}
+
+@media(max-width: 64.063rem) {
+    .content {
+        margin: 0px;
+        width: 100% !important;
+        padding: 22px 16px;
+    }
+
+    .content--emailAndPassword {
+        padding-top: 35px !important
+    }
+
+    .contentInitialScreen .contentFormVisible,
+    .contentInitialScreen .loginOptionsContainer,
+    .contentInitialScreen .loginOptionsContainer .options,
+    .content .contentForm {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .content .contentForm>div {
+        display: flex;
+        justify-content: center;
+    }
+
+    :global(.vtex-render__container-id-default) .content .contentForm .emailForm .formFooter .backButton :global(.vtex-button) {
+        top: 37px;
+        right: -51px;
+    }
+
+    .content .contentForm .emailAndPasswordForm .formFooter .backButton :global(.vtex-button) {
+        top: 10px;
+        right: -54px;
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList,
+    .contentInitialScreen .loginOptionsContainer .optionsList .optionsListItem,
+    .contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button) {
+        width: 100%;
+    }
+
+    .contentInitialScreen .loginOptionsContainer .formTitle {
+        margin-top: 15px;
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .accessCodeOptionBtn :global(.vtex-button) {
+        border: 1px solid var(--forCode-stroke-medium) !important;
+        background: var(--forCode-surface-button-secondary-default) !important;
+    }
+
+    .content--emailAndPassword .contentForm .emailVerification .formTitle {
+        font-size: 0px;
+    }
+
+    .content--emailAndPassword .contentForm .emailVerification .formTitle::before {
+        content: "Ingresar con correo y contraseña";
+        color: var(--forCode-text-body-dark);
+        text-align: center;
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content .contentForm .emailVerification .inputContainerEmail :global(.vtex-input)::before,
+    .content .contentForm .emailVerification .inputContainerPassword :global(.vtex-input)::before {
+        display: none;
+    }
+
+    .content .contentForm .emailVerification .inputContainerPassword {
+        padding-bottom: 0px;
+    }
+
+    .content .contentForm .emailVerification .formLinkContainer {
+        justify-content: flex-end;
+    }
+
+    .content .contentForm .emailVerification :global(.vtex-login-2-x-formLinkContainer.flex.justify-center.ph0.mt4) {
+        justify-content: center !important;
+    }
+
+    .content .contentForm .emailVerification .formFooter {
+        padding: 24px 0px 12px;
+    }
+
+    .content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        border-radius: 0;
+        border-radius: var(--forCode-radius-button);
+    }
+
+    .content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) :global(.vtex-button__label) {
+        width: 100%;
+    }
+
+
+    .content .contentForm .emailVerification .formFooter .sendButton :global(.vtex-button) :global(.vtex-button__label)::before {
+        content: "Ingresar";
+        width: 100%;
+        font-size: var(--forCode-font-size-base, 14px);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList :global(.vtex-button) :global(.vtex-button__label) {
+        font-weight: var(--forCode-font-weight-semibold);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+        content: "Recibir código de acceso por mail";
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .emailPasswordOptionBtn :global(.vtex-button) {
+        background: var(--forCode-surface-button-secondary-default);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+        content: "Ingresar con mail y contraseña";
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content--beginCreatePass .emailPasswordOptionBtn {
+        display: none;
+    }
+
+    .content--emailVerification .formTitle::before {
+        display: none;
+    }
+
+    .content--emailVerification :global(.vtex-button__label) span {
+        font-size: 0px !important;
+    }
+
+    /*.content--emailVerification :global(.vtex-button__label) span::after {
+        content: "Volver";
+        color: var(--forCode-text-link-default-state, #322DB5);
+        text-align: center;
+        font-family: "Inter";
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-medium, 500);
+        line-height: 24px;
+        text-transform: math-auto;
+    }*/
+
+    :global(.vtex-render__container-id-default) .content--emailVerification .contentFormVisible .emailVerification::before {
+        content: "Recibir código de acceso por mail";
+        text-align: center;
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base) !important;
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+        position: relative;
+        top: 25px;
+        width: 100%;
+        display: block;
+    }
+
+    .content .contentForm .emailVerification .formLinkContainer .forgotPasswordLink {
+        color: var(--forCode-text-link-default-state);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content--emailVerification .loginOptionsContainer,
+    .content--emailVerification .loginOptionsContainer .optionsSticky {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .content--emailVerification .loginOptionsContainer .optionsSticky .optionsList {
+        width: 100%;
+    }
+
+    .content--emailVerification .loginOptionsContainer::before {
+        display: none;
+    }
+
+    .content--emailVerification .loginOptionsContainer .optionsSticky::before {
+        content: "Escoja una opción para entrar";
+        color: var(--forCode-text-body-dark);
+        text-align: center;
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .formTitle::before {
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content--codeConfirmation .contentFormVisible {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .googleOptionBtn :global(.vtex-button) {
+        background: var(--forCode-surface-button-secondary-default);
+    }
+
+    .contentInitialScreen .loginOptionsContainer .optionsList .googleOptionBtn :global(.vtex-button) :global(.vtex-button__label)::after {
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content .contentForm .emailVerification .formLinkContainer .dontHaveAccount::before {
+        color: var(--forCode-text-link-default-state);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .content .contentForm .emailVerification .formLinkContainer .dontHaveAccount::after {
+        color: var(--forCode-text-link-default-state);
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+
+}
+
+.loginOptionsContainer,
+.loginOptionsContainer,
+.loginOptionsContainer .optionsSticky {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.loginOptionsContainer :global(.vtex-button) {
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-medium);
+    background: var(--forCode-surface-button-secondary-default);
+}
+
+.loginOptionsContainer .accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: 'Recibir código de acceso por mail';
+    display: block;
+    width: 100%;
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+.loginOptionsContainer .emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: 'Ingresar con mail y contraseña';
+    display: block;
+    width: 100%;
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}

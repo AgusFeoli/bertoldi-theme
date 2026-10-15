@@ -1,0 +1,65 @@
+.cucarda2x1MainContainer {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+:global(.vtex-product-summary-2-x-element--product-box) .cucarda2x1MainContainer {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+.cucarda2x1Container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 21px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--product-info) .cucarda2x1Container,
+:global(.vtex-flex-layout-0-x-flexRow--cucarda-descuento-segunda-unidad-container) .cucarda2x1Container {
+    justify-content: flex-start !important;
+}
+
+.cucarda2x1 {
+    display: flex;
+    padding: 2px 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    border: 1px solid var(--forCode-stroke-tag-2x1);
+    background: #FFF;
+}
+
+.cucarda2x1Text {
+    min-width: 50px;
+    margin: 0px;
+    padding: 0px;
+    color: var(--forCode-text-tag-2x1);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 1025px) {
+    .cucarda2x1Text {
+        min-width: 38px;
+        font-size: var(--forCode-font-size-xxs);
+        font-weight: var(--forCode-font-weight-bold);
+        line-height: var(--forCode-font-line-height-base);
+    }
+}
+
+
+/*Inicio PDP*/
+:global(.vtex-flex-layout-0-x-flexRow--product-main-info) .cucarda2x1MainContainer {
+}
+
+/*Fin PDP*/

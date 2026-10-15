@@ -1,0 +1,995 @@
+.searchResultContainer {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loadingOverlay {
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+/* Listado */
+/* Listado - filtros */
+.galleryTitle--layout {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-2xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 38px;
+    letter-spacing: -0.22px;
+}
+
+.filtersWrapper {
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-light);
+    background: var(--forCode-surface-background-base-default);
+    overflow: hidden;
+}
+
+.filtersWrapper .filter__container {
+    border-color: #E9EAED;
+    border: 0px;
+}
+
+.filtersWrapper .filter__container--title {
+    display: none;
+}
+
+.filtersWrapper .filter__container .filter,
+.filtersWrapper .filter__container .filter.filterIsOpen {
+    padding: 0px 16px;
+    background: var(--forCode-surface-background-base-default);
+}
+
+.filtersWrapper .filter__container .filter.filterIsOpen .filterSelectedFilters,
+.accordionFilterContent .accordionSelectedFilters {
+    display: none;
+}
+
+.filtersWrapper .filter__container .filter .filterTitle {
+    padding: 16px 0px 16px 4px;
+    border-bottom: 1px solid #CCD5E0;
+}
+
+.filtersWrapper .filter__container .filter .filterTitleSpan {
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+    width: 83%;
+    overflow-wrap: break-word;
+}
+
+.filter__container--selectedFilters .filterTitle {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.filter__container--selectedFilters .filterTitleSpan {
+    color: var(--forCode-text-body-dark) !important;
+    font-family: var(--forCode-font-family-titles) !important;
+    font-size: var(--forCode-font-size-xl) !important;
+    font-style: normal !important;
+    font-weight: var(--forCode-font-weight-regular) !important;
+    line-height: var(--forCode-font-line-height-xl) !important;
+}
+
+.filtersWrapper .filter__container .filter .filterTitleSpan :global(.vtex-tag) {
+    margin-top: 8px;
+}
+
+.filtersWrapper .filter__container .filter .filterTitleSpan :global(.vtex-tag),
+.accordionFilterItemTag :global(.vtex-tag) {
+    padding: 4px 8px;
+
+    color: var(--forCode-text-button-secondary);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xs);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+
+    border-radius: var(--forCode-spacing-system-radius-xl);
+    border: 1px solid var(--forCode-stroke-medium);
+    background: var(--forCode-surface-background-base-default);
+    transition: all 150ms ease-in-out;
+}
+
+.filtersWrapper .filter__container .filter .filterTitleSpan :global(.vtex-tag):hover,
+.accordionFilterItemTag :global(.vtex-tag):hover {
+    background: #6b677938;
+}
+
+.filtersWrapper .filter__container .filter .filterIcon {
+    color: #242629;
+    max-width: .4375rem;
+    padding: 0px;
+    padding-right: 5px;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow::-webkit-scrollbar {
+    width: .3125rem;
+    background: #C2C2C2;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow::-webkit-scrollbar-thumb {
+    width: .3125rem;
+    box-sizing: border-box;
+    border-radius: 0;
+    background: #E83380;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent {
+    padding: 8px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent::after {
+    content: '';
+    border-bottom: 1px solid #CCD5E0;
+    padding-bottom: 24px;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent .seeMoreButton {
+    width: max-content;
+    margin-top: 12px;
+    margin-left: 5px;
+    color: var(--forCode-text-link-default-state);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+    padding: 8px 4px;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    background-color: transparent;
+    transition: all 150ms ease-in-out;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent .seeMoreButton:hover {
+    background: var(--forCode-surface-button-ghost-link-default);
+}
+
+.filtersWrapper .filter__container:not(.filter__container--priceRange, .filter__container--selectedFilters) .filterTemplateOverflow {
+    background-color: #FFF;
+    padding: 0px;
+}
+
+.filtersWrapper .filter__container .filterTemplateOverflow:empty {
+    padding: 0;
+}
+
+.filtersWrapper .filter__container .filterItem {
+    margin-block-start: 9px !important;
+}
+
+.filtersWrapper .filter__container--selectedFilters .filterItem {
+    margin-block-start: 0 !important;
+}
+
+.filtersWrapper .filter__container .filterItem:nth-child(0n+1) {
+    margin-block-start: 0;
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container) {
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container):hover {
+    background: var(--forCode-surface-background-checkbox-hover);
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container):hover :global(.vtex-checkbox__label) {
+    color: var(--forCode-text-button-secondary);
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__inner-container) {
+    transition: none !important;
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container):hover :global(.vtex-checkbox__inner-container) {
+    border-color: #DE1269;
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__box) {
+    color: #fff;
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__label) {
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__container),
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__inner-container),
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__box-wrapper),
+.filtersWrapper .filter__container .filterItem :global(.vtex-checkbox__input) {
+    width: 16px;
+    height: 16px;
+    border-color: #CCD5E0;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.filtersWrapper .filter__container.filter__container--selectedFilters .filterTemplateOverflow:not(:empty) {
+    padding: 16px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtersWrapper .filter__container.filter__container--selectedFilters .filterTemplateOverflow::after {
+    content: '';
+    border-bottom: 1px solid #CCD5E0;
+    padding-bottom: 24px;
+}
+
+.filtersWrapper .filter__container.filter__container--selectedFilters .filterTemplateOverflow {
+    padding: 12px 18px 40px 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange .filterTemplateOverflow {
+    padding: 16px 18px 40px 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.filterTemplateOverflow :global(.vtex-slider-container) {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.filterTemplateOverflow :global(.vtex-slider-container) :global(.vtex-slider__left-value),
+.filterTemplateOverflow :global(.vtex-slider-container) :global(.vtex-slider__right-value) {
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange :global(.vtex-slider__values-container) {
+    justify-content: space-between;
+    width: 107%;
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange :global(.vtex-slider__dash) {
+    display: none;
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange :global(.vtex-slider__base) {
+    height: 8px !important;
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange :global(.vtex-slider__base-internal) {
+    background-color: #DE1269;
+}
+
+.filtersWrapper .filter__container.filter__container--priceRange :global(.vtex-slider__selector) {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 24px;
+    background: var(--forCode-surface-background-base-default);
+    box-shadow: 0 4px 6px 0 rgba(40, 22, 105, 0.05), 0 10px 15px -3px rgba(40, 22, 105, 0.10) !important;
+    position: relative;
+    top: -4px;
+}
+
+/* filtro talles */
+.accordionFilter .accordionFilterOpen--talle,
+.filtersWrapper .filter__container.filter__container--talle .filterContent {
+    padding: 16px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordionFilter .accordionFilterOpen--talle .filterAccordionItemBox,
+.filtersWrapper .filter__container.filter__container--talle .filterItem {
+    margin: 0;
+    padding: 0;
+}
+
+.accordionFilter .accordionFilterOpen--talle .filterAccordionItemBox :global(.vtex-checkbox__label),
+.filtersWrapper .filter__container.filter__container--talle .filterItem :global(.vtex-checkbox__label) {
+    display: flex;
+    place-items: center;
+    justify-content: flex-start;
+    height: 20px;
+    width: 100%;
+    padding-left: 0px;
+}
+
+/* filtro precios */
+.accordionFilter .filter__container--priceRange .filter {
+    padding: 0;
+}
+
+.accordionFilter .accordionFilterContainer--gama-de-precios .accordionFilterItemTitle,
+.accordionFilter .filter__container--priceRange .filterTitle,
+.filtersWrapper .filter__container.filter__container--priceRange .filterTitleSpan {
+    font-size: 0px !important;
+}
+
+.accordionFilter .accordionFilterContainer--gama-de-precios .accordionFilterItemTitle::before,
+.filtersWrapper .filter__container.filter__container--priceRange .filterTitleSpan::before {
+    content: 'Precio';
+    display: inline;
+    font-size: var(--forCode-font-size-lg);
+}
+
+.searchFilterBar {
+    margin-bottom: 16px;
+}
+
+.searchFilterBar :global(.vtex-input) :global(.vtex-input-prefix__group) {
+    border-radius: 4px;
+    border: 1px solid var(--forCode-stroke-default);
+}
+
+.searchFilterBar :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input),
+.searchFilterBar :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg, 16px);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 24px;
+}
+
+.priceRangeInputWrapper {
+    display: none;
+}
+
+/* Listado - ordenar por */
+.totalProducts--layout {
+    padding: 0;
+    text-transform: capitalize;
+    text-align: left;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 36px;
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.filterPopupButton .filterPopupTitle::before {
+    content: 'Filtrar por';
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+
+.orderByOptionsContainer {
+    width: 190px;
+    top: 2.5rem;
+    min-width: unset;
+    width: max-content;
+    border-color: #E4E4E4;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px #00000022;
+    flex-direction: column;
+    gap: .875rem;
+    padding-block: .875rem;
+}
+
+.orderByOptionsContainer .orderByOptionItem {
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    background: none;
+    padding: 6px 1rem;
+}
+
+.orderByOptionsContainer .orderByOptionItem.orderByOptionItem--selected,
+.orderByOptionsContainer .orderByOptionItem:hover {
+    color: var(--forCode-text-body-dark);
+    background: none;
+}
+
+.gallery {
+    padding-inline-start: 0;
+    margin: 0;
+    column-gap: 1rem;
+}
+
+.galleryItem--container {
+    flex-basis: calc(33.33% - .75rem) !important;
+    max-width: calc(33.33% - .75rem) !important;
+    padding: 0;
+}
+
+.galleryItem--container :global(.vtex-product-summary-2-x-clearLink--product-box) {
+    align-self: center;
+}
+
+.buttonShowMore--layout {
+    margin: 0px;
+}
+
+.buttonShowMore--layout .buttonShowMore :global(.vtex-button) {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+}
+
+.buttonShowMore--layout .buttonShowMore :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-primary-hover);
+    border-color: var(--forCode-surface-button-primary-hover);
+}
+
+.buttonShowMore--layout .buttonShowMore :global(.vtex-button__label) {
+    padding: 0px !important;
+    width: 196px;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 16px;
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: initial;
+}
+
+.showingProducts {
+    padding: 0px;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl) !important;
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.orderByDropdown {
+    padding: 0;
+}
+
+.filter__container--category-4 .filter .filterTitle .filterTitleSpan,
+.accordionFilterContainer--category-4 .accordionFilterItem .accordionFilterContent .accordionFilterItemTitle {
+    font-size: 0 !important;
+}
+
+.filter__container--category-4 .filter .filterTitle .filterTitleSpan::before,
+.accordionFilterContainer--category-4 .accordionFilterItem .accordionFilterContent .accordionFilterItemTitle::before {
+    content: "Más categorías";
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: capitalize;
+}
+
+
+@media (min-width: 64.064rem) {
+    .orderByButton {
+        width: 112px;
+        box-sizing: content-box;
+        position: relative;
+        margin-inline-start: auto;
+        border-radius: var(--forCode-spacing-system-radius-l);
+        border: 1px solid var(--forCode-stroke-light);
+        background: var(--forCode-surface-background-base-default);
+        padding: var(--forCode-spacing-system-xs) var(--forCode-spacing-system-sm);
+        gap: 10px;
+    }
+
+    .orderByButton .filterPopupTitle {
+        font-size: 0px;
+        display: inline-flex;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .orderByButton .filterPopupTitle .orderByText {
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-transform: initial;
+    }
+
+    .orderByButton .filterPopupArrowIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        border-radius: 0px;
+    }
+
+    .orderByButton .filterPopupArrowIcon::before {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M7.99987 11.1664C7.64853 11.1664 7.3072 11.0164 7.06387 10.7557L3.5132 6.95504C3.26187 6.68571 3.27587 6.26371 3.54453 6.01238C3.8132 5.76238 4.23587 5.77571 4.48653 6.04438L7.99987 9.80438L11.5132 6.04438C11.7639 5.77505 12.1872 5.76171 12.4552 6.01238C12.7239 6.26371 12.7385 6.68571 12.4872 6.95504L8.93653 10.7557C8.69253 11.0164 8.3512 11.1664 7.99987 11.1664Z' fill='%23434343'/%3E%3C/svg%3E") no-repeat 50% / contain;
+        background-size: 16px;
+        content: "";
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+    }
+
+    .orderByButton .filterPopupArrowIcon .caretIcon {
+        display: none;
+    }
+}
+
+@media(max-width: 64.063rem) {
+    .sidebar {
+        width: 90%;
+    }
+
+    .searchNotFound {
+        flex-direction: column;
+        margin-block: 1rem;
+        gap: 1rem;
+    }
+
+    .searchNotFound .searchNotFoundOops,
+    .searchNotFound .searchNotFoundInfo {
+        padding-inline: 1rem;
+    }
+
+    .searchResultContainer--container {
+        background-color: #F9F9F9;
+        padding-inline: 0;
+    }
+
+    .gallery {
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .galleryTitle--layout {
+        padding-inline: 0;
+        text-transform: lowercase;
+        font-size: 1.25rem;
+    }
+
+    .galleryTitle--layout::first-letter {
+        text-transform: uppercase;
+    }
+
+    .filters--layout,
+    .filters,
+    .filtersWrapperMobile,
+    .orderBy--layout,
+    .orderByDropdown {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .sidebar .closeIconButton {
+        position: absolute;
+        z-index: 9;
+        width: max-content;
+        left: unset;
+        top: 10px;
+        right: 17px;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--forCode-radius-button);
+        border: 1px solid var(--forCode-stroke-medium);
+        background: var(--forCode-surface-button-secondary-default);
+    }
+
+    .sidebar .closeIconButton .closeIcon {
+        color: #3E3D43;
+        width: 16px;
+        height: 16px;
+    }
+
+    .sidebar .filterAccordionBreadcrumbs {
+        display: flex;
+        padding: var(--forCode-spacing-system-md);
+        align-items: center;
+        border-bottom: 1px solid var(--forCode-stroke-light);
+        background: var(--forCode-surface-background-base-default);
+        height: fit-content;
+        position: sticky;
+        z-index: 8;
+        top: 0;
+    }
+
+    .filterBreadcrumbsContent {
+        padding: 0px;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .sidebar .filterAccordionBreadcrumbs .filterBreadcrumbsText {
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-titles);
+        font-size: var(--forCode-font-size-2xl);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: -0.12px;
+        line-height: 24px;
+        height: 24px;
+        text-transform: uppercase;
+    }
+
+    .sidebar .accordionFilterContainer {
+        padding: 0px 16px;
+    }
+
+    .sidebar .accordionFilterContainer .filterAccordionItemBox {
+        border-bottom: 0.8px solid var(--forCode-stroke-default);
+        min-height: unset;
+        padding: 16px 0px 16px 4px;
+    }
+
+    .sidebar .accordionFilterContainer .filterAccordionItemBox .accordionFilterContent {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 24px;
+    }
+
+    .sidebar .accordionFilterContainer .filterAccordionItemBox .accordionFilterContent .accordionFilterItemTitle {
+        color: var(--forCode-text-body-dark);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions {
+        padding: 16px 16px 0px 16px;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .seeMoreButton {
+        width: max-content;
+        margin-top: 16px;
+        padding: 8px 12px;
+        border-radius: var(--forCode-radius-button);
+        background: var(--forCode-surface-button-ghost-default, #F7F7F7);
+
+        color: var(--forCode-text-button-secondary);
+        text-align: center;
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions::after {
+        content: "";
+        display: block;
+        border-bottom: 0.8px solid var(--forCode-stroke-default);
+        padding-top: 24px;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox {
+        min-height: 2rem;
+        border: 0px;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__container) {
+        width: 1.5rem;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
+        border: 1px solid #717171;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label) {
+        color: var(--forCode-text-body-default);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-sm);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-transform: lowercase;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .sidebar .accordionFilter .accordionFilterItemOptions .filterAccordionItemBox :global(.vtex-checkbox__label)::first-letter {
+        text-transform: uppercase;
+    }
+
+    .sidebar .filterButtonsBox {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: var(--forCode-spacing-system-lg);
+        border-top: 1px solid var(--forCode-stroke-default);
+        height: fit-content;
+    }
+
+    .sidebar .filterButtonsBox .filterApplyButtonWrapper {
+        padding: 0;
+    }
+
+    .sidebar .filterButtonsBox :global(.vtex-button) {
+        display: flex;
+        min-height: 40px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--forCode-radius-button);
+        border: 1px solid var(--forCode-stroke-button-primary-default);
+        background: var(--forCode-Surface-button-secondary);
+
+    }
+
+    .sidebar .filterButtonsBox :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 0px;
+        padding: 0px !important;
+    }
+
+    .sidebar .filterButtonsBox :global(.vtex-button) :global(.vtex-button__label)::before {
+        content: "Borrar";
+        color: var(--forCode-text-button-secondary);
+        text-align: center;
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: 16px;
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-transform: capitalize;
+    }
+
+    .sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) {
+        display: flex;
+        min-height: 40px;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--forCode-radius-button);
+        background: var(--forCode-surface-button-primary-default);
+        border-color: var(--forCode-surface-button-primary-default);
+        transition: all 150ms ease-in-out;
+    }
+
+    .sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button):hover {
+        background: var(--forCode-surface-button-primary-hover);
+        border-color: var(--forCode-surface-button-primary-hover);
+    }
+
+    .sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: 0px;
+        padding: 0px !important;
+    }
+
+    .sidebar .filterButtonsBox .filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label)::before {
+        content: "Aplicar filtro";
+        color: var(--forCode-text-on-dark);
+        text-align: center;
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: 16px;
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-transform: initial;
+    }
+
+    .sidebar .filterButtonsBox :global(.vtex-button__label) {
+        font-size: .9375rem;
+        letter-spacing: .75px;
+    }
+
+    .sidebar .accordionFilter :global(.vtex-slider-container) {
+        padding-inline: .5rem;
+    }
+
+    .sidebar .accordionFilter :global(.vtex-slider__values-container) {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sidebar .accordionFilter :global(.vtex-slider) :global(.vtex-slider__selector) {
+        background-color: #DE1269;
+    }
+
+    .sidebar .accordionFilter :global(.vtex-slider) :global(.vtex-slider__base) :global(.vtex-slider__base-internal) {
+        background-color: #DE1269;
+    }
+
+    .sidebar .accordionFilter :global(.vtex-slider__dash) {
+        display: none;
+    }
+
+    .orderByButton {
+        border: none;
+        background-color: transparent;
+    }
+
+    .orderByButton .filterPopupTitle {
+        font-size: 0px;
+        width: 135px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .orderByButton .filterPopupTitle .orderByText {
+        color: var(--forCode-text-body-medium);
+        text-align: center;
+        font-family: var(--forCode-font-family-button);
+        font-size: var(--forCode-font-size-base);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: var(--forCode-font-line-height-xl);
+        letter-spacing: var(--forCode-spacing-system-none);
+        text-transform: initial;
+    }
+
+    .orderByButton .filterPopupTitle::after {
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M4.66637 5.33337C4.31504 5.33337 3.9737 5.18337 3.73037 4.9227L0.179704 1.12204C-0.0716296 0.852703 -0.0576296 0.430704 0.211037 0.17937C0.479704 -0.0706297 0.90237 -0.0572961 1.15304 0.211371L4.66637 3.97137L8.1797 0.211371C8.43037 -0.0579628 8.8537 -0.0712963 9.1217 0.17937C9.39037 0.430704 9.40504 0.852703 9.1537 1.12204L5.60304 4.9227C5.35904 5.18337 5.0177 5.33337 4.66637 5.33337Z' fill='%23DE1269'/%3E%3C/svg%3E") no-repeat 50% / contain;
+        background-size: 12px;
+        content: "";
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        position: relative;
+        top: 1px;
+    }
+
+    .filterPopupArrowIcon {
+        display: none;
+    }
+
+    .orderByButton,
+    .filterPopupButton {
+        display: flex;
+        height: fit-content;
+        width: fit-content;
+        box-sizing: content-box;
+        padding: 12px;
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--forCode-radius-button);
+        border: 1px solid var(--forCode-stroke-medium);
+    }
+
+    .filterPopupButton .filterPopupTitle {
+        font-size: 0px;
+        width: 135px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .orderByOptionsContainer {
+        top: 2.7rem !important;
+        right: 1%;
+    }
+
+    /*.gallery--container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1px;
+    }*/
+
+    .filterButtonsBox .filterTotalProducts {
+        display: none;
+    }
+
+    .buttonShowMore--layout .buttonShowMore :global(.vtex-button__label) {
+        width: 284px;
+    }
+
+    .galleryItem--container {
+        flex-basis: calc(26% - .75rem) !important;
+        max-width: calc(26% - .75rem) !important;
+    }
+}
+
+@media (max-width: 740px) {
+    .galleryItem--container {
+        flex-basis: calc(34% - .75rem) !important;
+        max-width: calc(34% - .75rem) !important;
+    }
+}
+
+@media (max-width: 40rem) {
+    .gallery {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .galleryItem--container {
+        flex-basis: calc(50% - .75rem) !important;
+        max-width: calc(50% - .75rem) !important;
+    }
+}
+
+@media (max-width: 25.938rem) {
+    /*.galleryItem--container {
+        flex-basis: calc(52% - .75rem) !important;
+        max-width: calc(52% - .75rem) !important;
+    }*/
+}
+
+@media (max-width: 22.688rem) {
+    /*.galleryItem--container {
+        flex-basis: calc(53% - .75rem) !important;
+        max-width: calc(53% - .75rem) !important;
+    }*/
+}

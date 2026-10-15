@@ -1,0 +1,36 @@
+@media(min-width: 1026px) {
+    :global(.vtex-flex-layout-0-x-flexRow--banner-dinamico-mas-carrusel) .sliderLayoutContainer--banner-dinamico-mas-carrusel-slider {
+        padding: 0px !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--banner-dinamico-mas-carrusel) .sliderTrack--banner-dinamico-mas-carrusel-slider {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        justify-content: center;
+        transform: unset !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--banner-dinamico-mas-carrusel) .slide--hidden {
+        display: none;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--banner-dinamico-mas-carrusel) .slide--visible {
+        width: unset !important;
+    }
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-flex-layout-0-x-flexRow--banner-dinamico-mas-carrusel) .sliderLayoutContainer--banner-dinamico-mas-carrusel-slider {
+        padding: 0px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sliderArrows--banner-dinamico-mas-carrusel-slider {
+        top: 44%;
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#product-detail-info-MB": {
+    "props": {
+      "blockClass": "product-detail-info-MB"
+    },
+    "children": ["flex-layout.row#product-detail-descripcion-MB", "flex-layout.row#product-detail-Especificaciones-MB"]
+  },
+  "flex-layout.row#product-detail-descripcion-MB": {
+    "props": {
+      "blockClass": "product-detail-descripcion-MB"
+    },
+    "children": ["rich-text#product-detail-descripcion-MB", "custom-description"]
+  },
+  "rich-text#product-detail-descripcion-MB": {
+    "title": "Titulo de la descripción",
+    "props": {
+      "blockClass": "product-detail-descripcion-MB",
+      "text": "Descripción"
+    }
+  },
+  "flex-layout.row#product-detail-Especificaciones-MB": {
+    "props": {
+      "blockClass": "product-detail-Especificaciones-MB"
+    },
+    "children": ["rich-text#product-detail-Especificaciones-MB", "product-specification-group#product-detail-table"]
+  },
+  "rich-text#product-detail-Especificaciones-MB": {
+    "title": "Titulo de la especificación ",
+    "props": {
+      "blockClass": "product-detail-Especificaciones-MB",
+      "text": "Especificaciones"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .container--product-detail-switch {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .contentItem {
+    width: fit-content;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItem :global(.vtex-button) {
+    padding: var(--forCode-spacing-system-xxs) var(--forCode-spacing-system-md);
+    background: var(--forCode-Color-Base-white);
+    border-bottom: 2px solid var(--forCode-Color-Base-white);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItem :global(.vtex-button) :global(.vtex-button__label) {
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-3xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 130%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItem :global(.vtex-button):hover {
+    background: var(--forCode-Color-Base-white);
+    outline-color: var(--forCode-Color-Base-white);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItem :global(.vtex-button):hover :global(.vtex-button__label) {
+    color: var(--forCode-text-body-dark);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItemActive :global(.vtex-button) {
+    padding: var(--forCode-spacing-system-xxs) var(--forCode-spacing-system-md);
+    background: var(--forCode-Color-Base-white);
+    border-bottom: 2px solid var(--forCode-stroke-button-primary-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--product-detail-info) .listItemActive :global(.vtex-button) :global(.vtex-button__label) {
+    color: var(--forCode-text-body-dark);
+    font-size: var(--forCode-font-size-3xl);
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 130%;
+}

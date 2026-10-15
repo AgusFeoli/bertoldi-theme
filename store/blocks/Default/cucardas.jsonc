@@ -1,0 +1,23 @@
+{
+    /* oportunidad */
+    "vtex.product-highlights@2.x:product-highlights#BeautySale": {
+        "props": {
+            "type": "collection",
+            "filter": {
+                "type": "show",
+                "highlightNames": [
+                    "Evento Sale"
+                ]
+            }
+        },
+        "children": [
+            "product-highlight-text#BeautySale"
+        ]
+    },
+    "product-highlight-text#BeautySale": {
+        "props": {
+            "message": "{highlightName}",
+            "blockClass": "BeautySale"
+        }
+    }
+}

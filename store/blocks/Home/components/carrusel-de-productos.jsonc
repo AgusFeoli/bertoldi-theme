@@ -1,0 +1,57 @@
+{
+  "flex-layout.row#carrusel-de-productos": {
+    "props": {
+      "blockClass": "carrusel-de-productos"
+    },
+    "children": ["flex-layout.row#carrusel-de-productos-titulo", "list-context.product-list#carrusel-de-productos"]
+  },
+  //******************************************************
+  //Titulo
+  //******************************************************
+  "flex-layout.row#carrusel-de-productos-titulo": {
+    "props": {
+      "blockClass": "carrusel-de-productos-titulo"
+    },
+    "children": ["rich-text#carrusel-de-productos-titulo", "link.product#carrusel-de-productos-link"]
+  },
+  "rich-text#carrusel-de-productos-titulo": {
+    "title": "Título",
+    "props": { "text": "Accesorios", "blockClass": "carrusel-de-productos-titulo" }
+  },
+  "link.product#carrusel-de-productos-link": {
+    "title": "Link",
+    "props": { "href": "/", "label": "Ver todos", "blockClass": "carrusel-de-productos-link" }
+  },
+  //******************************************************
+  // Slider
+  "list-context.product-list#carrusel-de-productos": {
+    "title": "Slider - Config. del Contenido",
+    "blocks": ["product-summary.shelf#product-box"],
+    "children": ["slider-layout#carrusel-de-productos"],
+    "props": {
+      "blockClass": "product-box",
+      "orderBy": "OrderByPriceASC",
+      "hideUnavailableItems": true
+    }
+  },
+  "slider-layout#carrusel-de-productos": {
+    "title": "Slider - Config. del Componente",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "autoplay": {
+        "timeout": 3500,
+        "stopOnHover": true
+      },
+      "showPaginationDots": "always",
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "blockClass": ["carrusel-de-productos"]
+    }
+  }
+  //******************************************************
+}

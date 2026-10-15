@@ -1,0 +1,94 @@
+{
+  "flex-layout.row#banner-fijo-mas-carrusel-1": {
+    "props": {
+      "blockClass": ["banner-fijo-mas-carrusel", "banner-fijo-mas-carrusel-1"]
+    },
+    "children": ["flex-layout.row#banner-fijo-mas-carrusel-container-1", "flex-layout.row#banner-fijo-mas-carrusel-image-1"]
+  },
+  //******************************************************
+  //
+  //Inicio Banner
+  //
+  //******************************************************
+  "flex-layout.row#banner-fijo-mas-carrusel-image-1": {
+    "title": "Banner",
+    "props": {
+      "blockClass": ["banner-fijo-mas-carrusel-image"]
+    },
+    "children": ["responsive-layout.desktop#banner-fijo-mas-carrusel-image-1", "responsive-layout.mobile#banner-fijo-mas-carrusel-image-1"]
+  },
+  "responsive-layout.desktop#banner-fijo-mas-carrusel-image-1": {
+    "children": ["image#banner-fijo-mas-carrusel-image-ds-1"]
+  },
+  "image#banner-fijo-mas-carrusel-image-ds-1": {
+    "title": "Banner desktop",
+    "props": { "blockClass": "banner-fijo-mas-carrusel-image", "src": "/arquivos/banner-fijo1.png" }
+  },
+  "responsive-layout.mobile#banner-fijo-mas-carrusel-image-1": {
+    "children": ["image#banner-fijo-mas-carrusel-image-mb-1"]
+  },
+  "image#banner-fijo-mas-carrusel-image-mb-1": {
+    "title": "Banner mobile",
+    "props": { "blockClass": "banner-fijo-mas-carrusel-image", "src": "/arquivos/banner-fijo-mb1.png" }
+  },
+  //******************************************************
+  //
+  //Inicio Slider
+  //
+  //******************************************************
+  "flex-layout.row#banner-fijo-mas-carrusel-container-1": {
+    "props": {
+      "blockClass": ["banner-fijo-mas-carrusel-container", "banner-fijo-mas-carrusel-container-1"]
+    },
+    "children": ["flex-layout.row#banner-fijo-mas-carrusel-container-titulo-1", "list-context.product-list#banner-fijo-mas-carrusel-container-1"]
+  },
+  //******************************************************
+  //Titulo-1
+  //******************************************************
+  "flex-layout.row#banner-fijo-mas-carrusel-container-titulo-1": {
+    "props": {
+      "blockClass": "banner-fijo-mas-carrusel-container-titulo"
+    },
+    "children": ["rich-text#banner-fijo-mas-carrusel-container-titulo-1", "link.product#banner-fijo-mas-carrusel-container-link-1"]
+  },
+  "rich-text#banner-fijo-mas-carrusel-container-titulo-1": {
+    "title": "Título",
+    "props": { "text": "Nuevos ingresos", "blockClass": "banner-fijo-mas-carrusel-container-titulo" }
+  },
+  "link.product#banner-fijo-mas-carrusel-container-link-1": {
+    "title": "Link",
+    "props": { "href": "/", "label": "Ver todos", "blockClass": "banner-fijo-mas-carrusel-container-link" }
+  },
+  //******************************************************
+  // Slider
+  "list-context.product-list#banner-fijo-mas-carrusel-container-1": {
+    "title": "Slider - Config. del Contenido",
+    "blocks": ["product-summary.shelf#product-box"],
+    "children": ["slider-layout#banner-fijo-mas-carrusel-container-1"],
+    "props": {
+      "blockClass": "product-box",
+      "orderBy": "OrderByPriceASC",
+      "hideUnavailableItems": true
+    }
+  },
+  "slider-layout#banner-fijo-mas-carrusel-container-1": {
+    "title": "Slider - Config. del Componente",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "autoplay": {
+        "timeout": 3500,
+        "stopOnHover": true
+      },
+      "showPaginationDots": "always",
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "blockClass": ["banner-fijo-mas-carrusel-container"]
+    }
+  }
+  //******************************************************
+}

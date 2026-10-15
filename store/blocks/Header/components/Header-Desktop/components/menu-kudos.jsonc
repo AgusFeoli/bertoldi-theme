@@ -1,0 +1,30 @@
+{
+  "flex-layout.row#menu-kudos": {
+    "title": "Menu",
+    "props": {
+      "blockClass": "menu-kudos"
+    },
+    "children": ["menu-kudos"]
+  },
+  "menu-kudos": {
+    "props": {
+      "team_id": 70,
+      //"local_json": true,
+      "logoStore": "assets/imgs/Header/menu-mobile-logo.svg",
+      "triggerMobile": "assets/imgs/Header/menu-trigger-logo-mobile.svg",
+      "ver_todo": {
+        "display": true,
+        "text": "Ver todo"
+      },
+      "myaccount": {
+        "display": true,
+        "image": "assets/imgs/Header/menu-mobile-mi-cuenta-logo.svg",
+        "text": "Ingresar",
+        "textLoggedIn": "Mi cuenta"
+      },
+      "desktopDepartmentHover": true,
+      "colorIconCloseMenuMobile": "#3E3D43",
+      "colorArrowDepartmentMobile": "#3E3D43"
+    }
+  }
+}

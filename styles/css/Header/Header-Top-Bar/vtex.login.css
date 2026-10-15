@@ -1,0 +1,7 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--header-top-bar-DS)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--header-top-bar-DS)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    display: none;
+}

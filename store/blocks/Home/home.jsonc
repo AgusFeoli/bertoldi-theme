@@ -1,0 +1,115 @@
+{
+  "store.home": {
+    "blocks": ["toggle-layout#home"]
+  },
+  "toggle-layout#home": {
+    "title": "Home",
+    "children": [
+      "toggle-layout#main-slider-cards",
+      "daily-event-countdown",
+      "toggle-layout#cards-informativas",
+      "toggle-layout#categorias-slider",
+      "toggle-layout#cards-financiacion",
+      "toggle-layout#colecciones-slider",
+      "toggle-layout#carrusel-de-productos",
+      "toggle-layout#marcas-slider",
+      "toggle-layout#banner-dinamico-mas-carrusel-1",
+      "toggle-layout#banner-fijo-mas-carrusel-1",
+      "toggle-layout#video-banner",
+      "toggle-layout#banner-dinamico-mas-carrusel-2",
+      "toggle-layout#banner-fijo-mas-carrusel-2",
+      "toggle-layout#grid-banners"
+    ]
+  },
+
+  "daily-event-countdown": {
+    "props": {
+      "FormSuscription": "form#newsletter"
+    }
+  },
+  //******************************************************
+  //
+  // Inicio de Toggles
+  //
+  //******************************************************
+  "toggle-layout#main-slider-cards": {
+    "title": "Slider Principal - Tarjetas",
+    "children": ["flex-layout.row#main-slider-cards-container"]
+  },
+  //
+  //
+  "toggle-layout#cards-informativas": {
+    "title": "Tarjetas Informativas",
+    "children": ["flex-layout.row#cards-informativas"]
+  },
+  //
+  //
+  "toggle-layout#categorias-slider": {
+    "title": "Slider categorías",
+    "children": ["flex-layout.row#categorias-slider"]
+  },
+  //
+  //
+  "toggle-layout#cards-financiacion": {
+    "title": "Tarjetas de financiación",
+    "children": ["flex-layout.row#cards-financiacion"]
+  },
+  //
+  //
+  "toggle-layout#colecciones-slider": {
+    "title": "Slider colecciones",
+    "children": ["flex-layout.row#colecciones-slider"]
+  },
+  //
+  //
+  "toggle-layout#carrusel-de-productos": {
+    "title": "Carrusel de Productos",
+    "children": ["flex-layout.row#carrusel-de-productos"]
+  },
+  //
+  //
+  "toggle-layout#marcas-slider": {
+    "title": "Slider marcas",
+    "children": ["flex-layout.row#marcas-slider"]
+  },
+  //
+  //
+  "toggle-layout#banner-dinamico-mas-carrusel-1": {
+    "title": "Primer Banner dinamico con carrusel de productos",
+    "children": ["flex-layout.row#banner-dinamico-mas-carrusel-1"]
+  },
+  //
+  //
+  "toggle-layout#banner-fijo-mas-carrusel-1": {
+    "title": "Primer Banner fijo con carrusel de productos",
+    "children": ["flex-layout.row#banner-fijo-mas-carrusel-1"]
+  },
+  //
+  //
+  "toggle-layout#video-banner": {
+    "title": "Video Banner",
+    "children": ["flex-layout.row#video-banner"]
+  },
+  //
+  //
+  "toggle-layout#banner-dinamico-mas-carrusel-2": {
+    "title": "Segundo Banner dinamico con carrusel de productos",
+    "children": ["flex-layout.row#banner-dinamico-mas-carrusel-2"]
+  },
+  //
+  //
+  "toggle-layout#banner-fijo-mas-carrusel-2": {
+    "title": "Segundo Banner fijo con carrusel de productos",
+    "children": ["flex-layout.row#banner-fijo-mas-carrusel-2"]
+  },
+  //
+  "toggle-layout#grid-banners": {
+    "title": "Grid Banners",
+    "children": ["flex-layout.row#grid-banners"]
+  }
+  //******************************************************
+  //
+  // Fin de Toggles
+  //
+  //******************************************************
+}

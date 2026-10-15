@@ -1,0 +1,215 @@
+{
+  "flex-layout.row#main-slider-cards-container": {
+    "props": {
+      "blockClass": "main-slider-cards-container"
+    },
+    "children": ["slider-layout#main-slider-card-slider"]
+  },
+  "slider-layout#main-slider-card-slider": {
+    "children": [
+      "flex-layout.row#main-slider-card-1",
+      "flex-layout.row#main-slider-card-2",
+      "flex-layout.row#main-slider-card-3",
+      "flex-layout.row#main-slider-card-4",
+      "flex-layout.row#main-slider-card-5",
+      "flex-layout.row#main-slider-card-6"
+    ],
+    "props": {
+      "blockClass": "main-slider-card-slider",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 16,
+      "autoplay": {
+        "timeout": 3500,
+        "stopOnHover": true
+      },
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never"
+    }
+  },
+
+  //******************************************************
+  // Card 1
+  //******************************************************
+  "flex-layout.row#main-slider-card-1": {
+    "title": "Tarjeta 1",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-1", "flex-layout.row#main-slider-info-container-1"]
+  },
+  "image#main-slider-image-1": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-1": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-dark"] },
+    "children": ["rich-text#main-slider-title-1", "rich-text#main-slider-text-1", "link.product#main-slider-link-1"]
+  },
+  "rich-text#main-slider-title-1": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-1": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-1": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  },
+
+  //******************************************************
+  // Card 2
+  //******************************************************
+  "flex-layout.row#main-slider-card-2": {
+    "title": "Tarjeta 2",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-2", "flex-layout.row#main-slider-info-container-2"]
+  },
+  "image#main-slider-image-2": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-2": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-medium"] },
+    "children": ["rich-text#main-slider-title-2", "rich-text#main-slider-text-2", "link.product#main-slider-link-2"]
+  },
+  "rich-text#main-slider-title-2": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-2": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-2": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  },
+
+  //******************************************************
+  // Card 3
+  //******************************************************
+  "flex-layout.row#main-slider-card-3": {
+    "title": "Tarjeta 3",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-3", "flex-layout.row#main-slider-info-container-3"]
+  },
+  "image#main-slider-image-3": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-3": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-light"] },
+    "children": ["rich-text#main-slider-title-3", "rich-text#main-slider-text-3", "link.product#main-slider-link-3"]
+  },
+  "rich-text#main-slider-title-3": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-3": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-3": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  },
+
+  //******************************************************
+  // Card 4
+  //******************************************************
+  "flex-layout.row#main-slider-card-4": {
+    "title": "Tarjeta 4",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-4", "flex-layout.row#main-slider-info-container-4"]
+  },
+  "image#main-slider-image-4": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-4": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-dark"] },
+    "children": ["rich-text#main-slider-title-4", "rich-text#main-slider-text-4", "link.product#main-slider-link-4"]
+  },
+  "rich-text#main-slider-title-4": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-4": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-4": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  },
+
+  //******************************************************
+  // Card 5
+  //******************************************************
+  "flex-layout.row#main-slider-card-5": {
+    "title": "Tarjeta 5",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-5", "flex-layout.row#main-slider-info-container-5"]
+  },
+  "image#main-slider-image-5": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-5": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-medium"] },
+    "children": ["rich-text#main-slider-title-5", "rich-text#main-slider-text-5", "link.product#main-slider-link-5"]
+  },
+  "rich-text#main-slider-title-5": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-5": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-5": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  },
+
+  //******************************************************
+  // Card 6
+  //******************************************************
+  "flex-layout.row#main-slider-card-6": {
+    "title": "Tarjeta 6",
+    "props": { "blockClass": "main-slider-cards" },
+    "children": ["image#main-slider-image-6", "flex-layout.row#main-slider-info-container-6"]
+  },
+  "image#main-slider-image-6": {
+    "title": "Imagen",
+    "props": { "blockClass": "main-slider-image", "src": "/arquivos/image-slider.png" }
+  },
+  "flex-layout.row#main-slider-info-container-6": {
+    "props": { "blockClass": ["main-slider-cards", "main-slider-info-container", "main-slider-info-container-background-light"] },
+    "children": ["rich-text#main-slider-title-6", "rich-text#main-slider-text-6", "link.product#main-slider-link-6"]
+  },
+  "rich-text#main-slider-title-6": {
+    "title": "Título",
+    "props": { "text": "Hasta 55% off", "blockClass": "main-slider-title" }
+  },
+  "rich-text#main-slider-text-6": {
+    "title": "Texto",
+    "props": { "text": "Lorem ipsum dolor sit amet consectetur. Morbi faucibus.", "blockClass": "main-slider-text" }
+  },
+  "link.product#main-slider-link-6": {
+    "title": "Link CTA",
+    "props": { "blockClass": "main-slider-link", "href": "/", "label": "¡Lo quiero!" }
+  }
+}

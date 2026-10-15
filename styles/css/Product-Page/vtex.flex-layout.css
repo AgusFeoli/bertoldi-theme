@@ -1,0 +1,5 @@
+.flexRow--product-breadcrumb,
+.flexRow--product-main-info,
+.flexRow--pdp-slider-product-box {
+    background: var(--forCode-surface-background-base-secondary);
+}

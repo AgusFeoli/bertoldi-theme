@@ -1,0 +1,193 @@
+.closed .closeIconContainer {
+    display: none;
+}
+
+.opened .closeIconContainer {
+    display: block;
+}
+
+.closeIconContainer {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.minicartSideBarContentWrapper {
+    height: 100vh !important;
+}
+
+.minicartTitle--minicart-container {
+    margin: 0px;
+    padding: 16px;
+    border-bottom: 1px solid var(--forCode-stroke-light);
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-2xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.minicartProductListContainer {
+    padding: 8px !important;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.minicartProductListContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.minicartProductListContainer::-webkit-scrollbar-track {
+    background: #dfdfdf;
+}
+
+.minicartProductListContainer::-webkit-scrollbar-thumb {
+    background: #7A7A7A;
+    border-radius: 10px;
+}
+
+.minicartProductListContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/***************/
+.minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button) {
+    display: flex;
+    height: fit-content;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--forCode-surface-button-primary-default);
+    border-radius: var(--forCode-radius-button);
+    background: var(--forCode-surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button):hover {
+    border-color: var(--forCode-surface-button-primary-hover);
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 0px;
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Finalizar compra";
+    display: block;
+    height: 16px;
+    text-transform: initial;
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 18px;
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+/***************/
+
+.minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) {
+    display: flex;
+    height: fit-content;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-secondary-default);
+    transition: all 150ms ease-in-out;
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-secondary-hover);
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 0px;
+}
+
+.minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) :global(.vtex-button__label)::before {
+    content: "Ver compra";
+    display: block;
+    height: 16px;
+    text-transform: initial;
+    color: var(--forCode-text-button-secondary);
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 18px;
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.minicartQuantityBadge {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    visibility: visible;
+    top: -15px;
+    left: -25%;
+    border: 1px solid var(--forCode-stroke-on-dark);
+    background: var(--forCode-surface-background-badge);
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 19px;
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.minicartSummary,
+.minicartCheckoutButton,
+:global(.vtex-rich-text-0-x-container--miniCart-mensaje) {
+    margin: 0px;
+    padding: 0px;
+}
+
+.minicartEmptyStateContainer {
+    background: var(--surface-background-background-grey-light);
+}
+
+.minicartEmptyStateContainer :global(.vtex-flex-layout-0-x-flexCol) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 46px;
+
+}
+
+.minicartEmptyStateContainer :global(.vtex-flex-layout-0-x-flexCol) :global(.vtex-flex-layout-0-x-flexColChild) {
+    height: fit-content !important;
+}
+
+@media(max-width: 64.063rem) {
+    .opened {
+        min-width: 320px !important;
+    }
+
+    .minicartQuantityBadge {
+        width: 9px;
+        height: 10px;
+        padding: 5px;
+        top: -14px;
+        left: 16%;
+        font-size: var(--forCode-font-size-sm);
+    }
+
+    .minicartCheckoutButton--minicartButton-to-checkout-profile :global(.vtex-button),
+    .minicartCheckoutButton--minicartButton-to-checkout-cart :global(.vtex-button) {
+        padding: 12px;
+    }
+}

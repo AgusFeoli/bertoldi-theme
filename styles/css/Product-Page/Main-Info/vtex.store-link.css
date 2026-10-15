@@ -1,0 +1,33 @@
+.link--product-slider-product-box-titulo-link {
+    text-decoration: none;
+}
+
+.label--product-slider-product-box-titulo-link {
+    display: flex;
+    gap: 4px;
+    color: var(--forCode-text-button-secondary);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-xlg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-xlg);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.label--product-slider-product-box-titulo-link::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M6.23126 12.6663C6.05583 12.6663 5.88436 12.6116 5.73851 12.5092C5.59266 12.4067 5.47899 12.2612 5.41186 12.0909C5.34473 11.9205 5.32716 11.7331 5.36138 11.5523C5.39559 11.3715 5.48005 11.2055 5.60407 11.0751L8.52531 8.0054L5.60407 4.93571C5.51935 4.84972 5.45177 4.74685 5.40527 4.63312C5.35878 4.51939 5.33431 4.39707 5.33329 4.2733C5.33226 4.14952 5.35471 4.02677 5.39931 3.91221C5.44392 3.79765 5.50979 3.69356 5.59308 3.60604C5.67637 3.51851 5.77542 3.4493 5.88444 3.40242C5.99346 3.35555 6.11028 3.33197 6.22806 3.33304C6.34585 3.33412 6.46226 3.35983 6.57049 3.40869C6.67872 3.45754 6.77661 3.52856 6.85844 3.61759L10.4069 7.34635C10.5732 7.52116 10.6666 7.75822 10.6666 8.0054C10.6666 8.25258 10.5732 8.48965 10.4069 8.66446L6.85844 12.3932C6.69211 12.568 6.46651 12.6663 6.23126 12.6663Z' fill='%23464958'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+
+@media(max-width: 64.063rem) {
+
+    .link--product-slider-product-box-titulo-link,
+    .label--product-slider-product-box-titulo-link::after {
+        display: none;
+    }
+}

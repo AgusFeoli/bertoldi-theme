@@ -1,0 +1,83 @@
+:global(.kudosio-menu-0-x-titleDepartment_t2v4 p) {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-medium);
+    text-align: center;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: lowercase;
+}
+
+:global(.kudosio-menu-0-x-titleDepartment_t2v4 p)::first-letter {
+    text-transform: uppercase;
+}
+
+:global(.kudosio-menu-0-x-titleDepartment_t2v4):hover {
+    border-color: var(--forCode-stroke-button-primary-default);
+}
+
+:global(.kudosio-menu-0-x-titleDepartment_t2v4):hover p {
+    color: var(--forCode-text-button-secondary);
+}
+
+:global(.kudosio-menu-0-x-titleCategory_t2v4 p) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    color: var(--forCode-text-body-dark) !important;
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-bold);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+    text-transform: none;
+}
+
+:global(.kudosio-menu-0-x-titleSubCategory_t2v4) {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:global(.kudosio-menu-0-x-titleSubCategory_t2v4 p) {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+:global(.kudosio-menu-0-x-titleSubCategory_t2v4):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--forCode-text-button-secondary);
+}
+
+:global(.kudosio-menu-0-x-titleSubCategory_t2v4):hover p {
+    color: var(--forCode-text-button-secondary);
+}
+
+:global(.kudosio-menu-0-x-containerCategoryMobile_t2v4>.kudosio-menu-0-x-contSubCategoryMobile_t2v4 .kudosio-menu-0-x-seeAll_t2v4) {
+    border-top: 1px solid var(--forCode-stroke-light);
+}
+
+
+:global(.kudosio-menu-0-x-titleCategoryMobile_t2v4:has(.kudosio-menu-0-x-arrowCategoryMobile_t2v4))::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='10' viewBox='0 0 6 10' fill='none'%3E%3Cpath d='M0.898005 9.33333C0.72258 9.33329 0.551105 9.2786 0.405256 9.17617C0.259407 9.07374 0.145734 8.92816 0.0786065 8.75785C0.0114793 8.58754 -0.00608739 8.40014 0.028126 8.21934C0.0623395 8.03854 0.146797 7.87246 0.270823 7.74209L3.19206 4.67239L0.270823 1.6027C0.186095 1.51671 0.118513 1.41385 0.0720211 1.30012C0.0255289 1.18638 0.00105705 1.06406 3.34932e-05 0.940288C-0.000990061 0.816513 0.0214558 0.693763 0.0660602 0.5792C0.110665 0.464638 0.176535 0.360557 0.259827 0.273031C0.34312 0.185506 0.442166 0.116288 0.551188 0.0694166C0.66021 0.0225454 0.777023 -0.00104038 0.894812 3.51967e-05C1.0126 0.00111077 1.12901 0.0268264 1.23724 0.0756814C1.34547 0.124536 1.44335 0.195553 1.52519 0.284586L5.0736 4.01334C5.23991 4.18815 5.33333 4.42521 5.33333 4.67239C5.33333 4.91958 5.23991 5.15664 5.0736 5.33145L1.52519 9.0602C1.35886 9.23503 1.13326 9.33328 0.898005 9.33333Z' fill='%233E3D43'/%3E%3C/svg%3E");
+    display: inline-block;
+    transition: .3s;
+}
+
+:global(.kudosio-menu-0-x-titleDepartmentMobile_t2v4:has(.kudosio-menu-0-x-arrowDepartmentMobile_t2v4))::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='10' viewBox='0 0 6 10' fill='none'%3E%3Cpath d='M0.898005 9.33333C0.72258 9.33329 0.551105 9.2786 0.405256 9.17617C0.259407 9.07374 0.145734 8.92816 0.0786065 8.75785C0.0114793 8.58754 -0.00608739 8.40014 0.028126 8.21934C0.0623395 8.03854 0.146797 7.87246 0.270823 7.74209L3.19206 4.67239L0.270823 1.6027C0.186095 1.51671 0.118513 1.41385 0.0720211 1.30012C0.0255289 1.18638 0.00105705 1.06406 3.34932e-05 0.940288C-0.000990061 0.816513 0.0214558 0.693763 0.0660602 0.5792C0.110665 0.464638 0.176535 0.360557 0.259827 0.273031C0.34312 0.185506 0.442166 0.116288 0.551188 0.0694166C0.66021 0.0225454 0.777023 -0.00104038 0.894812 3.51967e-05C1.0126 0.00111077 1.12901 0.0268264 1.23724 0.0756814C1.34547 0.124536 1.44335 0.195553 1.52519 0.284586L5.0736 4.01334C5.23991 4.18815 5.33333 4.42521 5.33333 4.67239C5.33333 4.91958 5.23991 5.15664 5.0736 5.33145L1.52519 9.0602C1.35886 9.23503 1.13326 9.33328 0.898005 9.33333Z' fill='%233E3D43'/%3E%3C/svg%3E");
+    display: inline-block;
+    transition: .3s;
+}

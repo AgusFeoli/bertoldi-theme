@@ -1,0 +1,53 @@
+{
+  "store.custom#preguntasfrecuentes": {
+    "children": ["flex-layout.row#preguntasfrecuentes-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#preguntasfrecuentes-main-container": {
+    "title": "Preguntas frecuentes",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-preguntasfrecuentes"]
+    },
+    "children": ["flex-layout.col#preguntasfrecuentes-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#preguntasfrecuentes-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "preguntasfrecuentes-main-col"]
+    },
+    "children": [
+      "rich-text#institutional-breadcrumb-preguntasfrecuentes",
+      "flex-layout.row#institutional-title-container-preguntasfrecuentes",
+      "flex-layout.col#institutional-text-container-preguntasfrecuentes"
+    ]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-preguntasfrecuentes": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-preguntasfrecuentes"],
+      "text": "[Inicio](/) / Preguntas frecuentes"
+    }
+  },
+  /* Titulo */
+  "flex-layout.row#institutional-title-container-preguntasfrecuentes": {
+    "props": {
+      "blockClass": ["institutional-title-container", "institutional-title-container-preguntasfrecuentes"]
+    },
+    "children": ["rich-text#institutional-title-preguntasfrecuentes"]
+  },
+  "rich-text#institutional-title-preguntasfrecuentes": {
+    "props": {
+      "blockClass": ["institutional-title", "institutional-title-preguntasfrecuentes"],
+      "text": "Preguntas Frecuentes"
+    }
+  },
+
+  /* Textos */
+  "flex-layout.col#institutional-text-container-preguntasfrecuentes": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-preguntasfrecuentes"]
+    },
+    "children": ["institutional-content"]
+  }
+}

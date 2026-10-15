@@ -1,0 +1,39 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--button-prod-box) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child :global(.vtex-button) {
+    border-radius: var(--spacing-system-radius-s);
+    background: var(--surface-button-primary-default);
+    border-color: var(--surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--button-prod-box) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child :global(.vtex-button):hover {
+    background: var(--surface-button-primary-hover);
+    border-color: var(--surface-button-primary-hover);
+}
+
+.buttonText--product-box {
+    font-size: 0px;
+}
+
+.buttonDataContainer--product-box::before {
+    content: "Agregar";
+    color: var(--text-on-dark);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-lg, 16px);
+    font-style: normal;
+    font-weight: var(--font-weight-semibold);
+    line-height: 100%;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+}
+
+.buttonText--product-box-buy-button {
+    color: var(--text-on-dark);
+    text-align: center;
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xmd);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 16px;
+    letter-spacing: var(--amount);
+    text-transform: initial;
+}

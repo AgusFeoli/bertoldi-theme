@@ -1,0 +1,11 @@
+{
+  /* - Footer - */
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      "image#whatsappButton",
+      "flex-layout.row#footer-institucional-DS",
+      "flex-layout.row#footer-copyright-DS"
+    ]
+  }
+}

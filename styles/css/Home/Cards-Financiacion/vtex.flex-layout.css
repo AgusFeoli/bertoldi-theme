@@ -1,0 +1,64 @@
+.flexRow--cards-financiacion {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--forCode-surface-background-base-secondary-md);
+}
+
+.flexRow--cards-financiacion :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 48px 16px 48px 16px;
+    margin: 0;
+}
+
+.flexRowContent--cards-financiacion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--cards-financiacion :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+.flexRow--card-financiacion {
+    padding: 26px 20px;
+    border-radius: var(--forCode-spacing-system-radius-s);
+    background: var(--forCode-surface-background-base-secondary);
+    border-left: 5px solid var(--forCode-stroke-button-primary-default);
+}
+
+.flexRowContent--card-financiacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.flexRowContent--card-financiacion :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    min-width: 44px !important;
+    min-height: 28px;
+}
+
+@media(max-width: 1025px) {
+    .flexRowContent--cards-financiacion {
+        gap: 0;
+    }
+
+    .flexRow--cards-financiacion :global(.vtex-store-components-3-x-container) {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .flexRow--card-financiacion {
+        width: 320px;
+        padding: 15px;
+    }
+}

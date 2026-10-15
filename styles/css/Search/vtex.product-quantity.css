@@ -1,0 +1,25 @@
+:global(.vtex-product-summary-2-x-element--search-product-box) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-product-summary-2-x-element--search-product-box) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+    padding: 16px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+    padding: 8px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+    max-width: 60px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: transparent !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+    min-width: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: transparent !important;
+}

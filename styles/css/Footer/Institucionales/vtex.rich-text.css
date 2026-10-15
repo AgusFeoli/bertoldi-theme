@@ -1,0 +1,101 @@
+.paragraph--footer-titulo-institucionales {
+    margin: 0px;
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+
+}
+
+.paragraph--institucionales-texto-regular-1 {
+    color: var(--text-body-default);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 19px;
+    margin: 0px;
+}
+
+.paragraph--institucionales-texto-regular-2,
+.link--institucionales-texto-regular-2 {
+    color: var(--text-body-medium);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 19px;
+    text-decoration: none;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.paragraph--institucionales-texto-medium {
+    color: var(--text-body-medium);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    line-height: 18px;
+    margin: 0px;
+}
+
+
+.link--institucionales-mail::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3E%3Cpath d='M7.99992 9.06839L14.1833 4.1267C13.9458 3.93842 13.6448 3.83441 13.3333 3.83301H2.66659C2.35503 3.83441 2.05402 3.93842 1.81659 4.1267L7.99992 9.06839Z' fill='%23434343'/%3E%3Cpath d='M8.83325 10.0409C8.59062 10.2141 8.29405 10.3087 7.98859 10.3103C7.70392 10.3109 7.42681 10.2248 7.19925 10.0652L1.33325 5.37861V11.9219C1.33325 12.2519 1.47373 12.5685 1.72378 12.8019C1.97382 13.0352 2.31296 13.1663 2.66659 13.1663H13.3333C13.6869 13.1663 14.026 13.0352 14.2761 12.8019C14.5261 12.5685 14.6666 12.2519 14.6666 11.9219V5.37861L8.83325 10.0409Z' fill='%23434343'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.paragraph--institucionales-whatsapp-number::before {
+    background: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.0663581 8.42795C0.0644405 9.81913 0.428555 11.1863 1.12217 12.3923L0 16.5L4.19332 15.3978C5.35292 16.0311 6.65302 16.3631 7.9743 16.3631C10.0737 16.3574 12.0851 15.5196 13.5679 14.0334C15.0506 12.5472 15.8837 10.5338 15.8844 8.4344C15.8878 7.39289 15.685 6.361 15.2877 5.39825C14.8904 4.4355 14.3064 3.56096 13.5695 2.825C12.8374 2.0859 11.9657 1.49974 11.005 1.1006C10.0443 0.701467 9.01388 0.497304 7.9736 0.500027C5.87474 0.506069 3.86389 1.34395 2.38171 2.83001C0.899524 4.31607 0.0669159 6.32908 0.0663581 8.42795Z' fill='%23434343'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.00606 5.04226C5.85839 4.71338 5.70215 4.70695 5.56161 4.70125C5.44676 4.69625 5.31478 4.69697 5.18352 4.69697C5.08348 4.69958 4.98507 4.72286 4.89446 4.76534C4.80386 4.80782 4.72303 4.86858 4.65704 4.94381C4.43359 5.1552 4.25671 5.41089 4.13768 5.69452C4.01865 5.97815 3.96009 6.28349 3.96575 6.59103C4.03003 7.33577 4.31019 8.04559 4.77189 8.63348C5.59248 9.92558 6.76214 10.9589 8.14553 11.614C9.81345 12.2718 10.153 12.1412 10.5154 12.1084C10.7911 12.0544 11.0522 11.9429 11.2819 11.7811C11.5115 11.6194 11.7044 11.411 11.848 11.1696C11.9771 10.8745 12.017 10.5482 11.9629 10.2308C11.9137 10.1487 11.7817 10.0988 11.5841 10.0003C11.3865 9.90189 10.4155 9.42391 10.2343 9.35828C10.0531 9.29265 9.92188 9.25984 9.7899 9.45745C9.65792 9.65506 9.27983 10.0995 9.16497 10.2315C9.05011 10.3635 8.93454 10.3799 8.73693 10.2814C8.15474 10.0493 7.61739 9.71759 7.14892 9.30122C6.71717 8.90213 6.34694 8.44126 6.0503 7.93364C5.93544 7.73603 6.03816 7.62902 6.13733 7.53057C6.23649 7.43212 6.33493 7.30014 6.43338 7.18457C6.51457 7.08465 6.58111 6.97368 6.631 6.85499C6.65723 6.8005 6.66947 6.74032 6.6666 6.67991C6.66374 6.6195 6.64587 6.56076 6.61459 6.50899C6.56537 6.41055 6.18155 5.4332 6.00606 5.04226Z' fill='white'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.paragraph--institucionales-encontranos {
+    position: relative;
+    bottom: 12px;
+}
+
+.container--footer-logos-redes-text-DS {
+    margin: 0;
+}
+
+.paragraph--footer-logos-redes-text-DS {
+    margin: 0px;
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+}
+
+.paragraph--question-disclosure-footer-mb {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-lg);
+}
+
+@media(max-width: 64.063rem) {
+    .container--footer-logos-redes-text-DS {
+        margin-top: 0px;
+    }
+}

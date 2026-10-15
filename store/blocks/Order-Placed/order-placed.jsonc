@@ -1,0 +1,151 @@
+{
+    "order-placed": {
+        "blocks": [
+            "op-header",
+            "op-order"
+        ]
+    },
+    "op-header": {
+        "children": [
+            "flex-layout.row#order-placed-header"
+        ]
+    },
+    "flex-layout.row#order-placed-header": {
+        "props": {
+            "blockClass": "order-placed-header"
+        },
+        "children": [
+            "op-section#confirmation"
+            // "op-section#notices",
+            // "op-summary-section",
+            // "op-bank-invoice-section"
+        ]
+    },
+    "op-section#confirmation": {
+        "props": {
+            "name": "confirmation",
+            "marginBottom": 9,
+            "borderless": true
+        },
+        "children": [
+            "op-confirmation-icon",
+            "op-confirmation-title",
+            "op-confirmation-message",
+            "flex-layout.row#confirmation-buttons",
+            "rich-text#order-placed-message-1",
+            "rich-text#order-placed-message-2",
+            "rich-text#order-placed-message-3"
+        ]
+    },
+    "rich-text#order-placed-message-1": {
+        "props": {
+            "blockClass": "order-placed-message",
+            "text": "La aprobación del pago puede tardar desde 5 minutos hasta 5 días hábiles."
+        }
+    },
+    "rich-text#order-placed-message-2": {
+        "props": {
+            "blockClass": "order-placed-message",
+            "text": "El período de entrega comienza a contar desde el momento en que se confirma el pago."
+        }
+    },
+    "rich-text#order-placed-message-3": {
+        "props": {
+            "blockClass": "order-placed-message",
+            "text": "Se enviará un código de seguimiento a su correo electrónico cuando comience el proceso de entrega."
+        }
+    },
+    "flex-layout.row#confirmation-buttons": {
+        "props": {
+            "blockClass": "confirmationButtons",
+            "marginTop": 8,
+            "marginBottom": 8,
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#confirmation-buttons"
+        ]
+    },
+    "flex-layout.col#confirmation-buttons": {
+        "children": [
+            "op-print-button"
+        ]
+    },
+    "op-section#notices": {
+        "props": {
+            "name": "notices",
+            "marginBottom": 9,
+            "borderless": true
+        },
+        "children": [
+            "op-notices"
+        ]
+    },
+    // each order section
+    "op-order": {
+        "children": [
+            "flex-layout.row#order-placed-order"
+        ]
+    },
+    "flex-layout.row#order-placed-order": {
+        "props": {
+            "blockClass": "order-placed-order"
+        },
+        "children": [
+            "flex-layout.row#order-date",
+            "flex-layout.row#order-grid",
+            "op-section#delivery-packages",
+            "op-section#pickup-packages",
+            "op-order-takeaway-packages",
+            "flex-layout.row#total-and-buttons"
+        ]
+    },
+    /* DATE */
+    "flex-layout.row#order-date": {
+        "props": {
+            "blockClass": "order-date"
+        },
+        "children": [
+            "op-order-number",
+            "op-order-datetime",
+            "op-order-seller"
+        ]
+    },
+    /* ORDER GRID */
+    "flex-layout.row#order-grid": {
+        "props": {
+            "blockClass": "order-grid"
+        },
+        "children": [
+            "op-order-customer",
+            "op-section#payments"
+        ]
+    },
+    // each order header
+    "flex-layout.row#total-and-buttons": {
+        "props": {
+            "blockClass": "total-and-buttons"
+        },
+        "children": [
+            "op-order-total",
+            "flex-layout.row#buttons-container"
+        ]
+    },
+    "flex-layout.row#buttons-container": {
+        "props": {
+            "blockClass": "buttons-container"
+        },
+        "children": [
+            "op-order-options",
+            "link#seguir-comprando"
+        ]
+    },
+    "link#seguir-comprando": {
+        "props": {
+            "href": "/",
+            "label": "HACER NUEVAS COMPRAS",
+            "blockClass": "seguir-comprando"
+        }
+    }
+}

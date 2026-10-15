@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#image-and-text": {
+    "props": {
+      "blockClass": ["image-and-text-container"]
+    },
+    "children": ["flex-layout.row#image-and-text-1", "flex-layout.row#image-and-text-2"]
+  },
+  //---------------------------------------------------
+  //---------------------------------------------------
+  //---------------------------------------------------
+  //Inicio Primero
+  "flex-layout.row#image-and-text-1": {
+    "title": "Imagen y Texto 1",
+    "props": {
+      "blockClass": ["image-and-text", "image-and-text-1"]
+    },
+    "children": ["image#image-and-text-1", "institutional-content"]
+  },
+  /*Imagen*/
+  "image#image-and-text-1": {
+    "title": "Imagen 1",
+    "props": {
+      "src": "/arquivos/imagenosotros2.png",
+      "blockClass": ["institutional-nosotros-metrica-image", "institutional-nosotros-metrica-image-1"]
+    }
+  },
+  //Fin Primero
+  //---------------------------------------------------
+  //---------------------------------------------------
+  //---------------------------------------------------
+  //Inicio Segundo
+  "flex-layout.row#image-and-text-2": {
+    "title": "Imagen y Texto 2",
+    "props": {
+      "blockClass": ["image-and-text", "image-and-text-2"]
+    },
+    "children": ["institutional-content", "image#image-and-text-2"]
+  },
+  /*Imagen*/
+  "image#image-and-text-2": {
+    "title": "Imagen 2",
+    "props": {
+      "src": "/arquivos/imagenosotros1.png",
+      "blockClass": ["institutional-nosotros-metrica-image", "institutional-nosotros-metrica-image-2"]
+    }
+  }
+}

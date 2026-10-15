@@ -1,0 +1,51 @@
+.flexRow--main-slider-cards-container {
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--main-slider-cards-container,
+.flexRow--main-slider-cards-container :global(.vtex-store-components-3-x-container),
+.flexRowContent--main-slider-cards-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRow--main-slider-cards {
+    width: 100%;
+    max-width: 100%;
+}
+
+.flexRowContent--main-slider-cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    box-shadow: 0 6px 15px -1px rgba(40, 22, 105, 0.14);
+    overflow: hidden;
+}
+
+.flexRowContent--main-slider-cards :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+.flexRowContent--main-slider-info-container {
+    border-radius: 0;
+    padding: 16px;
+}
+
+.flexRowContent--main-slider-info-container-background-dark {
+    background: var(--forCode-surface-background-background-primary);
+}
+
+.flexRowContent--main-slider-info-container-background-medium {
+    background: var(--forCode-surface-background-background-primary-light);
+}
+
+.flexRowContent--main-slider-info-container-background-light {
+    background: var(--forCode-surface-background-base-default);
+}
+
+.flexRowContent--main-slider-info-container :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display: flex;
+    justify-content: flex-start;
+}

@@ -1,0 +1,28 @@
+{
+  "responsive-layout.mobile#product": {
+    "title": "Página de Producto Mobile",
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+
+      "flex-layout.row#product-image-MB",
+      "flex-layout.row#product-data-PDP-MB",
+      "flex-layout.row#product-slider-product-box",
+      "ocultar-titulo-especificaciones",
+      "cucarda-pdp"
+    ]
+  },
+
+  "flex-layout.row#product-data-PDP-MB": {
+    "props": {
+      "blockClass": "product-data-PDP-MB"
+    },
+    "children": [
+      "flex-layout.col#pdp-cucardas-container",
+      "flex-layout.row#product-brand",
+      "flex-layout.row#product-name",
+      "flex-layout.row#product-ID",
+      "condition-layout.product#availability-MB",
+      "flex-layout.col#product-description"
+    ]
+  }
+}

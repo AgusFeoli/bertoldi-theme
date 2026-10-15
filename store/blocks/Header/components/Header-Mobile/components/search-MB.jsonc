@@ -1,0 +1,21 @@
+{
+  "flex-layout.row#search-MB": {
+    "title": "Search MB",
+    "props": {
+      "blockClass": "search-MB",
+      "htmlId": "row-test"
+    },
+    "children": ["search-bar#search-bar-MB"]
+  },
+  "search-bar#search-bar-MB": {
+    "blocks": [],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "minSearchTermLength": 10,
+      "placeholder": "¿Qué estás buscando?",
+      "containerMode": "container",
+      "blockClass": "search-bar-header",
+      "hideUnavailableItems": false
+    }
+  }
+}

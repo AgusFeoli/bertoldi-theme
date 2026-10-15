@@ -1,0 +1,36 @@
+{
+  "store.custom#politicasdecambio": {
+    "children": ["flex-layout.row#politicasdecambio-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#politicasdecambio-main-container": {
+    "title": "Políticas de cambio",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-politicasdecambio"]
+    },
+    "children": ["flex-layout.col#politicasdecambio-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#politicasdecambio-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "politicasdecambio-main-col"]
+    },
+    "children": ["rich-text#institutional-breadcrumb-politicasdecambio", "flex-layout.col#institutional-text-container-politicasdecambio"]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-politicasdecambio": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-politicasdecambio"],
+      "text": "[Inicio](/) / Politicas de cambio"
+    }
+  },
+
+  /* Textos */
+  "flex-layout.col#institutional-text-container-politicasdecambio": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-politicasdecambio"]
+    },
+    "children": ["institutional-content"]
+  }
+}

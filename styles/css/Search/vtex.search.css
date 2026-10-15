@@ -1,0 +1,100 @@
+.biggy-autocomplete-wrapper {
+    max-width: 566px;
+}
+
+.biggy-autocomplete {
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column !important;
+    max-height: unset;
+}
+
+.tileListList {
+    flex-direction: column !important;
+    margin: 0px;
+    padding: 0px !important;
+    max-height: 340px;
+    overflow: auto;
+}
+
+.biggy-autocomplete-wrapper .close-btn {
+    display: none;
+}
+
+.biggy-autocomplete-wrapper ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.biggy-autocomplete-wrapper ::-webkit-scrollbar-track {
+    background: #dfdfdf;
+}
+
+.biggy-autocomplete-wrapper ::-webkit-scrollbar-thumb {
+    background: #7A7A7A;
+    border-radius: 10px;
+}
+
+.biggy-autocomplete-wrapper ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.itemListTitle {
+    font-size: 0px;
+}
+
+.itemListItem {
+    padding: 16px 0px !important;
+    background: var(--forCode-surface-background-grey);
+}
+
+.itemListLink {
+    margin: 0px;
+    padding: 0px 24px !important;
+}
+
+.itemListSubItemLink {
+    text-transform: capitalize;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm) !important;
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular) !important;
+    line-height: 19px;
+    margin: 0px;
+    padding: 0px 24px !important;
+}
+
+.tileListFooter {
+    padding: 12px 10px;
+}
+
+.tileListSeeMore {
+    color: var(--forCode-text-text-button-primary);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: 100%;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    height: fit-content;
+    padding: 8px 0px;
+}
+
+.tileListSeeMore::after {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M10.2557 7.06305L6.45507 3.51238C6.1864 3.26171 5.76373 3.27504 5.51307 3.54438C5.26173 3.81371 5.27573 4.23571 5.5444 4.48704L9.30507 7.99971L5.5444 11.5124C5.27573 11.7637 5.26107 12.1857 5.5124 12.455C5.64373 12.5957 5.82107 12.6664 5.99973 12.6664C6.16307 12.6664 6.3264 12.607 6.45507 12.487L10.2557 8.93638C10.5204 8.68838 10.6664 8.35638 10.6664 7.99971C10.6664 7.64305 10.5204 7.31105 10.2557 7.06305Z' fill='%23E83380'/%3E%3C/svg%3E") no-repeat 50% / contain;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 4px;
+}
+
+@media(max-width: 64.063rem) {
+    .tileListSeeMore {
+        font-size: var(--forCode-font-size-sm);
+        line-height: 16px;
+    }
+}

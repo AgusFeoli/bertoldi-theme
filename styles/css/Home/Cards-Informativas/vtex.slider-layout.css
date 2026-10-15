@@ -1,0 +1,12 @@
+@media(min-width: 1026px) {
+    .sliderTrack--slider-cards-informativas {
+        transform: unset !important;
+        width: 100% !important;
+    }
+
+    .slide--slider-cards-informativas {
+        width: 100% !important;
+        padding: 0 16px 0 16px !important;
+
+    }
+}

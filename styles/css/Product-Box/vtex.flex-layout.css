@@ -1,0 +1,63 @@
+.flexRowContent--button-prod-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.flexRowContent--button-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--product-image :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    height: 100%;
+    width: 100% !important;
+}
+
+.flexRowContent--price-prod-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: left;
+    gap: 8px;
+    position: relative;
+    padding-top: 10.5px;
+}
+
+.flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+    justify-content: flex-start;
+}
+
+.flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    padding-top: 3px;
+}
+
+.flexRowContent--product-box-buy-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--product-box-buy-product :global(.vtex-button) {
+    padding: 12px;
+    border-radius: var(--spacing-system-radius-s);
+    background: var(--surface-button-primary-default);
+    border: 0;
+    transition: all .15s ease-in-out;
+}
+
+.flexRowContent--product-box-buy-product :global(.vtex-button):hover {
+    background: var(--primary-dark);
+}
+
+
+.flexRowContent--product-box-buy-product :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
+
+@media(max-width: 640px) {
+    .flexRowContent--price-prod-box {
+        padding-top: 6px;
+        gap: 4px;
+    }
+}

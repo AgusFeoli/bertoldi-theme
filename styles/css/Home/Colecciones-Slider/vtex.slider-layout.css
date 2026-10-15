@@ -1,0 +1,5 @@
+@media(max-width: 1025px) {
+    .sliderLayoutContainer--coleccion-slider {
+        margin-top: -25px;
+    }
+}

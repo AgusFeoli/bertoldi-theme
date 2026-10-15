@@ -1,0 +1,36 @@
+{
+  "condition-layout.product#availability-MB": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable",
+          "arguments": {
+            "value": "true"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#condition-result-true-MB",
+      "Else": "flex-layout.row#condition-result-false-MB"
+    }
+  },
+  "flex-layout.row#condition-result-true-MB": {
+    "props": {
+      "blockClass": ["condition-result", "condition-result-MB", "condition-result-true", "condition-result-true-MB"]
+    },
+    "children": [
+      "cucarda-envio-gratis",
+      "flex-layout.row#product-price",
+      "transparencia-fiscal",
+      "instalment-product-box",
+      "flex-layout.col#containerTalles",
+      "flex-layout.row#buy-product"
+    ]
+  },
+  "flex-layout.row#condition-result-false-MB": {
+    "props": {
+      "blockClass": ["condition-result", "condition-result-MB", "condition-result-false", "condition-result-false-MB"]
+    },
+    "children": ["flex-layout.col#containerTalles", "availability-notify"]
+  }
+}

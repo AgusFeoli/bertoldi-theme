@@ -1,0 +1,13 @@
+{
+  /* - Footer - */
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "children": ["image#whatsappButton", "flex-layout.row#footer-institucional-MB", "flex-layout.row#footer-copyright-DS"]
+  },
+  "flex-layout.row#boton-arrepentimiento-container-Mobile": {
+    "props": {
+      "blockClass": "boton-arrepentimiento-container-Mobile"
+    },
+    "children": ["link#boton-arrepentimiento"]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "flex-layout.row#cards-informativas": {
+    "props": {
+      "blockClass": "cards-informativas"
+    },
+    "children": ["responsive-layout.desktop#cards-informativas", "responsive-layout.mobile#cards-informativas"]
+  },
+  "responsive-layout.desktop#cards-informativas": {
+    "title": "Desktop",
+    "children": ["flex-layout.row#card-informativa-1", "flex-layout.row#card-informativa-2", "flex-layout.row#card-informativa-3"]
+  },
+  "responsive-layout.mobile#cards-informativas": {
+    "title": "Mobile",
+    "children": ["slider-layout#slider-cards-informativas"]
+  },
+  "slider-layout#slider-cards-informativas": {
+    "title": "Slider",
+    "children": ["flex-layout.row#card-informativa-1", "flex-layout.row#card-informativa-2", "flex-layout.row#card-informativa-3"],
+    "props": {
+      "blockClass": "slider-cards-informativas",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+
+      "centerMode": {
+        "desktop": "center",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 16,
+      "fullWidth": true,
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    }
+  },
+  //******************************************************
+  //
+  // Inicio de Card Informativa 1
+  //
+  //******************************************************
+  "flex-layout.row#card-informativa-1": {
+    "title": "Tarjeta Informativa 1",
+    "props": {
+      "blockClass": "card-informativa"
+    },
+    "children": ["flex-layout.row#image-card-informativa-1", "flex-layout.row#info-card-informativa-1"]
+  },
+  "flex-layout.row#image-card-informativa-1": {
+    "props": {
+      "blockClass": "image-card-informativa"
+    },
+    "children": ["image#card-informativa-1"]
+  },
+  "image#card-informativa-1": {
+    "title": "Imagen",
+    "props": {
+      "blockClass": "card-informativa",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='14' viewBox='0 0 24 14' fill='none'%3E%3Cpath d='M4.90084 0.438605C4.90084 1.02224 4.02344 1.02224 4.02344 0.438605C4.02383 -0.146202 4.90084 -0.146202 4.90084 0.438605Z' fill='%23DE1269'/%3E%3Cpath d='M1.25514 9.06556C1.25514 9.65036 0.378906 9.65036 0.378906 9.06556C0.378906 8.48075 1.25514 8.48075 1.25514 9.06556Z' fill='%23DE1269'/%3E%3Cpath d='M11.0723 12.0781C11.0723 13.1393 10.2027 14.0002 9.14162 14.0002C8.08051 14.0002 7.21094 13.1393 7.21094 12.0781C7.21094 11.0084 8.08051 10.1475 9.14162 10.1475C10.2027 10.1475 11.0723 11.0084 11.0723 12.0781Z' fill='%23DE1269'/%3E%3Cpath d='M19.7871 11.9826C19.7871 13.0437 18.9176 13.9133 17.8565 13.9133C16.7954 13.9133 15.9258 13.0437 15.9258 11.9826C15.9258 10.9215 16.7954 10.0605 17.8565 10.0605C18.9176 10.0605 19.7871 10.9215 19.7871 11.9826Z' fill='%23DE1269'/%3E%3Cpath d='M24.0582 6.73024L20.509 2.62445C20.4307 2.52888 20.3089 2.46777 20.1875 2.46777H16.0997C16.0041 2.46777 15.9258 2.54611 15.9258 2.64169V9.59787C15.9258 9.73574 16.0844 9.82623 16.1953 9.7424C16.6606 9.3934 17.2344 9.18893 17.8565 9.18893C19.3958 9.18893 20.6567 10.4412 20.6567 11.9806C20.6567 12.1282 20.6395 12.2763 20.6132 12.4154H23.7269C23.967 12.4154 24.1616 12.2207 24.1616 11.9806V7.00599C24.1612 6.90533 24.1244 6.8074 24.0582 6.73024ZM16.9955 6.25197V4.53673C16.9955 4.44115 17.0739 4.36281 17.1694 4.36281H19.9078C19.9579 4.36281 20.0069 4.38475 20.0394 4.42274L21.5612 6.18382C21.6591 6.29702 21.5776 6.47289 21.4276 6.47172L17.1671 6.42589C17.0715 6.42589 16.9951 6.34755 16.9955 6.25197Z' fill='%23DE1269'/%3E%3Cpath d='M6.02865 0.0417986C5.47087 0.0417986 5.46773 0.891002 6.03726 0.91137C6.65262 0.934089 7.06351 1.3724 7.06351 1.93762C7.06351 2.50284 6.60249 2.96387 6.03726 2.96387H2.61108C2.06113 2.96387 2.04468 3.83344 2.61108 3.83344C3.15906 3.83344 3.59385 4.27685 3.59385 4.81622C3.59385 5.35519 3.15906 5.79899 2.61108 5.79899H0.419521C-0.133949 5.79899 -0.1457 6.66856 0.419521 6.66856H2.4544C2.97614 6.6948 3.39369 7.12097 3.39369 7.65133C3.39369 8.1907 2.95029 8.6341 2.41092 8.6341C1.8598 8.6341 1.84452 9.50367 2.41092 9.50367H4.46342C5.03726 9.50367 5.5069 9.9647 5.5069 10.5385C5.5069 11.0951 5.01101 11.5734 4.44579 11.5906H3.27187C2.98162 11.5906 2.76736 11.884 2.85863 12.1614C2.91621 12.3376 3.08699 12.4602 3.27187 12.4602L6.38 12.4492C6.36355 12.3263 6.34201 12.2048 6.34201 12.0775C6.34201 10.5295 7.60288 9.27727 9.14226 9.27727C10.6816 9.27727 11.9425 10.5295 11.9425 12.0775C11.9425 12.1982 11.9218 12.3133 11.9065 12.4297L14.8838 12.4187C14.9794 12.4187 15.0565 12.3404 15.0565 12.2448L15.0577 0.21493C15.0577 0.119355 14.9794 0.0410156 14.8838 0.0410156L6.02865 0.0417986Z' fill='%23DE1269'/%3E%3C/svg%3E"
+    }
+  },
+  "flex-layout.row#info-card-informativa-1": {
+    "props": {
+      "blockClass": "info-card-informativa"
+    },
+    "children": ["rich-text#title-card-informativa-1", "rich-text#title-text-informativa-1"]
+  },
+  "rich-text#title-card-informativa-1": {
+    "title": "Título",
+    "props": { "text": "Envíos gratis ", "blockClass": "title-card-informativa" }
+  },
+  "rich-text#title-text-informativa-1": {
+    "title": "Texto",
+    "props": { "text": "Accede a envío gratis en compras superiores a $70.000", "blockClass": "text-card-informativa" }
+  },
+  //******************************************************
+  //
+  // Inicio de Card Informativa 2
+  //
+  //******************************************************
+  "flex-layout.row#card-informativa-2": {
+    "title": "Tarjeta Informativa 2",
+    "props": {
+      "blockClass": "card-informativa"
+    },
+    "children": ["flex-layout.row#image-card-informativa-2", "flex-layout.row#info-card-informativa-2"]
+  },
+  "flex-layout.row#image-card-informativa-2": {
+    "props": {
+      "blockClass": "image-card-informativa"
+    },
+    "children": ["image#card-informativa-2"]
+  },
+  "image#card-informativa-2": {
+    "title": "Imagen",
+    "props": {
+      "blockClass": "card-informativa",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18' viewBox='0 0 20 18' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.4131 7.65287C18.9889 7.33135 19.413 6.94968 19.413 6.05101C19.413 5.64678 19.4732 4.73926 19.3255 4.41995L17.7603 1.02516C17.4711 0.39892 16.9089 0.000885385 16.2062 0.000885385L3.20771 0C2.50452 0 1.94241 0.397592 1.65361 1.02428C1.43071 1.50634 0.0654542 4.37528 0.0203436 4.63533L0 6.05012C0 8.24639 3.17189 8.39322 3.80211 6.74182C4.05818 6.07179 5.02452 6.06383 5.28324 6.74182C5.57071 7.49676 6.36059 7.85278 7.12481 7.85278V7.85499C7.8855 7.85499 8.67892 7.49587 8.96727 6.74182C9.08491 6.434 9.37548 6.2372 9.70762 6.2372L9.70673 6.23543C10.6395 6.23543 10.2335 7.23936 11.4528 7.70329C12.4072 8.06727 13.7375 7.77361 14.1302 6.74226C14.2479 6.43445 14.5384 6.23764 14.8706 6.23764V6.23543C15.0324 6.23543 15.185 6.28319 15.3137 6.36899L15.3128 6.36988C15.7763 6.67946 15.6158 7.42157 16.7833 7.76167C17.3056 7.91381 17.9138 7.88108 18.4131 7.65287ZM6.42074 17.9996H2.96138C2.08216 17.9996 1.32015 17.3481 1.32015 16.4795V9.0398C2.49479 9.24147 3.78708 8.8828 4.54201 7.9284C5.15852 8.70766 6.14786 9.0973 7.12393 9.0973V9.09509C8.10575 9.09509 9.08845 8.71032 9.70584 7.92929C10.938 9.48649 13.6384 9.48737 14.8697 7.92929C15.6246 8.8828 16.9178 9.2428 18.0915 9.04069V16.4799C18.0915 17.3486 17.3291 18 16.4503 18H12.9914V13.1006C12.9914 12.3147 12.3439 11.6673 11.558 11.6673H7.85322C7.06732 11.6673 6.41985 12.3147 6.41985 13.1006L6.42074 17.9996ZM11.7478 17.9996V13.1006C11.7478 12.9945 11.6651 12.9118 11.5589 12.9118H7.8541C7.74796 12.9118 7.66526 12.9945 7.66526 13.1006V17.9991L11.7478 17.9996Z' fill='%23DE1269'/%3E%3C/svg%3E"
+    }
+  },
+  "flex-layout.row#info-card-informativa-2": {
+    "props": {
+      "blockClass": "info-card-informativa"
+    },
+    "children": ["rich-text#title-card-informativa-2", "rich-text#title-text-informativa-2"]
+  },
+  "rich-text#title-card-informativa-2": {
+    "title": "Título",
+    "props": { "text": "Retiro en tienda", "blockClass": "title-card-informativa" }
+  },
+  "rich-text#title-text-informativa-2": {
+    "title": "Texto",
+    "props": { "text": "Cuando realices tu compra podrás elegir entre envío a domicilio y retiro", "blockClass": "text-card-informativa" }
+  },
+  //******************************************************
+  //
+  // Inicio de Card Informativa 3
+  //
+  //******************************************************
+  "flex-layout.row#card-informativa-3": {
+    "title": "Tarjeta Informativa 3",
+    "props": {
+      "blockClass": "card-informativa"
+    },
+    "children": ["flex-layout.row#image-card-informativa-3", "flex-layout.row#info-card-informativa-3"]
+  },
+  "flex-layout.row#image-card-informativa-3": {
+    "props": {
+      "blockClass": "image-card-informativa"
+    },
+    "children": ["image#card-informativa-3"]
+  },
+  "image#card-informativa-3": {
+    "title": "Imagen",
+    "props": {
+      "blockClass": "card-informativa",
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='18' viewBox='0 0 16 18' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.41393 7.94021H2.71778L2.72305 5.00402C2.78839 3.61903 3.38835 2.3779 4.31854 1.47928L4.326 1.47182C5.2733 0.560485 6.56004 0 7.96915 0C9.38089 0 10.6707 0.56224 11.6193 1.47928C12.5666 2.395 13.1718 3.6664 13.2179 5.08296L13.2205 7.94021H14.077C14.4665 7.94021 14.8222 8.09985 15.0765 8.35465L15.1449 8.4314C15.3603 8.68051 15.491 9.00329 15.491 9.35414V16.5861C15.491 16.9755 15.3313 17.3312 15.0765 17.5856C14.8222 17.8404 14.4665 18 14.077 18H1.41393C1.02449 18 0.66881 17.8404 0.414443 17.5856C0.159637 17.3312 0 16.9755 0 16.5861V9.35414C0 8.96777 0.15876 8.61516 0.414443 8.35816C0.66881 8.09985 1.02405 7.94021 1.41393 7.94021ZM7.96872 10.5063C8.49105 10.5063 8.9147 10.9299 8.9147 11.4522C8.9147 11.8654 8.65024 12.2162 8.28097 12.3452L8.44149 13.0811L8.9147 15.2502H7.96872H7.02273L7.49594 13.0811L7.65646 12.3452C7.28762 12.2158 7.02273 11.8654 7.02273 11.4522C7.02273 10.9295 7.44639 10.5063 7.96872 10.5063ZM4.41327 7.94021H11.5242V5.10971C11.4886 4.16154 11.0799 3.31116 10.4457 2.69805C9.80455 2.0766 8.93049 1.69724 7.96872 1.69724C7.00738 1.69724 6.1342 2.07616 5.49609 2.69322C4.86543 3.30371 4.45845 4.14093 4.4124 5.07507C4.41283 5.07507 4.41327 7.94021 4.41327 7.94021Z' fill='%23DE1269'/%3E%3C/svg%3E"
+    }
+  },
+  "flex-layout.row#info-card-informativa-3": {
+    "props": {
+      "blockClass": "info-card-informativa"
+    },
+    "children": ["rich-text#title-card-informativa-3", "rich-text#title-text-informativa-3"]
+  },
+  "rich-text#title-card-informativa-3": {
+    "title": "Título",
+    "props": { "text": "Compra segura", "blockClass": "title-card-informativa" }
+  },
+  "rich-text#title-text-informativa-3": {
+    "title": "Texto",
+    "props": { "text": "Entorno seguro y encriptado", "blockClass": "text-card-informativa" }
+  }
+}

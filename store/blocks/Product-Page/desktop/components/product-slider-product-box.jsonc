@@ -1,0 +1,39 @@
+{
+  "flex-layout.row#product-slider-product-box": {
+    "title": "Carrusel de Productos",
+    "props": {
+      "blockClass": ["pdp-slider-product-box", "product-slider-product-box"]
+    },
+    "children": ["flex-layout.row#product-slider-product-box-titulo", "shelf.relatedProducts"]
+  },
+  /*Titulo*/
+  "flex-layout.row#product-slider-product-box-titulo": {
+    "props": {
+      "blockClass": ["pdp-slider-product-box-titulo", "product-slider-product-box-titulo"]
+    },
+    "children": ["rich-text#product-slider-product-box-titulo-text"]
+  },
+  "rich-text#product-slider-product-box-titulo-text": {
+    "title": "Titulo del Carrusel de Productos",
+    "props": {
+      "blockClass": ["pdp-slider-product-box-titulo-text", "product-slider-product-box-titulo-text"],
+      "text": "También te puede interesar"
+    }
+  },
+  /*Slider*/
+  "shelf.relatedProducts": {
+    "blocks": ["product-summary.shelf#product-box"],
+    "props": {
+      "blockClass": ["related", "product-box", "standard-arrows"],
+      "recommendation": "view",
+      "isFullModeStyle": true,
+      "productList": {
+        "minItemsPerPage": 2,
+        "itemsPerPage": 4,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": ""
+      }
+    }
+  }
+}

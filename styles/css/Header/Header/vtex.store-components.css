@@ -1,0 +1,152 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--header-DS) .searchBarContainer {
+    padding: 0;
+}
+
+/*:global(.vtex-flex-layout-0-x-flexRowContent--header-DS) .autoCompleteOuterContainer--search-bar-header {
+    padding-left: 50px;
+}*/
+
+.searchBarInnerContainer :global(.vtex-input-prefix__group) {
+    height: 40px;
+    width: 443px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-medium);
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+
+.searchBarInnerContainer--search-bar-header :global(.vtex-input__suffix) {
+    border-radius: 0px;
+    padding: 0;
+    padding-left: 0.75rem;
+    background: var(--forCode-surface-background-background-selected);
+    height: 40px;
+}
+
+.searchBarInnerContainer--search-bar-header :global(.vtex-styleguide-9-x-input),
+.searchBarInnerContainer--search-bar-header :global(.vtex-styleguide-9-x-input)::placeholder {
+    background: transparent;
+    height: 40px;
+    color: var(--forCode-text-body-light);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.searchBarInnerContainer--search-bar-header :global(.vtex-styleguide-9-x-input)::placeholder {
+    position: relative;
+    top: 0;
+}
+
+.searchBarIcon--search-bar-header {
+    visibility: hidden;
+    position: relative;
+    padding: 0 0.46rem 0 0;
+}
+
+.searchBarIcon--search-bar-header::before {
+    visibility: visible;
+    position: absolute;
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15.4996 14.0001H14.7096L14.4296 13.7301C15.6296 12.3301 16.2496 10.4201 15.9096 8.39014C15.4396 5.61014 13.1196 3.39014 10.3196 3.05014C6.08965 2.53014 2.52965 6.09014 3.04965 10.3201C3.38965 13.1201 5.60965 15.4401 8.38965 15.9101C10.4196 16.2501 12.3296 15.6301 13.7296 14.4301L13.9996 14.7101V15.5001L18.2496 19.7501C18.6596 20.1601 19.3296 20.1601 19.7396 19.7501C20.1496 19.3401 20.1496 18.6701 19.7396 18.2601L15.4996 14.0001ZM9.49965 14.0001C7.00965 14.0001 4.99965 11.9901 4.99965 9.50014C4.99965 7.01014 7.00965 5.00014 9.49965 5.00014C11.9896 5.00014 13.9996 7.01014 13.9996 9.50014C13.9996 11.9901 11.9896 14.0001 9.49965 14.0001Z' fill='%23DE1269'/%3E%3C/svg%3E")no-repeat center center;
+    width: 100%;
+    height: 100%;
+}
+
+.closeIcon {
+    background: var(--forCode-surface-background-background-selected);
+    z-index: 40;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    bottom: 2px;
+}
+
+
+.resultsList {
+    position: absolute;
+    left: 0%;
+    margin-top: 0.625rem;
+    width: 27.688rem;
+    box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06), 0px 4px 8px -2px rgba(16, 24, 40, 0.10);
+}
+
+.logoLink--logo-store {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: start;
+    width: 151px;
+}
+
+.logoContainer--logo-store,
+.imageElement--logo-store {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 151px;
+    height: 24.094px;
+    max-height: 24px;
+    padding: 0px;
+}
+
+@media(max-width: 64.063rem) {
+    .searchBarContainer {
+        padding: 2px 16px 12px;
+        background: transparent;
+    }
+
+    .searchBarInnerContainer :global(.vtex-input-prefix__group) {
+        width: 100%;
+        height: 40px;
+        padding: 8px 16px;
+        flex-direction: row;
+        gap: 8px;
+
+        border-radius: var(--forCode-spacing-system-radius-l);
+        border: 1px solid var(--forCode-stroke-medium);
+        background: var(--forCode-surface-background-base-secondary);
+    }
+
+
+    .searchBarInnerContainer :global(.vtex-input-prefix__group)::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M12.5006 11.0006H11.7106L11.4306 10.7306C12.6306 9.33063 13.2506 7.42063 12.9106 5.39063C12.4406 2.61063 10.1206 0.390626 7.32063 0.0506256C3.09063 -0.469374 -0.469374 3.09063 0.0506256 7.32063C0.390626 10.1206 2.61063 12.4406 5.39063 12.9106C7.42063 13.2506 9.33063 12.6306 10.7306 11.4306L11.0006 11.7106V12.5006L15.2506 16.7506C15.6606 17.1606 16.3306 17.1606 16.7406 16.7506C17.1506 16.3406 17.1506 15.6706 16.7406 15.2606L12.5006 11.0006ZM6.50063 11.0006C4.01063 11.0006 2.00063 8.99063 2.00063 6.50063C2.00063 4.01063 4.01063 2.00063 6.50063 2.00063C8.99063 2.00063 11.0006 4.01063 11.0006 6.50063C11.0006 8.99063 8.99063 11.0006 6.50063 11.0006Z' fill='%23DE1269'/%3E%3C/svg%3E");
+        display: block;
+        width: 17px;
+        height: 17px;
+        position: relative;
+        top: 3px;
+    }
+
+
+    .searchBarIcon--search-bar-header::before,
+    .closeIcon--search-bar-header {
+        visibility: hidden;
+    }
+
+    .searchBarInnerContainer--search-bar-header :global(.vtex-styleguide-9-x-input),
+    .searchBarInnerContainer--search-bar-header :global(.vtex-styleguide-9-x-input)::placeholder {
+        padding-left: 0px;
+        line-height: var(--forCode-font-line-height-4xl);
+        height: 24px;
+    }
+
+    .searchBarInnerContainer--search-bar-header :global(.vtex-input__suffix) {
+        display: none;
+    }
+
+    .resultsList {
+        position: relative;
+        width: 95%;
+    }
+
+    .logoLink--logo-store {
+        width: max-content;
+    }
+}

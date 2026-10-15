@@ -1,0 +1,16 @@
+{
+    "responsive-layout.desktop#product": {
+        "title": "Página de Producto Desktop",
+        "children": [
+            "flex-layout.row#product-breadcrumb",
+            "flex-layout.row#product-main-info",
+            "flex-layout.row#product-slider-product-box",
+            "cucarda-pdp"
+        ]
+    },
+    "cucarda-pdp": {
+        "props": {
+            "CucardaBeautySale": "vtex.product-highlights@2.x:product-highlights#BeautySale"
+        }
+    }
+}

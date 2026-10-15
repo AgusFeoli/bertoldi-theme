@@ -1,0 +1,43 @@
+{
+  //***************************************************************
+  //
+  //
+  //***************************************************************
+  //Inicio Trigger
+  "modal-trigger#pdbx-quickview": {
+    "props": {
+      "blockClass": "pdbx-quickview"
+    },
+    "children": ["rich-text#pdbx-quickview", "modal-layout#pdbx-quickview"]
+  },
+  "rich-text#pdbx-quickview": {
+    "props": {
+      "blockClass": "pdbx-quickview",
+      "text": "Agregar al carrito"
+    }
+  },
+  //Fin Trigger
+  //***************************************************************
+  //
+  //
+  //***************************************************************
+  //Inicio Modal
+  "modal-layout#pdbx-quickview": {
+    "props": {
+      "blockClass": "pdbx-quickview"
+    },
+    "children": ["flex-layout.row#pdbx-quickview-close", "select-variation-quickview"]
+  },
+  //Close Button
+  "flex-layout.row#pdbx-quickview-close": {
+    "props": {
+      "blockClass": "pdbx-quickview-close"
+    },
+    "children": ["modal-actions.close"]
+  }
+  //Fin Modal
+  //***************************************************************
+  //
+  //
+  //***************************************************************
+}

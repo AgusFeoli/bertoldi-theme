@@ -1,0 +1,50 @@
+.formSubmitContainer--form-arrepentimiento-submit,
+.formSubmitButton--form-arrepentimiento-submit {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0px;
+}
+
+.formSubmitButton--form-arrepentimiento-submit :global(.vtex-button) {
+    padding: 16px 12px !important;
+    border-radius: var(--forCode-radius-button) !important;
+    background: var(--forCode-surface-button-primary-default) !important;
+}
+
+.formSubmitButton--form-arrepentimiento-submit :global(.vtex-button):hover {
+    background: var(--forCode-surface-button-primary-hover) !important;
+}
+
+.formSubmitButton--form-arrepentimiento-submit :global(.vtex-button) :global(.vtex-button__label) {
+    width: 103px !important;
+    color: var(--forCode-text-on-dark) !important;
+    text-align: center !important;
+    font-family: var(--forCode-font-family-button) !important;
+    font-size: var(--forCode-font-size-lg) !important;
+    font-style: normal !important;
+    font-weight: var(--forCode-font-weight-semibold) !important;
+    line-height: 16px !important;
+    letter-spacing: var(--forCode-spacing-system-none) !important;
+}
+
+@media(max-width: 64.063rem) {
+    .formSubmitButton--form-arrepentimiento-submit :global(.vtex-button) :global(.vtex-button__label) {
+        font-size: var(--forCode-font-size-xmd, 15px) !important;
+        font-weight: var(--forCode-font-weight-medium, 500) !important;
+    }
+
+    .formSubmitButton--form-arrepentimiento-submit :global(.vtex-button) :global(.vtex-button__label)::before {
+        display: none !important;
+    }
+}
+
+@media(max-width: 49.875rem) {
+    .formSubmitButton--form-arrepentimiento-submit {
+        width: 174px;
+    }
+
+    .formSubmitContainer--form-arrepentimiento-submit,
+    .formSubmitButton--form-arrepentimiento-submit {
+        justify-content: flex-start;
+    }
+}

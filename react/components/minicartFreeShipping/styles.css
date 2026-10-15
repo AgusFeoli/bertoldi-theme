@@ -1,0 +1,59 @@
+.minicart_free_shipping_portal {
+    background: var(--forCode-surface-background-base-secondary);
+    padding: .5rem;
+    padding-bottom: 0;
+}
+
+.minicart_free_shipping {
+    padding: var(--forCode-spacing-system-md);
+    border-radius: var(--forCode-spacing-system-radius-sm, 16px);
+    border: 1px solid var(--forCode-stroke-light, #E9E9ED);
+    background: var(--forCode-surface-background-base-default, #FFF);
+
+    & .minicart_free_shipping__bar {
+        width: 100%;
+        height: 6px;
+        border-radius: var(--forCode-spacing-system-radius-s);
+        background: var(--forCode-surface-background-background-grey-medium);
+
+        & .minicart_free_shipping__bar_progress {
+            position: relative;
+            border-radius: var(--forCode-spacing-system-radius-s);
+            background: var(--forCode-surface-button-primary-default);
+            height: 100%;
+            transition: all .15s linear;
+        }
+    }
+
+    & .minicart_free_shipping__label {
+        color: var(--forCode-text-body-medium, #3E3D43);
+        font-family: var(--forCode-font-family-body, Poppins);
+        font-size: var(--forCode-font-size-xs, 12px);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-regular, 400);
+        line-height: var(--forCode-font-line-height-lg, 1.5);
+        margin-block-end: 5px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            margin-inline-end: 8px;
+            vertical-align: bottom;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='none' viewBox='0 0 22 22'%3E%3Crect width='21.5' height='21.5' x='.25' y='.25' stroke='%23de1269' stroke-width='.5' rx='10.75'/%3E%3Cpath fill='%23de1269' d='M16.7 12.875h-.3v-2.111a.96.96 0 0 0-.265-.662L14.262 8.15a.88.88 0 0 0-.635-.275H12.8v-.937a.97.97 0 0 0-.264-.663A.9.9 0 0 0 11.9 6h-6a.88.88 0 0 0-.636.275.96.96 0 0 0-.264.663v6.25c0 .248.095.486.264.662a.88.88 0 0 0 .636.275h.3c0 .497.19.974.527 1.326.338.351.796.549 1.273.549a1.76 1.76 0 0 0 1.273-.55c.337-.35.527-.828.527-1.325h2.4c0 .497.19.974.527 1.326.338.351.796.549 1.273.549s.935-.197 1.273-.55c.337-.35.527-.828.527-1.325h.9c.08 0 .156-.033.212-.092a.32.32 0 0 0 .088-.22v-.626a.32.32 0 0 0-.088-.22.3.3 0 0 0-.212-.092M8 15.063a.9.9 0 0 1-.5-.159.93.93 0 0 1-.331-.42.97.97 0 0 1 .195-1.022.9.9 0 0 1 .46-.256.87.87 0 0 1 .52.053.9.9 0 0 1 .404.345.966.966 0 0 1-.111 1.184.87.87 0 0 1-.636.275m6 0a.9.9 0 0 1-.5-.159.93.93 0 0 1-.332-.42.97.97 0 0 1 .196-1.022.9.9 0 0 1 .46-.256.87.87 0 0 1 .52.053.9.9 0 0 1 .404.345.966.966 0 0 1-.112 1.184.88.88 0 0 1-.636.274M15.5 11h-2.7V8.813h.827l1.873 1.95z'/%3E%3C/svg%3E") no-repeat center / contain;
+        }
+    }
+
+    &.reached {
+        .minicart_free_shipping__bar_progress {
+            background: var(--noCopy-success-default, #33CC67);
+        }
+
+        & .minicart_free_shipping__label {
+            &::before {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Crect width='20' height='20' fill='%2333cc67' rx='10'/%3E%3Cpath fill='%23fff' d='M8.673 13.5a.56.56 0 0 1-.409-.18L5.51 10.405a.6.6 0 0 1-.13-.205.69.69 0 0 1 .12-.696.56.56 0 0 1 .41-.192.56.56 0 0 1 .416.18l2.349 2.487 4.999-5.297a.56.56 0 0 1 .415-.181.56.56 0 0 1 .412.193.67.67 0 0 1 .166.453.67.67 0 0 1-.177.449L9.08 13.32a.56.56 0 0 1-.407.179'/%3E%3C/svg%3E");
+            }
+        }
+    }
+}

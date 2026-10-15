@@ -1,0 +1,31 @@
+/*Poppins*/
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(assets/Fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+/*Bebas Kai*/
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url(assets/Fonts/BebasKai/BebasKai.ttf);
+    font-weight: 400;
+}

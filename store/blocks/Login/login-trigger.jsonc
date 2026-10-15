@@ -1,0 +1,42 @@
+{
+    "login": {
+        "props": {
+            "iconLabel": "Ingresar",
+            "showIconProfile": true,
+            "optionsTitle": "Elegir una opción de ingreso",
+            "emailAndPasswordTitle": "Ingresa con email y contraseña",
+            "accessCodeTitle": "Recibir código de acceso por email",
+            "passwordPlaceholder": "Ingrese su contraseña",
+            "hasGoogleOneTap": true,
+            "logInButtonBehavior": "popover",
+            "accountOptionsButtonBehavior": "popover",
+            "accountOptionLinks": [
+                {
+                    "label": "Perfil",
+                    "path": "/account#/profile",
+                    "cssClass": "loginAccountItem"
+                },
+                {
+                    "label": "Direcciones",
+                    "path": "/account#/addresses",
+                    "cssClass": "loginAccountItem"
+                },
+                {
+                    "label": "Pedidos",
+                    "path": "/account#/orders",
+                    "cssClass": "loginAccountItem"
+                },
+                {
+                    "label": "Tarjetas de crédito",
+                    "path": "/account#/cards",
+                    "cssClass": "loginAccountItem"
+                },
+                {
+                    "label": "Autenticación",
+                    "path": "/account#/authentication",
+                    "cssClass": "loginAccountItem"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,5 @@
+@media(max-width: 1025px) {
+    .sliderLayoutContainer--marca-slider {
+        margin-top: -25px;
+    }
+}

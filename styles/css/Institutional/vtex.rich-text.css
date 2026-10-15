@@ -1,0 +1,146 @@
+/*Breadcrumb*/
+.container--institutional-breadcrumb {
+    width: 100%;
+    padding: 26px 0px 16px;
+    margin-bottom: 14px;
+}
+
+.wrapper--institutional-breadcrumb {
+    width: 100%;
+}
+
+.link--institutional-breadcrumb {
+    margin: 0px;
+    text-decoration: none;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+
+.paragraph--institutional-breadcrumb {
+    margin: 0px;
+    text-decoration: none;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-medium);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+/*Title*/
+.container--institutional-title {
+    width: 100% !important;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper--institutional-title {
+    width: 100%;
+}
+
+.paragraph--institutional-title {
+    margin: 0px;
+    text-decoration: none;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-4xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: -0.36px;
+}
+
+/*Sub Title*/
+.container--institutional-sub-title {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 24px;
+}
+
+.wrapper--institutional-sub-title {
+    width: 100%;
+}
+
+.paragraph--institutional-sub-title {
+    margin: 0px;
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+/*Textos*/
+.paragraph--institutional-text,
+.listItem--institutional-text,
+.link--institutional-text {
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+.listItem--institutional-text {
+    padding-bottom: 0px;
+}
+
+/*Textos Strong*/
+.strong--institutional-text {
+    font-weight: var(--forCode-font-weight-bold);
+    color: var(--forCode-text-body-medium);
+}
+
+@media(max-width: 64.063rem) {
+
+    /*Breadcrumb*/
+    .container--institutional-breadcrumb {
+        width: 100%;
+        margin-bottom: 0px;
+        padding-top: 20px;
+    }
+
+    /*Title*/
+    .container--institutional-title {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .paragraph--institutional-title {
+        font-size: var(--forCode-font-size-2xl);
+        line-height: var(--forCode-font-line-height-2xl);
+        letter-spacing: -0.12px;
+    }
+
+    /*Textos*/
+    .paragraph--institutional-text,
+    .listItem--institutional-text,
+    .link--institutional-text {
+        color: var(--forCode-text-body-medium);
+    }
+
+    .strong--institutional-text {
+        font-weight: var(--forCode-font-weight-semibold);
+    }
+
+    .paragraph--institutional-sub-title {
+        font-size: var(--forCode-font-size-sm);
+        line-height: var(--forCode-font-line-height-xl);
+    }
+}

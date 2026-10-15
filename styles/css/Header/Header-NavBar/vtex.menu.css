@@ -1,0 +1,36 @@
+.menuContainer--nav-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--forCode-spacing-system-md);
+    align-self: stretch;
+}
+
+.styledLinkIcon--nav-bar-container:first-child {
+    overflow: visible;
+    margin-right: .2rem;
+    width: 90%
+}
+
+.styledLinkContainer--nav-bar-container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.styledLinkContent--nav-bar-container {
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.styledLink--nav-bar-container {
+    display: flex;
+    padding: var(--forCode-spacing-system-sm) var(--forCode-spacing-system-md);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

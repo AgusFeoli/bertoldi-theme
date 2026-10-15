@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#product-image-MB": {
+    "props": {
+      "blockClass": "product-images-MB"
+    },
+    "children": ["flex-layout.col#product-images-container"]
+  }
+}

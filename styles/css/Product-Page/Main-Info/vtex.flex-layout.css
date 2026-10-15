@@ -1,0 +1,251 @@
+.flexRow--product-main-info :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexRowContent--product-main-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 13px;
+    width: 1200px;
+    padding: 0px;
+    padding-bottom: 23px;
+}
+
+.flexRow--product-ID {
+    margin-bottom: 16px;
+}
+
+.flexRow--product-price {
+    margin-bottom: 0px;
+}
+
+.flexRowContent--product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.flexRowContent--product-price :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: fit-content !important;
+}
+
+.flexRowContent--buy-product {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    padding-top: 32px;
+}
+
+:global(.vtex-modal-layout-0-x-modal--pdbx-quickview) .flexRowContent--buy-product {
+    display: none !important;
+}
+
+.flexRowContent--buy-product :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: max-content !important;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flexRow--cucarda-2x1-container {
+    position: absolute;
+    left: 26.5%;
+    z-index: 2;
+}
+
+.flexRowContent--installments-calculator-kudosio {
+    padding-top: 20px;
+}
+
+.flexCol--product-description {
+    width: 97.1%;
+    margin-top: 62px;
+}
+
+@media(max-width: 1025px) {
+    .flexCol--product-description {
+        margin-top: 32px;
+    }
+}
+
+
+.flexCol--product-specification {
+    width: 96%;
+    margin-top: 40px;
+}
+
+.flexRowContent--condition-result {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--condition-result :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexCol--product-images-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.flexColChild--product-images-container {
+    margin: 0;
+    padding: 0;
+}
+
+.flexCol--product-info {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: var(--forCode-spacing-system-radius-l);
+    border: 1px solid var(--forCode-stroke-light);
+}
+
+@media(max-width: 1220px) {
+    .flexRowContent--product-main-info {
+        gap: 0;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    /*
+    .flexRowContent--buy-product {
+        flex-direction: column;
+    }
+
+    .flexRowContent--buy-product :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        max-width: 100%;
+    }*/
+}
+
+@media(max-width: 64.063rem) {
+    .flexRow--product-main-info :global(.vtex-store-components-3-x-container) {
+        padding: 12px 16px 48px 16px;
+    }
+
+    .flexRowContent--product-main-info {
+        flex-direction: column;
+        width: 100%;
+        padding: 8px;
+        align-items: flex-start;
+    }
+
+    .flexRowContent--product-main-info :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 100% !important;
+    }
+
+    .flexRow--product-ID {
+        margin-bottom: 0px;
+    }
+
+    .flexRowContent--product-images-MB {
+        position: relative;
+        justify-content: center;
+        border-radius: var(--forCode-spacing-system-radius-l);
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .flexRowContent--product-data-PDP-MB {
+        position: relative;
+        border-radius: var(--forCode-spacing-system-radius-l);
+        background-color: #fff;
+        padding: 20px 16px 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexRowContent--product-data-PDP-MB :global(.vtex-flex-layout-0-x-stretchChildrenWidth),
+    .flexRowContent--product-images-MB :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        width: 100% !important;
+    }
+
+    .flexRow--product-brand :global(.vtex-store-components-3-x-container),
+    .flexRow--product-name :global(.vtex-store-components-3-x-container),
+    .flexRow--product-ID :global(.vtex-store-components-3-x-container),
+    .flexRow--product-images-MB :global(.vtex-store-components-3-x-container),
+    .flexRow--product-data-PDP-MB :global(.vtex-store-components-3-x-container),
+    .flexRow--product-price :global(.vtex-store-components-3-x-container),
+    .flexRow--buy-product :global(.vtex-store-components-3-x-container),
+    .flexRow--share-product :global(.vtex-store-components-3-x-container),
+    .flexRow--shiping-simulator :global(.vtex-store-components-3-x-container),
+    .flexRow--product-detail-info-MB :global(.vtex-store-components-3-x-container),
+    .flexRow--cucarda-envio-gratis-container :global(.vtex-store-components-3-x-container),
+    .flexRow--cucarda-descuento-segunda-unidad-container :global(.vtex-store-components-3-x-container),
+    .flexRow--installments-calculator-kudosio :global(.vtex-store-components-3-x-container),
+    .flexRow--condition-result-MB :global(.vtex-store-components-3-x-container) {
+        padding: 0px 16px;
+        background: var(--forCode-surface-background-base-secondary);
+    }
+
+    .flexRow--product-images-MB :global(.vtex-store-components-3-x-container) {
+        padding-bottom: 16px;
+    }
+
+    .flexRow--product-price :global(.vtex-store-components-3-x-container) {
+        padding-bottom: 8px;
+    }
+
+    .flexRow--buy-product {
+        margin: 0px;
+    }
+
+    .flexRow--buy-product :global(.vtex-store-components-3-x-container) {
+        padding-top: 12px;
+        padding-bottom: 32px;
+    }
+
+    .flexRow--share-product :global(.vtex-store-components-3-x-container) {
+        padding-bottom: 32px;
+    }
+
+    .flexRow--product-detail-info-MB :global(.vtex-store-components-3-x-container) {
+        padding-bottom: 34.5px;
+    }
+
+    .flexRowContent--product-price {
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        max-width: 330px;
+    }
+
+    .flexRowContent--product-detail-info-MB {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .flexRow--cucarda-2x1-container {
+        left: unset;
+    }
+
+    .flexRowContent--installments-calculator-kudosio {
+        border-top: 1px solid var(--forCode-stroke-light);
+        margin-top: 11px;
+    }
+}
+
+@media(max-width: 44.938rem) {
+    .flexRow--cucarda-2x1-container {
+        padding-left: 1%;
+    }
+}
+
+@media(max-width: 64.063rem) {
+    .flexRowContent--buy-product {
+        gap: 12px;
+        max-width: 330px;
+    }
+
+    .flexRowContent--buy-product :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+        width: max-content !important;
+    }
+}

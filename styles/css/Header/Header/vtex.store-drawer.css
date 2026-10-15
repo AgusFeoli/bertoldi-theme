@@ -1,0 +1,137 @@
+/* ----- DRAWER SEARCH ----- */
+.openIconContainer--search {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z' fill='%23524C4C'/%3E%3C/svg%3E") no-repeat center center / contain;
+    background-size: 24px;
+    height: 24px;
+    margin: 0 auto;
+    padding: 0;
+    width: 24px !important;
+}
+
+.menuIcon--search {
+    display: none;
+}
+
+/*-*/
+.overlay--search {
+    /* top: 96px; */
+}
+
+.overlay--search--visible {
+    display: none;
+}
+
+.drawer--search,
+.closed--search {
+    display: none;
+    transform: translate3d(0%, 0px, 0px) !important;
+    top: 96px !important;
+}
+
+.opened--search {
+    display: block;
+    max-width: 1296px !important;
+    width: 100% !important;
+    margin: auto !important;
+    left: 0;
+    bottom: auto;
+    background: #00000066 !important;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px !important;
+}
+
+.drawerContent--search {
+    overflow: inherit;
+    position: relative;
+    top: 75px;
+    left: -1%;
+}
+
+.closeIconContainer--search {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    width: 24px;
+    left: 5%;
+    bottom: -6px;
+}
+
+.closeIconButton--search {
+    padding: 0;
+}
+
+.closeIconButton--search .closeIcon--search {
+    display: none;
+}
+
+.closeIconButton--search::before {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18.2997 5.70973C17.9097 5.31973 17.2797 5.31973 16.8897 5.70973L11.9997 10.5897L7.10973 5.69973C6.71973 5.30973 6.08973 5.30973 5.69973 5.69973C5.30973 6.08973 5.30973 6.71973 5.69973 7.10973L10.5897 11.9997L5.69973 16.8897C5.30973 17.2797 5.30973 17.9097 5.69973 18.2997C6.08973 18.6897 6.71973 18.6897 7.10973 18.2997L11.9997 13.4097L16.8897 18.2997C17.2797 18.6897 17.9097 18.6897 18.2997 18.2997C18.6897 17.9097 18.6897 17.2797 18.2997 16.8897L13.4097 11.9997L18.2997 7.10973C18.6797 6.72973 18.6797 6.08973 18.2997 5.70973Z' fill='white'/%3E%3C/svg%3E")no-repeat center center;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.closeIcon--search {
+    color: #fff;
+}
+
+.childrenContainer--search {
+    padding: 0px;
+    margin-top: 14px;
+}
+
+@media(max-width: 62rem) {
+    .drawer--site-menu {
+        max-width: 304px !important;
+        z-index: 9999;
+    }
+
+    .overlay--site-menu {
+        z-index: 9999;
+    }
+
+    .drawer--site-menu .closeIconContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--forCode-spacing-system-lg) var(--forCode-spacing-system-md);
+        align-items: center;
+        border-bottom: 1px solid var(--forCode-stroke-light);
+    }
+
+    .drawer--site-menu .closeIconContainer::before {
+        content: "Menú";
+        color: var(--forCode-text-body-medium);
+        font-family: var(--forCode-font-family-body);
+        font-size: var(--forCode-font-size-lg);
+        font-style: normal;
+        font-weight: var(--forCode-font-weight-semibold);
+        line-height: 24px;
+    }
+
+    .closeIconButton,
+    .closeIconButton .closeIcon--site-menu {
+        padding: 0px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .drawerContent--site-menu {
+        height: 100vh;
+    }
+
+    .openIconContainer--site-menu {
+        padding: 0px;
+    }
+
+    .openIconContainer--site-menu::before {
+        visibility: visible;
+        display: block;
+        content: "";
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z' fill='%23434343'/%3E%3C/svg%3E")no-repeat center center;
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -1,0 +1,5 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--cards-informativas)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}

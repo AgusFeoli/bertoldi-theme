@@ -1,0 +1,143 @@
+:global(.vtex-search-result-3-x-searchResultContainer) :global(.relative.justify-center.flex) {
+    width: 100%;
+}
+
+:global(.vtex-search-2-x-searchBanner--bannerProdList)>a {
+    width: 100%;
+}
+
+:global(.vtex-search-2-x-searchBanner--bannerProdList)>a>img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+:global(.vtex-search-result-3-x-totalProducts--layout)>span>:global(.c-muted-2) {
+    color: var(--forCode-text-body-medium) !important;
+}
+
+:global(.vtex-slider__selector-tooltip) {
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: 19px;
+}
+
+:global(.vtex-search-result-3-x-showingProductsCount.b) {
+    font-weight: var(--forCode-font-weight-regular) !important;
+}
+
+:global(.vtex-search-result-3-x-filtersWrapper) :global(.vtex-search-result-3-x-filter__container) :global(.vtex-search-result-3-x-filterItem) :global(.vtex-checkbox__inner-container.h1.w1.absolute.ba.bw1.br1.b--action-primary.bg-action-primary.mr3),
+:global(.vtex-search-result-3-x-filterAccordionItemBox) :global(.vtex-checkbox__inner-container.h1.w1.absolute.ba.bw1.br1.b--action-primary.bg-action-primary.mr3) {
+    background-color: var(--forCode-surface-button-primary-default);
+    border-color: var(--forCode-surface-button-primary-default);
+}
+
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer--search-bar-header)>div>div {
+    width: fit-content !important;
+}
+
+:global(.vtex-search-2-x-itemListLinkTitle) :global(.b) {
+    text-transform: capitalize;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm) !important;
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular) !important;
+    line-height: 19px;
+    margin: 0px;
+    padding: 0px;
+}
+
+:global(.vtex-search-2-x-tileListItem) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child :global(.vtex-button) {
+    max-width: 110px;
+}
+
+:global(.vtex-store-components-3-x-autoCompleteOuterContainer) :global(.vtex-input__error.c-danger.t-small.mt3.lh-title) {
+    display: none;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box) :global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button.numeric-stepper__minus-button.br2.pa0.br-0.flex.items-center.justify-center.ba.b--muted-4.bw1.h-small.f6.bg-muted-5.c-disabled.o-100) {
+    padding: 16px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) :global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button.numeric-stepper__minus-button.br2.pa0.br-0.flex.items-center.justify-center.ba.b--muted-4.bw1.h-small.f6.bg-muted-5.c-disabled.o-100) {
+    padding: 8px;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) :global(.vtex-flex-layout-0-x-flexRowContent--button-prod-box) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: fit-content !important;
+}
+
+:global(.vtex-product-summary-2-x-element--search-product-box-MB) :global(.vtex-flex-layout-0-x-flexRowContent--button-prod-box) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    width: 100% !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--list-product-cont)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    max-width: 240px;
+    width: 240px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--list-product-cont)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+    max-width: 950px;
+    width: 950px !important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--list-product-cont)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child>:global(.vtex-flex-layout-0-x-flexCol) {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+:global(.vtex-search-2-x-searchBanner--bannerProdList>img) {
+    width: 100%;
+    object-fit: cover;
+}
+
+:global(.vtex-slider__base-internal),
+:global(.vtex-slider__selector) {
+    background-color: #524C4C;
+}
+
+@media(max-width: 76.25rem) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--list-product-cont)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+        max-width: 180px;
+        width: 180px !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--list-product-cont)>:global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        max-width: 810px;
+        width: 810px !important;
+    }
+}
+
+@media(max-width: 64.063rem) {
+    :global(.vtex-search-2-x-searchBanner--bannerProdList)>a>img {
+        height: 159px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse) :global(.ReactCollapse--content) :global(.pl8) {
+        padding: 0px !important;
+    }
+
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse):last-child :global(.ReactCollapse--content) :global(.pl8) :global(.vtex-search-result-3-x-accordionFilterItemOptions) {
+        padding-bottom: 16px !important;
+    }
+
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse):last-child :global(.ReactCollapse--content) :global(.pl8) :global(.vtex-search-result-3-x-accordionFilterItemOptions) :global(.vtex-search-result-3-x-filterTemplateOverflow){
+        padding-top: 20px;
+    }
+
+    :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--collapse):last-child :global(.ReactCollapse--content) :global(.pl8) :global(.vtex-search-result-3-x-accordionFilterItemOptions)::after {
+        display: none;
+    }
+
+    :global(.vtex-search-2-x-tileListItem) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child :global(.vtex-button) {
+        max-width: 100%;
+    }
+}

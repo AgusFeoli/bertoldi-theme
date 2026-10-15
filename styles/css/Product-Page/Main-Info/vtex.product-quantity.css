@@ -1,0 +1,173 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorContainer--product-page-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorTitle {
+    display: none;
+    margin: 0px;
+    color: var(--forCode-text-body-default);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .availableQuantityContainer {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: var(--forCode-radius-button);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-button__label) {
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 100% !important;
+    height: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px !important;
+    height: 48px;
+    padding: 16px 12px !important;
+    margin: 0px;
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-button-primary-default);
+    background: var(--forCode-surface-button-primary-default);
+    transition: all 150ms ease-in-out;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button):hover {
+    background: var(--forCode-surface-button-primary-hover);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) {
+    font-size: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button)::before {
+    content: "Agregar al carrito";
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+    text-transform: initial;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+    padding: 16px !important;
+    width: auto !important;
+    height: 50px !important;
+}
+
+@media(max-width: 1025px) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button),
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+        padding: 12px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text) {
+    font-size: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M7.99967 7.99967H3.33301H7.99967Z' fill='%23DE1269'/%3E%3Cpath d='M7.99967 3.33301V7.99967M7.99967 7.99967V12.6663M7.99967 7.99967H12.6663M7.99967 7.99967H3.33301' stroke='%23DE1269' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text) {
+    font-size: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='2' viewBox='0 0 14 2' fill='none'%3E%3Cpath d='M13 1L1 1L13 1Z' fill='%23A3A3A3'/%3E%3Cpath d='M13 1L1 1' stroke='%23DE1269' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+    max-width: 30px;
+    min-height: 34px;
+    padding: 5px 10px;
+    border: 0px;
+    border-color: transparent;
+    outline: none;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-base);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-2xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+
+}
+
+
+
+/*Quantity Selector*/
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorDropdownContainer :global(.vtex-dropdown__container),
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorDropdownMobileContainer :global(.vtex-dropdown__container) {
+    padding: 0px 8px 0px 12px;
+    height: fit-content;
+    width: fit-content;
+
+    border-radius: 4px;
+    border: 1px solid var(--forCode-stroke-default);
+    background: var(--forCode-surface-background-card-default);
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorDropdownContainer :global(.vtex-dropdown__container) :global(.vtex-dropdown__button),
+:global(.vtex-flex-layout-0-x-flexRowContent--buy-product) .quantitySelectorDropdownMobileContainer :global(.vtex-dropdown__container) :global(.vtex-dropdown__button) {
+    padding: 0px !important;
+    width: 39px;
+    height: 48px;
+}
+
+@media(max-width: 1220px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) {
+        width: 100% !important;
+        height: 42px;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button)::before {
+        font-size: var(--forCode-font-size-base, 16px);
+        line-height: var(--forCode-font-line-height-xl, 20px);
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer--pdp-add-to-cart-button) :global(.vtex-add-to-cart-button-0-x-buttonText--pdp-add-to-cart-button):last-child {
+        display: none;
+    }
+}
+
+@media(max-width: 64.063rem) {
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--buy-product) :global(.vtex-button) :global(.vtex-add-to-cart-button-0-x-buttonText--pdp-add-to-cart-button) {
+        min-width: 100%;
+    }
+}

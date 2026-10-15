@@ -1,0 +1,36 @@
+{
+  "store.custom#comocomprar": {
+    "children": ["flex-layout.row#comocomprar-main-container"]
+  },
+  /* Main Container */
+  "flex-layout.row#comocomprar-main-container": {
+    "title": "Como Comprar",
+    "props": {
+      "blockClass": ["institutional-main-container", "institutional-main-container-comocomprar"]
+    },
+    "children": ["flex-layout.col#comocomprar-main-col"]
+  },
+  /*Main Col*/
+  "flex-layout.col#comocomprar-main-col": {
+    "props": {
+      "blockClass": ["institutional-main-col", "comocomprar-main-col"]
+    },
+    "children": ["rich-text#institutional-breadcrumb-comocomprar", "flex-layout.col#institutional-text-container-comocomprar"]
+  },
+  /* Breadcrumb*/
+  "rich-text#institutional-breadcrumb-comocomprar": {
+    "title": "Breadcrumb",
+    "props": {
+      "blockClass": ["institutional-breadcrumb", "institutional-breadcrumb-comocomprar"],
+      "text": "[Inicio](/) / Como comprar"
+    }
+  },
+
+  /* Textos */
+  "flex-layout.col#institutional-text-container-comocomprar": {
+    "props": {
+      "blockClass": ["institutional-text-container", "institutional-text-container-comocomprar"]
+    },
+    "children": ["institutional-content"]
+  }
+}

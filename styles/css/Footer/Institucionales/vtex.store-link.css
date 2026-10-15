@@ -1,0 +1,61 @@
+.link--link-institucionales {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+}
+
+.link--link-institucionales:hover {
+    text-decoration: none;
+    border-bottom: 1px solid var(--forCode-text-on-dark);
+}
+
+.label--link-institucionales {
+    color: var(--forCode-text-on-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.link--boton-arrepentimiento {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: var(--forCode-radius-button);
+    border: 1px solid var(--forCode-stroke-on-dark);
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+}
+
+.link--boton-arrepentimiento:hover {
+    border: 1px solid var(--forCode-stroke-default);
+    background: rgba(255, 255, 255, 0.15)
+}
+
+
+.label--boton-arrepentimiento {
+    display: inline-block;
+    width: 188px;
+    height: 16px;
+    color: var(--forCode-text-on-dark);
+    text-align: center;
+    font-family: var(--forCode-font-family-button);
+    font-size: var(--forCode-font-size-sm);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-semibold);
+    line-height: var(--forCode-font-line-height-xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 64.063rem) {
+    .link--boton-arrepentimiento {
+        margin-top: 0px;
+        max-width: 186px;
+        box-sizing: content-box;
+    }
+
+    .link--link-institucionales {
+        text-decoration: none;
+    }
+}

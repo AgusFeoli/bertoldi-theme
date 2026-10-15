@@ -1,0 +1,53 @@
+{
+    "video-banner": {
+        "component": "VideoBanner"
+    },
+    "instalment-product-box": {
+        "component": "InstalmentProductBox"
+    },
+    "custom-description": {
+        "component": "CustomDescription"
+    },
+    "ocultar-titulo-especificaciones": {
+        "component": "OcultarTituloEspecificaciones"
+    },
+    "transparencia-fiscal": {
+        "component": "TransparenciaFiscal"
+    },
+    "cucarda-2x1": {
+        "component": "Cucarda2x1"
+    },
+    "cucarda-nuevo": {
+        "component": "CucardaNuevo"
+    },
+    "cucarda-envio-gratis": {
+        "component": "CucardaEnvioGratis"
+    },
+    "cucarda-envio-gratis-setter": {
+        "component": "CucardaEnvioGratisSetter"
+    },
+    "header-top-bar": {
+        "component": "HeaderTopBar"
+    },
+    "institutional-content": {
+        "component": "InstitutionalContent"
+    },
+    "sucursales": {
+        "component": "Sucursales"
+    },
+    "select-sku-in-product-box": {
+        "component": "SelectSkuInProductBox"
+    },
+    "select-variation-quickview": {
+        "component": "SelectVariationQuickview"
+    }  ,  
+    "cucarda-pdp": {
+        "component": "CucardaPDP"
+    },
+    "daily-event-countdown": {
+        "component": "DailyEventCountdown"
+    },
+    "minicart-free-shipping-bar": {
+        "component": "minicartFreeShippingBar"
+    }
+}

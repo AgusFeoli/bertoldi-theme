@@ -1,0 +1,18 @@
+.paragraph--carrusel-de-productos-titulo {
+    margin: 0;
+    padding: 0;
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-titles);
+    font-size: var(--forCode-font-size-3xl);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-3xl);
+    letter-spacing: -0.15px;
+}
+
+@media(max-width: 640px) {
+    .paragraph--carrusel-de-productos-titulo {
+        font-size: var(--forCode-font-size-2xl);
+        line-height: var(--forCode-font-line-height-2xl);
+    }
+}

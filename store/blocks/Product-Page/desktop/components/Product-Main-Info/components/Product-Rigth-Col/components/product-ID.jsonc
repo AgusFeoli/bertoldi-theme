@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#product-ID": {
+        "props": {
+            "blockClass": "product-ID"
+        },
+        "children": [
+            "product-identifier.product"
+        ]
+    },
+    "product-identifier.product": {
+        "props": {
+            "label": "custom",
+            "customLabel": "SKU"
+        }
+    }
+}

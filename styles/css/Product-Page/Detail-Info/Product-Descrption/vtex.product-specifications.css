@@ -1,0 +1,32 @@
+.specificationName {
+    color: var(--forCode-text-body-medium);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+.specificationValue {
+    color: var(--forCode-text-body-dark);
+    font-family: var(--forCode-font-family-body);
+    font-size: var(--forCode-font-size-lg);
+    font-style: normal;
+    font-weight: var(--forCode-font-weight-regular);
+    line-height: var(--forCode-font-line-height-4xl);
+    letter-spacing: var(--forCode-spacing-system-none);
+}
+
+@media(max-width: 64.063rem) {
+    .specificationName {
+        font-size: var(--forCode-font-size-sm);
+        line-height: var(--forCode-font-line-height-2xl);
+    }
+
+    .specificationValue {
+        font-size: var(--forCode-font-size-sm);
+        line-height: var(--forCode-font-line-height-2xl);
+    }
+
+}

@@ -1,0 +1,139 @@
+{
+    "form#arrepentimiento": {
+        "props": {
+            "entity": "AR",
+            "schema": "arrepentimiento"
+        },
+        "children": [
+            "flex-layout.row#form-arrepentimiento-container"
+        ],
+        "blocks": [
+            "form-success#form-arrepentimiento"
+        ]
+    },
+    "flex-layout.row#form-arrepentimiento-container": {
+        "props": {
+            "blockClass": "form-arrepentimiento-container",
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#form-arrepentimiento-col-1",
+            "flex-layout.col#form-arrepentimiento-col-2"
+        ]
+    },
+    /* Columna 1*/
+    "flex-layout.col#form-arrepentimiento-col-1": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-col",
+                "form-arrepentimiento-col-1"
+            ],
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "form-input.text#form-arrepentimiento-name",
+            "form-input.text#form-arrepentimiento-order",
+            "form-input.text#form-arrepentimiento-email",
+            "form-input.text#form-arrepentimiento-telefono"
+        ]
+    },
+    "form-input.text#form-arrepentimiento-name": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-input",
+                "form-arrepentimiento-input-name"
+            ],
+            "pointer": "#/properties/name",
+            "label": "Nombre"
+        }
+    },
+    "form-input.text#form-arrepentimiento-order": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-input",
+                "form-arrepentimiento-input-order"
+            ],
+            "pointer": "#/properties/order",
+            "label": "Nº de orden"
+        }
+    },
+    "form-input.text#form-arrepentimiento-email": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-input",
+                "form-arrepentimiento-input-email"
+            ],
+            "pointer": "#/properties/email",
+            "label": "E-mail"
+        }
+    },
+    "form-input.text#form-arrepentimiento-telefono": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-input",
+                "form-arrepentimiento-input-telefono"
+            ],
+            "pointer": "#/properties/phone",
+            "label": "Teléfono"
+        }
+    },
+    /* Fin de Columna 1*/
+    /**/
+    /**/
+    /**/
+    /**/
+    /* Columna 2*/
+    "flex-layout.col#form-arrepentimiento-col-2": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-col",
+                "form-arrepentimiento-col-2"
+            ],
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "form-input.textarea#form-arrepentimiento-message",
+            "form-submit#form-arrepentimiento"
+        ]
+    },
+    "form-input.textarea#form-arrepentimiento-message": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-input",
+                "form-arrepentimiento-input-message"
+            ],
+            "pointer": "#/properties/message",
+            "label": "Motivo de la cancelación"
+        }
+    },
+    "form-submit#form-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-submit"
+            ],
+            "label": "Enviar"
+        }
+    },
+    "form-success#form-arrepentimiento": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-submit",
+                "form-arrepentimiento-submit-success"
+            ]
+        },
+        "children": [
+            "rich-text#form-arrepentimiento-successSubmit"
+        ]
+    },
+    "rich-text#form-arrepentimiento-successSubmit": {
+        "props": {
+            "blockClass": [
+                "form-arrepentimiento-submit-text"
+            ],
+            "text": "El formulario se envió correctamente.",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+    /* Fin de Columna 2*/
+}

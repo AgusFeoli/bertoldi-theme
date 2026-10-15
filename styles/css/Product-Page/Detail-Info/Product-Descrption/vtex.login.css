@@ -1,0 +1,68 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)>div>div>div:first-child {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationGroup)>div>div>div:last-child {
+    border-radius: var(--forCode-spacing-system-radius-s);
+    border: 1px solid var(--forCode-stroke-light);
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger) {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid transparent;
+}
+
+:global(.vtex-disclosure-layout-1-x-content--visible) {
+    margin-top: 2px;
+}
+
+@media(max-width: 1025px) {
+
+    :global(.vtex-disclosure-layout-1-x-trigger) {
+        padding: 0;
+    }
+
+    :global(.vtex-disclosure-layout-1-x-content--visible) {
+        padding-top: 18px;
+    }
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger)::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='6' viewBox='0 0 11 6' fill='none'%3E%3Cpath d='M4.56152 0.788086C4.92214 0.402923 5.57919 0.404151 5.93848 0.789062L9.93262 5.0752V5.07617C10.0263 5.17668 10.0222 5.33605 9.91992 5.43262C9.87178 5.47772 9.8121 5.5 9.75 5.5C9.68301 5.49998 9.61601 5.47305 9.56641 5.41992L5.61621 1.17969L5.25 0.787109L4.88477 1.17969L0.932617 5.41992C0.837202 5.52187 0.680542 5.52589 0.580078 5.43164C0.491008 5.348 0.476103 5.21488 0.537109 5.11523L0.567383 5.0752L4.56152 0.788086Z' fill='%2319191A' stroke='%2319191A'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    transition: all 150ms ease-in-out;
+    border-radius: 4px;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger):hover {
+    cursor: pointer;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger):hover::after {
+    background-color: #e5e5e5;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger--hidden)::after {
+    transform: rotate(180deg);
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger--hidden) {
+    border-color: #6B6779;
+}
+
+@media(max-width: 64.063rem) {
+    :global(.vtex-disclosure-layout-1-x-trigger) {
+        border-bottom: none;
+    }
+
+}

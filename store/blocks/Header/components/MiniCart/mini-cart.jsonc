@@ -1,0 +1,20 @@
+{
+  "minicart.v2": {
+    "props": {
+      "customPixelEventName": "addToCart"
+    },
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "title": "Minicart",
+    "props": {
+      "blockClass": "minicart-container"
+    },
+    "blocks": ["minicart-empty-state"],
+    "children": [
+        "minicart-free-shipping-bar",
+        "minicart-product-list",
+        "flex-layout.row#minicart-footer"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#header-top-bar-DS": {
+    "title": "Top Bar",
+    "props": {
+      "blockClass": "header-top-bar-DS"
+    },
+    "children": ["header-top-bar", "cucarda-envio-gratis-setter"]
+  },
+  "rich-text#top-bar-text": {
+    "title": "Texto Top Bar",
+    "props": {
+      "blockClass": "notification",
+      "text": "Envío gratis en compras superiores a $29.999"
+    }
+  }
+}

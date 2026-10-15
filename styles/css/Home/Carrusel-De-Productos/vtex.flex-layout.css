@@ -1,0 +1,64 @@
+.flexRow--carrusel-de-productos {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background: var(--forCode-surface-background-base-secondary);
+}
+
+.flexRow--carrusel-de-productos :global(.vtex-store-components-3-x-container) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 48px 16px 0 16px;
+    margin: 0;
+}
+
+.flexRowContent--carrusel-de-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRowContent--carrusel-de-productos :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexRowContent--price-prod-box :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+.flexRowContent--carrusel-de-productos-titulo {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    align-items: center;
+    padding: 0px 4px;
+    margin-bottom: 15px;
+}
+
+.flexRowContent--carrusel-de-productos-titulo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
+}
+
+@media(max-width: 64.063rem) {
+    .flexRowContent--carrusel-de-productos {
+        width: 100%;
+        gap: 17.5px;
+        padding: 27px 0px 48px 0px;
+    }
+
+    .flexRowContent--carrusel-de-productos-titulo {
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+
+    .flexRow--carrusel-de-productos :global(.vtex-store-components-3-x-container) {
+        padding: 32px 11px 0 11px;
+    }
+}
