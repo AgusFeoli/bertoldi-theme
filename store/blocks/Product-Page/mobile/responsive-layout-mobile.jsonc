@@ -17,6 +17,7 @@
       "blockClass": "product-data-PDP-MB"
     },
     "children": [
+      "flex-layout.col#containerTalles",
       "flex-layout.col#pdp-cucardas-container",
       "flex-layout.row#product-brand",
       "flex-layout.row#product-name",

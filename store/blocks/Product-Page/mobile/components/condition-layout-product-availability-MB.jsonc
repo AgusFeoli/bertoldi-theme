@@ -23,7 +23,6 @@
       "flex-layout.row#product-price",
       "transparencia-fiscal",
       "instalment-product-box",
-      "flex-layout.col#containerTalles",
       "flex-layout.row#buy-product"
     ]
   },
@@ -31,6 +30,6 @@
     "props": {
       "blockClass": ["condition-result", "condition-result-MB", "condition-result-false", "condition-result-false-MB"]
     },
-    "children": ["flex-layout.col#containerTalles", "availability-notify"]
+    "children": ["availability-notify"]
   }
 }
