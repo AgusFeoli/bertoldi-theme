@@ -257,3 +257,26 @@
         left: 46%;
     }
 }
+/* Carrusel de productos de la home ("Nuevos ingresos"): parte inferior de la card en tonos de azul */
+:global(.vtex-slider-layout-0-x-slide--carrusel-de-productos) .clearLink--product-box {
+    --card-bottom-blue: #E3F0FD;
+    background: linear-gradient(to bottom, var(--forCode-surface-background-card-default, #FFFFFF) 270px, var(--card-bottom-blue) 270px);
+}
+
+:global(.vtex-slider-layout-0-x-slide--carrusel-de-productos):nth-child(4n+2) .clearLink--product-box {
+    --card-bottom-blue: #CFE3FA;
+}
+
+:global(.vtex-slider-layout-0-x-slide--carrusel-de-productos):nth-child(4n+3) .clearLink--product-box {
+    --card-bottom-blue: #BBD7F7;
+}
+
+:global(.vtex-slider-layout-0-x-slide--carrusel-de-productos):nth-child(4n+4) .clearLink--product-box {
+    --card-bottom-blue: #A6CAF3;
+}
+
+@media(max-width: 1025px) {
+    :global(.vtex-slider-layout-0-x-slide--carrusel-de-productos) .clearLink--product-box {
+        background: linear-gradient(to bottom, var(--forCode-surface-background-card-default, #FFFFFF) 162px, var(--card-bottom-blue) 162px);
+    }
+}
