@@ -1,3 +1,9 @@
-docs/
+docs/Add_New_Section.md
+docs/Component_Modification_Guide.md
+docs/Icons.md
+docs/Quantity_Selector.md
+docs/best-practices.md
+docs/i18n.md
+docs/mcp-github-search-guide.md
 agents.md
 .calvin/
